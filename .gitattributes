@@ -3,3 +3,4 @@ game.pck.gz.* binary
 *.ogg binary
 *.mp3 binary
 *.wav binary
+site/** -text
