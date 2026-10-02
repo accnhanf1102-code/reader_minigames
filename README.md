@@ -1,9 +1,69 @@
 # Protelysion (Phổ La Thái Lợi Tây Ông) · Mê Cung 《Thư Hải》
 
-> **Dự Án Bản Địa Hóa Tiếng Việt & Tích Hợp SillyTavern (Localization Project)**
->
-> - **Nguyên tác**: **Adirm007** (Phát hành theo giấy phép CC BY-NC 4.0).
-> - **Mục tiêu dự án**: Bản địa hóa giao diện Web UI, hệ thống Prompt bàn giao hai chiều (Entry & Exit handoff), đồng bộ bộ từ khóa Worldbook (951 thuật ngữ) và xây dựng Adapter hai chiều cho `stat_data` (ENG ↔ CN) tương thích với Card SillyTavern **Thiên Chương Định Mệnh / Cửu Thập Cửu Dạ Mộng (Độc Giả - Reader)**.
+> **Dự Án Bản Địa Hóa Tiếng Việt & Tích Hợp SillyTavern Toàn Diện**
+> - **Nguyên tác**: **Adirm007** (CC BY-NC 4.0)
+> - **Kho lưu trữ GitHub**: [reader_minigames](https://github.com/accnhanf1102-code/reader_minigames)
+> - **Tương thích**: SillyTavern Card **Thiên Chương Định Mệnh / Cửu Thập Cửu Dạ Mộng (Độc Giả - Reader)**, hỗ trợ cả biến tiếng Anh và tiếng Trung qua Adapter thông minh.
+
+---
+
+## 🌟 Tổng Quan 4 Giai Đoạn Hoàn Thành
+
+### 1. Giai đoạn 1: Adapter 2 Chiều Cho `stat_data` (ENG ↔ CN)
+- **Cơ chế Hook 2 chiều thông minh**:
+  - **Đầu vào (Host -> Game Engine)**: Tự động phát hiện biến `stat_data` dạng tiếng Anh (chuẩn Zod/MVU schema của SillyTavern như `protagonist`, `level`, `exp`, `hp`, `mp`, `sp`, `inventory`, `quality`, `fate_points`, `partners_list`...) và chuyển đổi đệ quy sang tiếng Trung chuẩn engine (`主角`, `等级`, `经验`, `生命值`, `法力值`, `体力值`, `背包`, `品质`, `命运点数`, `关系列表`...).
+  - **Đầu ra (Game Engine -> Host)**: Sau chuyến thám hiểm (kết toán kinh nghiệm, FP, tăng cấp, nhận vật phẩm, tiêu hao tài nguyên), Adapter tự động chuyển ngược dữ liệu sang tiếng Anh để ghi đè an toàn vào thẻ nhân vật mà không làm hỏng cấu trúc Zod.
+  - **Hỗ trợ phân cấp phẩm chất (Item Quality Tier)**: Tự động ánh xạ 7 bậc phẩm chất từ tiếng Trung sang tiếng Việt chuẩn theo `extra_mapping.md` (`Phổ Thông`, `Trung Kiên`, `Tinh Anh`, `Sử Thi`, `Truyền Thuyết`, `Thần Thoại`, `Đăng Thần`).
+
+### 2. Giai đoạn 2: Việt Hóa Toàn Diện Giao Diện Web UI
+- Đã dịch toàn bộ hệ thống hiển thị trong `site/distribution.js` sang tiếng Việt:
+  - **Sảnh Thư Gian & Chuẩn bị**: Trạng thái tải game, chọn chế độ (Tải trọn gói / Khởi hành gọn nhẹ), lựa chọn đồng đội, thiết lập tài nguyên.
+  - **Giao diện Chiến đấu & Bản đồ**: Thanh trạng thái HP/MP/SP, nhật ký chiến đấu, bảng kỹ năng, nhãn buff/debuff, lượt hành động, trạng thái "Thất khống".
+  - **Nhân viên tiếp tế & Thương nhân**: Tương tác chọn Sự kiện, Ghế dài hồi phục, Gian hàng mua dược phẩm/phù chú bằng FP tích lũy, lựa chọn tiêu diệt.
+  - **Sổ tay hành trình & Bảng kết toán**: Xem hành trang, thánh vật, tổng kết thám hiểm.
+- Cập nhật regex nạp ngoại liên `install/普罗泰利西翁-书海外链加载正则.json` với giao diện nạp tiếng Việt mượt mà.
+
+### 3. Giai đoạn 3: Việt Hóa Prompt Handoff & Đồng Bộ 951 Thuật Ngữ Thư Hải
+- **Tích hợp Từ Điển Hit Mapping (`booksea_hit_mapping.json`)**:
+  - Nhúng trực tiếp 951 thuật ngữ quái vật, danh hiệu, vật liệu rơi, khu vực và chủ đề mê cung vào game engine.
+  - Tên quái vật hạ gục đội ngũ trong tóm tắt kết thúc chuyến thám hiểm được xuất ra bằng tiếng Việt chuẩn (Ví dụ: `「Kẻ nhiễm bệnh lang thang」Lv.3`).
+- **Khớp chuẩn Regex Worldbook Lorebook**:
+  - Định dạng bàn giao `Quái địch liên quan: 「...」Lv.` khớp tuyệt đối với hàm quét `_bs_foe_hit` và `_bs_hit` trong `reader_entry.md` dòng 1684, kích hoạt chính xác trang Worldbook của từng loài quái vật khi AI kể tiếp cốt truyện!
+- **Chuẩn hóa lệnh Vào sân & Rời sân (Entry & Exit)**:
+  - Lệnh vào sân: `"Vào Protelysion"` (hỗ trợ cả `"Tiến vào Protelysion"` và `"进入普罗泰利西翁"`).
+  - Lệnh rời sân: `"Rời khỏi Protelysion"` (hỗ trợ cả `"Rời khỏi Proteleision"` và `"离开普罗泰利西翁"`).
+  - Đồng bộ cập nhật đồng thời trong `install/读者对话渲染0917 (new).json`, `data_bo_sung/reader_entry.md`, và `install/读者核心本体 (new).txt`.
+
+### 4. Giai đoạn 4: Bộ Kiểm Thử E2E Toàn Diện & Đảm Bảo Toàn Vẹn Mã Nguồn
+- **Hệ thống Kiểm thử tự động (E2E Test Suite)**:
+  - Chạy mô phỏng toàn bộ chu trình 2 chiều Inbound/Outbound của `stat_data`.
+  - Kiểm tra tính tương thích của regex kích hoạt Lorebook và hit mapping.
+  - Đảm bảo tính toán đúng byte và mã băm SHA-256 trong `site/release-manifest.json`.
+- **Đạt chuẩn kiểm duyệt của Trình biên dịch `tools/materialize.py`**: Tránh hoàn toàn lỗi `'启动器校验失败，拒绝执行'`.
+
+---
+
+## 🛠 Hướng Dẫn Cài Đặt Vào SillyTavern
+
+### Điều kiện tiên quyết:
+- SillyTavern đã cài đặt các tiện ích mở rộng: **TavernHelper**, **MVU** và **EJS Template**.
+- Đang sử dụng Card nhân vật **Lỗ Thần Quốc / Cửu Thập Cửu Dạ Mộng (Độc Giả - Reader)**.
+
+### Các bước thực hiện:
+1. **Cài đặt Regex Render Đối Thoại**:
+   - Mở SillyTavern → Cài đặt Regex (Regex Scripts).
+   - Nhập tệp `install/读者对话渲染0917 (new).json` (Tắt hoặc thay thế phiên bản regex render cũ của Độc Giả).
+2. **Cập nhật Lõi Độc Giả (Reader Core EJS)**:
+   - Vào mục **World Info (Sách thế giới)** chứa các mục của Độc Giả.
+   - Chọn mục **读者核心 / Lõi Độc Giả**, sao chép toàn bộ nội dung từ tệp `install/读者核心本体 (new).txt` (hoặc `data_bo_sung/reader_entry.md`) và dán đè vào trường Content của mục này.
+3. **Cài đặt Regex Khởi Động Mê Cung Thư Hải**:
+   - Trong Cài đặt Regex của SillyTavern, nhập tệp `install/普罗泰利西翁-书海外链加载正则.json`.
+   - Regex này chịu trách nhiệm hiển thị khung Iframe game khi có lệnh tiến vào.
+4. **Bắt đầu trải nghiệm**:
+   - Trong cuộc trò chuyện với Độc Giả, mở menu sảnh: **Sảnh Độc Giả → Thiết lập Trứng Phục Sinh (Cài đặt) → Vào Protelysion**.
+   - Hoặc bạn có thể tự gõ tin nhắn bất kỳ chứa cụm từ `"Vào Protelysion"` (ví dụ: *"Nắm tay em, chúng ta cùng Vào Protelysion"*).
+   - AI sẽ miêu tả bối cảnh bước vào mê cung, sau đó giao diện game Thư Hải tiếng Việt sẽ mở ra ngay trong tin nhắn!
+   - Khi hoàn thành chuyến đi hoặc thất bại, game sẽ tự động gửi lệnh `"Rời khỏi Protelysion"` kèm metadata kết toán để AI viết tiếp cốt truyện trở về một cách liền mạch.
 
 ---
 
