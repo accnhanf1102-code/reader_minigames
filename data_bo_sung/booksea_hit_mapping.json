@@ -1,0 +1,8270 @@
+{
+  "metadata": {
+    "description": "Bảng ánh xạ (mapping) toàn bộ từ khóa _bs_hit từ nguyên bản tiếng Trung (reader_entry_raw.md) sang tiếng Việt (reader_entry.md) phục vụ bản địa hóa mini-game Thư Hải (Protelysion).",
+    "source_raw": "data/reader_entry_raw.md",
+    "target_entry": "data/reader_entry.md",
+    "total_hit_lines": 633,
+    "total_unique_terms": 951,
+    "counts": {
+      "themes": 50,
+      "monsters": 306,
+      "items": 306,
+      "locations": 272,
+      "special": 17
+    },
+    "generated_at": "2026-10-02T16:28:11.395Z"
+  },
+  "exact_mapping": {
+    "沙盘": "Sa bàn",
+    "书海": "Biển sách",
+    "普罗泰利西翁": "Protelysion",
+    "迷宫": "Proteleision",
+    "来访者": "Khách đến thăm",
+    "黑影少女": "Thiếu nữ bóng đen",
+    "斗篷女": "Nữ áo choàng",
+    "兜帽女": "Nữ mũ trùm",
+    "补给员": "Nhân viên tiếp tế",
+    "商人": "Thương nhân",
+    "谜之存在": "Tồn tại bí ẩn",
+    "异常层": "Tầng dị thường",
+    "黄色回廊": "Hành lang màu vàng",
+    "后室": "Backrooms",
+    "无尽泳池房": "Phòng hồ bơi vô tận",
+    "错页拼贴街区": "Khu phố chắp vá lệch trang",
+    "拼贴街区": "Khu phố chắp vá",
+    "错页": "Lệch trang",
+    "错轴回廊": "Hành lang lệch trục",
+    "悬置构筑": "Cấu trúc treo lơ lửng",
+    "错轴": "Lệch trục",
+    "废墟末日": "Phế tích mạt nhật",
+    "感染街区": "Khu phố nhiễm bệnh",
+    "避难所": "Nơi tị nạn",
+    "污染实验区": "Khu thí nghiệm ô nhiễm",
+    "游荡感染者": "Kẻ nhiễm bệnh lang thang",
+    "游荡感染者腐牙": "Kẻ nhiễm bệnh lang thang răng mục",
+    "饥饿猎犬": "Chó săn đói khát",
+    "饥饿猎犬肋骨": "Chó săn đói khát xương sườn",
+    "防化残兵": "Tàn binh phòng hóa",
+    "防化残兵滤毒罐": "Tàn binh phòng hóa bình lọc độc",
+    "孢子鼠群": "Đàn chuột bào tử",
+    "孢子鼠群孢囊": "Đàn chuột bào tử túi bào tử",
+    "车壳寄生体": "Vật ký sinh vỏ xe",
+    "车壳寄生体锈壳": "Vật ký sinh vỏ xe vỏ rỉ sét",
+    "暴走屠夫": "Đồ tể bạo tẩu",
+    "暴走屠夫剁骨刀": "Đồ tể bạo tẩu dao chặt xương",
+    "变异装甲兵": "Binh sĩ thiết giáp biến dị",
+    "变异装甲兵肉铁板": "Binh sĩ thiết giáp biến dị tấm sắt thịt",
+    "孢子主母": "Bào tử chủ mẫu",
+    "孢子主母孢宫": "Bào tử chủ mẫu bào cung",
+    "零号病患": "Bệnh nhân số 0",
+    "零号病患病历残页": "Bệnh nhân số 0 tàn trang bệnh án",
+    "玄门山海": "Huyền môn sơn hải",
+    "断山古道": "Cổ đạo núi đứt",
+    "洞府": "Động phủ",
+    "倒悬丹宫": "Đan cung treo ngược",
+    "山魈": "Sơn tiêu",
+    "山魈攫魂爪": "Sơn tiêu trảo đoạt hồn",
+    "符纸傀儡": "Phù chỉ khôi lỗi",
+    "符纸傀儡敕令符": "Sắc lệnh phù của phù chỉ khôi lỗi",
+    "丹炉精": "Đan lô tinh",
+    "丹炉精炉烬": "Tàn lò của đan lô tinh",
+    "御剑残影": "Ngự kiếm tàn ảnh",
+    "御剑残影断剑穗": "Tua kiếm gãy của ngự kiếm tàn ảnh",
+    "丹毒童偶": "Đan độc đồng ngẫu",
+    "丹毒童偶毒丹": "Độc đan của đan độc đồng ngẫu",
+    "守山石狮": "Thủ sơn thạch sư",
+    "守山石狮石鬃": "Bờm đá của thủ sơn thạch sư",
+    "走火丹师": "Tẩu hỏa đan sư",
+    "走火丹师焦金丹": "Kim đan cháy của tẩu hỏa đan sư",
+    "镇宫剑阵": "Trấn cung kiếm trận",
+    "镇宫剑阵阵眼剑": "Kiếm trận nhãn của trấn cung kiếm trận",
+    "倒悬丹尊": "Đảo huyền đan tôn",
+    "倒悬丹尊逆丹": "Nghịch đan của đảo huyền đan tôn",
+    "巫祭荒原": "Vu tế hoang nguyên",
+    "图腾部落": "Đồ đằng bộ lạc",
+    "沼地": "Đầm lầy",
+    "祖灵祭坛": "Tổ linh tế đàn",
+    "骨面猎手": "Cốt diện liệp thủ",
+    "骨面猎手骨面具": "Mặt nạ xương của cốt diện liệp thủ",
+    "蛊壶侍从": "Cổ hồ thị tòng",
+    "蛊壶侍从蛊壶": "Hũ cổ của cổ hồ thị tòng",
+    "灰羽鬣鸟": "Hôi vũ liệp điểu",
+    "灰羽鬣鸟灰羽": "Lông xám của hôi vũ liệp điểu",
+    "沼泽蜱": "Bọ ve đầm lầy",
+    "沼泽蜱血囊": "Túi máu của bọ ve đầm lầy",
+    "树根行者": "Thụ căn hành giả",
+    "树根行者祖根": "Rễ tổ của thụ căn hành giả",
+    "三面祭司": "Tam diện tế tư",
+    "三面祭司第三张脸": "Khuôn mặt thứ ba của tam diện tế tư",
+    "巨骨猎王": "Cự cốt liệp vương",
+    "巨骨猎王王骨": "Xương vương của cự cốt liệp vương",
+    "饥饿祖灵": "Cơ ngạ tổ linh",
+    "饥饿祖灵供碗": "Bát cúng của cơ ngạ tổ linh",
+    "万面鼓母": "Vạn diện cổ mẫu",
+    "万面鼓母鼓皮": "Mặt trống của vạn diện cổ mẫu",
+    "龙与王冠": "Rồng và vương miện",
+    "边境堡垒": "Biên cảnh bảo lũy",
+    "王都地牢": "Vương đô địa lao",
+    "龙骨殿": "Long cốt điện",
+    "朽甲士兵": "Hủ giáp binh sĩ",
+    "朽甲士兵锈甲片": "Mảnh giáp rỉ của hủ giáp binh sĩ",
+    "烛火修士": "Chúc hỏa tu sĩ",
+    "烛火修士残烛": "Tàn nến của chúc hỏa tu sĩ",
+    "地牢猎犬": "Địa lao liệp khuyển",
+    "地牢猎犬项圈": "Vòng cổ của địa lao liệp khuyển",
+    "蓝帽哥布林": "Lam mạo goblin",
+    "蓝帽哥布林蓝帽子": "Mũ xanh của lam mạo goblin",
+    "塔楼石像": "Tháp lâu thạch tượng",
+    "塔楼石像石翼": "Cánh đá của tháp lâu thạch tượng",
+    "王庭处刑官": "Vương đình xử hình quan",
+    "王庭处刑官法槌": "Búa xử án của vương đình xử hình quan",
+    "失誓骑士": "Thất thệ kỵ sĩ",
+    "失誓骑士断誓剑": "Kiếm gãy lời thề của thất thệ kỵ sĩ",
+    "幼龙看守": "Ấu long khán thủ",
+    "幼龙看守龙鳞": "Vảy rồng của ấu long khán thủ",
+    "空冠之王": "Không quan chi vương",
+    "空冠之王空王冠": "Vương miện trống của không quan chi vương",
+    "轨道失落": "Quỹ đạo thất lạc",
+    "空间站": "Trạm không gian",
+    "机库": "Khoang chứa tàu",
+    "引力反应堆": "Lò phản ứng dẫn lực",
+    "巡检蜂机": "Tuần kiểm phong cơ",
+    "巡检蜂机光学镜头": "Ống kính quang học của tuần kiểm phong cơ",
+    "失压宇航员": "Thất áp vũ hàng viên",
+    "失压宇航员头盔": "Mũ bảo hiểm của thất áp vũ hàng viên",
+    "磁轨炮台": "Từ quỹ pháo đài",
+    "磁轨炮台线圈": "Cuộn dây của từ quỹ pháo đài",
+    "维修蜘蛛": "Duy tu tri chu",
+    "维修蜘蛛电弧足": "Chân hồ quang của duy tu tri chu",
+    "纳米聚合体": "Nano tụ hợp thể",
+    "纳米聚合体灰雾核": "Lõi sương xám của nano tụ hợp thể",
+    "重装清除者": "Trọng trang thanh trừ giả",
+    "重装清除者装甲板": "Tấm giáp của trọng trang thanh trừ giả",
+    "相位猎手": "Tương vị liệp thủ",
+    "相位猎手相位核": "Lõi pha của tương vị liệp thủ",
+    "母机维护核": "Mẫu cơ duy hộ hạch",
+    "母机维护核主板": "Bo mạch chủ của mẫu cơ duy hộ hạch",
+    "引力主机零式": "Dẫn lực chủ cơ Zero",
+    "引力主机零式引力核": "Lõi dẫn lực của dẫn lực chủ cơ zero",
+    "鬼城旧事": "Quỷ thành cựu sự",
+    "荒村": "Hoang thôn",
+    "冥婚宅": "Minh hôn trạch",
+    "纸扎街": "Chỉ trát nhai",
+    "无面行人": "Vô diện hành nhân",
+    "无面行人借来的脸": "Khuôn mặt mượn của vô diện hành nhân",
+    "纸扎童子": "Chỉ trát đồng tử",
+    "纸扎童子纸扎手": "Tay giấy bện của chỉ trát đồng tử",
+    "吊影": "Điếu ảnh",
+    "吊影悬梁索": "Dây treo xà của điếu ảnh",
+    "旧井湿鬼": "Cựu tỉnh thấp quỷ",
+    "旧井湿鬼井苔": "Rêu giếng của cựu tỉnh thấp quỷ",
+    "灯笼眼": "Đăng lung nhãn",
+    "灯笼眼眼灯": "Đèn mắt của đăng lung nhãn",
+    "送葬轿夫": "Tống táng kiệu phu",
+    "送葬轿夫轿杠": "Đòn kiệu của tống táng kiệu phu",
+    "无声戏子": "Vô thanh hí tử",
+    "无声戏子哑嗓": "Giọng câm của vô thanh hí tử",
+    "守井婆": "Thủ tỉnh bà",
+    "守井婆井绳": "Dây thừng giếng của thủ tỉnh bà",
+    "迎亲空轿": "Nghênh thân không kiệu",
+    "迎亲空轿红盖头": "Khăn voan đỏ của nghênh thân không kiệu",
+    "刀剑江湖": "Đao kiếm giang hồ",
+    "雨巷": "Vũ hạng",
+    "竹林驿": "Trúc lâm dịch",
+    "铸剑山庄": "Đúc kiếm sơn trang",
+    "蒙面刀客": "Mông diện đao khách",
+    "蒙面刀客缺口刀": "Đao mẻ của mông diện đao khách",
+    "飞镖游侠": "Phi tiêu du hiệp",
+    "飞镖游侠镖囊": "Túi phi tiêu của phi tiêu du hiệp",
+    "醉拳客": "Túy quyền khách",
+    "醉拳客酒葫芦": "Hồ lô rượu của túy quyền khách",
+    "毒针侍女": "Độc châm thị nữ",
+    "毒针侍女绣针": "Kim thêu của độc châm thị nữ",
+    "断棍僧": "Đoạn côn tăng",
+    "断棍僧断棍": "Gậy gãy của đoạn côn tăng",
+    "雨夜追命客": "Vũ dạ truy mệnh khách",
+    "雨夜追命客斗笠": "Nón lá của vũ dạ truy mệnh khách",
+    "铁面庄主": "Thiết diện trang chủ",
+    "铁面庄主铁面具": "Mặt nạ sắt của thiết diện trang chủ",
+    "无影双刃": "Vô ảnh song nhận",
+    "无影双刃双刃鞘": "Vỏ song nhận của vô ảnh song nhận",
+    "铸剑无归人": "Đúc kiếm vô quy nhân",
+    "铸剑无归人未成剑": "Kiếm chưa đúc xong của đúc kiếm vô quy nhân",
+    "深渊观测": "Thâm uyên quan trắc",
+    "海边观测所": "Đài quan trắc ven biển",
+    "失真矿井": "Hầm mỏ méo mó",
+    "星骸祭台": "Đài tế tinh hài",
+    "深潜侍从": "Thâm tiềm thị tòng",
+    "深潜侍从献身印": "Ấn hiến thân của thâm tiềm thị tòng",
+    "触须雏体": "Xúc tu sơ thể",
+    "触须雏体幼触须": "Xúc tu non của xúc tu sơ thể",
+    "盲眼观测员": "Manh nhãn quan trắc viên",
+    "盲眼观测员空眼窝": "Hốc mắt rỗng của manh nhãn quan trắc viên",
+    "倒壳甲虫": "Đảo xác giáp trùng",
+    "倒壳甲虫反面壳": "Vỏ mặt ngược của đảo xác giáp trùng",
+    "黑潮水蛭": "Hắc triều thủy đỉa",
+    "黑潮水蛭吸盘": "Giác hút của hắc triều thủy đỉa",
+    "星骸看守": "Tinh hài khán thủ",
+    "星骸看守星骸碎片": "Mảnh vỡ tinh hài của tinh hài khán thủ",
+    "黑潮司祭": "Hắc triều tư tế",
+    "黑潮司祭祷文": "Bài nguyện của hắc triều tư tế",
+    "折光之眼": "Chiết quang chi nhãn",
+    "折光之眼晶状体": "Thể thủy tinh của chiết quang chi nhãn",
+    "不可名状的观测者": "Kẻ quan trắc không thể gọi tên",
+    "不可名状的观测者视线残片": "Mảnh ánh nhìn của kẻ quan trắc không thể gọi tên",
+    "午夜都市": "Ngọ dạ đô thị",
+    "空站": "Không trạm",
+    "便利店街": "Tiện lợi điếm nhai",
+    "金融高楼": "Tòa nhà tài chính",
+    "末班乘客": "Mạt ban thừa khách",
+    "末班乘客旧车票": "Vé xe cũ của mạt ban thừa khách",
+    "外卖空壳": "Ngoại mại không xác",
+    "外卖空壳保温箱": "Hộp giữ nhiệt của ngoại mại không xác",
+    "监控眼": "Giám khống nhãn",
+    "监控眼摄像头": "Camera của giám khống nhãn",
+    "霓虹飞蛾": "Nghê hồng phi nga",
+    "霓虹飞蛾荧粉": "Bột huỳnh quang của nghê hồng phi nga",
+    "失眠保安": "Thất miên bảo an",
+    "失眠保安手电筒": "Đèn pin của thất miên bảo an",
+    "永夜站长": "Vĩnh dạ trạm trưởng",
+    "永夜站长站长帽": "Mũ trạm trưởng của vĩnh dạ trạm trưởng",
+    "广告女王": "Quảng cáo nữ vương",
+    "广告女王霓虹冠": "Vương miện neon của quảng cáo nữ vương",
+    "红灯追猎者": "Hồng đăng truy liệp giả",
+    "红灯追猎者红灯": "Đèn đỏ của hồng đăng truy liệp giả",
+    "零点城市管理员": "Linh điểm thành thị quản lý viên",
+    "零点城市管理员门禁卡": "Thẻ từ của linh điểm thành thị quản lý viên",
+    "无尽客房": "Vô tận khách phòng",
+    "长廊": "Trường lang",
+    "泳池房": "Vịnh trì phòng",
+    "办公夹层": "Tầng lửng văn phòng",
+    "地毯蠕虫": "Địa thảm nhuyễn trùng",
+    "地毯蠕虫绒毛": "Lông tơ của địa thảm nhuyễn trùng",
+    "巡廊人偶": "Tuần lang nhân ngẫu",
+    "巡廊人偶门牌": "Biển số phòng của tuần lang nhân ngẫu",
+    "出口幻影": "Xuất khẩu huyễn ảnh",
+    "出口幻影绿色标识": "Biển báo màu xanh của xuất khẩu huyễn ảnh",
+    "湿面访客": "Thấp diện phóng khách",
+    "湿面访客湿手帕": "Khăn tay ướt của thấp diện phóng khách",
+    "插座寄生体": "Sáp tọa ký sinh thể",
+    "插座寄生体电极": "Điện cực của sáp tọa ký sinh thể",
+    "万能钥匙持有者": "Vạn năng thược thi trì hữu giả",
+    "万能钥匙持有者万能钥匙": "Chìa khóa vạn năng của vạn năng thược thi trì hữu giả",
+    "过曝巡查员": "Quá bộc tuần tra viên",
+    "过曝巡查员闪光灯": "Đèn flash của quá bộc tuần tra viên",
+    "长廊吞咽者": "Trường lang thôn yết giả",
+    "长廊吞咽者喉管": "Ống họng của trường lang thôn yết giả",
+    "第零间房": "Căn phòng thứ không",
+    "第零间房门框": "Khung cửa của căn phòng thứ không",
+    "齿轮黄昏": "Xỉ luân hoàng hôn",
+    "发条工坊": "Dây cót công phường",
+    "空中车站": "Không trung xa trạm",
+    "时钟塔": "Thời chung tháp",
+    "发条鼠": "Chuột dây cót",
+    "发条鼠发条": "Dây cót của chuột dây cót",
+    "锅炉仆役": "Nồi hơi bộc dịch",
+    "锅炉仆役压力阀": "Van áp suất của nồi hơi bộc dịch",
+    "齿轮蜘蛛": "Xỉ luân tri chu",
+    "齿轮蜘蛛齿网": "Lưới bánh răng của xỉ luân tri chu",
+    "烟囱小鬼": "Yên thông tiểu quỷ",
+    "烟囱小鬼煤灰": "Tro than của yên thông tiểu quỷ",
+    "铆钉工兵": "Đinh tán công binh",
+    "铆钉工兵铆钉枪": "Súng bắn đinh tán của đinh tán công binh",
+    "重锤技师": "Trọng chùy kỹ sư",
+    "重锤技师校准锤": "Búa hiệu chuẩn của trọng chùy kỹ sư",
+    "失控巡空艇": "Thất khống tuần không đĩnh",
+    "失控巡空艇舵轮": "Bánh lái của thất khống tuần không đĩnh",
+    "逆摆监察官": "Nghịch bãi giám sát quan",
+    "逆摆监察官逆摆": "Con lắc ngược của nghịch bãi giám sát quan",
+    "停钟工程师": "Đình chung công trình sư",
+    "停钟工程师主发条": "Dây cót chính của đình chung công trình sư",
+    "冻土教堂": "Đống thổ giáo đường",
+    "霜原": "Sương nguyên",
+    "埋雪修院": "Mai tuyết tu viện",
+    "冰封钟楼": "Băng phong chung lâu",
+    "雪原失魂者": "Tuyết nguyên thất hồn giả",
+    "雪原失魂者冰泪": "Lệ băng của tuyết nguyên thất hồn giả",
+    "冰棘狼": "Băng cức lang",
+    "冰棘狼冰棘": "Gai băng của băng cức lang",
+    "诵霜修女": "Tụng sương tu nữ",
+    "诵霜修女霜念珠": "Tràng hạt sương của tụng sương tu nữ",
+    "结晶钟灵": "Kết tinh chung linh",
+    "结晶钟灵钟晶": "Tinh thể chuông của kết tinh chung linh",
+    "寒鸦侍女": "Hàn nha thị nữ",
+    "寒鸦侍女黑羽": "Lông đen của hàn nha thị nữ",
+    "埋雪骑士": "Mai tuyết kỵ sĩ",
+    "埋雪骑士誓铠": "Giáp thề của mai tuyết kỵ sĩ",
+    "白疫告解师": "Bạch dịch cáo giải sư",
+    "白疫告解师告解簿": "Sổ giải tội của bạch dịch cáo giải sư",
+    "冻土守钟人": "Đống thổ thủ chung nhân",
+    "冻土守钟人钟锤": "Búa gõ chuông của đống thổ thủ chung nhân",
+    "永冬圣像": "Vĩnh đông thánh tượng",
+    "永冬圣像圣像碎片": "Mảnh vỡ thánh tượng của vĩnh đông thánh tượng",
+    "血肉温室": "Huyết nhục ôn thất",
+    "异植苗床": "Dị thực miêu sàng",
+    "血管廊": "Huyết quản lang",
+    "母巢温室": "Mẫu sào ôn thất",
+    "孢囊花": "Bào nang hoa",
+    "孢囊花花蕊": "Nhụy hoa của bào nang hoa",
+    "牙叶草": "Nha diệp thảo",
+    "牙叶草叶牙": "Răng lá của nha diệp thảo",
+    "血管藤": "Huyết quản đằng",
+    "血管藤藤脉": "Mạch dây leo của huyết quản đằng",
+    "菌肤园丁": "Khuẩn phu viên đinh",
+    "菌肤园丁菌丝": "Khuẩn ty của khuẩn phu viên đinh",
+    "浆果拟态者": "Tương quả nghĩ thái giả",
+    "浆果拟态者假浆果": "Quả mọng giả của tương quả nghĩ thái giả",
+    "倒生园长": "Đảo sinh viên trưởng",
+    "倒生园长修枝剪": "Kéo tỉa cành của đảo sinh viên trưởng",
+    "骨瓣捕食者": "Cốt biện bộ thực giả",
+    "骨瓣捕食者骨瓣": "Cánh hoa xương của cốt biện bộ thực giả",
+    "绽裂囊母": "Trán liệt nang mẫu",
+    "绽裂囊母胎囊": "Túi thai của trán liệt nang mẫu",
+    "永生花床": "Vĩnh sinh hoa sàng",
+    "永生花床永生花": "Hoa vĩnh sinh của vĩnh sinh hoa sàng",
+    "沉没王庭": "Trầm một vương đình",
+    "珊瑚街": "San hô nhai",
+    "沉舰墓": "Trầm hạm mộ",
+    "深水宫": "Thâm thủy cung",
+    "锈锚水兵": "Tú miêu thủy binh",
+    "锈锚水兵锈锚": "Neo rỉ sét của tú miêu thủy binh",
+    "珊瑚骑士": "San hô kỵ sĩ",
+    "珊瑚骑士珊瑚甲": "Giáp san hô của san hô kỵ sĩ",
+    "寄居铜盔": "Ký cư đồng khôi",
+    "寄居铜盔铜盔": "Mũ cối đồng của ký cư đồng khôi",
+    "发光水母": "Phát quang thủy mẫu",
+    "发光水母伞膜": "Màng dù của phát quang thủy mẫu",
+    "深水剑鱼": "Thâm thủy kiếm ngư",
+    "深水剑鱼剑吻": "Mõm kiếm của thâm thủy kiếm ngư",
+    "沉锚统领": "Trầm miêu thống lĩnh",
+    "沉锚统领军令牌": "Lệnh bài quân sự của trầm miêu thống lĩnh",
+    "裂壳祭司": "Liệt xác tế tư",
+    "裂壳祭司裂壳": "Vỏ nứt của liệt xác tế tư",
+    "鲸骨卫士": "Kình cốt vệ sĩ",
+    "鲸骨卫士鲸骨盾": "Khiên xương cá voi của kình cốt vệ sĩ",
+    "溺冠女王": "Nịch quan nữ vương",
+    "溺冠女王溺冠": "Vương miện đuối nước của nịch quan nữ vương",
+    "纸页天穹": "Chỉ diệp thiên khung",
+    "漂浮书架": "Phiêu phù thư giá",
+    "折纸庭": "Chiết chỉ đình",
+    "倒序印厂": "Đảo tự ấn xưởng",
+    "折纸鸟": "Chiết chỉ điểu",
+    "折纸鸟折痕翼": "Cánh nếp gấp của chiết chỉ điểu",
+    "墨滴史莱姆": "Mặc tích slime",
+    "墨滴史莱姆墨核": "Lõi mực của mặc tích slime",
+    "错字虫": "Thác tự trùng",
+    "错字虫错字": "Chữ sai của thác tự trùng",
+    "缺页卫兵": "Khuyết diệp vệ binh",
+    "缺页卫兵残页": "Tàn trang của khuyết diệp vệ binh",
+    "装订蛛": "Trang đính tri",
+    "装订蛛装订线": "Chỉ đóng sách của trang đính tri",
+    "索引守卫": "Sách dẫn thủ vệ",
+    "索引守卫索引签": "Thẻ chỉ mục của sách dẫn thủ vệ",
+    "删改使徒": "San cải sứ đồ",
+    "删改使徒红笔": "Bút đỏ của san cải sứ đồ",
+    "巨型装订者": "Cự hình trang đính giả",
+    "巨型装订者巨钉": "Đinh ghim lớn của cự hình trang đính giả",
+    "无字的作者": "Vô tự chi tác giả",
+    "无字的作者空白稿纸": "Giấy bản thảo trắng của vô tự chi tác giả",
+    "无名夹缝": "Vô danh giáp phùng",
+    "破碎天体": "Phá toái thiên thể",
+    "法则残廊": "Pháp tắc tàn lang",
+    "无界门": "Vô giới môn",
+    "碎界游灵": "Toái giới du linh",
+    "碎界游灵界隙碎片": "Mảnh vỡ khe nứt giới của toái giới du linh",
+    "逆光卫星": "Nghịch quang vệ tinh",
+    "逆光卫星逆光镜": "Kính ngược sáng của nghịch quang vệ tinh",
+    "法则碎片体": "Pháp tắc toái phiến thể",
+    "法则碎片体残律": "Tàn luật của pháp tắc toái phiến thể",
+    "概率孑孓": "Xác suất lăng quăng",
+    "概率孑孓概率卵": "Trứng xác suất của xác suất lăng quăng",
+    "虚无浮鲸": "Hư vô phù kình",
+    "虚无浮鲸鲸须": "Râu cá voi của hư vô phù kình",
+    "边界剥离者": "Biên giới bác ly giả",
+    "边界剥离者剥离刃": "Lưỡi dao bóc tách của biên giới bác ly giả",
+    "失序执法体": "Thất tự chấp pháp thể",
+    "失序执法体执法徽": "Huy hiệu chấp pháp của thất tự chấp pháp thể",
+    "星墓巡行者": "Tinh mộ tuần hành giả",
+    "星墓巡行者巡行灯": "Đèn tuần hành của tinh mộ tuần hành giả",
+    "书海的留白": "Thư hải chi lưu bạch",
+    "书海的留白空白页": "Trang giấy trắng của thư hải chi lưu bạch",
+    "倒灌机场": "Đảo quán cơ trường",
+    "反向降雨的候机厅": "Sảnh chờ mưa chảy ngược",
+    "永远延误的登机廊": "Hành lang lên máy bay mãi mãi chậm trễ",
+    "水面停机坪": "Sân đỗ thủy diện",
+    "托运行尸": "Ký vận hành thi",
+    "登机牌虫": "Thẻ lên máy bay trùng",
+    "逆雨安检伞": "Dù an kiểm nghịch vũ",
+    "逆雨安检伞伞骨": "Nan dù của dù an kiểm nghịch vũ",
+    "行李转盘兽": "Băng chuyền hành lý thú",
+    "行李转盘兽转盘履带": "Băng tải bàn xoay của băng chuyền hành lý thú",
+    "失焦接机影": "Bóng đón máy bay mất nét",
+    "失焦接机影接机牌": "Biển đón máy bay của bóng đón máy bay mất nét",
+    "逆航乘务长": "Tiếp viên trưởng nghịch hàng",
+    "航灯领航偶": "Hoa tiêu đèn hiệu con rối",
+    "航灯领航偶航灯": "Đèn hiệu hàng không của hoa tiêu đèn hiệu con rối",
+    "舷窗窥视者": "Kẻ dòm ngó cửa sổ máy bay",
+    "舷窗窥视者舷窗玻璃": "Kính cửa sổ mạn của kẻ dòm ngó cửa sổ máy bay",
+    "最后一班广播": "Phát thanh chuyến bay cuối cùng",
+    "无人高速服务区": "Trạm dịch vụ cao tốc không người",
+    "空停车场": "Bãi đỗ xe trống",
+    "通宵餐厅": "Nhà hàng suốt đêm",
+    "延伸到天边的加油岛": "Đảo đổ xăng kéo dài tận chân trời",
+    "轮胎猎犬": "Chó săn lốp xe",
+    "餐盘搬运者": "Kẻ bưng khay cơm",
+    "油渍软泥": "Bùn nhão vết dầu",
+    "油渍软泥油膜": "Màng dầu của bùn nhão vết dầu",
+    "加油枪蠕虫": "Giun vòi bơm xăng",
+    "加油枪蠕虫油枪头": "Đầu vòi bơm xăng của giun vòi bơm xăng",
+    "售货柜寄生体": "Ký sinh thể tủ bán hàng tự động",
+    "售货柜寄生体找零硬币": "Tiền xu trả lại của ký sinh thể tủ bán hàng tự động",
+    "夜班收费员": "Thu phí viên ca đêm",
+    "废灯巡路者": "Kẻ tuần đường đèn hỏng",
+    "废灯巡路者灯罩": "Chao đèn của kẻ tuần đường đèn hỏng",
+    "油罐驮行兽": "Thú thồ bồn dầu",
+    "油罐驮行兽油罐阀": "Van bồn dầu của thú thồ bồn dầu",
+    "无终点长途客": "Khách đường dài không điểm đến",
+    "无限货运港": "Vô hạn hàng vận cảng",
+    "集装箱峡谷": "Hẻm núi container",
+    "起重机森林": "Rừng cần cẩu",
+    "永不靠岸的码头": "Bến tàu vĩnh viễn không cập bến",
+    "封箱蟹": "Cua đóng thùng",
+    "货签漂浮体": "Thể trôi nổi thẻ hàng",
+    "浮标钉螺": "Ốc đinh phao cứu sinh",
+    "浮标钉螺浮标壳": "Vỏ phao của ốc đinh phao cứu sinh",
+    "缆绳水蛭": "Đỉa dây cáp",
+    "缆绳水蛭缆绳段": "Đoạn dây cáp của đỉa dây cáp",
+    "锈箱潜伏者": "Kẻ ẩn núp thùng rỉ sét",
+    "锈箱潜伏者锈箱板": "Tấm thùng rỉ của kẻ ẩn núp thùng rỉ sét",
+    "铁索吊运者": "Kẻ cẩu dây sắt",
+    "海关封签官": "Quan niêm phong hải quan",
+    "海关封签官封签": "Niêm phong của quan niêm phong hải quan",
+    "沉锚搬山蟹": "Cua dời núi neo chìm",
+    "沉锚搬山蟹沉锚钳": "Càng neo chìm của cua dời núi neo chìm",
+    "港口总提单": "Vận đơn tổng cảng",
+    "永昼雪原旅馆": "Khách sạn tuyết nguyên vĩnh trú",
+    "玻璃暖房": "Nhà kính thủy tinh",
+    "朝向太阳的客房": "Phòng hướng về mặt trời",
+    "埋雪观景台": "Đài ngắm cảnh vùi trong tuyết",
+    "雪毯房客": "Khách trọ chăn tuyết",
+    "暖灯蛾": "Bướm đêm đèn ấm",
+    "窗霜壁虎": "Thạch sùng sương cửa sổ",
+    "窗霜壁虎霜爪": "Móng sương của thạch sùng sương cửa sổ",
+    "雪枕潜伏者": "Kẻ rình rập gối tuyết",
+    "雪枕潜伏者雪枕": "Gối tuyết của kẻ rình rập gối tuyết",
+    "长昼雪鸮": "Cú tuyết ngày dài",
+    "长昼雪鸮昼羽": "Lông ngày của cú tuyết ngày dài",
+    "白昼司门者": "Kẻ giữ cửa ban ngày",
+    "暖房巡夜人": "Người tuần đêm nhà kính",
+    "暖房巡夜人提灯": "Đèn lồng của người tuần đêm nhà kính",
+    "风雪搬运兽": "Thú vận chuyển gió tuyết",
+    "风雪搬运兽雪橇绳": "Dây xe trượt tuyết của thú vận chuyển gió tuyết",
+    "永不退房的太阳": "Mặt trời vĩnh viễn không trả phòng",
+    "倒置住宅群": "Khu dân cư đảo ngược",
+    "楼底天台": "Sân thượng đáy tòa nhà",
+    "垂直客厅街": "Phố phòng khách thẳng đứng",
+    "悬挂的地下室": "Tầng hầm treo lơ lửng",
+    "天花板住客": "Khách trọ trần nhà",
+    "倒悬扫帚": "Chổi treo ngược",
+    "逆行壁蜥": "Thằn lằn tường bò ngược",
+    "逆行壁蜥逆鳞": "Vảy ngược của thằn lằn tường bò ngược",
+    "落物袋灵": "Linh túi nhặt đồ rơi",
+    "落物袋灵收纳袋": "Túi đựng đồ của linh túi nhặt đồ rơi",
+    "灯座倒栖鸟": "Chim đậu ngược đui đèn",
+    "灯座倒栖鸟栖爪": "Móng đậu của chim đậu ngược đui đèn",
+    "楼底管理员": "Quản lý đáy tòa nhà",
+    "天井钩索客": "Khách móc dây giếng trời",
+    "天井钩索客钩索": "Dây móc của khách móc dây giếng trời",
+    "承重墙傀儡": "Khôi lỗi tường chịu lực",
+    "承重墙傀儡承重砖": "Gạch chịu lực của khôi lỗi tường chịu lực",
+    "第十三层地基": "Nền móng tầng thứ mười ba",
+    "铅笔森林": "Rừng bút chì",
+    "削屑山谷": "Thung lũng vụn gọt",
+    "橡皮湿地": "Vùng đất ngập nước tẩy",
+    "石墨树冠": "Tán cây than chì",
+    "削屑甲虫": "Bọ hung vụn gọt",
+    "橡皮兽": "Thú gôm tẩy",
+    "断芯蚁": "Kiến gãy ngòi",
+    "断芯蚁笔芯": "Ngòi bút của kiến gãy ngòi",
+    "涂改液蛞蝓": "Sên bút xóa",
+    "涂改液蛞蝓白痕": "Vết trắng của sên bút xóa",
+    "素描纸鹿": "Hươu giấy ký họa",
+    "素描纸鹿素描角": "Sừng ký họa của hươu giấy ký họa",
+    "石墨伐木者": "Tiều phu than chì",
+    "削笔巡林者": "Người tuần rừng gọt bút",
+    "削笔巡林者卷笔刀": "Gọt bút chì của người tuần rừng gọt bút",
+    "炭笔独角兽": "Kỳ lân bút than",
+    "炭笔独角兽炭角": "Sừng than của kỳ lân bút than",
+    "未画完的树王": "Vua cây chưa vẽ xong",
+    "巨人体内行政区": "Khu hành chính trong cơ thể khổng lồ",
+    "胃袋大厅": "Đại sảnh túi dạ dày",
+    "血管办公街": "Phố công sở mạch máu",
+    "骨髓档案室": "Phòng hồ sơ tủy xương",
+    "公章细胞": "Tế bào con dấu",
+    "票据白虫": "Sâu trắng hóa đơn",
+    "回形针寄虫": "Ký trùng ghim kẹp",
+    "回形针寄虫针钩": "Móc kim của ký trùng ghim kẹp",
+    "印泥吞吐囊": "Túi nuốt nhả mực dấu",
+    "印泥吞吐囊印泥": "Mực dấu của túi nuốt nhả mực dấu",
+    "订书钉步卒": "Bộ binh ghim bấm",
+    "订书钉步卒钉脚": "Chân đinh của bộ binh ghim bấm",
+    "脉搏科长": "Trưởng phòng mạch đập",
+    "腺体档案官": "Quan hồ sơ tuyến thể",
+    "腺体档案官档案袋": "Túi hồ sơ của quan hồ sơ tuyến thể",
+    "红章吞噬者": "Kẻ nuốt chửng dấu đỏ",
+    "红章吞噬者注销章": "Con dấu hủy bỏ của kẻ nuốt chửng dấu đỏ",
+    "总务心脏": "Trái tim tổng vụ",
+    "淹没的电影院": "Rạp chiếu phim bị nhấn chìm",
+    "水下售票厅": "Phòng vé dưới nước",
+    "倒映银幕": "Màn bạc phản chiếu",
+    "潮汐放映间": "Phòng chiếu thủy triều",
+    "胶片水蛇": "Rắn nước phim nhựa",
+    "座椅寄居者": "Kẻ ký cư ghế ngồi",
+    "荧幕鳐": "Cá đuối màn chiếu",
+    "荧幕鳐荧幕翼": "Cánh màn chiếu của cá đuối màn chiếu",
+    "爆米花浮囊": "Túi nổi bỏng ngô",
+    "爆米花浮囊焦糖壳": "Vỏ caramen của túi nổi bỏng ngô",
+    "票夹鳗": "Lươn kẹp vé",
+    "票夹鳗票夹": "Kẹp vé của lươn kẹp vé",
+    "沉幕检票员": "Người soát vé màn chìm",
+    "胶片缠幕者": "Kẻ quấn phim quanh màn",
+    "胶片缠幕者缠幕胶片": "Phim quấn màn của kẻ quấn phim quanh màn",
+    "聚光深潜怪": "Quái lặn sâu tụ quang",
+    "聚光深潜怪聚光镜": "Kính tụ quang của quái lặn sâu tụ quang",
+    "第零场观众": "Khán giả suất chiếu số không",
+    "无星天文馆": "Cung thiên văn không sao",
+    "黑暗穹顶": "Mái vòm hắc ám",
+    "伪造星图廊": "Hành lang bản đồ sao giả mạo",
+    "缩小银河展台": "Quầy trưng bày ngân hà thu nhỏ",
+    "星图银鱼": "Cá bạc tinh đồ",
+    "空轨行星": "Hành tinh quỹ đạo trống",
+    "陨砂水母": "Sứa cát thiên thạch",
+    "陨砂水母陨砂": "Cát thiên thạch của sứa cát thiên thạch",
+    "星盘甲虫": "Bọ hung tinh bàn",
+    "星盘甲虫星盘甲": "Giáp tinh bàn của bọ hung tinh bàn",
+    "轨仪蜗牛": "Ốc sên thước đo quỹ đạo",
+    "轨仪蜗牛轨仪壳": "Vỏ thước đo quỹ đạo của ốc sên thước đo quỹ đạo",
+    "望镜导览员": "Hướng dẫn viên kính viễn vọng",
+    "黄道测绘师": "Người khảo sát hoàng đạo",
+    "黄道测绘师测绘尺": "Thước khảo sát của người khảo sát hoàng đạo",
+    "破镜星群兽": "Thú cụm sao kính vỡ",
+    "破镜星群兽镜片": "Mảnh kính của thú cụm sao kính vỡ",
+    "熄灭的北极星": "Sao bắc cực đã tắt",
+    "蜂巢公寓": "Chung cư tổ ong",
+    "六边形走廊": "Hành lang lục giác",
+    "共享厨房": "Bếp chung",
+    "振翅电梯井": "Hố thang máy đập cánh",
+    "蜜蜡房客": "Khách trọ sáp ong",
+    "门铃蜂": "Ong chuông cửa",
+    "密封袋蛹": "Nhộng túi niêm phong",
+    "密封袋蛹密封袋": "Túi niêm phong của nhộng túi niêm phong",
+    "墙缝蜡蚁": "Kiến sáp khe tường",
+    "墙缝蜡蚁蜡屑": "Vụn sáp của kiến sáp khe tường",
+    "蜂房搬运螨": "Ve vận chuyển tổ ong",
+    "蜂房搬运螨背篓": "Chiếc gùi của ve vận chuyển tổ ong",
+    "蜂巢保安": "Bảo vệ tổ ong",
+    "蜡印管事": "Quản sự dấu sáp",
+    "蜡印管事蜡印": "Dấu sáp của quản sự dấu sáp",
+    "振翅电梯兽": "Thú thang máy đập cánh",
+    "振翅电梯兽翅膜": "Màng cánh của thú thang máy đập cánh",
+    "蜂后物业": "Ban quản lý ong chúa",
+    "永久开学日": "Ngày khai giảng vĩnh cửu",
+    "无人教室": "Lớp học không người",
+    "封闭操场": "Sân thể dục đóng kín",
+    "无尽考场": "Phòng thi vô tận",
+    "黑板粉尘": "Bụi phấn bảng đen",
+    "课桌童偶": "Đồng ngẫu bàn học",
+    "作业纸蛾": "Bướm giấy bài tập",
+    "作业纸蛾作业纸": "Giấy bài tập của bướm giấy bài tập",
+    "圆规足蛛": "Nhện chân compa",
+    "圆规足蛛圆规脚": "Chân compa của nhện chân compa",
+    "墨水盒兽": "Thú hộp mực",
+    "墨水盒兽墨水": "Mực của thú hộp mực",
+    "监考影": "Bóng giám thị",
+    "铃声训导员": "Giám thị chuông reo",
+    "铃声训导员训导铃": "Chuông giám thị của giám thị chuông reo",
+    "试卷装订巨偶": "Khổng ngẫu đóng tập bài thi",
+    "试卷装订巨偶装订钉": "Đinh đóng tập của khổng ngẫu đóng tập bài thi",
+    "永不毕业者": "Kẻ không bao giờ tốt nghiệp",
+    "无货超市": "Siêu thị không hàng",
+    "空货架海": "Biển kệ trống",
+    "冷柜长廊": "Hành lang tủ đông",
+    "循环收银台": "Quầy thu ngân tuần hoàn",
+    "条码蛇": "Rắn mã vạch",
+    "购物车犬": "Chó xe đẩy",
+    "价签蜉蝣": "Phù du bảng giá",
+    "价签蜉蝣价签": "Bảng giá của phù du bảng giá",
+    "冷柜冰蚕": "Băng tằm tủ đông",
+    "冷柜冰蚕冰丝": "Tơ băng của băng tằm tủ đông",
+    "塑袋寄居体": "Thể ký cư túi nhựa",
+    "塑袋寄居体塑料袋": "Túi nhựa của thể ký cư túi nhựa",
+    "夜盘点员": "Nhân viên kiểm kê ca đêm",
+    "货架搬山者": "Kẻ dời núi kệ hàng",
+    "货架搬山者货架": "Kệ hàng của kẻ dời núi kệ hàng",
+    "条码扫描巨眼": "Cự nhãn quét mã vạch",
+    "条码扫描巨眼扫描镜": "Kính quét của cự nhãn quét mã vạch",
+    "零库存店长": "Cửa hàng trưởng tồn kho bằng không",
+    "发光盐田": "Ruộng muối phát quang",
+    "结晶堤岸": "Đê kết tinh",
+    "盐雾泵房": "Trạm bơm sương muối",
+    "黑水蒸发池": "Hồ bốc hơi nước đen",
+    "盐壳蜥": "Thằn lằn vỏ muối",
+    "卤水蜉蝣": "Phù du nước ót",
+    "盐晶蜗牛": "Ốc sên tinh thể muối",
+    "盐晶蜗牛晶壳": "Vỏ tinh thể của ốc sên tinh thể muối",
+    "泵房卤泥": "Bùn ót trạm bơm",
+    "泵房卤泥泥核": "Nhân bùn của bùn ót trạm bơm",
+    "结晶水蚤": "Rận nước kết tinh",
+    "结晶水蚤晶足": "Chân tinh thể của rận nước kết tinh",
+    "晒盐祭司": "Tế tư phơi muối",
+    "卤湖守泵人": "Người giữ bơm hồ ót",
+    "卤湖守泵人泵阀": "Van bơm của người giữ bơm hồ ót",
+    "发光盐角兽": "Thú sừng muối phát quang",
+    "发光盐角兽盐角": "Sừng muối của thú sừng muối phát quang",
+    "白色潮汐": "Thủy triều trắng",
+    "云上屠宰厂": "Lò mổ trên mây",
+    "云雾流水线": "Dây chuyền mây mù",
+    "悬空冷库": "Kho lạnh treo lơ lửng",
+    "羽毛卸货台": "Sàn bốc dỡ lông vũ",
+    "羽钩小兽": "Thú nhỏ móc vũ",
+    "白雾肉块": "Tảng thịt sương trắng",
+    "云脂毛虫": "Sâu mỡ mây",
+    "云脂毛虫云脂": "Mỡ mây của sâu mỡ mây",
+    "羽秤怪鸟": "Quái điểu cân lông",
+    "羽秤怪鸟秤砣": "Quả cân của quái điểu cân lông",
+    "滑轨钩虫": "Sâu móc ray trượt",
+    "滑轨钩虫钩足": "Chân móc của sâu móc ray trượt",
+    "卸云工头": "Quản đốc dỡ mây",
+    "冷库屠云者": "Đồ tể mổ mây kho lạnh",
+    "冷库屠云者屠刀": "Đao đồ tể của đồ tể mổ mây kho lạnh",
+    "链钩缝合兽": "Thú khâu móc xích",
+    "链钩缝合兽缝合线": "Chỉ khâu của thú khâu móc xích",
+    "云层分割机": "Máy phân cắt tầng mây",
+    "雨伞沙漠": "Sa mạc ô dù",
+    "伞骨沙丘": "Cồn cát nan ô",
+    "无雨驿站": "Trạm dịch không mưa",
+    "逆风伞塔": "Tháp ô ngược gió",
+    "伞骨蝎": "Bọ cạp nan ô",
+    "布面沙鳐": "Cá đuối cát mặt vải",
+    "伞柄蠕虫": "Giun cán ô",
+    "伞柄蠕虫伞柄": "Cán ô của giun cán ô",
+    "漏斗沙螺": "Ốc cát phễu",
+    "漏斗沙螺漏斗壳": "Vỏ phễu của ốc cát phễu",
+    "伞布夜蛾": "Bướm đêm vải ô",
+    "伞布夜蛾夜色鳞粉": "Phấn vảy màu đêm của bướm đêm vải ô",
+    "撑伞行刑客": "Đao phủ che ô",
+    "逆风伞匠": "Thợ làm ô ngược gió",
+    "逆风伞匠修伞锤": "Búa sửa ô của thợ làm ô ngược gió",
+    "千骨撑天兽": "Thú ngàn nan chống trời",
+    "千骨撑天兽伞骨": "Nan ô của thú ngàn nan chống trời",
+    "从未落下的雨": "Cơn mưa chưa từng rơi xuống",
+    "瓶中群岛": "Quần đảo trong chai",
+    "玻璃海岸": "Bờ biển thủy tinh",
+    "瓶塞灯塔": "Ngọn hải đăng nút chai",
+    "软木群礁": "Rạn đá nút bấc",
+    "玻璃虾": "Tôm thủy tinh",
+    "软木潜鸟": "Chim lặn gỗ bấc",
+    "瓶砂蟹": "Cua cát chai",
+    "瓶砂蟹瓶砂": "Cát chai của cua cát chai",
+    "漂签鱼": "Cá thẻ trôi",
+    "漂签鱼漂流签": "Thẻ trôi dạt của cá thẻ trôi",
+    "水藻塞偶": "Rối nút bấc rong biển",
+    "水藻塞偶藻塞": "Nút rong biển của rối nút bấc rong biển",
+    "瓶塞守卫": "Thủ vệ nút chai",
+    "玻璃航标者": "Người đặt tiêu thủy tinh",
+    "玻璃航标者航标灯": "Đèn tiêu hàng hải của người đặt tiêu thủy tinh",
+    "软木甲巨鲸": "Cá voi khổng lồ giáp gỗ bấc",
+    "软木甲巨鲸软木甲": "Giáp gỗ bấc của cá voi khổng lồ giáp gỗ bấc",
+    "收集海洋的人": "Người thu thập đại dương",
+    "机械神社": "Đền Thần cơ khí",
+    "伺服鸟居": "Cổng Torii trợ động",
+    "自动祈愿台": "Bệ cầu nguyện tự động",
+    "芯片内殿": "Điện trong vi mạch",
+    "电签纸偶": "Bùa giấy quẻ điện tử",
+    "铜尾狐机": "Hồ ly máy đuôi đồng",
+    "齿轮铃虫": "Côn trùng chuông bánh răng",
+    "齿轮铃虫铃片": "Mảnh chuông của côn trùng chuông bánh răng",
+    "铁羽鸦机": "Quạ máy lông sắt",
+    "铁羽鸦机铁羽": "Lông sắt của quạ máy lông sắt",
+    "香灰微型卫": "Vệ sĩ siêu nhỏ tàn hương",
+    "香灰微型卫香灰": "Tàn hương của vệ sĩ siêu nhỏ tàn hương",
+    "维护神官": "Thần quan bảo trì",
+    "伺服巫祝": "Vu nữ trợ động",
+    "伺服巫祝祈愿卡": "Thẻ cầu nguyện của vu nữ trợ động",
+    "护殿铜狮机": "Sư tử đồng máy hộ điện",
+    "护殿铜狮机铜鬃": "Bờm đồng của sư tử đồng máy hộ điện",
+    "八百万处理器": "Bộ xử lý Bát Bách Vạn",
+    "骨白游乐园": "Công viên giải trí xương trắng",
+    "停摆旋转木马": "Vòng quay ngựa gỗ ngừng chạy",
+    "骨质摩天轮": "Vòng đu quay xương cốt",
+    "售票坟场": "Nghĩa địa bán vé",
+    "木马肋骨": "Xương sườn ngựa gỗ",
+    "票根蝙蝠": "Dơi cuống vé",
+    "骨架气球犬": "Chó bóng bay khung xương",
+    "骨架气球犬气球骨": "Xương bóng bay của chó bóng bay khung xương",
+    "糖纸灯蛾": "Bướm đèn giấy kẹo",
+    "糖纸灯蛾糖纸翅": "Cánh giấy kẹo của bướm đèn giấy kẹo",
+    "旋杯寄居骨": "Xương ký cư tách xoay",
+    "旋杯寄居骨旋杯": "Tách xoay của xương ký cư tách xoay",
+    "白面售票员": "Nhân viên bán vé mặt trắng",
+    "白骨巡园者": "Kẻ tuần tra công viên xương trắng",
+    "白骨巡园者巡园哨": "Còi tuần tra của kẻ tuần tra công viên xương trắng",
+    "断轨过山龙": "Rồng tàu lượn đứt ray",
+    "断轨过山龙断轨": "Ray đứt của rồng tàu lượn đứt ray",
+    "旋转中的墓园": "Nghĩa trang đang xoay tròn",
+    "梦境水族馆": "Thủy cung mộng cảnh",
+    "鱼缸卧室": "Phòng ngủ bể cá",
+    "通往海底的电梯": "Thang máy xuống đáy biển",
+    "梦游展廊": "Hành lang triển lãm mộng du",
+    "枕头水母": "Sứa gối đầu",
+    "梦鳞鱼": "Cá vảy mộng",
+    "珊瑚闹钟蟹": "Cua đồng hồ báo thức san hô",
+    "珊瑚闹钟蟹闹铃": "Chuông báo thức của cua đồng hồ báo thức san hô",
+    "枕羽海马": "Cá ngựa lông gối",
+    "枕羽海马枕羽": "Lông gối của cá ngựa lông gối",
+    "瞌睡海葵": "Hải quỳ buồn ngủ",
+    "瞌睡海葵触须": "Xúc tu của hải quỳ buồn ngủ",
+    "无眠饲养员": "Người chăm sóc không ngủ",
+    "梦幕潜行者": "Kẻ lén lút màn mộng",
+    "梦幕潜行者梦幕": "Màn mộng của kẻ lén lút màn mộng",
+    "玻璃睡鲨": "Cá nhám ngủ thủy tinh",
+    "玻璃睡鲨睡鳍": "Vây ngủ của cá nhám ngủ thủy tinh",
+    "透明梦鲸": "Cá voi mộng trong suốt",
+    "黑日农场": "Nông trại mặt trời đen",
+    "朝黑日生长的麦田": "Ruộng lúa mạch hướng về mặt trời đen",
+    "倒流水车": "Cối xay nước chảy ngược",
+    "稻草谷仓": "Kho thóc rơm rạ",
+    "黑穗鸦": "Quạ bông đen",
+    "稻草耕者": "Kẻ cày cấy rơm rạ",
+    "焦籽跳虫": "Bọ nhảy hạt cháy",
+    "焦籽跳虫焦籽": "Hạt cháy của bọ nhảy hạt cháy",
+    "黑乳木偶牛": "Bò rối gỗ sữa đen",
+    "黑乳木偶牛黑乳": "Sữa đen của bò rối gỗ sữa đen",
+    "锈镰草螳": "Bọ ngựa cỏ lưỡi liềm rỉ",
+    "锈镰草螳锈镰": "Liềm rỉ của bọ ngựa cỏ lưỡi liềm rỉ",
+    "日蚀农夫": "Nông phu nhật thực",
+    "麦垛焚日者": "Kẻ đốt mặt trời đống rơm",
+    "麦垛焚日者焚火": "Lửa thiêu của kẻ đốt mặt trời đống rơm",
+    "日环犁地兽": "Thú cày đất vành nhật",
+    "日环犁地兽日环犁": "Cày vành nhật của thú cày đất vành nhật",
+    "不落的黑日": "Mặt trời đen không lặn",
+    "极深钻井酒店": "Khách sạn giếng khoan cực sâu",
+    "钻头前台": "Quầy lễ tân mũi khoan",
+    "岩层套房": "Phòng suite tầng đá",
+    "地热宴会厅": "Sảnh tiệc địa nhiệt",
+    "岩屑门童": "Doorman vụn đá",
+    "热液蠕虫": "Giun nhiệt dịch",
+    "矿灯盲蛾": "Bướm mù đèn hầm mỏ",
+    "矿灯盲蛾矿灯粉": "Bột đèn mỏ của bướm mù đèn hầm mỏ",
+    "钻泥甲虫": "Bọ cánh cứng khoan bùn",
+    "钻泥甲虫泥壳": "Vỏ bùn của bọ cánh cứng khoan bùn",
+    "缆索岩蚯": "Giun đất đá dây cáp",
+    "缆索岩蚯岩索": "Cáp đá của giun đất đá dây cáp",
+    "钻井领班": "Tổ trưởng giếng khoan",
+    "套管守门者": "Kẻ canh cổng ống chống",
+    "套管守门者套管": "Ống chống của kẻ canh cổng ống chống",
+    "热泉岩壳兽": "Thú vỏ đá suối nước nóng",
+    "热泉岩壳兽岩壳": "Vỏ đá của thú vỏ đá suối nước nóng",
+    "地心总经理": "Tổng giám đốc tâm trái đất",
+    "缝隙城堡": "Lâu đài khe nứt",
+    "墙缝集市": "Chợ khe tường",
+    "砖内牢房": "Nhà lao trong gạch",
+    "巨门背面": "Mặt sau cửa lớn",
+    "灰泥鼠兵": "Chuột lính vữa vôi",
+    "碎砖蜥": "Thằn lằn gạch vỡ",
+    "门栓蠹虫": "Mọt then cửa",
+    "门栓蠹虫蛀粉": "Bột mọt của mọt then cửa",
+    "石缝壁蛛": "Nhện vách khe đá",
+    "石缝壁蛛石丝": "Tơ đá của nhện vách khe đá",
+    "锈锁蛙": "Ếch khóa rỉ",
+    "锈锁蛙锈锁舌": "Lưỡi khóa rỉ của ếch khóa rỉ",
+    "门缝骑士": "Kỵ sĩ khe cửa",
+    "碎墙执旗者": "Kẻ cầm cờ tường vỡ",
+    "碎墙执旗者碎旗": "Cờ rách của kẻ cầm cờ tường vỡ",
+    "砖甲攻城兽": "Thú công thành giáp gạch",
+    "砖甲攻城兽砖甲": "Giáp gạch của thú công thành giáp gạch",
+    "缝隙里的王冠": "Vương miện trong khe nứt",
+    "折叠地铁": "Tàu điện ngầm gấp khúc",
+    "交叉车厢": "Toa xe giao nhau",
+    "站中站": "Ga trong ga",
+    "纸折隧道": "Đường hầm gấp giấy",
+    "扶手长虫": "Giun dài tay vịn",
+    "站牌旅客": "Hành khách biển báo ga",
+    "折票飞蛾": "Bướm đêm vé gấp",
+    "折票飞蛾折票": "Vé gấp của bướm đêm vé gấp",
+    "车窗映像": "Hình phản chiếu cửa sổ xe",
+    "车窗映像车窗倒影": "Bóng phản chiếu cửa sổ của hình phản chiếu cửa sổ xe",
+    "隧道拉链虫": "Sâu khóa kéo đường hầm",
+    "隧道拉链虫拉链齿": "Răng khóa kéo của sâu khóa kéo đường hầm",
+    "折线列车长": "Trưởng tàu tuyến gấp",
+    "换轨调度影": "Bóng điều độ bẻ ghi",
+    "换轨调度影换轨杆": "Cần bẻ ghi của bóng điều độ bẻ ghi",
+    "铰链车厢兽": "Thú toa xe bản lề",
+    "铰链车厢兽铰链": "Bản lề của thú toa xe bản lề",
+    "没有始发站": "Không có ga xuất phát",
+    "大潮钟表行": "Hiệu đồng hồ đại triều",
+    "涨潮柜台": "Quầy triều dâng",
+    "摆轮海沟": "Rãnh biển bánh xe cân bằng",
+    "水下报时厅": "Sảnh điểm giờ dưới nước",
+    "发条潮蟹": "Cua triều dây cót",
+    "指针鱼": "Cá kim đồng hồ",
+    "秒轮虾": "Tôm bánh xe giây",
+    "秒轮虾秒轮": "Bánh xe giây của tôm bánh xe giây",
+    "表盘海星": "Sao biển mặt số",
+    "表盘海星表盘": "Mặt số của sao biển mặt số",
+    "钟罩水母": "Sứa chụp đồng hồ",
+    "钟罩水母钟罩": "Chụp đồng hồ của sứa chụp đồng hồ",
+    "海摆修表师": "Thợ sửa đồng hồ con lắc biển",
+    "潮刻报时者": "Kẻ điểm giờ khắc triều",
+    "潮刻报时者报时贝": "Sò điểm giờ của kẻ điểm giờ khắc triều",
+    "锚链巨摆兽": "Thú con lắc xích neo khổng lồ",
+    "锚链巨摆兽锚链摆": "Con lắc xích neo của thú con lắc xích neo khổng lồ",
+    "第十三次潮汐": "Thủy triều lần thứ mười ba",
+    "黑雪邮局": "Bưu điện tuyết đen",
+    "未投递大厅": "Đại sảnh thư chưa phát",
+    "煤雪分拣场": "Bãi phân loại tuyết than",
+    "冻住的信箱街": "Phố hòm thư đóng băng",
+    "邮票寒蛾": "Bướm lạnh tem thư",
+    "封口雪鼠": "Chuột tuyết dán miệng",
+    "邮袋寒鸦": "Quạ túi thư",
+    "邮袋寒鸦邮袋": "Túi thư của quạ túi thư",
+    "信蜡冻偶": "Con rối sáp niêm phong đóng băng",
+    "信蜡冻偶冻蜡": "Sáp đông của con rối sáp niêm phong đóng băng",
+    "黑雪纸蛛": "Nhện giấy tuyết đen",
+    "黑雪纸蛛黑雪纸": "Giấy tuyết đen của nhện giấy tuyết đen",
+    "退信邮差": "Người đưa thư trả về",
+    "封缄监察者": "Người giám sát niêm phong",
+    "封缄监察者监察印": "Con dấu giám sát của người giám sát niêm phong",
+    "雪橇信笼兽": "Thú lồng thư xe trượt tuyết",
+    "雪橇信笼兽信笼": "Lồng thư của thú lồng thư xe trượt tuyết",
+    "无人签收的冬天": "Mùa đông không người ký nhận",
+    "玻璃墓园": "Nghĩa trang thủy tinh",
+    "透明坟场": "Nghĩa địa trong suốt",
+    "棱镜碑林": "Rừng bia lăng kính",
+    "折光守墓屋": "Nhà người trông mộ khúc xạ",
+    "碑光蝶": "Bướm quang bia",
+    "玻璃骸骨": "Hài cốt thủy tinh",
+    "棱镜蜗牛": "Ốc sên lăng kính",
+    "棱镜蜗牛棱镜壳": "Vỏ lăng kính của ốc sên lăng kính",
+    "墓玻璃蜘蛛": "Nhện thủy tinh lăng mộ",
+    "墓玻璃蜘蛛玻璃丝": "Tơ thủy tinh của nhện thủy tinh lăng mộ",
+    "露滴灯灵": "Đèn linh giọt sương",
+    "露滴灯灵露滴": "Giọt sương của đèn linh giọt sương",
+    "折光守墓者": "Người trông mộ khúc xạ",
+    "碎镜送葬者": "Người đưa tang gương vỡ",
+    "碎镜送葬者碎镜": "Gương vỡ của người đưa tang gương vỡ",
+    "晶棺守陵兽": "Thú giữ lăng quan tài pha lê",
+    "晶棺守陵兽晶棺碎片": "Mảnh quan tài pha lê của thú giữ lăng quan tài pha lê",
+    "看不见的葬礼": "Tang lễ vô hình",
+    "蒸汽竹海": "Biển trúc hơi nước",
+    "铜节竹林": "Rừng trúc đốt đồng",
+    "沸泉茶棚": "Lán trà suối sôi",
+    "蒸汽栈桥": "Cầu ván hơi nước",
+    "铜竹螳螂": "Bọ ngựa trúc đồng",
+    "汽雾剑灵": "Kiếm linh sương khí",
+    "阀节竹蜂": "Ong trúc van đốt",
+    "阀节竹蜂阀节刺": "Gai van đốt của ong trúc van đốt",
+    "铜笋甲虫": "Bọ cánh cứng măng đồng",
+    "铜笋甲虫铜笋壳": "Vỏ măng đồng của bọ cánh cứng măng đồng",
+    "滚露汽蛙": "Ếch hơi nước giọt lăn",
+    "滚露汽蛙汽泡": "Bọt khí của ếch hơi nước giọt lăn",
+    "竹海铸客": "Đúc khách biển trúc",
+    "蒸泉阀守": "Người giữ van suối sôi",
+    "蒸泉阀守阀令牌": "Lệnh bài van của người giữ van suối sôi",
+    "竹节压风兽": "Thú nén gió đốt trúc",
+    "竹节压风兽压风节": "Đốt nén gió của thú nén gió đốt trúc",
+    "千节机关龙": "Cơ quan long ngàn đốt",
+    "超立方仓储": "Kho lưu trữ siêu lập phương",
+    "重复货架": "Kệ hàng trùng lặp",
+    "四向装卸门": "Cửa bốc dỡ bốn hướng",
+    "空间库存核": "Lõi tồn kho không gian",
+    "库存立方": "Khối lập phương tồn kho",
+    "叉车侍从": "Thị tùng xe nâng",
+    "折角搬运虫": "Sâu vận chuyển góc gập",
+    "折角搬运虫折角": "Góc gập của sâu vận chuyển góc gập",
+    "货架索引灵": "Linh mục lục kệ hàng",
+    "货架索引灵索引卡": "Thẻ mục lục của linh mục lục kệ hàng",
+    "空盒潜伏体": "Thể ẩn nấp hộp rỗng",
+    "空盒潜伏体空盒": "Hộp rỗng của thể ẩn nấp hộp rỗng",
+    "第四维盘点员": "Nhân viên kiểm kê chiều thứ tư",
+    "维缝封箱者": "Kẻ đóng thùng khe nứt chiều",
+    "维缝封箱者封箱胶": "Băng keo dán thùng của kẻ đóng thùng khe nứt chiều",
+    "对折集装兽": "Thú container gập đôi",
+    "对折集装兽对折箱": "Hộp gập đôi của thú container gập đôi",
+    "无法出库之物": "Vật phẩm không thể xuất kho",
+    "无人的婚宴": "Tiệc cưới không người",
+    "永远热着的宴席": "Yến tiệc luôn nóng sốt",
+    "空礼堂": "Lễ đường trống rỗng",
+    "镜中新房": "Tân phòng trong gương",
+    "酒盏侍者": "Thị giả chén rượu",
+    "喜糖纸灵": "Linh giấy kẹo mừng",
+    "空椅游魂": "Hồn du đãng ghế trống",
+    "空椅游魂椅背": "Lưng ghế của hồn du đãng ghế trống",
+    "红烛蜡偶": "Búp bê sáp nến đỏ",
+    "红烛蜡偶红烛泪": "Nước mắt nến đỏ của búp bê sáp nến đỏ",
+    "婚纱蛾": "Bướm đêm váy cưới",
+    "婚纱蛾婚纱翅": "Cánh váy cưới của bướm đêm váy cưới",
+    "空席司仪": "MC bàn trống",
+    "酒窖守席者": "Người giữ tiệc hầm rượu",
+    "酒窖守席者窖钥": "Chìa khóa hầm của người giữ tiệc hầm rượu",
+    "缎带婚轿兽": "Thú kiệu hoa ruy băng",
+    "缎带婚轿兽缎带": "Ruy băng của thú kiệu hoa ruy băng",
+    "缺席的新郎": "Chú rể vắng mặt",
+    "彩色噪声海": "Biển nhiễu xạ màu",
+    "失真沙滩": "Bãi cát biến dạng",
+    "信号浮岛": "Đảo nổi tín hiệu",
+    "白噪港湾": "Vịnh nhiễu trắng",
+    "噪点鱼": "Cá điểm nhiễu",
+    "失真鸟": "Chim biến dạng",
+    "色块海蜗": "Ốc biển mảng màu",
+    "色块海蜗负片壳": "Vỏ phim âm bản của ốc biển mảng màu",
+    "失帧水母": "Sứa mất khung hình",
+    "失帧水母帧片": "Mảnh khung hình của sứa mất khung hình",
+    "频闪浮游群": "Đàn sinh vật trôi nổi nhấp nháy",
+    "频闪浮游群频闪光": "Ánh nhấp nháy của đàn sinh vật trôi nổi nhấp nháy",
+    "信号捕手": "Kẻ bắt tín hiệu",
+    "调色潮汐师": "Sư điều sắc thủy triều",
+    "调色潮汐师调色盘": "Bảng pha màu của sư điều sắc thủy triều",
+    "断频虹鳗": "Lươn cầu vồng đứt tần số",
+    "断频虹鳗虹鳍": "Vây cầu vồng của lươn cầu vồng đứt tần số",
+    "未调谐的海": "Vùng biển chưa điều chuẩn",
+    "低重力垃圾环": "Vành đai rác trọng lực thấp",
+    "轨道废物街": "Phố phế liệu quỹ đạo",
+    "破船拼接港": "Cảng ghép nối tàu hỏng",
+    "磁吸回收场": "Bãi tái chế hút từ",
+    "废片卫星": "Mảnh vệ tinh phế liệu",
+    "磁尘团": "Khối bụi từ",
+    "电池寄居蟹": "Cua ký cư pin",
+    "电池寄居蟹电池壳": "Vỏ pin của cua ký cư pin",
+    "缆线飞鳐": "Cá đuối bay dây cáp",
+    "缆线飞鳐缆线翼": "Cánh cáp của cá đuối bay dây cáp",
+    "铆钉爬虫": "Bọ bò đinh tán",
+    "铆钉爬虫铆钉": "Đinh tán của bọ bò đinh tán",
+    "废环回收王": "Vua thu gom phế liệu vành đai",
+    "磁轨拾荒者": "Người nhặt rác đường ray từ tính",
+    "磁轨拾荒者拾荒钩": "Móc nhặt rác của người nhặt rác đường ray từ tính",
+    "残骸拼接龙": "Rồng ghép mảnh vỡ",
+    "残骸拼接龙拼接鳞": "Vảy ghép nối của rồng ghép mảnh vỡ",
+    "人造星屑": "Bụi sao nhân tạo",
+    "无尽后台剧院": "Nhà hát hậu trường vô tận",
+    "换景走廊": "Hành lang đổi cảnh",
+    "提线仓库": "Kho dây kéo",
+    "无观众舞台": "Sân khấu không khán giả",
+    "面具小偶": "Con rối nhỏ đeo mặt nạ",
+    "提词纸鸟": "Chim giấy nhắc lời",
+    "幕布蛛": "Nhện màn nhung",
+    "幕布蛛幕布丝": "Tơ màn nhung của nhện màn nhung",
+    "灯架脚兽": "Thú chân giá đèn",
+    "灯架脚兽追光灯": "Đèn theo dõi của thú chân giá đèn",
+    "道具箱影": "Bóng hòm đạo cụ",
+    "道具箱影道具": "Đạo cụ của bóng hòm đạo cụ",
+    "换景总管": "Tổng quản đổi cảnh",
+    "绳桥提偶师": "Nghệ nhân múa rối cầu dây",
+    "绳桥提偶师提线": "Dây kéo của nghệ nhân múa rối cầu dây",
+    "落幕布景兽": "Thú phông nền hạ màn",
+    "落幕布景兽布景板": "Tấm phông nền của thú phông nền hạ màn",
+    "最后一位观众": "Vị khán giả cuối cùng",
+    "宝箱怪": "Quái rương báu",
+    "价值的结晶": "Tinh thể của giá trị"
+  },
+  "categories": {
+    "themes": {
+      "异常层": "Tầng dị thường",
+      "无尽泳池房": "Phòng hồ bơi vô tận",
+      "废墟末日": "Phế tích mạt nhật",
+      "玄门山海": "Huyền môn sơn hải",
+      "巫祭荒原": "Vu tế hoang nguyên",
+      "龙与王冠": "Rồng và vương miện",
+      "轨道失落": "Quỹ đạo thất lạc",
+      "鬼城旧事": "Quỷ thành cựu sự",
+      "刀剑江湖": "Đao kiếm giang hồ",
+      "深渊观测": "Thâm uyên quan trắc",
+      "午夜都市": "Ngọ dạ đô thị",
+      "无尽客房": "Vô tận khách phòng",
+      "齿轮黄昏": "Xỉ luân hoàng hôn",
+      "冻土教堂": "Đống thổ giáo đường",
+      "血肉温室": "Huyết nhục ôn thất",
+      "沉没王庭": "Trầm một vương đình",
+      "纸页天穹": "Chỉ diệp thiên khung",
+      "无名夹缝": "Vô danh giáp phùng",
+      "倒灌机场": "Đảo quán cơ trường",
+      "无人高速服务区": "Trạm dịch vụ cao tốc không người",
+      "无限货运港": "Vô hạn hàng vận cảng",
+      "永昼雪原旅馆": "Khách sạn tuyết nguyên vĩnh trú",
+      "倒置住宅群": "Khu dân cư đảo ngược",
+      "铅笔森林": "Rừng bút chì",
+      "巨人体内行政区": "Khu hành chính trong cơ thể khổng lồ",
+      "淹没的电影院": "Rạp chiếu phim bị nhấn chìm",
+      "无星天文馆": "Cung thiên văn không sao",
+      "蜂巢公寓": "Chung cư tổ ong",
+      "永久开学日": "Ngày khai giảng vĩnh cửu",
+      "无货超市": "Siêu thị không hàng",
+      "发光盐田": "Ruộng muối phát quang",
+      "云上屠宰厂": "Lò mổ trên mây",
+      "雨伞沙漠": "Sa mạc ô dù",
+      "瓶中群岛": "Quần đảo trong chai",
+      "机械神社": "Đền Thần cơ khí",
+      "骨白游乐园": "Công viên giải trí xương trắng",
+      "梦境水族馆": "Thủy cung mộng cảnh",
+      "黑日农场": "Nông trại mặt trời đen",
+      "极深钻井酒店": "Khách sạn giếng khoan cực sâu",
+      "缝隙城堡": "Lâu đài khe nứt",
+      "折叠地铁": "Tàu điện ngầm gấp khúc",
+      "大潮钟表行": "Hiệu đồng hồ đại triều",
+      "黑雪邮局": "Bưu điện tuyết đen",
+      "玻璃墓园": "Nghĩa trang thủy tinh",
+      "蒸汽竹海": "Biển trúc hơi nước",
+      "超立方仓储": "Kho lưu trữ siêu lập phương",
+      "无人的婚宴": "Tiệc cưới không người",
+      "彩色噪声海": "Biển nhiễu xạ màu",
+      "低重力垃圾环": "Vành đai rác trọng lực thấp",
+      "无尽后台剧院": "Nhà hát hậu trường vô tận"
+    },
+    "monsters": {
+      "黄色回廊": "Hành lang màu vàng",
+      "游荡感染者": "Kẻ nhiễm bệnh lang thang",
+      "饥饿猎犬": "Chó săn đói khát",
+      "防化残兵": "Tàn binh phòng hóa",
+      "孢子鼠群": "Đàn chuột bào tử",
+      "车壳寄生体": "Vật ký sinh vỏ xe",
+      "暴走屠夫": "Đồ tể bạo tẩu",
+      "变异装甲兵": "Binh sĩ thiết giáp biến dị",
+      "孢子主母": "Bào tử chủ mẫu",
+      "零号病患": "Bệnh nhân số 0",
+      "山魈": "Sơn tiêu",
+      "符纸傀儡": "Phù chỉ khôi lỗi",
+      "丹炉精": "Đan lô tinh",
+      "御剑残影": "Ngự kiếm tàn ảnh",
+      "丹毒童偶": "Đan độc đồng ngẫu",
+      "守山石狮": "Thủ sơn thạch sư",
+      "走火丹师": "Tẩu hỏa đan sư",
+      "镇宫剑阵": "Trấn cung kiếm trận",
+      "倒悬丹尊": "Đảo huyền đan tôn",
+      "骨面猎手": "Cốt diện liệp thủ",
+      "蛊壶侍从": "Cổ hồ thị tòng",
+      "灰羽鬣鸟": "Hôi vũ liệp điểu",
+      "沼泽蜱": "Bọ ve đầm lầy",
+      "树根行者": "Thụ căn hành giả",
+      "三面祭司": "Tam diện tế tư",
+      "巨骨猎王": "Cự cốt liệp vương",
+      "饥饿祖灵": "Cơ ngạ tổ linh",
+      "万面鼓母": "Vạn diện cổ mẫu",
+      "朽甲士兵": "Hủ giáp binh sĩ",
+      "烛火修士": "Chúc hỏa tu sĩ",
+      "地牢猎犬": "Địa lao liệp khuyển",
+      "蓝帽哥布林": "Lam mạo goblin",
+      "塔楼石像": "Tháp lâu thạch tượng",
+      "王庭处刑官": "Vương đình xử hình quan",
+      "失誓骑士": "Thất thệ kỵ sĩ",
+      "幼龙看守": "Ấu long khán thủ",
+      "空冠之王": "Không quan chi vương",
+      "巡检蜂机": "Tuần kiểm phong cơ",
+      "失压宇航员": "Thất áp vũ hàng viên",
+      "磁轨炮台": "Từ quỹ pháo đài",
+      "维修蜘蛛": "Duy tu tri chu",
+      "纳米聚合体": "Nano tụ hợp thể",
+      "重装清除者": "Trọng trang thanh trừ giả",
+      "相位猎手": "Tương vị liệp thủ",
+      "母机维护核": "Mẫu cơ duy hộ hạch",
+      "引力主机零式": "Dẫn lực chủ cơ Zero",
+      "无面行人": "Vô diện hành nhân",
+      "纸扎童子": "Chỉ trát đồng tử",
+      "吊影": "Điếu ảnh",
+      "旧井湿鬼": "Cựu tỉnh thấp quỷ",
+      "灯笼眼": "Đăng lung nhãn",
+      "送葬轿夫": "Tống táng kiệu phu",
+      "无声戏子": "Vô thanh hí tử",
+      "守井婆": "Thủ tỉnh bà",
+      "迎亲空轿": "Nghênh thân không kiệu",
+      "蒙面刀客": "Mông diện đao khách",
+      "飞镖游侠": "Phi tiêu du hiệp",
+      "醉拳客": "Túy quyền khách",
+      "毒针侍女": "Độc châm thị nữ",
+      "断棍僧": "Đoạn côn tăng",
+      "雨夜追命客": "Vũ dạ truy mệnh khách",
+      "铁面庄主": "Thiết diện trang chủ",
+      "无影双刃": "Vô ảnh song nhận",
+      "铸剑无归人": "Đúc kiếm vô quy nhân",
+      "深潜侍从": "Thâm tiềm thị tòng",
+      "触须雏体": "Xúc tu sơ thể",
+      "盲眼观测员": "Manh nhãn quan trắc viên",
+      "倒壳甲虫": "Đảo xác giáp trùng",
+      "黑潮水蛭": "Hắc triều thủy đỉa",
+      "星骸看守": "Tinh hài khán thủ",
+      "黑潮司祭": "Hắc triều tư tế",
+      "折光之眼": "Chiết quang chi nhãn",
+      "不可名状的观测者": "Kẻ quan trắc không thể gọi tên",
+      "末班乘客": "Mạt ban thừa khách",
+      "外卖空壳": "Ngoại mại không xác",
+      "监控眼": "Giám khống nhãn",
+      "霓虹飞蛾": "Nghê hồng phi nga",
+      "失眠保安": "Thất miên bảo an",
+      "永夜站长": "Vĩnh dạ trạm trưởng",
+      "广告女王": "Quảng cáo nữ vương",
+      "红灯追猎者": "Hồng đăng truy liệp giả",
+      "零点城市管理员": "Linh điểm thành thị quản lý viên",
+      "地毯蠕虫": "Địa thảm nhuyễn trùng",
+      "巡廊人偶": "Tuần lang nhân ngẫu",
+      "出口幻影": "Xuất khẩu huyễn ảnh",
+      "湿面访客": "Thấp diện phóng khách",
+      "插座寄生体": "Sáp tọa ký sinh thể",
+      "万能钥匙持有者": "Vạn năng thược thi trì hữu giả",
+      "过曝巡查员": "Quá bộc tuần tra viên",
+      "长廊吞咽者": "Trường lang thôn yết giả",
+      "第零间房": "Căn phòng thứ không",
+      "发条鼠": "Chuột dây cót",
+      "锅炉仆役": "Nồi hơi bộc dịch",
+      "齿轮蜘蛛": "Xỉ luân tri chu",
+      "烟囱小鬼": "Yên thông tiểu quỷ",
+      "铆钉工兵": "Đinh tán công binh",
+      "重锤技师": "Trọng chùy kỹ sư",
+      "失控巡空艇": "Thất khống tuần không đĩnh",
+      "逆摆监察官": "Nghịch bãi giám sát quan",
+      "停钟工程师": "Đình chung công trình sư",
+      "雪原失魂者": "Tuyết nguyên thất hồn giả",
+      "冰棘狼": "Băng cức lang",
+      "诵霜修女": "Tụng sương tu nữ",
+      "结晶钟灵": "Kết tinh chung linh",
+      "寒鸦侍女": "Hàn nha thị nữ",
+      "埋雪骑士": "Mai tuyết kỵ sĩ",
+      "白疫告解师": "Bạch dịch cáo giải sư",
+      "冻土守钟人": "Đống thổ thủ chung nhân",
+      "永冬圣像": "Vĩnh đông thánh tượng",
+      "孢囊花": "Bào nang hoa",
+      "牙叶草": "Nha diệp thảo",
+      "血管藤": "Huyết quản đằng",
+      "菌肤园丁": "Khuẩn phu viên đinh",
+      "浆果拟态者": "Tương quả nghĩ thái giả",
+      "倒生园长": "Đảo sinh viên trưởng",
+      "骨瓣捕食者": "Cốt biện bộ thực giả",
+      "绽裂囊母": "Trán liệt nang mẫu",
+      "永生花床": "Vĩnh sinh hoa sàng",
+      "锈锚水兵": "Tú miêu thủy binh",
+      "珊瑚骑士": "San hô kỵ sĩ",
+      "寄居铜盔": "Ký cư đồng khôi",
+      "发光水母": "Phát quang thủy mẫu",
+      "深水剑鱼": "Thâm thủy kiếm ngư",
+      "沉锚统领": "Trầm miêu thống lĩnh",
+      "裂壳祭司": "Liệt xác tế tư",
+      "鲸骨卫士": "Kình cốt vệ sĩ",
+      "溺冠女王": "Nịch quan nữ vương",
+      "折纸鸟": "Chiết chỉ điểu",
+      "墨滴史莱姆": "Mặc tích slime",
+      "错字虫": "Thác tự trùng",
+      "缺页卫兵": "Khuyết diệp vệ binh",
+      "装订蛛": "Trang đính tri",
+      "索引守卫": "Sách dẫn thủ vệ",
+      "删改使徒": "San cải sứ đồ",
+      "巨型装订者": "Cự hình trang đính giả",
+      "无字的作者": "Vô tự chi tác giả",
+      "碎界游灵": "Toái giới du linh",
+      "逆光卫星": "Nghịch quang vệ tinh",
+      "法则碎片体": "Pháp tắc toái phiến thể",
+      "概率孑孓": "Xác suất lăng quăng",
+      "虚无浮鲸": "Hư vô phù kình",
+      "边界剥离者": "Biên giới bác ly giả",
+      "失序执法体": "Thất tự chấp pháp thể",
+      "星墓巡行者": "Tinh mộ tuần hành giả",
+      "书海的留白": "Thư hải chi lưu bạch",
+      "逆雨安检伞": "Dù an kiểm nghịch vũ",
+      "行李转盘兽": "Băng chuyền hành lý thú",
+      "失焦接机影": "Bóng đón máy bay mất nét",
+      "航灯领航偶": "Hoa tiêu đèn hiệu con rối",
+      "舷窗窥视者": "Kẻ dòm ngó cửa sổ máy bay",
+      "油渍软泥": "Bùn nhão vết dầu",
+      "加油枪蠕虫": "Giun vòi bơm xăng",
+      "售货柜寄生体": "Ký sinh thể tủ bán hàng tự động",
+      "废灯巡路者": "Kẻ tuần đường đèn hỏng",
+      "油罐驮行兽": "Thú thồ bồn dầu",
+      "浮标钉螺": "Ốc đinh phao cứu sinh",
+      "缆绳水蛭": "Đỉa dây cáp",
+      "锈箱潜伏者": "Kẻ ẩn núp thùng rỉ sét",
+      "海关封签官": "Quan niêm phong hải quan",
+      "沉锚搬山蟹": "Cua dời núi neo chìm",
+      "窗霜壁虎": "Thạch sùng sương cửa sổ",
+      "雪枕潜伏者": "Kẻ rình rập gối tuyết",
+      "长昼雪鸮": "Cú tuyết ngày dài",
+      "暖房巡夜人": "Người tuần đêm nhà kính",
+      "风雪搬运兽": "Thú vận chuyển gió tuyết",
+      "逆行壁蜥": "Thằn lằn tường bò ngược",
+      "落物袋灵": "Linh túi nhặt đồ rơi",
+      "灯座倒栖鸟": "Chim đậu ngược đui đèn",
+      "天井钩索客": "Khách móc dây giếng trời",
+      "承重墙傀儡": "Khôi lỗi tường chịu lực",
+      "断芯蚁": "Kiến gãy ngòi",
+      "涂改液蛞蝓": "Sên bút xóa",
+      "素描纸鹿": "Hươu giấy ký họa",
+      "削笔巡林者": "Người tuần rừng gọt bút",
+      "炭笔独角兽": "Kỳ lân bút than",
+      "回形针寄虫": "Ký trùng ghim kẹp",
+      "印泥吞吐囊": "Túi nuốt nhả mực dấu",
+      "订书钉步卒": "Bộ binh ghim bấm",
+      "腺体档案官": "Quan hồ sơ tuyến thể",
+      "红章吞噬者": "Kẻ nuốt chửng dấu đỏ",
+      "荧幕鳐": "Cá đuối màn chiếu",
+      "爆米花浮囊": "Túi nổi bỏng ngô",
+      "票夹鳗": "Lươn kẹp vé",
+      "胶片缠幕者": "Kẻ quấn phim quanh màn",
+      "聚光深潜怪": "Quái lặn sâu tụ quang",
+      "陨砂水母": "Sứa cát thiên thạch",
+      "星盘甲虫": "Bọ hung tinh bàn",
+      "轨仪蜗牛": "Ốc sên thước đo quỹ đạo",
+      "黄道测绘师": "Người khảo sát hoàng đạo",
+      "破镜星群兽": "Thú cụm sao kính vỡ",
+      "密封袋蛹": "Nhộng túi niêm phong",
+      "墙缝蜡蚁": "Kiến sáp khe tường",
+      "蜂房搬运螨": "Ve vận chuyển tổ ong",
+      "蜡印管事": "Quản sự dấu sáp",
+      "振翅电梯兽": "Thú thang máy đập cánh",
+      "作业纸蛾": "Bướm giấy bài tập",
+      "圆规足蛛": "Nhện chân compa",
+      "墨水盒兽": "Thú hộp mực",
+      "铃声训导员": "Giám thị chuông reo",
+      "试卷装订巨偶": "Khổng ngẫu đóng tập bài thi",
+      "价签蜉蝣": "Phù du bảng giá",
+      "冷柜冰蚕": "Băng tằm tủ đông",
+      "塑袋寄居体": "Thể ký cư túi nhựa",
+      "货架搬山者": "Kẻ dời núi kệ hàng",
+      "条码扫描巨眼": "Cự nhãn quét mã vạch",
+      "盐晶蜗牛": "Ốc sên tinh thể muối",
+      "泵房卤泥": "Bùn ót trạm bơm",
+      "结晶水蚤": "Rận nước kết tinh",
+      "卤湖守泵人": "Người giữ bơm hồ ót",
+      "发光盐角兽": "Thú sừng muối phát quang",
+      "云脂毛虫": "Sâu mỡ mây",
+      "羽秤怪鸟": "Quái điểu cân lông",
+      "滑轨钩虫": "Sâu móc ray trượt",
+      "冷库屠云者": "Đồ tể mổ mây kho lạnh",
+      "链钩缝合兽": "Thú khâu móc xích",
+      "伞柄蠕虫": "Giun cán ô",
+      "漏斗沙螺": "Ốc cát phễu",
+      "伞布夜蛾": "Bướm đêm vải ô",
+      "逆风伞匠": "Thợ làm ô ngược gió",
+      "千骨撑天兽": "Thú ngàn nan chống trời",
+      "瓶砂蟹": "Cua cát chai",
+      "漂签鱼": "Cá thẻ trôi",
+      "水藻塞偶": "Rối nút bấc rong biển",
+      "玻璃航标者": "Người đặt tiêu thủy tinh",
+      "软木甲巨鲸": "Cá voi khổng lồ giáp gỗ bấc",
+      "齿轮铃虫": "Côn trùng chuông bánh răng",
+      "铁羽鸦机": "Quạ máy lông sắt",
+      "香灰微型卫": "Vệ sĩ siêu nhỏ tàn hương",
+      "伺服巫祝": "Vu nữ trợ động",
+      "护殿铜狮机": "Sư tử đồng máy hộ điện",
+      "骨架气球犬": "Chó bóng bay khung xương",
+      "糖纸灯蛾": "Bướm đèn giấy kẹo",
+      "旋杯寄居骨": "Xương ký cư tách xoay",
+      "白骨巡园者": "Kẻ tuần tra công viên xương trắng",
+      "断轨过山龙": "Rồng tàu lượn đứt ray",
+      "珊瑚闹钟蟹": "Cua đồng hồ báo thức san hô",
+      "枕羽海马": "Cá ngựa lông gối",
+      "瞌睡海葵": "Hải quỳ buồn ngủ",
+      "梦幕潜行者": "Kẻ lén lút màn mộng",
+      "玻璃睡鲨": "Cá nhám ngủ thủy tinh",
+      "焦籽跳虫": "Bọ nhảy hạt cháy",
+      "黑乳木偶牛": "Bò rối gỗ sữa đen",
+      "锈镰草螳": "Bọ ngựa cỏ lưỡi liềm rỉ",
+      "麦垛焚日者": "Kẻ đốt mặt trời đống rơm",
+      "日环犁地兽": "Thú cày đất vành nhật",
+      "矿灯盲蛾": "Bướm mù đèn hầm mỏ",
+      "钻泥甲虫": "Bọ cánh cứng khoan bùn",
+      "缆索岩蚯": "Giun đất đá dây cáp",
+      "套管守门者": "Kẻ canh cổng ống chống",
+      "热泉岩壳兽": "Thú vỏ đá suối nước nóng",
+      "门栓蠹虫": "Mọt then cửa",
+      "石缝壁蛛": "Nhện vách khe đá",
+      "锈锁蛙": "Ếch khóa rỉ",
+      "碎墙执旗者": "Kẻ cầm cờ tường vỡ",
+      "砖甲攻城兽": "Thú công thành giáp gạch",
+      "折票飞蛾": "Bướm đêm vé gấp",
+      "车窗映像": "Hình phản chiếu cửa sổ xe",
+      "隧道拉链虫": "Sâu khóa kéo đường hầm",
+      "换轨调度影": "Bóng điều độ bẻ ghi",
+      "铰链车厢兽": "Thú toa xe bản lề",
+      "秒轮虾": "Tôm bánh xe giây",
+      "表盘海星": "Sao biển mặt số",
+      "钟罩水母": "Sứa chụp đồng hồ",
+      "潮刻报时者": "Kẻ điểm giờ khắc triều",
+      "锚链巨摆兽": "Thú con lắc xích neo khổng lồ",
+      "邮袋寒鸦": "Quạ túi thư",
+      "信蜡冻偶": "Con rối sáp niêm phong đóng băng",
+      "黑雪纸蛛": "Nhện giấy tuyết đen",
+      "封缄监察者": "Người giám sát niêm phong",
+      "雪橇信笼兽": "Thú lồng thư xe trượt tuyết",
+      "棱镜蜗牛": "Ốc sên lăng kính",
+      "墓玻璃蜘蛛": "Nhện thủy tinh lăng mộ",
+      "露滴灯灵": "Đèn linh giọt sương",
+      "碎镜送葬者": "Người đưa tang gương vỡ",
+      "晶棺守陵兽": "Thú giữ lăng quan tài pha lê",
+      "阀节竹蜂": "Ong trúc van đốt",
+      "铜笋甲虫": "Bọ cánh cứng măng đồng",
+      "滚露汽蛙": "Ếch hơi nước giọt lăn",
+      "蒸泉阀守": "Người giữ van suối sôi",
+      "竹节压风兽": "Thú nén gió đốt trúc",
+      "折角搬运虫": "Sâu vận chuyển góc gập",
+      "货架索引灵": "Linh mục lục kệ hàng",
+      "空盒潜伏体": "Thể ẩn nấp hộp rỗng",
+      "维缝封箱者": "Kẻ đóng thùng khe nứt chiều",
+      "对折集装兽": "Thú container gập đôi",
+      "空椅游魂": "Hồn du đãng ghế trống",
+      "红烛蜡偶": "Búp bê sáp nến đỏ",
+      "婚纱蛾": "Bướm đêm váy cưới",
+      "酒窖守席者": "Người giữ tiệc hầm rượu",
+      "缎带婚轿兽": "Thú kiệu hoa ruy băng",
+      "色块海蜗": "Ốc biển mảng màu",
+      "失帧水母": "Sứa mất khung hình",
+      "频闪浮游群": "Đàn sinh vật trôi nổi nhấp nháy",
+      "调色潮汐师": "Sư điều sắc thủy triều",
+      "断频虹鳗": "Lươn cầu vồng đứt tần số",
+      "电池寄居蟹": "Cua ký cư pin",
+      "缆线飞鳐": "Cá đuối bay dây cáp",
+      "铆钉爬虫": "Bọ bò đinh tán",
+      "磁轨拾荒者": "Người nhặt rác đường ray từ tính",
+      "残骸拼接龙": "Rồng ghép mảnh vỡ",
+      "幕布蛛": "Nhện màn nhung",
+      "灯架脚兽": "Thú chân giá đèn",
+      "道具箱影": "Bóng hòm đạo cụ",
+      "绳桥提偶师": "Nghệ nhân múa rối cầu dây",
+      "落幕布景兽": "Thú phông nền hạ màn",
+      "宝箱怪": "Quái rương báu"
+    },
+    "items": {
+      "后室": "Backrooms",
+      "游荡感染者腐牙": "Kẻ nhiễm bệnh lang thang răng mục",
+      "饥饿猎犬肋骨": "Chó săn đói khát xương sườn",
+      "防化残兵滤毒罐": "Tàn binh phòng hóa bình lọc độc",
+      "孢子鼠群孢囊": "Đàn chuột bào tử túi bào tử",
+      "车壳寄生体锈壳": "Vật ký sinh vỏ xe vỏ rỉ sét",
+      "暴走屠夫剁骨刀": "Đồ tể bạo tẩu dao chặt xương",
+      "变异装甲兵肉铁板": "Binh sĩ thiết giáp biến dị tấm sắt thịt",
+      "孢子主母孢宫": "Bào tử chủ mẫu bào cung",
+      "零号病患病历残页": "Bệnh nhân số 0 tàn trang bệnh án",
+      "山魈攫魂爪": "Sơn tiêu trảo đoạt hồn",
+      "符纸傀儡敕令符": "Sắc lệnh phù của phù chỉ khôi lỗi",
+      "丹炉精炉烬": "Tàn lò của đan lô tinh",
+      "御剑残影断剑穗": "Tua kiếm gãy của ngự kiếm tàn ảnh",
+      "丹毒童偶毒丹": "Độc đan của đan độc đồng ngẫu",
+      "守山石狮石鬃": "Bờm đá của thủ sơn thạch sư",
+      "走火丹师焦金丹": "Kim đan cháy của tẩu hỏa đan sư",
+      "镇宫剑阵阵眼剑": "Kiếm trận nhãn của trấn cung kiếm trận",
+      "倒悬丹尊逆丹": "Nghịch đan của đảo huyền đan tôn",
+      "骨面猎手骨面具": "Mặt nạ xương của cốt diện liệp thủ",
+      "蛊壶侍从蛊壶": "Hũ cổ của cổ hồ thị tòng",
+      "灰羽鬣鸟灰羽": "Lông xám của hôi vũ liệp điểu",
+      "沼泽蜱血囊": "Túi máu của bọ ve đầm lầy",
+      "树根行者祖根": "Rễ tổ của thụ căn hành giả",
+      "三面祭司第三张脸": "Khuôn mặt thứ ba của tam diện tế tư",
+      "巨骨猎王王骨": "Xương vương của cự cốt liệp vương",
+      "饥饿祖灵供碗": "Bát cúng của cơ ngạ tổ linh",
+      "万面鼓母鼓皮": "Mặt trống của vạn diện cổ mẫu",
+      "朽甲士兵锈甲片": "Mảnh giáp rỉ của hủ giáp binh sĩ",
+      "烛火修士残烛": "Tàn nến của chúc hỏa tu sĩ",
+      "地牢猎犬项圈": "Vòng cổ của địa lao liệp khuyển",
+      "蓝帽哥布林蓝帽子": "Mũ xanh của lam mạo goblin",
+      "塔楼石像石翼": "Cánh đá của tháp lâu thạch tượng",
+      "王庭处刑官法槌": "Búa xử án của vương đình xử hình quan",
+      "失誓骑士断誓剑": "Kiếm gãy lời thề của thất thệ kỵ sĩ",
+      "幼龙看守龙鳞": "Vảy rồng của ấu long khán thủ",
+      "空冠之王空王冠": "Vương miện trống của không quan chi vương",
+      "巡检蜂机光学镜头": "Ống kính quang học của tuần kiểm phong cơ",
+      "失压宇航员头盔": "Mũ bảo hiểm của thất áp vũ hàng viên",
+      "磁轨炮台线圈": "Cuộn dây của từ quỹ pháo đài",
+      "维修蜘蛛电弧足": "Chân hồ quang của duy tu tri chu",
+      "纳米聚合体灰雾核": "Lõi sương xám của nano tụ hợp thể",
+      "重装清除者装甲板": "Tấm giáp của trọng trang thanh trừ giả",
+      "相位猎手相位核": "Lõi pha của tương vị liệp thủ",
+      "母机维护核主板": "Bo mạch chủ của mẫu cơ duy hộ hạch",
+      "引力主机零式引力核": "Lõi dẫn lực của dẫn lực chủ cơ zero",
+      "无面行人借来的脸": "Khuôn mặt mượn của vô diện hành nhân",
+      "纸扎童子纸扎手": "Tay giấy bện của chỉ trát đồng tử",
+      "吊影悬梁索": "Dây treo xà của điếu ảnh",
+      "旧井湿鬼井苔": "Rêu giếng của cựu tỉnh thấp quỷ",
+      "灯笼眼眼灯": "Đèn mắt của đăng lung nhãn",
+      "送葬轿夫轿杠": "Đòn kiệu của tống táng kiệu phu",
+      "无声戏子哑嗓": "Giọng câm của vô thanh hí tử",
+      "守井婆井绳": "Dây thừng giếng của thủ tỉnh bà",
+      "迎亲空轿红盖头": "Khăn voan đỏ của nghênh thân không kiệu",
+      "蒙面刀客缺口刀": "Đao mẻ của mông diện đao khách",
+      "飞镖游侠镖囊": "Túi phi tiêu của phi tiêu du hiệp",
+      "醉拳客酒葫芦": "Hồ lô rượu của túy quyền khách",
+      "毒针侍女绣针": "Kim thêu của độc châm thị nữ",
+      "断棍僧断棍": "Gậy gãy của đoạn côn tăng",
+      "雨夜追命客斗笠": "Nón lá của vũ dạ truy mệnh khách",
+      "铁面庄主铁面具": "Mặt nạ sắt của thiết diện trang chủ",
+      "无影双刃双刃鞘": "Vỏ song nhận của vô ảnh song nhận",
+      "铸剑无归人未成剑": "Kiếm chưa đúc xong của đúc kiếm vô quy nhân",
+      "深潜侍从献身印": "Ấn hiến thân của thâm tiềm thị tòng",
+      "触须雏体幼触须": "Xúc tu non của xúc tu sơ thể",
+      "盲眼观测员空眼窝": "Hốc mắt rỗng của manh nhãn quan trắc viên",
+      "倒壳甲虫反面壳": "Vỏ mặt ngược của đảo xác giáp trùng",
+      "黑潮水蛭吸盘": "Giác hút của hắc triều thủy đỉa",
+      "星骸看守星骸碎片": "Mảnh vỡ tinh hài của tinh hài khán thủ",
+      "黑潮司祭祷文": "Bài nguyện của hắc triều tư tế",
+      "折光之眼晶状体": "Thể thủy tinh của chiết quang chi nhãn",
+      "不可名状的观测者视线残片": "Mảnh ánh nhìn của kẻ quan trắc không thể gọi tên",
+      "末班乘客旧车票": "Vé xe cũ của mạt ban thừa khách",
+      "外卖空壳保温箱": "Hộp giữ nhiệt của ngoại mại không xác",
+      "监控眼摄像头": "Camera của giám khống nhãn",
+      "霓虹飞蛾荧粉": "Bột huỳnh quang của nghê hồng phi nga",
+      "失眠保安手电筒": "Đèn pin của thất miên bảo an",
+      "永夜站长站长帽": "Mũ trạm trưởng của vĩnh dạ trạm trưởng",
+      "广告女王霓虹冠": "Vương miện neon của quảng cáo nữ vương",
+      "红灯追猎者红灯": "Đèn đỏ của hồng đăng truy liệp giả",
+      "零点城市管理员门禁卡": "Thẻ từ của linh điểm thành thị quản lý viên",
+      "地毯蠕虫绒毛": "Lông tơ của địa thảm nhuyễn trùng",
+      "巡廊人偶门牌": "Biển số phòng của tuần lang nhân ngẫu",
+      "出口幻影绿色标识": "Biển báo màu xanh của xuất khẩu huyễn ảnh",
+      "湿面访客湿手帕": "Khăn tay ướt của thấp diện phóng khách",
+      "插座寄生体电极": "Điện cực của sáp tọa ký sinh thể",
+      "万能钥匙持有者万能钥匙": "Chìa khóa vạn năng của vạn năng thược thi trì hữu giả",
+      "过曝巡查员闪光灯": "Đèn flash của quá bộc tuần tra viên",
+      "长廊吞咽者喉管": "Ống họng của trường lang thôn yết giả",
+      "第零间房门框": "Khung cửa của căn phòng thứ không",
+      "发条鼠发条": "Dây cót của chuột dây cót",
+      "锅炉仆役压力阀": "Van áp suất của nồi hơi bộc dịch",
+      "齿轮蜘蛛齿网": "Lưới bánh răng của xỉ luân tri chu",
+      "烟囱小鬼煤灰": "Tro than của yên thông tiểu quỷ",
+      "铆钉工兵铆钉枪": "Súng bắn đinh tán của đinh tán công binh",
+      "重锤技师校准锤": "Búa hiệu chuẩn của trọng chùy kỹ sư",
+      "失控巡空艇舵轮": "Bánh lái của thất khống tuần không đĩnh",
+      "逆摆监察官逆摆": "Con lắc ngược của nghịch bãi giám sát quan",
+      "停钟工程师主发条": "Dây cót chính của đình chung công trình sư",
+      "雪原失魂者冰泪": "Lệ băng của tuyết nguyên thất hồn giả",
+      "冰棘狼冰棘": "Gai băng của băng cức lang",
+      "诵霜修女霜念珠": "Tràng hạt sương của tụng sương tu nữ",
+      "结晶钟灵钟晶": "Tinh thể chuông của kết tinh chung linh",
+      "寒鸦侍女黑羽": "Lông đen của hàn nha thị nữ",
+      "埋雪骑士誓铠": "Giáp thề của mai tuyết kỵ sĩ",
+      "白疫告解师告解簿": "Sổ giải tội của bạch dịch cáo giải sư",
+      "冻土守钟人钟锤": "Búa gõ chuông của đống thổ thủ chung nhân",
+      "永冬圣像圣像碎片": "Mảnh vỡ thánh tượng của vĩnh đông thánh tượng",
+      "孢囊花花蕊": "Nhụy hoa của bào nang hoa",
+      "牙叶草叶牙": "Răng lá của nha diệp thảo",
+      "血管藤藤脉": "Mạch dây leo của huyết quản đằng",
+      "菌肤园丁菌丝": "Khuẩn ty của khuẩn phu viên đinh",
+      "浆果拟态者假浆果": "Quả mọng giả của tương quả nghĩ thái giả",
+      "倒生园长修枝剪": "Kéo tỉa cành của đảo sinh viên trưởng",
+      "骨瓣捕食者骨瓣": "Cánh hoa xương của cốt biện bộ thực giả",
+      "绽裂囊母胎囊": "Túi thai của trán liệt nang mẫu",
+      "永生花床永生花": "Hoa vĩnh sinh của vĩnh sinh hoa sàng",
+      "锈锚水兵锈锚": "Neo rỉ sét của tú miêu thủy binh",
+      "珊瑚骑士珊瑚甲": "Giáp san hô của san hô kỵ sĩ",
+      "寄居铜盔铜盔": "Mũ cối đồng của ký cư đồng khôi",
+      "发光水母伞膜": "Màng dù của phát quang thủy mẫu",
+      "深水剑鱼剑吻": "Mõm kiếm của thâm thủy kiếm ngư",
+      "沉锚统领军令牌": "Lệnh bài quân sự của trầm miêu thống lĩnh",
+      "裂壳祭司裂壳": "Vỏ nứt của liệt xác tế tư",
+      "鲸骨卫士鲸骨盾": "Khiên xương cá voi của kình cốt vệ sĩ",
+      "溺冠女王溺冠": "Vương miện đuối nước của nịch quan nữ vương",
+      "折纸鸟折痕翼": "Cánh nếp gấp của chiết chỉ điểu",
+      "墨滴史莱姆墨核": "Lõi mực của mặc tích slime",
+      "错字虫错字": "Chữ sai của thác tự trùng",
+      "缺页卫兵残页": "Tàn trang của khuyết diệp vệ binh",
+      "装订蛛装订线": "Chỉ đóng sách của trang đính tri",
+      "索引守卫索引签": "Thẻ chỉ mục của sách dẫn thủ vệ",
+      "删改使徒红笔": "Bút đỏ của san cải sứ đồ",
+      "巨型装订者巨钉": "Đinh ghim lớn của cự hình trang đính giả",
+      "无字的作者空白稿纸": "Giấy bản thảo trắng của vô tự chi tác giả",
+      "碎界游灵界隙碎片": "Mảnh vỡ khe nứt giới của toái giới du linh",
+      "逆光卫星逆光镜": "Kính ngược sáng của nghịch quang vệ tinh",
+      "法则碎片体残律": "Tàn luật của pháp tắc toái phiến thể",
+      "概率孑孓概率卵": "Trứng xác suất của xác suất lăng quăng",
+      "虚无浮鲸鲸须": "Râu cá voi của hư vô phù kình",
+      "边界剥离者剥离刃": "Lưỡi dao bóc tách của biên giới bác ly giả",
+      "失序执法体执法徽": "Huy hiệu chấp pháp của thất tự chấp pháp thể",
+      "星墓巡行者巡行灯": "Đèn tuần hành của tinh mộ tuần hành giả",
+      "书海的留白空白页": "Trang giấy trắng của thư hải chi lưu bạch",
+      "逆雨安检伞伞骨": "Nan dù của dù an kiểm nghịch vũ",
+      "行李转盘兽转盘履带": "Băng tải bàn xoay của băng chuyền hành lý thú",
+      "失焦接机影接机牌": "Biển đón máy bay của bóng đón máy bay mất nét",
+      "航灯领航偶航灯": "Đèn hiệu hàng không của hoa tiêu đèn hiệu con rối",
+      "舷窗窥视者舷窗玻璃": "Kính cửa sổ mạn của kẻ dòm ngó cửa sổ máy bay",
+      "油渍软泥油膜": "Màng dầu của bùn nhão vết dầu",
+      "加油枪蠕虫油枪头": "Đầu vòi bơm xăng của giun vòi bơm xăng",
+      "售货柜寄生体找零硬币": "Tiền xu trả lại của ký sinh thể tủ bán hàng tự động",
+      "废灯巡路者灯罩": "Chao đèn của kẻ tuần đường đèn hỏng",
+      "油罐驮行兽油罐阀": "Van bồn dầu của thú thồ bồn dầu",
+      "浮标钉螺浮标壳": "Vỏ phao của ốc đinh phao cứu sinh",
+      "缆绳水蛭缆绳段": "Đoạn dây cáp của đỉa dây cáp",
+      "锈箱潜伏者锈箱板": "Tấm thùng rỉ của kẻ ẩn núp thùng rỉ sét",
+      "海关封签官封签": "Niêm phong của quan niêm phong hải quan",
+      "沉锚搬山蟹沉锚钳": "Càng neo chìm của cua dời núi neo chìm",
+      "窗霜壁虎霜爪": "Móng sương của thạch sùng sương cửa sổ",
+      "雪枕潜伏者雪枕": "Gối tuyết của kẻ rình rập gối tuyết",
+      "长昼雪鸮昼羽": "Lông ngày của cú tuyết ngày dài",
+      "暖房巡夜人提灯": "Đèn lồng của người tuần đêm nhà kính",
+      "风雪搬运兽雪橇绳": "Dây xe trượt tuyết của thú vận chuyển gió tuyết",
+      "逆行壁蜥逆鳞": "Vảy ngược của thằn lằn tường bò ngược",
+      "落物袋灵收纳袋": "Túi đựng đồ của linh túi nhặt đồ rơi",
+      "灯座倒栖鸟栖爪": "Móng đậu của chim đậu ngược đui đèn",
+      "天井钩索客钩索": "Dây móc của khách móc dây giếng trời",
+      "承重墙傀儡承重砖": "Gạch chịu lực của khôi lỗi tường chịu lực",
+      "断芯蚁笔芯": "Ngòi bút của kiến gãy ngòi",
+      "涂改液蛞蝓白痕": "Vết trắng của sên bút xóa",
+      "素描纸鹿素描角": "Sừng ký họa của hươu giấy ký họa",
+      "削笔巡林者卷笔刀": "Gọt bút chì của người tuần rừng gọt bút",
+      "炭笔独角兽炭角": "Sừng than của kỳ lân bút than",
+      "回形针寄虫针钩": "Móc kim của ký trùng ghim kẹp",
+      "印泥吞吐囊印泥": "Mực dấu của túi nuốt nhả mực dấu",
+      "订书钉步卒钉脚": "Chân đinh của bộ binh ghim bấm",
+      "腺体档案官档案袋": "Túi hồ sơ của quan hồ sơ tuyến thể",
+      "红章吞噬者注销章": "Con dấu hủy bỏ của kẻ nuốt chửng dấu đỏ",
+      "荧幕鳐荧幕翼": "Cánh màn chiếu của cá đuối màn chiếu",
+      "爆米花浮囊焦糖壳": "Vỏ caramen của túi nổi bỏng ngô",
+      "票夹鳗票夹": "Kẹp vé của lươn kẹp vé",
+      "胶片缠幕者缠幕胶片": "Phim quấn màn của kẻ quấn phim quanh màn",
+      "聚光深潜怪聚光镜": "Kính tụ quang của quái lặn sâu tụ quang",
+      "陨砂水母陨砂": "Cát thiên thạch của sứa cát thiên thạch",
+      "星盘甲虫星盘甲": "Giáp tinh bàn của bọ hung tinh bàn",
+      "轨仪蜗牛轨仪壳": "Vỏ thước đo quỹ đạo của ốc sên thước đo quỹ đạo",
+      "黄道测绘师测绘尺": "Thước khảo sát của người khảo sát hoàng đạo",
+      "破镜星群兽镜片": "Mảnh kính của thú cụm sao kính vỡ",
+      "密封袋蛹密封袋": "Túi niêm phong của nhộng túi niêm phong",
+      "墙缝蜡蚁蜡屑": "Vụn sáp của kiến sáp khe tường",
+      "蜂房搬运螨背篓": "Chiếc gùi của ve vận chuyển tổ ong",
+      "蜡印管事蜡印": "Dấu sáp của quản sự dấu sáp",
+      "振翅电梯兽翅膜": "Màng cánh của thú thang máy đập cánh",
+      "作业纸蛾作业纸": "Giấy bài tập của bướm giấy bài tập",
+      "圆规足蛛圆规脚": "Chân compa của nhện chân compa",
+      "墨水盒兽墨水": "Mực của thú hộp mực",
+      "铃声训导员训导铃": "Chuông giám thị của giám thị chuông reo",
+      "试卷装订巨偶装订钉": "Đinh đóng tập của khổng ngẫu đóng tập bài thi",
+      "价签蜉蝣价签": "Bảng giá của phù du bảng giá",
+      "冷柜冰蚕冰丝": "Tơ băng của băng tằm tủ đông",
+      "塑袋寄居体塑料袋": "Túi nhựa của thể ký cư túi nhựa",
+      "货架搬山者货架": "Kệ hàng của kẻ dời núi kệ hàng",
+      "条码扫描巨眼扫描镜": "Kính quét của cự nhãn quét mã vạch",
+      "盐晶蜗牛晶壳": "Vỏ tinh thể của ốc sên tinh thể muối",
+      "泵房卤泥泥核": "Nhân bùn của bùn ót trạm bơm",
+      "结晶水蚤晶足": "Chân tinh thể của rận nước kết tinh",
+      "卤湖守泵人泵阀": "Van bơm của người giữ bơm hồ ót",
+      "发光盐角兽盐角": "Sừng muối của thú sừng muối phát quang",
+      "云脂毛虫云脂": "Mỡ mây của sâu mỡ mây",
+      "羽秤怪鸟秤砣": "Quả cân của quái điểu cân lông",
+      "滑轨钩虫钩足": "Chân móc của sâu móc ray trượt",
+      "冷库屠云者屠刀": "Đao đồ tể của đồ tể mổ mây kho lạnh",
+      "链钩缝合兽缝合线": "Chỉ khâu của thú khâu móc xích",
+      "伞柄蠕虫伞柄": "Cán ô của giun cán ô",
+      "漏斗沙螺漏斗壳": "Vỏ phễu của ốc cát phễu",
+      "伞布夜蛾夜色鳞粉": "Phấn vảy màu đêm của bướm đêm vải ô",
+      "逆风伞匠修伞锤": "Búa sửa ô của thợ làm ô ngược gió",
+      "千骨撑天兽伞骨": "Nan ô của thú ngàn nan chống trời",
+      "瓶砂蟹瓶砂": "Cát chai của cua cát chai",
+      "漂签鱼漂流签": "Thẻ trôi dạt của cá thẻ trôi",
+      "水藻塞偶藻塞": "Nút rong biển của rối nút bấc rong biển",
+      "玻璃航标者航标灯": "Đèn tiêu hàng hải của người đặt tiêu thủy tinh",
+      "软木甲巨鲸软木甲": "Giáp gỗ bấc của cá voi khổng lồ giáp gỗ bấc",
+      "齿轮铃虫铃片": "Mảnh chuông của côn trùng chuông bánh răng",
+      "铁羽鸦机铁羽": "Lông sắt của quạ máy lông sắt",
+      "香灰微型卫香灰": "Tàn hương của vệ sĩ siêu nhỏ tàn hương",
+      "伺服巫祝祈愿卡": "Thẻ cầu nguyện của vu nữ trợ động",
+      "护殿铜狮机铜鬃": "Bờm đồng của sư tử đồng máy hộ điện",
+      "骨架气球犬气球骨": "Xương bóng bay của chó bóng bay khung xương",
+      "糖纸灯蛾糖纸翅": "Cánh giấy kẹo của bướm đèn giấy kẹo",
+      "旋杯寄居骨旋杯": "Tách xoay của xương ký cư tách xoay",
+      "白骨巡园者巡园哨": "Còi tuần tra của kẻ tuần tra công viên xương trắng",
+      "断轨过山龙断轨": "Ray đứt của rồng tàu lượn đứt ray",
+      "珊瑚闹钟蟹闹铃": "Chuông báo thức của cua đồng hồ báo thức san hô",
+      "枕羽海马枕羽": "Lông gối của cá ngựa lông gối",
+      "瞌睡海葵触须": "Xúc tu của hải quỳ buồn ngủ",
+      "梦幕潜行者梦幕": "Màn mộng của kẻ lén lút màn mộng",
+      "玻璃睡鲨睡鳍": "Vây ngủ của cá nhám ngủ thủy tinh",
+      "焦籽跳虫焦籽": "Hạt cháy của bọ nhảy hạt cháy",
+      "黑乳木偶牛黑乳": "Sữa đen của bò rối gỗ sữa đen",
+      "锈镰草螳锈镰": "Liềm rỉ của bọ ngựa cỏ lưỡi liềm rỉ",
+      "麦垛焚日者焚火": "Lửa thiêu của kẻ đốt mặt trời đống rơm",
+      "日环犁地兽日环犁": "Cày vành nhật của thú cày đất vành nhật",
+      "矿灯盲蛾矿灯粉": "Bột đèn mỏ của bướm mù đèn hầm mỏ",
+      "钻泥甲虫泥壳": "Vỏ bùn của bọ cánh cứng khoan bùn",
+      "缆索岩蚯岩索": "Cáp đá của giun đất đá dây cáp",
+      "套管守门者套管": "Ống chống của kẻ canh cổng ống chống",
+      "热泉岩壳兽岩壳": "Vỏ đá của thú vỏ đá suối nước nóng",
+      "门栓蠹虫蛀粉": "Bột mọt của mọt then cửa",
+      "石缝壁蛛石丝": "Tơ đá của nhện vách khe đá",
+      "锈锁蛙锈锁舌": "Lưỡi khóa rỉ của ếch khóa rỉ",
+      "碎墙执旗者碎旗": "Cờ rách của kẻ cầm cờ tường vỡ",
+      "砖甲攻城兽砖甲": "Giáp gạch của thú công thành giáp gạch",
+      "折票飞蛾折票": "Vé gấp của bướm đêm vé gấp",
+      "车窗映像车窗倒影": "Bóng phản chiếu cửa sổ của hình phản chiếu cửa sổ xe",
+      "隧道拉链虫拉链齿": "Răng khóa kéo của sâu khóa kéo đường hầm",
+      "换轨调度影换轨杆": "Cần bẻ ghi của bóng điều độ bẻ ghi",
+      "铰链车厢兽铰链": "Bản lề của thú toa xe bản lề",
+      "秒轮虾秒轮": "Bánh xe giây của tôm bánh xe giây",
+      "表盘海星表盘": "Mặt số của sao biển mặt số",
+      "钟罩水母钟罩": "Chụp đồng hồ của sứa chụp đồng hồ",
+      "潮刻报时者报时贝": "Sò điểm giờ của kẻ điểm giờ khắc triều",
+      "锚链巨摆兽锚链摆": "Con lắc xích neo của thú con lắc xích neo khổng lồ",
+      "邮袋寒鸦邮袋": "Túi thư của quạ túi thư",
+      "信蜡冻偶冻蜡": "Sáp đông của con rối sáp niêm phong đóng băng",
+      "黑雪纸蛛黑雪纸": "Giấy tuyết đen của nhện giấy tuyết đen",
+      "封缄监察者监察印": "Con dấu giám sát của người giám sát niêm phong",
+      "雪橇信笼兽信笼": "Lồng thư của thú lồng thư xe trượt tuyết",
+      "棱镜蜗牛棱镜壳": "Vỏ lăng kính của ốc sên lăng kính",
+      "墓玻璃蜘蛛玻璃丝": "Tơ thủy tinh của nhện thủy tinh lăng mộ",
+      "露滴灯灵露滴": "Giọt sương của đèn linh giọt sương",
+      "碎镜送葬者碎镜": "Gương vỡ của người đưa tang gương vỡ",
+      "晶棺守陵兽晶棺碎片": "Mảnh quan tài pha lê của thú giữ lăng quan tài pha lê",
+      "阀节竹蜂阀节刺": "Gai van đốt của ong trúc van đốt",
+      "铜笋甲虫铜笋壳": "Vỏ măng đồng của bọ cánh cứng măng đồng",
+      "滚露汽蛙汽泡": "Bọt khí của ếch hơi nước giọt lăn",
+      "蒸泉阀守阀令牌": "Lệnh bài van của người giữ van suối sôi",
+      "竹节压风兽压风节": "Đốt nén gió của thú nén gió đốt trúc",
+      "折角搬运虫折角": "Góc gập của sâu vận chuyển góc gập",
+      "货架索引灵索引卡": "Thẻ mục lục của linh mục lục kệ hàng",
+      "空盒潜伏体空盒": "Hộp rỗng của thể ẩn nấp hộp rỗng",
+      "维缝封箱者封箱胶": "Băng keo dán thùng của kẻ đóng thùng khe nứt chiều",
+      "对折集装兽对折箱": "Hộp gập đôi của thú container gập đôi",
+      "空椅游魂椅背": "Lưng ghế của hồn du đãng ghế trống",
+      "红烛蜡偶红烛泪": "Nước mắt nến đỏ của búp bê sáp nến đỏ",
+      "婚纱蛾婚纱翅": "Cánh váy cưới của bướm đêm váy cưới",
+      "酒窖守席者窖钥": "Chìa khóa hầm của người giữ tiệc hầm rượu",
+      "缎带婚轿兽缎带": "Ruy băng của thú kiệu hoa ruy băng",
+      "色块海蜗负片壳": "Vỏ phim âm bản của ốc biển mảng màu",
+      "失帧水母帧片": "Mảnh khung hình của sứa mất khung hình",
+      "频闪浮游群频闪光": "Ánh nhấp nháy của đàn sinh vật trôi nổi nhấp nháy",
+      "调色潮汐师调色盘": "Bảng pha màu của sư điều sắc thủy triều",
+      "断频虹鳗虹鳍": "Vây cầu vồng của lươn cầu vồng đứt tần số",
+      "电池寄居蟹电池壳": "Vỏ pin của cua ký cư pin",
+      "缆线飞鳐缆线翼": "Cánh cáp của cá đuối bay dây cáp",
+      "铆钉爬虫铆钉": "Đinh tán của bọ bò đinh tán",
+      "磁轨拾荒者拾荒钩": "Móc nhặt rác của người nhặt rác đường ray từ tính",
+      "残骸拼接龙拼接鳞": "Vảy ghép nối của rồng ghép mảnh vỡ",
+      "幕布蛛幕布丝": "Tơ màn nhung của nhện màn nhung",
+      "灯架脚兽追光灯": "Đèn theo dõi của thú chân giá đèn",
+      "道具箱影道具": "Đạo cụ của bóng hòm đạo cụ",
+      "绳桥提偶师提线": "Dây kéo của nghệ nhân múa rối cầu dây",
+      "落幕布景兽布景板": "Tấm phông nền của thú phông nền hạ màn",
+      "价值的结晶": "Tinh thể của giá trị"
+    },
+    "locations": {
+      "感染街区": "Khu phố nhiễm bệnh",
+      "避难所": "Nơi tị nạn",
+      "污染实验区": "Khu thí nghiệm ô nhiễm",
+      "断山古道": "Cổ đạo núi đứt",
+      "洞府": "Động phủ",
+      "倒悬丹宫": "Đan cung treo ngược",
+      "图腾部落": "Đồ đằng bộ lạc",
+      "沼地": "Đầm lầy",
+      "祖灵祭坛": "Tổ linh tế đàn",
+      "边境堡垒": "Biên cảnh bảo lũy",
+      "王都地牢": "Vương đô địa lao",
+      "龙骨殿": "Long cốt điện",
+      "空间站": "Trạm không gian",
+      "机库": "Khoang chứa tàu",
+      "引力反应堆": "Lò phản ứng dẫn lực",
+      "荒村": "Hoang thôn",
+      "冥婚宅": "Minh hôn trạch",
+      "纸扎街": "Chỉ trát nhai",
+      "雨巷": "Vũ hạng",
+      "竹林驿": "Trúc lâm dịch",
+      "铸剑山庄": "Đúc kiếm sơn trang",
+      "海边观测所": "Đài quan trắc ven biển",
+      "失真矿井": "Hầm mỏ méo mó",
+      "星骸祭台": "Đài tế tinh hài",
+      "空站": "Không trạm",
+      "便利店街": "Tiện lợi điếm nhai",
+      "金融高楼": "Tòa nhà tài chính",
+      "长廊": "Trường lang",
+      "泳池房": "Vịnh trì phòng",
+      "办公夹层": "Tầng lửng văn phòng",
+      "发条工坊": "Dây cót công phường",
+      "空中车站": "Không trung xa trạm",
+      "时钟塔": "Thời chung tháp",
+      "霜原": "Sương nguyên",
+      "埋雪修院": "Mai tuyết tu viện",
+      "冰封钟楼": "Băng phong chung lâu",
+      "异植苗床": "Dị thực miêu sàng",
+      "血管廊": "Huyết quản lang",
+      "母巢温室": "Mẫu sào ôn thất",
+      "珊瑚街": "San hô nhai",
+      "沉舰墓": "Trầm hạm mộ",
+      "深水宫": "Thâm thủy cung",
+      "漂浮书架": "Phiêu phù thư giá",
+      "折纸庭": "Chiết chỉ đình",
+      "倒序印厂": "Đảo tự ấn xưởng",
+      "破碎天体": "Phá toái thiên thể",
+      "法则残廊": "Pháp tắc tàn lang",
+      "无界门": "Vô giới môn",
+      "反向降雨的候机厅": "Sảnh chờ mưa chảy ngược",
+      "永远延误的登机廊": "Hành lang lên máy bay mãi mãi chậm trễ",
+      "水面停机坪": "Sân đỗ thủy diện",
+      "托运行尸": "Ký vận hành thi",
+      "登机牌虫": "Thẻ lên máy bay trùng",
+      "逆航乘务长": "Tiếp viên trưởng nghịch hàng",
+      "最后一班广播": "Phát thanh chuyến bay cuối cùng",
+      "空停车场": "Bãi đỗ xe trống",
+      "通宵餐厅": "Nhà hàng suốt đêm",
+      "延伸到天边的加油岛": "Đảo đổ xăng kéo dài tận chân trời",
+      "轮胎猎犬": "Chó săn lốp xe",
+      "餐盘搬运者": "Kẻ bưng khay cơm",
+      "夜班收费员": "Thu phí viên ca đêm",
+      "无终点长途客": "Khách đường dài không điểm đến",
+      "集装箱峡谷": "Hẻm núi container",
+      "起重机森林": "Rừng cần cẩu",
+      "永不靠岸的码头": "Bến tàu vĩnh viễn không cập bến",
+      "封箱蟹": "Cua đóng thùng",
+      "货签漂浮体": "Thể trôi nổi thẻ hàng",
+      "铁索吊运者": "Kẻ cẩu dây sắt",
+      "港口总提单": "Vận đơn tổng cảng",
+      "玻璃暖房": "Nhà kính thủy tinh",
+      "朝向太阳的客房": "Phòng hướng về mặt trời",
+      "埋雪观景台": "Đài ngắm cảnh vùi trong tuyết",
+      "雪毯房客": "Khách trọ chăn tuyết",
+      "暖灯蛾": "Bướm đêm đèn ấm",
+      "白昼司门者": "Kẻ giữ cửa ban ngày",
+      "永不退房的太阳": "Mặt trời vĩnh viễn không trả phòng",
+      "楼底天台": "Sân thượng đáy tòa nhà",
+      "垂直客厅街": "Phố phòng khách thẳng đứng",
+      "悬挂的地下室": "Tầng hầm treo lơ lửng",
+      "天花板住客": "Khách trọ trần nhà",
+      "倒悬扫帚": "Chổi treo ngược",
+      "楼底管理员": "Quản lý đáy tòa nhà",
+      "第十三层地基": "Nền móng tầng thứ mười ba",
+      "削屑山谷": "Thung lũng vụn gọt",
+      "橡皮湿地": "Vùng đất ngập nước tẩy",
+      "石墨树冠": "Tán cây than chì",
+      "削屑甲虫": "Bọ hung vụn gọt",
+      "橡皮兽": "Thú gôm tẩy",
+      "石墨伐木者": "Tiều phu than chì",
+      "未画完的树王": "Vua cây chưa vẽ xong",
+      "胃袋大厅": "Đại sảnh túi dạ dày",
+      "血管办公街": "Phố công sở mạch máu",
+      "骨髓档案室": "Phòng hồ sơ tủy xương",
+      "公章细胞": "Tế bào con dấu",
+      "票据白虫": "Sâu trắng hóa đơn",
+      "脉搏科长": "Trưởng phòng mạch đập",
+      "总务心脏": "Trái tim tổng vụ",
+      "水下售票厅": "Phòng vé dưới nước",
+      "倒映银幕": "Màn bạc phản chiếu",
+      "潮汐放映间": "Phòng chiếu thủy triều",
+      "胶片水蛇": "Rắn nước phim nhựa",
+      "座椅寄居者": "Kẻ ký cư ghế ngồi",
+      "沉幕检票员": "Người soát vé màn chìm",
+      "第零场观众": "Khán giả suất chiếu số không",
+      "黑暗穹顶": "Mái vòm hắc ám",
+      "伪造星图廊": "Hành lang bản đồ sao giả mạo",
+      "缩小银河展台": "Quầy trưng bày ngân hà thu nhỏ",
+      "星图银鱼": "Cá bạc tinh đồ",
+      "空轨行星": "Hành tinh quỹ đạo trống",
+      "望镜导览员": "Hướng dẫn viên kính viễn vọng",
+      "熄灭的北极星": "Sao bắc cực đã tắt",
+      "六边形走廊": "Hành lang lục giác",
+      "共享厨房": "Bếp chung",
+      "振翅电梯井": "Hố thang máy đập cánh",
+      "蜜蜡房客": "Khách trọ sáp ong",
+      "门铃蜂": "Ong chuông cửa",
+      "蜂巢保安": "Bảo vệ tổ ong",
+      "蜂后物业": "Ban quản lý ong chúa",
+      "无人教室": "Lớp học không người",
+      "封闭操场": "Sân thể dục đóng kín",
+      "无尽考场": "Phòng thi vô tận",
+      "黑板粉尘": "Bụi phấn bảng đen",
+      "课桌童偶": "Đồng ngẫu bàn học",
+      "监考影": "Bóng giám thị",
+      "永不毕业者": "Kẻ không bao giờ tốt nghiệp",
+      "空货架海": "Biển kệ trống",
+      "冷柜长廊": "Hành lang tủ đông",
+      "循环收银台": "Quầy thu ngân tuần hoàn",
+      "条码蛇": "Rắn mã vạch",
+      "购物车犬": "Chó xe đẩy",
+      "夜盘点员": "Nhân viên kiểm kê ca đêm",
+      "零库存店长": "Cửa hàng trưởng tồn kho bằng không",
+      "结晶堤岸": "Đê kết tinh",
+      "盐雾泵房": "Trạm bơm sương muối",
+      "黑水蒸发池": "Hồ bốc hơi nước đen",
+      "盐壳蜥": "Thằn lằn vỏ muối",
+      "卤水蜉蝣": "Phù du nước ót",
+      "晒盐祭司": "Tế tư phơi muối",
+      "白色潮汐": "Thủy triều trắng",
+      "云雾流水线": "Dây chuyền mây mù",
+      "悬空冷库": "Kho lạnh treo lơ lửng",
+      "羽毛卸货台": "Sàn bốc dỡ lông vũ",
+      "羽钩小兽": "Thú nhỏ móc vũ",
+      "白雾肉块": "Tảng thịt sương trắng",
+      "卸云工头": "Quản đốc dỡ mây",
+      "云层分割机": "Máy phân cắt tầng mây",
+      "伞骨沙丘": "Cồn cát nan ô",
+      "无雨驿站": "Trạm dịch không mưa",
+      "逆风伞塔": "Tháp ô ngược gió",
+      "伞骨蝎": "Bọ cạp nan ô",
+      "布面沙鳐": "Cá đuối cát mặt vải",
+      "撑伞行刑客": "Đao phủ che ô",
+      "从未落下的雨": "Cơn mưa chưa từng rơi xuống",
+      "玻璃海岸": "Bờ biển thủy tinh",
+      "瓶塞灯塔": "Ngọn hải đăng nút chai",
+      "软木群礁": "Rạn đá nút bấc",
+      "玻璃虾": "Tôm thủy tinh",
+      "软木潜鸟": "Chim lặn gỗ bấc",
+      "瓶塞守卫": "Thủ vệ nút chai",
+      "收集海洋的人": "Người thu thập đại dương",
+      "伺服鸟居": "Cổng Torii trợ động",
+      "自动祈愿台": "Bệ cầu nguyện tự động",
+      "芯片内殿": "Điện trong vi mạch",
+      "电签纸偶": "Bùa giấy quẻ điện tử",
+      "铜尾狐机": "Hồ ly máy đuôi đồng",
+      "维护神官": "Thần quan bảo trì",
+      "八百万处理器": "Bộ xử lý Bát Bách Vạn",
+      "停摆旋转木马": "Vòng quay ngựa gỗ ngừng chạy",
+      "骨质摩天轮": "Vòng đu quay xương cốt",
+      "售票坟场": "Nghĩa địa bán vé",
+      "木马肋骨": "Xương sườn ngựa gỗ",
+      "票根蝙蝠": "Dơi cuống vé",
+      "白面售票员": "Nhân viên bán vé mặt trắng",
+      "旋转中的墓园": "Nghĩa trang đang xoay tròn",
+      "鱼缸卧室": "Phòng ngủ bể cá",
+      "通往海底的电梯": "Thang máy xuống đáy biển",
+      "梦游展廊": "Hành lang triển lãm mộng du",
+      "枕头水母": "Sứa gối đầu",
+      "梦鳞鱼": "Cá vảy mộng",
+      "无眠饲养员": "Người chăm sóc không ngủ",
+      "透明梦鲸": "Cá voi mộng trong suốt",
+      "朝黑日生长的麦田": "Ruộng lúa mạch hướng về mặt trời đen",
+      "倒流水车": "Cối xay nước chảy ngược",
+      "稻草谷仓": "Kho thóc rơm rạ",
+      "黑穗鸦": "Quạ bông đen",
+      "稻草耕者": "Kẻ cày cấy rơm rạ",
+      "日蚀农夫": "Nông phu nhật thực",
+      "不落的黑日": "Mặt trời đen không lặn",
+      "钻头前台": "Quầy lễ tân mũi khoan",
+      "岩层套房": "Phòng suite tầng đá",
+      "地热宴会厅": "Sảnh tiệc địa nhiệt",
+      "岩屑门童": "Doorman vụn đá",
+      "热液蠕虫": "Giun nhiệt dịch",
+      "钻井领班": "Tổ trưởng giếng khoan",
+      "地心总经理": "Tổng giám đốc tâm trái đất",
+      "墙缝集市": "Chợ khe tường",
+      "砖内牢房": "Nhà lao trong gạch",
+      "巨门背面": "Mặt sau cửa lớn",
+      "灰泥鼠兵": "Chuột lính vữa vôi",
+      "碎砖蜥": "Thằn lằn gạch vỡ",
+      "门缝骑士": "Kỵ sĩ khe cửa",
+      "缝隙里的王冠": "Vương miện trong khe nứt",
+      "交叉车厢": "Toa xe giao nhau",
+      "站中站": "Ga trong ga",
+      "纸折隧道": "Đường hầm gấp giấy",
+      "扶手长虫": "Giun dài tay vịn",
+      "站牌旅客": "Hành khách biển báo ga",
+      "折线列车长": "Trưởng tàu tuyến gấp",
+      "没有始发站": "Không có ga xuất phát",
+      "涨潮柜台": "Quầy triều dâng",
+      "摆轮海沟": "Rãnh biển bánh xe cân bằng",
+      "水下报时厅": "Sảnh điểm giờ dưới nước",
+      "发条潮蟹": "Cua triều dây cót",
+      "指针鱼": "Cá kim đồng hồ",
+      "海摆修表师": "Thợ sửa đồng hồ con lắc biển",
+      "第十三次潮汐": "Thủy triều lần thứ mười ba",
+      "未投递大厅": "Đại sảnh thư chưa phát",
+      "煤雪分拣场": "Bãi phân loại tuyết than",
+      "冻住的信箱街": "Phố hòm thư đóng băng",
+      "邮票寒蛾": "Bướm lạnh tem thư",
+      "封口雪鼠": "Chuột tuyết dán miệng",
+      "退信邮差": "Người đưa thư trả về",
+      "无人签收的冬天": "Mùa đông không người ký nhận",
+      "透明坟场": "Nghĩa địa trong suốt",
+      "棱镜碑林": "Rừng bia lăng kính",
+      "折光守墓屋": "Nhà người trông mộ khúc xạ",
+      "碑光蝶": "Bướm quang bia",
+      "玻璃骸骨": "Hài cốt thủy tinh",
+      "折光守墓者": "Người trông mộ khúc xạ",
+      "看不见的葬礼": "Tang lễ vô hình",
+      "铜节竹林": "Rừng trúc đốt đồng",
+      "沸泉茶棚": "Lán trà suối sôi",
+      "蒸汽栈桥": "Cầu ván hơi nước",
+      "铜竹螳螂": "Bọ ngựa trúc đồng",
+      "汽雾剑灵": "Kiếm linh sương khí",
+      "竹海铸客": "Đúc khách biển trúc",
+      "千节机关龙": "Cơ quan long ngàn đốt",
+      "重复货架": "Kệ hàng trùng lặp",
+      "四向装卸门": "Cửa bốc dỡ bốn hướng",
+      "空间库存核": "Lõi tồn kho không gian",
+      "库存立方": "Khối lập phương tồn kho",
+      "叉车侍从": "Thị tùng xe nâng",
+      "第四维盘点员": "Nhân viên kiểm kê chiều thứ tư",
+      "无法出库之物": "Vật phẩm không thể xuất kho",
+      "永远热着的宴席": "Yến tiệc luôn nóng sốt",
+      "空礼堂": "Lễ đường trống rỗng",
+      "镜中新房": "Tân phòng trong gương",
+      "酒盏侍者": "Thị giả chén rượu",
+      "喜糖纸灵": "Linh giấy kẹo mừng",
+      "空席司仪": "MC bàn trống",
+      "缺席的新郎": "Chú rể vắng mặt",
+      "失真沙滩": "Bãi cát biến dạng",
+      "信号浮岛": "Đảo nổi tín hiệu",
+      "白噪港湾": "Vịnh nhiễu trắng",
+      "噪点鱼": "Cá điểm nhiễu",
+      "失真鸟": "Chim biến dạng",
+      "信号捕手": "Kẻ bắt tín hiệu",
+      "未调谐的海": "Vùng biển chưa điều chuẩn",
+      "轨道废物街": "Phố phế liệu quỹ đạo",
+      "破船拼接港": "Cảng ghép nối tàu hỏng",
+      "磁吸回收场": "Bãi tái chế hút từ",
+      "废片卫星": "Mảnh vệ tinh phế liệu",
+      "磁尘团": "Khối bụi từ",
+      "废环回收王": "Vua thu gom phế liệu vành đai",
+      "人造星屑": "Bụi sao nhân tạo",
+      "换景走廊": "Hành lang đổi cảnh",
+      "提线仓库": "Kho dây kéo",
+      "无观众舞台": "Sân khấu không khán giả",
+      "面具小偶": "Con rối nhỏ đeo mặt nạ",
+      "提词纸鸟": "Chim giấy nhắc lời",
+      "换景总管": "Tổng quản đổi cảnh",
+      "最后一位观众": "Vị khán giả cuối cùng"
+    },
+    "special": {
+      "沙盘": "Sa bàn",
+      "书海": "Biển sách",
+      "普罗泰利西翁": "Protelysion",
+      "迷宫": "Proteleision",
+      "来访者": "Khách đến thăm",
+      "黑影少女": "Thiếu nữ bóng đen",
+      "斗篷女": "Nữ áo choàng",
+      "兜帽女": "Nữ mũ trùm",
+      "补给员": "Nhân viên tiếp tế",
+      "商人": "Thương nhân",
+      "谜之存在": "Tồn tại bí ẩn",
+      "错页拼贴街区": "Khu phố chắp vá lệch trang",
+      "拼贴街区": "Khu phố chắp vá",
+      "错页": "Lệch trang",
+      "错轴回廊": "Hành lang lệch trục",
+      "悬置构筑": "Cấu trúc treo lơ lửng",
+      "错轴": "Lệch trục"
+    }
+  },
+  "per_line_mapping": [
+    {
+      "line": 1691,
+      "raw": [
+        "沙盘",
+        "书海",
+        "普罗泰利西翁",
+        "迷宫"
+      ],
+      "vn": [
+        "Sa bàn",
+        "Biển sách",
+        "Protelysion",
+        "Proteleision",
+        "Mê cung"
+      ]
+    },
+    {
+      "line": 1695,
+      "raw": [
+        "来访者",
+        "黑影少女",
+        "斗篷女",
+        "兜帽女"
+      ],
+      "vn": [
+        "Khách đến thăm",
+        "Thiếu nữ bóng đen",
+        "Nữ áo choàng",
+        "Nữ mũ trùm"
+      ]
+    },
+    {
+      "line": 1699,
+      "raw": [
+        "补给员",
+        "商人",
+        "谜之存在"
+      ],
+      "vn": [
+        "Nhân viên tiếp tế",
+        "Thương nhân",
+        "Tồn tại bí ẩn"
+      ]
+    },
+    {
+      "line": 1704,
+      "raw": [
+        "异常层"
+      ],
+      "vn": [
+        "Tầng dị thường"
+      ]
+    },
+    {
+      "line": 1710,
+      "raw": [
+        "黄色回廊",
+        "后室"
+      ],
+      "vn": [
+        "Hành lang màu vàng",
+        "Backrooms",
+        "Hậu thất"
+      ]
+    },
+    {
+      "line": 1715,
+      "raw": [
+        "无尽泳池房"
+      ],
+      "vn": [
+        "Phòng hồ bơi vô tận"
+      ]
+    },
+    {
+      "line": 1720,
+      "raw": [
+        "错页拼贴街区",
+        "拼贴街区",
+        "错页"
+      ],
+      "vn": [
+        "Khu phố chắp vá lệch trang",
+        "Khu phố chắp vá",
+        "Lệch trang"
+      ]
+    },
+    {
+      "line": 1725,
+      "raw": [
+        "错轴回廊",
+        "悬置构筑",
+        "错轴"
+      ],
+      "vn": [
+        "Hành lang lệch trục",
+        "Cấu trúc treo lơ lửng",
+        "Lệch trục"
+      ]
+    },
+    {
+      "line": 1731,
+      "raw": [
+        "废墟末日"
+      ],
+      "vn": [
+        "Phế tích mạt nhật"
+      ]
+    },
+    {
+      "line": 1738,
+      "raw": [
+        "感染街区"
+      ],
+      "vn": [
+        "Khu phố nhiễm bệnh"
+      ]
+    },
+    {
+      "line": 1742,
+      "raw": [
+        "避难所"
+      ],
+      "vn": [
+        "Nơi tị nạn"
+      ]
+    },
+    {
+      "line": 1746,
+      "raw": [
+        "污染实验区"
+      ],
+      "vn": [
+        "Khu thí nghiệm ô nhiễm"
+      ]
+    },
+    {
+      "line": 1750,
+      "raw": [
+        "游荡感染者",
+        "游荡感染者腐牙"
+      ],
+      "vn": [
+        "Kẻ nhiễm bệnh lang thang",
+        "Kẻ nhiễm bệnh lang thang răng mục"
+      ]
+    },
+    {
+      "line": 1754,
+      "raw": [
+        "饥饿猎犬",
+        "饥饿猎犬肋骨"
+      ],
+      "vn": [
+        "Chó săn đói khát",
+        "Chó săn đói khát xương sườn"
+      ]
+    },
+    {
+      "line": 1758,
+      "raw": [
+        "防化残兵",
+        "防化残兵滤毒罐"
+      ],
+      "vn": [
+        "Tàn binh phòng hóa",
+        "Tàn binh phòng hóa bình lọc độc"
+      ]
+    },
+    {
+      "line": 1762,
+      "raw": [
+        "孢子鼠群",
+        "孢子鼠群孢囊"
+      ],
+      "vn": [
+        "Đàn chuột bào tử",
+        "Đàn chuột bào tử túi bào tử"
+      ]
+    },
+    {
+      "line": 1766,
+      "raw": [
+        "车壳寄生体",
+        "车壳寄生体锈壳"
+      ],
+      "vn": [
+        "Vật ký sinh vỏ xe",
+        "Vật ký sinh vỏ xe vỏ rỉ sét"
+      ]
+    },
+    {
+      "line": 1770,
+      "raw": [
+        "暴走屠夫",
+        "暴走屠夫剁骨刀"
+      ],
+      "vn": [
+        "Đồ tể bạo tẩu",
+        "Đồ tể bạo tẩu dao chặt xương"
+      ]
+    },
+    {
+      "line": 1774,
+      "raw": [
+        "变异装甲兵",
+        "变异装甲兵肉铁板"
+      ],
+      "vn": [
+        "Binh sĩ thiết giáp biến dị",
+        "Binh sĩ thiết giáp biến dị tấm sắt thịt"
+      ]
+    },
+    {
+      "line": 1778,
+      "raw": [
+        "孢子主母",
+        "孢子主母孢宫"
+      ],
+      "vn": [
+        "Bào tử chủ mẫu",
+        "Bào tử chủ mẫu bào cung"
+      ]
+    },
+    {
+      "line": 1782,
+      "raw": [
+        "零号病患",
+        "零号病患病历残页"
+      ],
+      "vn": [
+        "Bệnh nhân số 0",
+        "Bệnh nhân số 0 tàn trang bệnh án"
+      ]
+    },
+    {
+      "line": 1787,
+      "raw": [
+        "玄门山海"
+      ],
+      "vn": [
+        "Huyền môn sơn hải"
+      ]
+    },
+    {
+      "line": 1794,
+      "raw": [
+        "断山古道"
+      ],
+      "vn": [
+        "Cổ đạo núi đứt"
+      ]
+    },
+    {
+      "line": 1798,
+      "raw": [
+        "洞府"
+      ],
+      "vn": [
+        "Động phủ"
+      ]
+    },
+    {
+      "line": 1802,
+      "raw": [
+        "倒悬丹宫"
+      ],
+      "vn": [
+        "Đan cung treo ngược"
+      ]
+    },
+    {
+      "line": 1806,
+      "raw": [
+        "山魈",
+        "山魈攫魂爪"
+      ],
+      "vn": [
+        "Sơn tiêu",
+        "Sơn tiêu trảo đoạt hồn"
+      ]
+    },
+    {
+      "line": 1810,
+      "raw": [
+        "符纸傀儡",
+        "符纸傀儡敕令符"
+      ],
+      "vn": [
+        "Phù chỉ khôi lỗi",
+        "Sắc lệnh phù của phù chỉ khôi lỗi"
+      ]
+    },
+    {
+      "line": 1814,
+      "raw": [
+        "丹炉精",
+        "丹炉精炉烬"
+      ],
+      "vn": [
+        "Đan lô tinh",
+        "Tàn lò của đan lô tinh"
+      ]
+    },
+    {
+      "line": 1818,
+      "raw": [
+        "御剑残影",
+        "御剑残影断剑穗"
+      ],
+      "vn": [
+        "Ngự kiếm tàn ảnh",
+        "Tua kiếm gãy của ngự kiếm tàn ảnh"
+      ]
+    },
+    {
+      "line": 1822,
+      "raw": [
+        "丹毒童偶",
+        "丹毒童偶毒丹"
+      ],
+      "vn": [
+        "Đan độc đồng ngẫu",
+        "Độc đan của đan độc đồng ngẫu"
+      ]
+    },
+    {
+      "line": 1826,
+      "raw": [
+        "守山石狮",
+        "守山石狮石鬃"
+      ],
+      "vn": [
+        "Thủ sơn thạch sư",
+        "Bờm đá của thủ sơn thạch sư"
+      ]
+    },
+    {
+      "line": 1830,
+      "raw": [
+        "走火丹师",
+        "走火丹师焦金丹"
+      ],
+      "vn": [
+        "Tẩu hỏa đan sư",
+        "Kim đan cháy của tẩu hỏa đan sư"
+      ]
+    },
+    {
+      "line": 1834,
+      "raw": [
+        "镇宫剑阵",
+        "镇宫剑阵阵眼剑"
+      ],
+      "vn": [
+        "Trấn cung kiếm trận",
+        "Kiếm trận nhãn của trấn cung kiếm trận"
+      ]
+    },
+    {
+      "line": 1838,
+      "raw": [
+        "倒悬丹尊",
+        "倒悬丹尊逆丹"
+      ],
+      "vn": [
+        "Đảo huyền đan tôn",
+        "Nghịch đan của đảo huyền đan tôn"
+      ]
+    },
+    {
+      "line": 1843,
+      "raw": [
+        "巫祭荒原"
+      ],
+      "vn": [
+        "Vu tế hoang nguyên"
+      ]
+    },
+    {
+      "line": 1850,
+      "raw": [
+        "图腾部落"
+      ],
+      "vn": [
+        "Đồ đằng bộ lạc"
+      ]
+    },
+    {
+      "line": 1854,
+      "raw": [
+        "沼地"
+      ],
+      "vn": [
+        "Đầm lầy"
+      ]
+    },
+    {
+      "line": 1858,
+      "raw": [
+        "祖灵祭坛"
+      ],
+      "vn": [
+        "Tổ linh tế đàn"
+      ]
+    },
+    {
+      "line": 1862,
+      "raw": [
+        "骨面猎手",
+        "骨面猎手骨面具"
+      ],
+      "vn": [
+        "Cốt diện liệp thủ",
+        "Mặt nạ xương của cốt diện liệp thủ"
+      ]
+    },
+    {
+      "line": 1866,
+      "raw": [
+        "蛊壶侍从",
+        "蛊壶侍从蛊壶"
+      ],
+      "vn": [
+        "Cổ hồ thị tòng",
+        "Hũ cổ của cổ hồ thị tòng"
+      ]
+    },
+    {
+      "line": 1870,
+      "raw": [
+        "灰羽鬣鸟",
+        "灰羽鬣鸟灰羽"
+      ],
+      "vn": [
+        "Hôi vũ liệp điểu",
+        "Lông xám của hôi vũ liệp điểu"
+      ]
+    },
+    {
+      "line": 1874,
+      "raw": [
+        "沼泽蜱",
+        "沼泽蜱血囊"
+      ],
+      "vn": [
+        "Bọ ve đầm lầy",
+        "Túi máu của bọ ve đầm lầy"
+      ]
+    },
+    {
+      "line": 1878,
+      "raw": [
+        "树根行者",
+        "树根行者祖根"
+      ],
+      "vn": [
+        "Thụ căn hành giả",
+        "Rễ tổ của thụ căn hành giả"
+      ]
+    },
+    {
+      "line": 1882,
+      "raw": [
+        "三面祭司",
+        "三面祭司第三张脸"
+      ],
+      "vn": [
+        "Tam diện tế tư",
+        "Khuôn mặt thứ ba của tam diện tế tư"
+      ]
+    },
+    {
+      "line": 1886,
+      "raw": [
+        "巨骨猎王",
+        "巨骨猎王王骨"
+      ],
+      "vn": [
+        "Cự cốt liệp vương",
+        "Xương vương của cự cốt liệp vương"
+      ]
+    },
+    {
+      "line": 1890,
+      "raw": [
+        "饥饿祖灵",
+        "饥饿祖灵供碗"
+      ],
+      "vn": [
+        "Cơ ngạ tổ linh",
+        "Bát cúng của cơ ngạ tổ linh"
+      ]
+    },
+    {
+      "line": 1894,
+      "raw": [
+        "万面鼓母",
+        "万面鼓母鼓皮"
+      ],
+      "vn": [
+        "Vạn diện cổ mẫu",
+        "Mặt trống của vạn diện cổ mẫu"
+      ]
+    },
+    {
+      "line": 1899,
+      "raw": [
+        "龙与王冠"
+      ],
+      "vn": [
+        "Rồng và vương miện"
+      ]
+    },
+    {
+      "line": 1906,
+      "raw": [
+        "边境堡垒"
+      ],
+      "vn": [
+        "Biên cảnh bảo lũy"
+      ]
+    },
+    {
+      "line": 1910,
+      "raw": [
+        "王都地牢"
+      ],
+      "vn": [
+        "Vương đô địa lao"
+      ]
+    },
+    {
+      "line": 1914,
+      "raw": [
+        "龙骨殿"
+      ],
+      "vn": [
+        "Long cốt điện"
+      ]
+    },
+    {
+      "line": 1918,
+      "raw": [
+        "朽甲士兵",
+        "朽甲士兵锈甲片"
+      ],
+      "vn": [
+        "Hủ giáp binh sĩ",
+        "Mảnh giáp rỉ của hủ giáp binh sĩ"
+      ]
+    },
+    {
+      "line": 1922,
+      "raw": [
+        "烛火修士",
+        "烛火修士残烛"
+      ],
+      "vn": [
+        "Chúc hỏa tu sĩ",
+        "Tàn nến của chúc hỏa tu sĩ"
+      ]
+    },
+    {
+      "line": 1926,
+      "raw": [
+        "地牢猎犬",
+        "地牢猎犬项圈"
+      ],
+      "vn": [
+        "Địa lao liệp khuyển",
+        "Vòng cổ của địa lao liệp khuyển"
+      ]
+    },
+    {
+      "line": 1930,
+      "raw": [
+        "蓝帽哥布林",
+        "蓝帽哥布林蓝帽子"
+      ],
+      "vn": [
+        "Lam mạo goblin",
+        "Mũ xanh của lam mạo goblin"
+      ]
+    },
+    {
+      "line": 1934,
+      "raw": [
+        "塔楼石像",
+        "塔楼石像石翼"
+      ],
+      "vn": [
+        "Tháp lâu thạch tượng",
+        "Cánh đá của tháp lâu thạch tượng"
+      ]
+    },
+    {
+      "line": 1938,
+      "raw": [
+        "王庭处刑官",
+        "王庭处刑官法槌"
+      ],
+      "vn": [
+        "Vương đình xử hình quan",
+        "Búa xử án của vương đình xử hình quan"
+      ]
+    },
+    {
+      "line": 1942,
+      "raw": [
+        "失誓骑士",
+        "失誓骑士断誓剑"
+      ],
+      "vn": [
+        "Thất thệ kỵ sĩ",
+        "Kiếm gãy lời thề của thất thệ kỵ sĩ"
+      ]
+    },
+    {
+      "line": 1946,
+      "raw": [
+        "幼龙看守",
+        "幼龙看守龙鳞"
+      ],
+      "vn": [
+        "Ấu long khán thủ",
+        "Vảy rồng của ấu long khán thủ"
+      ]
+    },
+    {
+      "line": 1950,
+      "raw": [
+        "空冠之王",
+        "空冠之王空王冠"
+      ],
+      "vn": [
+        "Không quan chi vương",
+        "Vương miện trống của không quan chi vương"
+      ]
+    },
+    {
+      "line": 1955,
+      "raw": [
+        "轨道失落"
+      ],
+      "vn": [
+        "Quỹ đạo thất lạc"
+      ]
+    },
+    {
+      "line": 1962,
+      "raw": [
+        "空间站"
+      ],
+      "vn": [
+        "Trạm không gian"
+      ]
+    },
+    {
+      "line": 1966,
+      "raw": [
+        "机库"
+      ],
+      "vn": [
+        "Khoang chứa tàu"
+      ]
+    },
+    {
+      "line": 1970,
+      "raw": [
+        "引力反应堆"
+      ],
+      "vn": [
+        "Lò phản ứng dẫn lực"
+      ]
+    },
+    {
+      "line": 1974,
+      "raw": [
+        "巡检蜂机",
+        "巡检蜂机光学镜头"
+      ],
+      "vn": [
+        "Tuần kiểm phong cơ",
+        "Ống kính quang học của tuần kiểm phong cơ"
+      ]
+    },
+    {
+      "line": 1978,
+      "raw": [
+        "失压宇航员",
+        "失压宇航员头盔"
+      ],
+      "vn": [
+        "Thất áp vũ hàng viên",
+        "Mũ bảo hiểm của thất áp vũ hàng viên"
+      ]
+    },
+    {
+      "line": 1982,
+      "raw": [
+        "磁轨炮台",
+        "磁轨炮台线圈"
+      ],
+      "vn": [
+        "Từ quỹ pháo đài",
+        "Cuộn dây của từ quỹ pháo đài"
+      ]
+    },
+    {
+      "line": 1986,
+      "raw": [
+        "维修蜘蛛",
+        "维修蜘蛛电弧足"
+      ],
+      "vn": [
+        "Duy tu tri chu",
+        "Chân hồ quang của duy tu tri chu"
+      ]
+    },
+    {
+      "line": 1990,
+      "raw": [
+        "纳米聚合体",
+        "纳米聚合体灰雾核"
+      ],
+      "vn": [
+        "Nano tụ hợp thể",
+        "Lõi sương xám của nano tụ hợp thể"
+      ]
+    },
+    {
+      "line": 1994,
+      "raw": [
+        "重装清除者",
+        "重装清除者装甲板"
+      ],
+      "vn": [
+        "Trọng trang thanh trừ giả",
+        "Tấm giáp của trọng trang thanh trừ giả"
+      ]
+    },
+    {
+      "line": 1998,
+      "raw": [
+        "相位猎手",
+        "相位猎手相位核"
+      ],
+      "vn": [
+        "Tương vị liệp thủ",
+        "Lõi pha của tương vị liệp thủ"
+      ]
+    },
+    {
+      "line": 2002,
+      "raw": [
+        "母机维护核",
+        "母机维护核主板"
+      ],
+      "vn": [
+        "Mẫu cơ duy hộ hạch",
+        "Bo mạch chủ của mẫu cơ duy hộ hạch"
+      ]
+    },
+    {
+      "line": 2006,
+      "raw": [
+        "引力主机零式",
+        "引力主机零式引力核"
+      ],
+      "vn": [
+        "Dẫn lực chủ cơ Zero",
+        "Lõi dẫn lực của dẫn lực chủ cơ zero"
+      ]
+    },
+    {
+      "line": 2011,
+      "raw": [
+        "鬼城旧事"
+      ],
+      "vn": [
+        "Quỷ thành cựu sự"
+      ]
+    },
+    {
+      "line": 2018,
+      "raw": [
+        "荒村"
+      ],
+      "vn": [
+        "Hoang thôn"
+      ]
+    },
+    {
+      "line": 2022,
+      "raw": [
+        "冥婚宅"
+      ],
+      "vn": [
+        "Minh hôn trạch"
+      ]
+    },
+    {
+      "line": 2026,
+      "raw": [
+        "纸扎街"
+      ],
+      "vn": [
+        "Chỉ trát nhai"
+      ]
+    },
+    {
+      "line": 2030,
+      "raw": [
+        "无面行人",
+        "无面行人借来的脸"
+      ],
+      "vn": [
+        "Vô diện hành nhân",
+        "Khuôn mặt mượn của vô diện hành nhân"
+      ]
+    },
+    {
+      "line": 2034,
+      "raw": [
+        "纸扎童子",
+        "纸扎童子纸扎手"
+      ],
+      "vn": [
+        "Chỉ trát đồng tử",
+        "Tay giấy bện của chỉ trát đồng tử"
+      ]
+    },
+    {
+      "line": 2038,
+      "raw": [
+        "吊影",
+        "吊影悬梁索"
+      ],
+      "vn": [
+        "Điếu ảnh",
+        "Dây treo xà của điếu ảnh"
+      ]
+    },
+    {
+      "line": 2042,
+      "raw": [
+        "旧井湿鬼",
+        "旧井湿鬼井苔"
+      ],
+      "vn": [
+        "Cựu tỉnh thấp quỷ",
+        "Rêu giếng của cựu tỉnh thấp quỷ"
+      ]
+    },
+    {
+      "line": 2046,
+      "raw": [
+        "灯笼眼",
+        "灯笼眼眼灯"
+      ],
+      "vn": [
+        "Đăng lung nhãn",
+        "Đèn mắt của đăng lung nhãn"
+      ]
+    },
+    {
+      "line": 2050,
+      "raw": [
+        "送葬轿夫",
+        "送葬轿夫轿杠"
+      ],
+      "vn": [
+        "Tống táng kiệu phu",
+        "Đòn kiệu của tống táng kiệu phu"
+      ]
+    },
+    {
+      "line": 2054,
+      "raw": [
+        "无声戏子",
+        "无声戏子哑嗓"
+      ],
+      "vn": [
+        "Vô thanh hí tử",
+        "Giọng câm của vô thanh hí tử"
+      ]
+    },
+    {
+      "line": 2058,
+      "raw": [
+        "守井婆",
+        "守井婆井绳"
+      ],
+      "vn": [
+        "Thủ tỉnh bà",
+        "Dây thừng giếng của thủ tỉnh bà"
+      ]
+    },
+    {
+      "line": 2062,
+      "raw": [
+        "迎亲空轿",
+        "迎亲空轿红盖头"
+      ],
+      "vn": [
+        "Nghênh thân không kiệu",
+        "Khăn voan đỏ của nghênh thân không kiệu"
+      ]
+    },
+    {
+      "line": 2067,
+      "raw": [
+        "刀剑江湖"
+      ],
+      "vn": [
+        "Đao kiếm giang hồ"
+      ]
+    },
+    {
+      "line": 2074,
+      "raw": [
+        "雨巷"
+      ],
+      "vn": [
+        "Vũ hạng"
+      ]
+    },
+    {
+      "line": 2078,
+      "raw": [
+        "竹林驿"
+      ],
+      "vn": [
+        "Trúc lâm dịch"
+      ]
+    },
+    {
+      "line": 2082,
+      "raw": [
+        "铸剑山庄"
+      ],
+      "vn": [
+        "Đúc kiếm sơn trang"
+      ]
+    },
+    {
+      "line": 2086,
+      "raw": [
+        "蒙面刀客",
+        "蒙面刀客缺口刀"
+      ],
+      "vn": [
+        "Mông diện đao khách",
+        "Đao mẻ của mông diện đao khách"
+      ]
+    },
+    {
+      "line": 2090,
+      "raw": [
+        "飞镖游侠",
+        "飞镖游侠镖囊"
+      ],
+      "vn": [
+        "Phi tiêu du hiệp",
+        "Túi phi tiêu của phi tiêu du hiệp"
+      ]
+    },
+    {
+      "line": 2094,
+      "raw": [
+        "醉拳客",
+        "醉拳客酒葫芦"
+      ],
+      "vn": [
+        "Túy quyền khách",
+        "Hồ lô rượu của túy quyền khách"
+      ]
+    },
+    {
+      "line": 2098,
+      "raw": [
+        "毒针侍女",
+        "毒针侍女绣针"
+      ],
+      "vn": [
+        "Độc châm thị nữ",
+        "Kim thêu của độc châm thị nữ"
+      ]
+    },
+    {
+      "line": 2102,
+      "raw": [
+        "断棍僧",
+        "断棍僧断棍"
+      ],
+      "vn": [
+        "Đoạn côn tăng",
+        "Gậy gãy của đoạn côn tăng"
+      ]
+    },
+    {
+      "line": 2106,
+      "raw": [
+        "雨夜追命客",
+        "雨夜追命客斗笠"
+      ],
+      "vn": [
+        "Vũ dạ truy mệnh khách",
+        "Nón lá của vũ dạ truy mệnh khách"
+      ]
+    },
+    {
+      "line": 2110,
+      "raw": [
+        "铁面庄主",
+        "铁面庄主铁面具"
+      ],
+      "vn": [
+        "Thiết diện trang chủ",
+        "Mặt nạ sắt của thiết diện trang chủ"
+      ]
+    },
+    {
+      "line": 2114,
+      "raw": [
+        "无影双刃",
+        "无影双刃双刃鞘"
+      ],
+      "vn": [
+        "Vô ảnh song nhận",
+        "Vỏ song nhận của vô ảnh song nhận"
+      ]
+    },
+    {
+      "line": 2118,
+      "raw": [
+        "铸剑无归人",
+        "铸剑无归人未成剑"
+      ],
+      "vn": [
+        "Đúc kiếm vô quy nhân",
+        "Kiếm chưa đúc xong của đúc kiếm vô quy nhân"
+      ]
+    },
+    {
+      "line": 2123,
+      "raw": [
+        "深渊观测"
+      ],
+      "vn": [
+        "Thâm uyên quan trắc"
+      ]
+    },
+    {
+      "line": 2130,
+      "raw": [
+        "海边观测所"
+      ],
+      "vn": [
+        "Đài quan trắc ven biển"
+      ]
+    },
+    {
+      "line": 2134,
+      "raw": [
+        "失真矿井"
+      ],
+      "vn": [
+        "Hầm mỏ méo mó"
+      ]
+    },
+    {
+      "line": 2138,
+      "raw": [
+        "星骸祭台"
+      ],
+      "vn": [
+        "Đài tế tinh hài"
+      ]
+    },
+    {
+      "line": 2142,
+      "raw": [
+        "深潜侍从",
+        "深潜侍从献身印"
+      ],
+      "vn": [
+        "Thâm tiềm thị tòng",
+        "Ấn hiến thân của thâm tiềm thị tòng"
+      ]
+    },
+    {
+      "line": 2146,
+      "raw": [
+        "触须雏体",
+        "触须雏体幼触须"
+      ],
+      "vn": [
+        "Xúc tu sơ thể",
+        "Xúc tu non của xúc tu sơ thể"
+      ]
+    },
+    {
+      "line": 2150,
+      "raw": [
+        "盲眼观测员",
+        "盲眼观测员空眼窝"
+      ],
+      "vn": [
+        "Manh nhãn quan trắc viên",
+        "Hốc mắt rỗng của manh nhãn quan trắc viên"
+      ]
+    },
+    {
+      "line": 2154,
+      "raw": [
+        "倒壳甲虫",
+        "倒壳甲虫反面壳"
+      ],
+      "vn": [
+        "Đảo xác giáp trùng",
+        "Vỏ mặt ngược của đảo xác giáp trùng"
+      ]
+    },
+    {
+      "line": 2158,
+      "raw": [
+        "黑潮水蛭",
+        "黑潮水蛭吸盘"
+      ],
+      "vn": [
+        "Hắc triều thủy đỉa",
+        "Giác hút của hắc triều thủy đỉa"
+      ]
+    },
+    {
+      "line": 2162,
+      "raw": [
+        "星骸看守",
+        "星骸看守星骸碎片"
+      ],
+      "vn": [
+        "Tinh hài khán thủ",
+        "Mảnh vỡ tinh hài của tinh hài khán thủ"
+      ]
+    },
+    {
+      "line": 2166,
+      "raw": [
+        "黑潮司祭",
+        "黑潮司祭祷文"
+      ],
+      "vn": [
+        "Hắc triều tư tế",
+        "Bài nguyện của hắc triều tư tế"
+      ]
+    },
+    {
+      "line": 2170,
+      "raw": [
+        "折光之眼",
+        "折光之眼晶状体"
+      ],
+      "vn": [
+        "Chiết quang chi nhãn",
+        "Thể thủy tinh của chiết quang chi nhãn"
+      ]
+    },
+    {
+      "line": 2174,
+      "raw": [
+        "不可名状的观测者",
+        "不可名状的观测者视线残片"
+      ],
+      "vn": [
+        "Kẻ quan trắc không thể gọi tên",
+        "Mảnh ánh nhìn của kẻ quan trắc không thể gọi tên"
+      ]
+    },
+    {
+      "line": 2179,
+      "raw": [
+        "午夜都市"
+      ],
+      "vn": [
+        "Ngọ dạ đô thị"
+      ]
+    },
+    {
+      "line": 2186,
+      "raw": [
+        "空站"
+      ],
+      "vn": [
+        "Không trạm"
+      ]
+    },
+    {
+      "line": 2190,
+      "raw": [
+        "便利店街"
+      ],
+      "vn": [
+        "Tiện lợi điếm nhai"
+      ]
+    },
+    {
+      "line": 2194,
+      "raw": [
+        "金融高楼"
+      ],
+      "vn": [
+        "Tòa nhà tài chính"
+      ]
+    },
+    {
+      "line": 2198,
+      "raw": [
+        "末班乘客",
+        "末班乘客旧车票"
+      ],
+      "vn": [
+        "Mạt ban thừa khách",
+        "Vé xe cũ của mạt ban thừa khách"
+      ]
+    },
+    {
+      "line": 2202,
+      "raw": [
+        "外卖空壳",
+        "外卖空壳保温箱"
+      ],
+      "vn": [
+        "Ngoại mại không xác",
+        "Hộp giữ nhiệt của ngoại mại không xác"
+      ]
+    },
+    {
+      "line": 2206,
+      "raw": [
+        "监控眼",
+        "监控眼摄像头"
+      ],
+      "vn": [
+        "Giám khống nhãn",
+        "Camera của giám khống nhãn"
+      ]
+    },
+    {
+      "line": 2210,
+      "raw": [
+        "霓虹飞蛾",
+        "霓虹飞蛾荧粉"
+      ],
+      "vn": [
+        "Nghê hồng phi nga",
+        "Bột huỳnh quang của nghê hồng phi nga"
+      ]
+    },
+    {
+      "line": 2214,
+      "raw": [
+        "失眠保安",
+        "失眠保安手电筒"
+      ],
+      "vn": [
+        "Thất miên bảo an",
+        "Đèn pin của thất miên bảo an"
+      ]
+    },
+    {
+      "line": 2218,
+      "raw": [
+        "永夜站长",
+        "永夜站长站长帽"
+      ],
+      "vn": [
+        "Vĩnh dạ trạm trưởng",
+        "Mũ trạm trưởng của vĩnh dạ trạm trưởng"
+      ]
+    },
+    {
+      "line": 2222,
+      "raw": [
+        "广告女王",
+        "广告女王霓虹冠"
+      ],
+      "vn": [
+        "Quảng cáo nữ vương",
+        "Vương miện neon của quảng cáo nữ vương"
+      ]
+    },
+    {
+      "line": 2226,
+      "raw": [
+        "红灯追猎者",
+        "红灯追猎者红灯"
+      ],
+      "vn": [
+        "Hồng đăng truy liệp giả",
+        "Đèn đỏ của hồng đăng truy liệp giả"
+      ]
+    },
+    {
+      "line": 2230,
+      "raw": [
+        "零点城市管理员",
+        "零点城市管理员门禁卡"
+      ],
+      "vn": [
+        "Linh điểm thành thị quản lý viên",
+        "Thẻ từ của linh điểm thành thị quản lý viên"
+      ]
+    },
+    {
+      "line": 2235,
+      "raw": [
+        "无尽客房"
+      ],
+      "vn": [
+        "Vô tận khách phòng"
+      ]
+    },
+    {
+      "line": 2242,
+      "raw": [
+        "长廊"
+      ],
+      "vn": [
+        "Trường lang"
+      ]
+    },
+    {
+      "line": 2246,
+      "raw": [
+        "泳池房"
+      ],
+      "vn": [
+        "Vịnh trì phòng"
+      ]
+    },
+    {
+      "line": 2250,
+      "raw": [
+        "办公夹层"
+      ],
+      "vn": [
+        "Tầng lửng văn phòng"
+      ]
+    },
+    {
+      "line": 2254,
+      "raw": [
+        "地毯蠕虫",
+        "地毯蠕虫绒毛"
+      ],
+      "vn": [
+        "Địa thảm nhuyễn trùng",
+        "Lông tơ của địa thảm nhuyễn trùng"
+      ]
+    },
+    {
+      "line": 2258,
+      "raw": [
+        "巡廊人偶",
+        "巡廊人偶门牌"
+      ],
+      "vn": [
+        "Tuần lang nhân ngẫu",
+        "Biển số phòng của tuần lang nhân ngẫu"
+      ]
+    },
+    {
+      "line": 2262,
+      "raw": [
+        "出口幻影",
+        "出口幻影绿色标识"
+      ],
+      "vn": [
+        "Xuất khẩu huyễn ảnh",
+        "Biển báo màu xanh của xuất khẩu huyễn ảnh"
+      ]
+    },
+    {
+      "line": 2266,
+      "raw": [
+        "湿面访客",
+        "湿面访客湿手帕"
+      ],
+      "vn": [
+        "Thấp diện phóng khách",
+        "Khăn tay ướt của thấp diện phóng khách"
+      ]
+    },
+    {
+      "line": 2270,
+      "raw": [
+        "插座寄生体",
+        "插座寄生体电极"
+      ],
+      "vn": [
+        "Sáp tọa ký sinh thể",
+        "Điện cực của sáp tọa ký sinh thể"
+      ]
+    },
+    {
+      "line": 2274,
+      "raw": [
+        "万能钥匙持有者",
+        "万能钥匙持有者万能钥匙"
+      ],
+      "vn": [
+        "Vạn năng thược thi trì hữu giả",
+        "Chìa khóa vạn năng của vạn năng thược thi trì hữu giả"
+      ]
+    },
+    {
+      "line": 2278,
+      "raw": [
+        "过曝巡查员",
+        "过曝巡查员闪光灯"
+      ],
+      "vn": [
+        "Quá bộc tuần tra viên",
+        "Đèn flash của quá bộc tuần tra viên"
+      ]
+    },
+    {
+      "line": 2282,
+      "raw": [
+        "长廊吞咽者",
+        "长廊吞咽者喉管"
+      ],
+      "vn": [
+        "Trường lang thôn yết giả",
+        "Ống họng của trường lang thôn yết giả"
+      ]
+    },
+    {
+      "line": 2286,
+      "raw": [
+        "第零间房",
+        "第零间房门框"
+      ],
+      "vn": [
+        "Căn phòng thứ không",
+        "Khung cửa của căn phòng thứ không"
+      ]
+    },
+    {
+      "line": 2291,
+      "raw": [
+        "齿轮黄昏"
+      ],
+      "vn": [
+        "Xỉ luân hoàng hôn"
+      ]
+    },
+    {
+      "line": 2298,
+      "raw": [
+        "发条工坊"
+      ],
+      "vn": [
+        "Dây cót công phường"
+      ]
+    },
+    {
+      "line": 2302,
+      "raw": [
+        "空中车站"
+      ],
+      "vn": [
+        "Không trung xa trạm"
+      ]
+    },
+    {
+      "line": 2306,
+      "raw": [
+        "时钟塔"
+      ],
+      "vn": [
+        "Thời chung tháp"
+      ]
+    },
+    {
+      "line": 2310,
+      "raw": [
+        "发条鼠",
+        "发条鼠发条"
+      ],
+      "vn": [
+        "Chuột dây cót",
+        "Dây cót của chuột dây cót"
+      ]
+    },
+    {
+      "line": 2314,
+      "raw": [
+        "锅炉仆役",
+        "锅炉仆役压力阀"
+      ],
+      "vn": [
+        "Nồi hơi bộc dịch",
+        "Van áp suất của nồi hơi bộc dịch"
+      ]
+    },
+    {
+      "line": 2318,
+      "raw": [
+        "齿轮蜘蛛",
+        "齿轮蜘蛛齿网"
+      ],
+      "vn": [
+        "Xỉ luân tri chu",
+        "Lưới bánh răng của xỉ luân tri chu"
+      ]
+    },
+    {
+      "line": 2322,
+      "raw": [
+        "烟囱小鬼",
+        "烟囱小鬼煤灰"
+      ],
+      "vn": [
+        "Yên thông tiểu quỷ",
+        "Tro than của yên thông tiểu quỷ"
+      ]
+    },
+    {
+      "line": 2326,
+      "raw": [
+        "铆钉工兵",
+        "铆钉工兵铆钉枪"
+      ],
+      "vn": [
+        "Đinh tán công binh",
+        "Súng bắn đinh tán của đinh tán công binh"
+      ]
+    },
+    {
+      "line": 2330,
+      "raw": [
+        "重锤技师",
+        "重锤技师校准锤"
+      ],
+      "vn": [
+        "Trọng chùy kỹ sư",
+        "Búa hiệu chuẩn của trọng chùy kỹ sư"
+      ]
+    },
+    {
+      "line": 2334,
+      "raw": [
+        "失控巡空艇",
+        "失控巡空艇舵轮"
+      ],
+      "vn": [
+        "Thất khống tuần không đĩnh",
+        "Bánh lái của thất khống tuần không đĩnh"
+      ]
+    },
+    {
+      "line": 2338,
+      "raw": [
+        "逆摆监察官",
+        "逆摆监察官逆摆"
+      ],
+      "vn": [
+        "Nghịch bãi giám sát quan",
+        "Con lắc ngược của nghịch bãi giám sát quan"
+      ]
+    },
+    {
+      "line": 2342,
+      "raw": [
+        "停钟工程师",
+        "停钟工程师主发条"
+      ],
+      "vn": [
+        "Đình chung công trình sư",
+        "Dây cót chính của đình chung công trình sư"
+      ]
+    },
+    {
+      "line": 2347,
+      "raw": [
+        "冻土教堂"
+      ],
+      "vn": [
+        "Đống thổ giáo đường"
+      ]
+    },
+    {
+      "line": 2354,
+      "raw": [
+        "霜原"
+      ],
+      "vn": [
+        "Sương nguyên"
+      ]
+    },
+    {
+      "line": 2358,
+      "raw": [
+        "埋雪修院"
+      ],
+      "vn": [
+        "Mai tuyết tu viện"
+      ]
+    },
+    {
+      "line": 2362,
+      "raw": [
+        "冰封钟楼"
+      ],
+      "vn": [
+        "Băng phong chung lâu"
+      ]
+    },
+    {
+      "line": 2366,
+      "raw": [
+        "雪原失魂者",
+        "雪原失魂者冰泪"
+      ],
+      "vn": [
+        "Tuyết nguyên thất hồn giả",
+        "Lệ băng của tuyết nguyên thất hồn giả"
+      ]
+    },
+    {
+      "line": 2370,
+      "raw": [
+        "冰棘狼",
+        "冰棘狼冰棘"
+      ],
+      "vn": [
+        "Băng cức lang",
+        "Gai băng của băng cức lang"
+      ]
+    },
+    {
+      "line": 2374,
+      "raw": [
+        "诵霜修女",
+        "诵霜修女霜念珠"
+      ],
+      "vn": [
+        "Tụng sương tu nữ",
+        "Tràng hạt sương của tụng sương tu nữ"
+      ]
+    },
+    {
+      "line": 2378,
+      "raw": [
+        "结晶钟灵",
+        "结晶钟灵钟晶"
+      ],
+      "vn": [
+        "Kết tinh chung linh",
+        "Tinh thể chuông của kết tinh chung linh"
+      ]
+    },
+    {
+      "line": 2382,
+      "raw": [
+        "寒鸦侍女",
+        "寒鸦侍女黑羽"
+      ],
+      "vn": [
+        "Hàn nha thị nữ",
+        "Lông đen của hàn nha thị nữ"
+      ]
+    },
+    {
+      "line": 2386,
+      "raw": [
+        "埋雪骑士",
+        "埋雪骑士誓铠"
+      ],
+      "vn": [
+        "Mai tuyết kỵ sĩ",
+        "Giáp thề của mai tuyết kỵ sĩ"
+      ]
+    },
+    {
+      "line": 2390,
+      "raw": [
+        "白疫告解师",
+        "白疫告解师告解簿"
+      ],
+      "vn": [
+        "Bạch dịch cáo giải sư",
+        "Sổ giải tội của bạch dịch cáo giải sư"
+      ]
+    },
+    {
+      "line": 2394,
+      "raw": [
+        "冻土守钟人",
+        "冻土守钟人钟锤"
+      ],
+      "vn": [
+        "Đống thổ thủ chung nhân",
+        "Búa gõ chuông của đống thổ thủ chung nhân"
+      ]
+    },
+    {
+      "line": 2398,
+      "raw": [
+        "永冬圣像",
+        "永冬圣像圣像碎片"
+      ],
+      "vn": [
+        "Vĩnh đông thánh tượng",
+        "Mảnh vỡ thánh tượng của vĩnh đông thánh tượng"
+      ]
+    },
+    {
+      "line": 2403,
+      "raw": [
+        "血肉温室"
+      ],
+      "vn": [
+        "Huyết nhục ôn thất"
+      ]
+    },
+    {
+      "line": 2410,
+      "raw": [
+        "异植苗床"
+      ],
+      "vn": [
+        "Dị thực miêu sàng"
+      ]
+    },
+    {
+      "line": 2414,
+      "raw": [
+        "血管廊"
+      ],
+      "vn": [
+        "Huyết quản lang"
+      ]
+    },
+    {
+      "line": 2418,
+      "raw": [
+        "母巢温室"
+      ],
+      "vn": [
+        "Mẫu sào ôn thất"
+      ]
+    },
+    {
+      "line": 2422,
+      "raw": [
+        "孢囊花",
+        "孢囊花花蕊"
+      ],
+      "vn": [
+        "Bào nang hoa",
+        "Nhụy hoa của bào nang hoa"
+      ]
+    },
+    {
+      "line": 2426,
+      "raw": [
+        "牙叶草",
+        "牙叶草叶牙"
+      ],
+      "vn": [
+        "Nha diệp thảo",
+        "Răng lá của nha diệp thảo"
+      ]
+    },
+    {
+      "line": 2430,
+      "raw": [
+        "血管藤",
+        "血管藤藤脉"
+      ],
+      "vn": [
+        "Huyết quản đằng",
+        "Mạch dây leo của huyết quản đằng"
+      ]
+    },
+    {
+      "line": 2434,
+      "raw": [
+        "菌肤园丁",
+        "菌肤园丁菌丝"
+      ],
+      "vn": [
+        "Khuẩn phu viên đinh",
+        "Khuẩn ty của khuẩn phu viên đinh"
+      ]
+    },
+    {
+      "line": 2438,
+      "raw": [
+        "浆果拟态者",
+        "浆果拟态者假浆果"
+      ],
+      "vn": [
+        "Tương quả nghĩ thái giả",
+        "Quả mọng giả của tương quả nghĩ thái giả"
+      ]
+    },
+    {
+      "line": 2442,
+      "raw": [
+        "倒生园长",
+        "倒生园长修枝剪"
+      ],
+      "vn": [
+        "Đảo sinh viên trưởng",
+        "Kéo tỉa cành của đảo sinh viên trưởng"
+      ]
+    },
+    {
+      "line": 2446,
+      "raw": [
+        "骨瓣捕食者",
+        "骨瓣捕食者骨瓣"
+      ],
+      "vn": [
+        "Cốt biện bộ thực giả",
+        "Cánh hoa xương của cốt biện bộ thực giả"
+      ]
+    },
+    {
+      "line": 2450,
+      "raw": [
+        "绽裂囊母",
+        "绽裂囊母胎囊"
+      ],
+      "vn": [
+        "Trán liệt nang mẫu",
+        "Túi thai của trán liệt nang mẫu"
+      ]
+    },
+    {
+      "line": 2454,
+      "raw": [
+        "永生花床",
+        "永生花床永生花"
+      ],
+      "vn": [
+        "Vĩnh sinh hoa sàng",
+        "Hoa vĩnh sinh của vĩnh sinh hoa sàng"
+      ]
+    },
+    {
+      "line": 2459,
+      "raw": [
+        "沉没王庭"
+      ],
+      "vn": [
+        "Trầm một vương đình"
+      ]
+    },
+    {
+      "line": 2466,
+      "raw": [
+        "珊瑚街"
+      ],
+      "vn": [
+        "San hô nhai"
+      ]
+    },
+    {
+      "line": 2470,
+      "raw": [
+        "沉舰墓"
+      ],
+      "vn": [
+        "Trầm hạm mộ"
+      ]
+    },
+    {
+      "line": 2474,
+      "raw": [
+        "深水宫"
+      ],
+      "vn": [
+        "Thâm thủy cung"
+      ]
+    },
+    {
+      "line": 2478,
+      "raw": [
+        "锈锚水兵",
+        "锈锚水兵锈锚"
+      ],
+      "vn": [
+        "Tú miêu thủy binh",
+        "Neo rỉ sét của tú miêu thủy binh"
+      ]
+    },
+    {
+      "line": 2482,
+      "raw": [
+        "珊瑚骑士",
+        "珊瑚骑士珊瑚甲"
+      ],
+      "vn": [
+        "San hô kỵ sĩ",
+        "Giáp san hô của san hô kỵ sĩ"
+      ]
+    },
+    {
+      "line": 2486,
+      "raw": [
+        "寄居铜盔",
+        "寄居铜盔铜盔"
+      ],
+      "vn": [
+        "Ký cư đồng khôi",
+        "Mũ cối đồng của ký cư đồng khôi"
+      ]
+    },
+    {
+      "line": 2490,
+      "raw": [
+        "发光水母",
+        "发光水母伞膜"
+      ],
+      "vn": [
+        "Phát quang thủy mẫu",
+        "Màng dù của phát quang thủy mẫu"
+      ]
+    },
+    {
+      "line": 2494,
+      "raw": [
+        "深水剑鱼",
+        "深水剑鱼剑吻"
+      ],
+      "vn": [
+        "Thâm thủy kiếm ngư",
+        "Mõm kiếm của thâm thủy kiếm ngư"
+      ]
+    },
+    {
+      "line": 2498,
+      "raw": [
+        "沉锚统领",
+        "沉锚统领军令牌"
+      ],
+      "vn": [
+        "Trầm miêu thống lĩnh",
+        "Lệnh bài quân sự của trầm miêu thống lĩnh"
+      ]
+    },
+    {
+      "line": 2502,
+      "raw": [
+        "裂壳祭司",
+        "裂壳祭司裂壳"
+      ],
+      "vn": [
+        "Liệt xác tế tư",
+        "Vỏ nứt của liệt xác tế tư"
+      ]
+    },
+    {
+      "line": 2506,
+      "raw": [
+        "鲸骨卫士",
+        "鲸骨卫士鲸骨盾"
+      ],
+      "vn": [
+        "Kình cốt vệ sĩ",
+        "Khiên xương cá voi của kình cốt vệ sĩ"
+      ]
+    },
+    {
+      "line": 2510,
+      "raw": [
+        "溺冠女王",
+        "溺冠女王溺冠"
+      ],
+      "vn": [
+        "Nịch quan nữ vương",
+        "Vương miện đuối nước của nịch quan nữ vương"
+      ]
+    },
+    {
+      "line": 2515,
+      "raw": [
+        "纸页天穹"
+      ],
+      "vn": [
+        "Chỉ diệp thiên khung"
+      ]
+    },
+    {
+      "line": 2522,
+      "raw": [
+        "漂浮书架"
+      ],
+      "vn": [
+        "Phiêu phù thư giá"
+      ]
+    },
+    {
+      "line": 2526,
+      "raw": [
+        "折纸庭"
+      ],
+      "vn": [
+        "Chiết chỉ đình"
+      ]
+    },
+    {
+      "line": 2530,
+      "raw": [
+        "倒序印厂"
+      ],
+      "vn": [
+        "Đảo tự ấn xưởng"
+      ]
+    },
+    {
+      "line": 2534,
+      "raw": [
+        "折纸鸟",
+        "折纸鸟折痕翼"
+      ],
+      "vn": [
+        "Chiết chỉ điểu",
+        "Cánh nếp gấp của chiết chỉ điểu"
+      ]
+    },
+    {
+      "line": 2538,
+      "raw": [
+        "墨滴史莱姆",
+        "墨滴史莱姆墨核"
+      ],
+      "vn": [
+        "Mặc tích slime",
+        "Lõi mực của mặc tích slime"
+      ]
+    },
+    {
+      "line": 2542,
+      "raw": [
+        "错字虫",
+        "错字虫错字"
+      ],
+      "vn": [
+        "Thác tự trùng",
+        "Chữ sai của thác tự trùng"
+      ]
+    },
+    {
+      "line": 2546,
+      "raw": [
+        "缺页卫兵",
+        "缺页卫兵残页"
+      ],
+      "vn": [
+        "Khuyết diệp vệ binh",
+        "Tàn trang của khuyết diệp vệ binh"
+      ]
+    },
+    {
+      "line": 2550,
+      "raw": [
+        "装订蛛",
+        "装订蛛装订线"
+      ],
+      "vn": [
+        "Trang đính tri",
+        "Chỉ đóng sách của trang đính tri"
+      ]
+    },
+    {
+      "line": 2554,
+      "raw": [
+        "索引守卫",
+        "索引守卫索引签"
+      ],
+      "vn": [
+        "Sách dẫn thủ vệ",
+        "Thẻ chỉ mục của sách dẫn thủ vệ"
+      ]
+    },
+    {
+      "line": 2558,
+      "raw": [
+        "删改使徒",
+        "删改使徒红笔"
+      ],
+      "vn": [
+        "San cải sứ đồ",
+        "Bút đỏ của san cải sứ đồ"
+      ]
+    },
+    {
+      "line": 2562,
+      "raw": [
+        "巨型装订者",
+        "巨型装订者巨钉"
+      ],
+      "vn": [
+        "Cự hình trang đính giả",
+        "Đinh ghim lớn của cự hình trang đính giả"
+      ]
+    },
+    {
+      "line": 2566,
+      "raw": [
+        "无字的作者",
+        "无字的作者空白稿纸"
+      ],
+      "vn": [
+        "Vô tự chi tác giả",
+        "Giấy bản thảo trắng của vô tự chi tác giả"
+      ]
+    },
+    {
+      "line": 2571,
+      "raw": [
+        "无名夹缝"
+      ],
+      "vn": [
+        "Vô danh giáp phùng"
+      ]
+    },
+    {
+      "line": 2578,
+      "raw": [
+        "破碎天体"
+      ],
+      "vn": [
+        "Phá toái thiên thể"
+      ]
+    },
+    {
+      "line": 2582,
+      "raw": [
+        "法则残廊"
+      ],
+      "vn": [
+        "Pháp tắc tàn lang"
+      ]
+    },
+    {
+      "line": 2586,
+      "raw": [
+        "无界门"
+      ],
+      "vn": [
+        "Vô giới môn"
+      ]
+    },
+    {
+      "line": 2590,
+      "raw": [
+        "碎界游灵",
+        "碎界游灵界隙碎片"
+      ],
+      "vn": [
+        "Toái giới du linh",
+        "Mảnh vỡ khe nứt giới của toái giới du linh"
+      ]
+    },
+    {
+      "line": 2594,
+      "raw": [
+        "逆光卫星",
+        "逆光卫星逆光镜"
+      ],
+      "vn": [
+        "Nghịch quang vệ tinh",
+        "Kính ngược sáng của nghịch quang vệ tinh"
+      ]
+    },
+    {
+      "line": 2598,
+      "raw": [
+        "法则碎片体",
+        "法则碎片体残律"
+      ],
+      "vn": [
+        "Pháp tắc toái phiến thể",
+        "Tàn luật của pháp tắc toái phiến thể"
+      ]
+    },
+    {
+      "line": 2602,
+      "raw": [
+        "概率孑孓",
+        "概率孑孓概率卵"
+      ],
+      "vn": [
+        "Xác suất lăng quăng",
+        "Trứng xác suất của xác suất lăng quăng"
+      ]
+    },
+    {
+      "line": 2606,
+      "raw": [
+        "虚无浮鲸",
+        "虚无浮鲸鲸须"
+      ],
+      "vn": [
+        "Hư vô phù kình",
+        "Râu cá voi của hư vô phù kình"
+      ]
+    },
+    {
+      "line": 2610,
+      "raw": [
+        "边界剥离者",
+        "边界剥离者剥离刃"
+      ],
+      "vn": [
+        "Biên giới bác ly giả",
+        "Lưỡi dao bóc tách của biên giới bác ly giả"
+      ]
+    },
+    {
+      "line": 2614,
+      "raw": [
+        "失序执法体",
+        "失序执法体执法徽"
+      ],
+      "vn": [
+        "Thất tự chấp pháp thể",
+        "Huy hiệu chấp pháp của thất tự chấp pháp thể"
+      ]
+    },
+    {
+      "line": 2618,
+      "raw": [
+        "星墓巡行者",
+        "星墓巡行者巡行灯"
+      ],
+      "vn": [
+        "Tinh mộ tuần hành giả",
+        "Đèn tuần hành của tinh mộ tuần hành giả"
+      ]
+    },
+    {
+      "line": 2622,
+      "raw": [
+        "书海的留白",
+        "书海的留白空白页"
+      ],
+      "vn": [
+        "Thư hải chi lưu bạch",
+        "Trang giấy trắng của thư hải chi lưu bạch"
+      ]
+    },
+    {
+      "line": 2627,
+      "raw": [
+        "倒灌机场"
+      ],
+      "vn": [
+        "Đảo quán cơ trường"
+      ]
+    },
+    {
+      "line": 2634,
+      "raw": [
+        "反向降雨的候机厅"
+      ],
+      "vn": [
+        "Sảnh chờ mưa chảy ngược"
+      ]
+    },
+    {
+      "line": 2638,
+      "raw": [
+        "永远延误的登机廊"
+      ],
+      "vn": [
+        "Hành lang lên máy bay mãi mãi chậm trễ"
+      ]
+    },
+    {
+      "line": 2642,
+      "raw": [
+        "水面停机坪"
+      ],
+      "vn": [
+        "Sân đỗ thủy diện"
+      ]
+    },
+    {
+      "line": 2646,
+      "raw": [
+        "托运行尸"
+      ],
+      "vn": [
+        "Ký vận hành thi"
+      ]
+    },
+    {
+      "line": 2650,
+      "raw": [
+        "登机牌虫"
+      ],
+      "vn": [
+        "Thẻ lên máy bay trùng"
+      ]
+    },
+    {
+      "line": 2654,
+      "raw": [
+        "逆雨安检伞",
+        "逆雨安检伞伞骨"
+      ],
+      "vn": [
+        "Dù an kiểm nghịch vũ",
+        "Nan dù của dù an kiểm nghịch vũ"
+      ]
+    },
+    {
+      "line": 2658,
+      "raw": [
+        "行李转盘兽",
+        "行李转盘兽转盘履带"
+      ],
+      "vn": [
+        "Băng chuyền hành lý thú",
+        "Băng tải bàn xoay của băng chuyền hành lý thú"
+      ]
+    },
+    {
+      "line": 2662,
+      "raw": [
+        "失焦接机影",
+        "失焦接机影接机牌"
+      ],
+      "vn": [
+        "Bóng đón máy bay mất nét",
+        "Biển đón máy bay của bóng đón máy bay mất nét"
+      ]
+    },
+    {
+      "line": 2666,
+      "raw": [
+        "逆航乘务长"
+      ],
+      "vn": [
+        "Tiếp viên trưởng nghịch hàng"
+      ]
+    },
+    {
+      "line": 2670,
+      "raw": [
+        "航灯领航偶",
+        "航灯领航偶航灯"
+      ],
+      "vn": [
+        "Hoa tiêu đèn hiệu con rối",
+        "Đèn hiệu hàng không của hoa tiêu đèn hiệu con rối"
+      ]
+    },
+    {
+      "line": 2674,
+      "raw": [
+        "舷窗窥视者",
+        "舷窗窥视者舷窗玻璃"
+      ],
+      "vn": [
+        "Kẻ dòm ngó cửa sổ máy bay",
+        "Kính cửa sổ mạn của kẻ dòm ngó cửa sổ máy bay"
+      ]
+    },
+    {
+      "line": 2678,
+      "raw": [
+        "最后一班广播"
+      ],
+      "vn": [
+        "Phát thanh chuyến bay cuối cùng"
+      ]
+    },
+    {
+      "line": 2683,
+      "raw": [
+        "无人高速服务区"
+      ],
+      "vn": [
+        "Trạm dịch vụ cao tốc không người"
+      ]
+    },
+    {
+      "line": 2690,
+      "raw": [
+        "空停车场"
+      ],
+      "vn": [
+        "Bãi đỗ xe trống"
+      ]
+    },
+    {
+      "line": 2694,
+      "raw": [
+        "通宵餐厅"
+      ],
+      "vn": [
+        "Nhà hàng suốt đêm"
+      ]
+    },
+    {
+      "line": 2698,
+      "raw": [
+        "延伸到天边的加油岛"
+      ],
+      "vn": [
+        "Đảo đổ xăng kéo dài tận chân trời"
+      ]
+    },
+    {
+      "line": 2702,
+      "raw": [
+        "轮胎猎犬"
+      ],
+      "vn": [
+        "Chó săn lốp xe"
+      ]
+    },
+    {
+      "line": 2706,
+      "raw": [
+        "餐盘搬运者"
+      ],
+      "vn": [
+        "Kẻ bưng khay cơm"
+      ]
+    },
+    {
+      "line": 2710,
+      "raw": [
+        "油渍软泥",
+        "油渍软泥油膜"
+      ],
+      "vn": [
+        "Bùn nhão vết dầu",
+        "Màng dầu của bùn nhão vết dầu"
+      ]
+    },
+    {
+      "line": 2714,
+      "raw": [
+        "加油枪蠕虫",
+        "加油枪蠕虫油枪头"
+      ],
+      "vn": [
+        "Giun vòi bơm xăng",
+        "Đầu vòi bơm xăng của giun vòi bơm xăng"
+      ]
+    },
+    {
+      "line": 2718,
+      "raw": [
+        "售货柜寄生体",
+        "售货柜寄生体找零硬币"
+      ],
+      "vn": [
+        "Ký sinh thể tủ bán hàng tự động",
+        "Tiền xu trả lại của ký sinh thể tủ bán hàng tự động"
+      ]
+    },
+    {
+      "line": 2722,
+      "raw": [
+        "夜班收费员"
+      ],
+      "vn": [
+        "Thu phí viên ca đêm"
+      ]
+    },
+    {
+      "line": 2726,
+      "raw": [
+        "废灯巡路者",
+        "废灯巡路者灯罩"
+      ],
+      "vn": [
+        "Kẻ tuần đường đèn hỏng",
+        "Chao đèn của kẻ tuần đường đèn hỏng"
+      ]
+    },
+    {
+      "line": 2730,
+      "raw": [
+        "油罐驮行兽",
+        "油罐驮行兽油罐阀"
+      ],
+      "vn": [
+        "Thú thồ bồn dầu",
+        "Van bồn dầu của thú thồ bồn dầu"
+      ]
+    },
+    {
+      "line": 2734,
+      "raw": [
+        "无终点长途客"
+      ],
+      "vn": [
+        "Khách đường dài không điểm đến"
+      ]
+    },
+    {
+      "line": 2739,
+      "raw": [
+        "无限货运港"
+      ],
+      "vn": [
+        "Vô hạn hàng vận cảng"
+      ]
+    },
+    {
+      "line": 2746,
+      "raw": [
+        "集装箱峡谷"
+      ],
+      "vn": [
+        "Hẻm núi container"
+      ]
+    },
+    {
+      "line": 2750,
+      "raw": [
+        "起重机森林"
+      ],
+      "vn": [
+        "Rừng cần cẩu"
+      ]
+    },
+    {
+      "line": 2754,
+      "raw": [
+        "永不靠岸的码头"
+      ],
+      "vn": [
+        "Bến tàu vĩnh viễn không cập bến"
+      ]
+    },
+    {
+      "line": 2758,
+      "raw": [
+        "封箱蟹"
+      ],
+      "vn": [
+        "Cua đóng thùng"
+      ]
+    },
+    {
+      "line": 2762,
+      "raw": [
+        "货签漂浮体"
+      ],
+      "vn": [
+        "Thể trôi nổi thẻ hàng"
+      ]
+    },
+    {
+      "line": 2766,
+      "raw": [
+        "浮标钉螺",
+        "浮标钉螺浮标壳"
+      ],
+      "vn": [
+        "Ốc đinh phao cứu sinh",
+        "Vỏ phao của ốc đinh phao cứu sinh"
+      ]
+    },
+    {
+      "line": 2770,
+      "raw": [
+        "缆绳水蛭",
+        "缆绳水蛭缆绳段"
+      ],
+      "vn": [
+        "Đỉa dây cáp",
+        "Đoạn dây cáp của đỉa dây cáp"
+      ]
+    },
+    {
+      "line": 2774,
+      "raw": [
+        "锈箱潜伏者",
+        "锈箱潜伏者锈箱板"
+      ],
+      "vn": [
+        "Kẻ ẩn núp thùng rỉ sét",
+        "Tấm thùng rỉ của kẻ ẩn núp thùng rỉ sét"
+      ]
+    },
+    {
+      "line": 2778,
+      "raw": [
+        "铁索吊运者"
+      ],
+      "vn": [
+        "Kẻ cẩu dây sắt"
+      ]
+    },
+    {
+      "line": 2782,
+      "raw": [
+        "海关封签官",
+        "海关封签官封签"
+      ],
+      "vn": [
+        "Quan niêm phong hải quan",
+        "Niêm phong của quan niêm phong hải quan"
+      ]
+    },
+    {
+      "line": 2786,
+      "raw": [
+        "沉锚搬山蟹",
+        "沉锚搬山蟹沉锚钳"
+      ],
+      "vn": [
+        "Cua dời núi neo chìm",
+        "Càng neo chìm của cua dời núi neo chìm"
+      ]
+    },
+    {
+      "line": 2790,
+      "raw": [
+        "港口总提单"
+      ],
+      "vn": [
+        "Vận đơn tổng cảng"
+      ]
+    },
+    {
+      "line": 2795,
+      "raw": [
+        "永昼雪原旅馆"
+      ],
+      "vn": [
+        "Khách sạn tuyết nguyên vĩnh trú"
+      ]
+    },
+    {
+      "line": 2802,
+      "raw": [
+        "玻璃暖房"
+      ],
+      "vn": [
+        "Nhà kính thủy tinh"
+      ]
+    },
+    {
+      "line": 2806,
+      "raw": [
+        "朝向太阳的客房"
+      ],
+      "vn": [
+        "Phòng hướng về mặt trời"
+      ]
+    },
+    {
+      "line": 2810,
+      "raw": [
+        "埋雪观景台"
+      ],
+      "vn": [
+        "Đài ngắm cảnh vùi trong tuyết"
+      ]
+    },
+    {
+      "line": 2814,
+      "raw": [
+        "雪毯房客"
+      ],
+      "vn": [
+        "Khách trọ chăn tuyết"
+      ]
+    },
+    {
+      "line": 2818,
+      "raw": [
+        "暖灯蛾"
+      ],
+      "vn": [
+        "Bướm đêm đèn ấm"
+      ]
+    },
+    {
+      "line": 2822,
+      "raw": [
+        "窗霜壁虎",
+        "窗霜壁虎霜爪"
+      ],
+      "vn": [
+        "Thạch sùng sương cửa sổ",
+        "Móng sương của thạch sùng sương cửa sổ"
+      ]
+    },
+    {
+      "line": 2826,
+      "raw": [
+        "雪枕潜伏者",
+        "雪枕潜伏者雪枕"
+      ],
+      "vn": [
+        "Kẻ rình rập gối tuyết",
+        "Gối tuyết của kẻ rình rập gối tuyết"
+      ]
+    },
+    {
+      "line": 2830,
+      "raw": [
+        "长昼雪鸮",
+        "长昼雪鸮昼羽"
+      ],
+      "vn": [
+        "Cú tuyết ngày dài",
+        "Lông ngày của cú tuyết ngày dài"
+      ]
+    },
+    {
+      "line": 2834,
+      "raw": [
+        "白昼司门者"
+      ],
+      "vn": [
+        "Kẻ giữ cửa ban ngày"
+      ]
+    },
+    {
+      "line": 2838,
+      "raw": [
+        "暖房巡夜人",
+        "暖房巡夜人提灯"
+      ],
+      "vn": [
+        "Người tuần đêm nhà kính",
+        "Đèn lồng của người tuần đêm nhà kính"
+      ]
+    },
+    {
+      "line": 2842,
+      "raw": [
+        "风雪搬运兽",
+        "风雪搬运兽雪橇绳"
+      ],
+      "vn": [
+        "Thú vận chuyển gió tuyết",
+        "Dây xe trượt tuyết của thú vận chuyển gió tuyết"
+      ]
+    },
+    {
+      "line": 2846,
+      "raw": [
+        "永不退房的太阳"
+      ],
+      "vn": [
+        "Mặt trời vĩnh viễn không trả phòng"
+      ]
+    },
+    {
+      "line": 2851,
+      "raw": [
+        "倒置住宅群"
+      ],
+      "vn": [
+        "Khu dân cư đảo ngược"
+      ]
+    },
+    {
+      "line": 2858,
+      "raw": [
+        "楼底天台"
+      ],
+      "vn": [
+        "Sân thượng đáy tòa nhà"
+      ]
+    },
+    {
+      "line": 2862,
+      "raw": [
+        "垂直客厅街"
+      ],
+      "vn": [
+        "Phố phòng khách thẳng đứng"
+      ]
+    },
+    {
+      "line": 2866,
+      "raw": [
+        "悬挂的地下室"
+      ],
+      "vn": [
+        "Tầng hầm treo lơ lửng"
+      ]
+    },
+    {
+      "line": 2870,
+      "raw": [
+        "天花板住客"
+      ],
+      "vn": [
+        "Khách trọ trần nhà"
+      ]
+    },
+    {
+      "line": 2874,
+      "raw": [
+        "倒悬扫帚"
+      ],
+      "vn": [
+        "Chổi treo ngược"
+      ]
+    },
+    {
+      "line": 2878,
+      "raw": [
+        "逆行壁蜥",
+        "逆行壁蜥逆鳞"
+      ],
+      "vn": [
+        "Thằn lằn tường bò ngược",
+        "Vảy ngược của thằn lằn tường bò ngược"
+      ]
+    },
+    {
+      "line": 2882,
+      "raw": [
+        "落物袋灵",
+        "落物袋灵收纳袋"
+      ],
+      "vn": [
+        "Linh túi nhặt đồ rơi",
+        "Túi đựng đồ của linh túi nhặt đồ rơi"
+      ]
+    },
+    {
+      "line": 2886,
+      "raw": [
+        "灯座倒栖鸟",
+        "灯座倒栖鸟栖爪"
+      ],
+      "vn": [
+        "Chim đậu ngược đui đèn",
+        "Móng đậu của chim đậu ngược đui đèn"
+      ]
+    },
+    {
+      "line": 2890,
+      "raw": [
+        "楼底管理员"
+      ],
+      "vn": [
+        "Quản lý đáy tòa nhà"
+      ]
+    },
+    {
+      "line": 2894,
+      "raw": [
+        "天井钩索客",
+        "天井钩索客钩索"
+      ],
+      "vn": [
+        "Khách móc dây giếng trời",
+        "Dây móc của khách móc dây giếng trời"
+      ]
+    },
+    {
+      "line": 2898,
+      "raw": [
+        "承重墙傀儡",
+        "承重墙傀儡承重砖"
+      ],
+      "vn": [
+        "Khôi lỗi tường chịu lực",
+        "Gạch chịu lực của khôi lỗi tường chịu lực"
+      ]
+    },
+    {
+      "line": 2902,
+      "raw": [
+        "第十三层地基"
+      ],
+      "vn": [
+        "Nền móng tầng thứ mười ba"
+      ]
+    },
+    {
+      "line": 2907,
+      "raw": [
+        "铅笔森林"
+      ],
+      "vn": [
+        "Rừng bút chì"
+      ]
+    },
+    {
+      "line": 2914,
+      "raw": [
+        "削屑山谷"
+      ],
+      "vn": [
+        "Thung lũng vụn gọt"
+      ]
+    },
+    {
+      "line": 2918,
+      "raw": [
+        "橡皮湿地"
+      ],
+      "vn": [
+        "Vùng đất ngập nước tẩy"
+      ]
+    },
+    {
+      "line": 2922,
+      "raw": [
+        "石墨树冠"
+      ],
+      "vn": [
+        "Tán cây than chì"
+      ]
+    },
+    {
+      "line": 2926,
+      "raw": [
+        "削屑甲虫"
+      ],
+      "vn": [
+        "Bọ hung vụn gọt"
+      ]
+    },
+    {
+      "line": 2930,
+      "raw": [
+        "橡皮兽"
+      ],
+      "vn": [
+        "Thú gôm tẩy"
+      ]
+    },
+    {
+      "line": 2934,
+      "raw": [
+        "断芯蚁",
+        "断芯蚁笔芯"
+      ],
+      "vn": [
+        "Kiến gãy ngòi",
+        "Ngòi bút của kiến gãy ngòi"
+      ]
+    },
+    {
+      "line": 2938,
+      "raw": [
+        "涂改液蛞蝓",
+        "涂改液蛞蝓白痕"
+      ],
+      "vn": [
+        "Sên bút xóa",
+        "Vết trắng của sên bút xóa"
+      ]
+    },
+    {
+      "line": 2942,
+      "raw": [
+        "素描纸鹿",
+        "素描纸鹿素描角"
+      ],
+      "vn": [
+        "Hươu giấy ký họa",
+        "Sừng ký họa của hươu giấy ký họa"
+      ]
+    },
+    {
+      "line": 2946,
+      "raw": [
+        "石墨伐木者"
+      ],
+      "vn": [
+        "Tiều phu than chì"
+      ]
+    },
+    {
+      "line": 2950,
+      "raw": [
+        "削笔巡林者",
+        "削笔巡林者卷笔刀"
+      ],
+      "vn": [
+        "Người tuần rừng gọt bút",
+        "Gọt bút chì của người tuần rừng gọt bút"
+      ]
+    },
+    {
+      "line": 2954,
+      "raw": [
+        "炭笔独角兽",
+        "炭笔独角兽炭角"
+      ],
+      "vn": [
+        "Kỳ lân bút than",
+        "Sừng than của kỳ lân bút than"
+      ]
+    },
+    {
+      "line": 2958,
+      "raw": [
+        "未画完的树王"
+      ],
+      "vn": [
+        "Vua cây chưa vẽ xong"
+      ]
+    },
+    {
+      "line": 2963,
+      "raw": [
+        "巨人体内行政区"
+      ],
+      "vn": [
+        "Khu hành chính trong cơ thể khổng lồ"
+      ]
+    },
+    {
+      "line": 2970,
+      "raw": [
+        "胃袋大厅"
+      ],
+      "vn": [
+        "Đại sảnh túi dạ dày"
+      ]
+    },
+    {
+      "line": 2974,
+      "raw": [
+        "血管办公街"
+      ],
+      "vn": [
+        "Phố công sở mạch máu"
+      ]
+    },
+    {
+      "line": 2978,
+      "raw": [
+        "骨髓档案室"
+      ],
+      "vn": [
+        "Phòng hồ sơ tủy xương"
+      ]
+    },
+    {
+      "line": 2982,
+      "raw": [
+        "公章细胞"
+      ],
+      "vn": [
+        "Tế bào con dấu"
+      ]
+    },
+    {
+      "line": 2986,
+      "raw": [
+        "票据白虫"
+      ],
+      "vn": [
+        "Sâu trắng hóa đơn"
+      ]
+    },
+    {
+      "line": 2990,
+      "raw": [
+        "回形针寄虫",
+        "回形针寄虫针钩"
+      ],
+      "vn": [
+        "Ký trùng ghim kẹp",
+        "Móc kim của ký trùng ghim kẹp"
+      ]
+    },
+    {
+      "line": 2994,
+      "raw": [
+        "印泥吞吐囊",
+        "印泥吞吐囊印泥"
+      ],
+      "vn": [
+        "Túi nuốt nhả mực dấu",
+        "Mực dấu của túi nuốt nhả mực dấu"
+      ]
+    },
+    {
+      "line": 2998,
+      "raw": [
+        "订书钉步卒",
+        "订书钉步卒钉脚"
+      ],
+      "vn": [
+        "Bộ binh ghim bấm",
+        "Chân đinh của bộ binh ghim bấm"
+      ]
+    },
+    {
+      "line": 3002,
+      "raw": [
+        "脉搏科长"
+      ],
+      "vn": [
+        "Trưởng phòng mạch đập"
+      ]
+    },
+    {
+      "line": 3006,
+      "raw": [
+        "腺体档案官",
+        "腺体档案官档案袋"
+      ],
+      "vn": [
+        "Quan hồ sơ tuyến thể",
+        "Túi hồ sơ của quan hồ sơ tuyến thể"
+      ]
+    },
+    {
+      "line": 3010,
+      "raw": [
+        "红章吞噬者",
+        "红章吞噬者注销章"
+      ],
+      "vn": [
+        "Kẻ nuốt chửng dấu đỏ",
+        "Con dấu hủy bỏ của kẻ nuốt chửng dấu đỏ"
+      ]
+    },
+    {
+      "line": 3014,
+      "raw": [
+        "总务心脏"
+      ],
+      "vn": [
+        "Trái tim tổng vụ"
+      ]
+    },
+    {
+      "line": 3019,
+      "raw": [
+        "淹没的电影院"
+      ],
+      "vn": [
+        "Rạp chiếu phim bị nhấn chìm"
+      ]
+    },
+    {
+      "line": 3026,
+      "raw": [
+        "水下售票厅"
+      ],
+      "vn": [
+        "Phòng vé dưới nước"
+      ]
+    },
+    {
+      "line": 3030,
+      "raw": [
+        "倒映银幕"
+      ],
+      "vn": [
+        "Màn bạc phản chiếu"
+      ]
+    },
+    {
+      "line": 3034,
+      "raw": [
+        "潮汐放映间"
+      ],
+      "vn": [
+        "Phòng chiếu thủy triều"
+      ]
+    },
+    {
+      "line": 3038,
+      "raw": [
+        "胶片水蛇"
+      ],
+      "vn": [
+        "Rắn nước phim nhựa"
+      ]
+    },
+    {
+      "line": 3042,
+      "raw": [
+        "座椅寄居者"
+      ],
+      "vn": [
+        "Kẻ ký cư ghế ngồi"
+      ]
+    },
+    {
+      "line": 3046,
+      "raw": [
+        "荧幕鳐",
+        "荧幕鳐荧幕翼"
+      ],
+      "vn": [
+        "Cá đuối màn chiếu",
+        "Cánh màn chiếu của cá đuối màn chiếu"
+      ]
+    },
+    {
+      "line": 3050,
+      "raw": [
+        "爆米花浮囊",
+        "爆米花浮囊焦糖壳"
+      ],
+      "vn": [
+        "Túi nổi bỏng ngô",
+        "Vỏ caramen của túi nổi bỏng ngô"
+      ]
+    },
+    {
+      "line": 3054,
+      "raw": [
+        "票夹鳗",
+        "票夹鳗票夹"
+      ],
+      "vn": [
+        "Lươn kẹp vé",
+        "Kẹp vé của lươn kẹp vé"
+      ]
+    },
+    {
+      "line": 3058,
+      "raw": [
+        "沉幕检票员"
+      ],
+      "vn": [
+        "Người soát vé màn chìm"
+      ]
+    },
+    {
+      "line": 3062,
+      "raw": [
+        "胶片缠幕者",
+        "胶片缠幕者缠幕胶片"
+      ],
+      "vn": [
+        "Kẻ quấn phim quanh màn",
+        "Phim quấn màn của kẻ quấn phim quanh màn"
+      ]
+    },
+    {
+      "line": 3066,
+      "raw": [
+        "聚光深潜怪",
+        "聚光深潜怪聚光镜"
+      ],
+      "vn": [
+        "Quái lặn sâu tụ quang",
+        "Kính tụ quang của quái lặn sâu tụ quang"
+      ]
+    },
+    {
+      "line": 3070,
+      "raw": [
+        "第零场观众"
+      ],
+      "vn": [
+        "Khán giả suất chiếu số không"
+      ]
+    },
+    {
+      "line": 3075,
+      "raw": [
+        "无星天文馆"
+      ],
+      "vn": [
+        "Cung thiên văn không sao"
+      ]
+    },
+    {
+      "line": 3082,
+      "raw": [
+        "黑暗穹顶"
+      ],
+      "vn": [
+        "Mái vòm hắc ám"
+      ]
+    },
+    {
+      "line": 3086,
+      "raw": [
+        "伪造星图廊"
+      ],
+      "vn": [
+        "Hành lang bản đồ sao giả mạo"
+      ]
+    },
+    {
+      "line": 3090,
+      "raw": [
+        "缩小银河展台"
+      ],
+      "vn": [
+        "Quầy trưng bày ngân hà thu nhỏ"
+      ]
+    },
+    {
+      "line": 3094,
+      "raw": [
+        "星图银鱼"
+      ],
+      "vn": [
+        "Cá bạc tinh đồ"
+      ]
+    },
+    {
+      "line": 3098,
+      "raw": [
+        "空轨行星"
+      ],
+      "vn": [
+        "Hành tinh quỹ đạo trống"
+      ]
+    },
+    {
+      "line": 3102,
+      "raw": [
+        "陨砂水母",
+        "陨砂水母陨砂"
+      ],
+      "vn": [
+        "Sứa cát thiên thạch",
+        "Cát thiên thạch của sứa cát thiên thạch"
+      ]
+    },
+    {
+      "line": 3106,
+      "raw": [
+        "星盘甲虫",
+        "星盘甲虫星盘甲"
+      ],
+      "vn": [
+        "Bọ hung tinh bàn",
+        "Giáp tinh bàn của bọ hung tinh bàn"
+      ]
+    },
+    {
+      "line": 3110,
+      "raw": [
+        "轨仪蜗牛",
+        "轨仪蜗牛轨仪壳"
+      ],
+      "vn": [
+        "Ốc sên thước đo quỹ đạo",
+        "Vỏ thước đo quỹ đạo của ốc sên thước đo quỹ đạo"
+      ]
+    },
+    {
+      "line": 3114,
+      "raw": [
+        "望镜导览员"
+      ],
+      "vn": [
+        "Hướng dẫn viên kính viễn vọng"
+      ]
+    },
+    {
+      "line": 3118,
+      "raw": [
+        "黄道测绘师",
+        "黄道测绘师测绘尺"
+      ],
+      "vn": [
+        "Người khảo sát hoàng đạo",
+        "Thước khảo sát của người khảo sát hoàng đạo"
+      ]
+    },
+    {
+      "line": 3122,
+      "raw": [
+        "破镜星群兽",
+        "破镜星群兽镜片"
+      ],
+      "vn": [
+        "Thú cụm sao kính vỡ",
+        "Mảnh kính của thú cụm sao kính vỡ"
+      ]
+    },
+    {
+      "line": 3126,
+      "raw": [
+        "熄灭的北极星"
+      ],
+      "vn": [
+        "Sao bắc cực đã tắt"
+      ]
+    },
+    {
+      "line": 3131,
+      "raw": [
+        "蜂巢公寓"
+      ],
+      "vn": [
+        "Chung cư tổ ong"
+      ]
+    },
+    {
+      "line": 3138,
+      "raw": [
+        "六边形走廊"
+      ],
+      "vn": [
+        "Hành lang lục giác"
+      ]
+    },
+    {
+      "line": 3142,
+      "raw": [
+        "共享厨房"
+      ],
+      "vn": [
+        "Bếp chung"
+      ]
+    },
+    {
+      "line": 3146,
+      "raw": [
+        "振翅电梯井"
+      ],
+      "vn": [
+        "Hố thang máy đập cánh"
+      ]
+    },
+    {
+      "line": 3150,
+      "raw": [
+        "蜜蜡房客"
+      ],
+      "vn": [
+        "Khách trọ sáp ong"
+      ]
+    },
+    {
+      "line": 3154,
+      "raw": [
+        "门铃蜂"
+      ],
+      "vn": [
+        "Ong chuông cửa"
+      ]
+    },
+    {
+      "line": 3158,
+      "raw": [
+        "密封袋蛹",
+        "密封袋蛹密封袋"
+      ],
+      "vn": [
+        "Nhộng túi niêm phong",
+        "Túi niêm phong của nhộng túi niêm phong"
+      ]
+    },
+    {
+      "line": 3162,
+      "raw": [
+        "墙缝蜡蚁",
+        "墙缝蜡蚁蜡屑"
+      ],
+      "vn": [
+        "Kiến sáp khe tường",
+        "Vụn sáp của kiến sáp khe tường"
+      ]
+    },
+    {
+      "line": 3166,
+      "raw": [
+        "蜂房搬运螨",
+        "蜂房搬运螨背篓"
+      ],
+      "vn": [
+        "Ve vận chuyển tổ ong",
+        "Chiếc gùi của ve vận chuyển tổ ong"
+      ]
+    },
+    {
+      "line": 3170,
+      "raw": [
+        "蜂巢保安"
+      ],
+      "vn": [
+        "Bảo vệ tổ ong"
+      ]
+    },
+    {
+      "line": 3174,
+      "raw": [
+        "蜡印管事",
+        "蜡印管事蜡印"
+      ],
+      "vn": [
+        "Quản sự dấu sáp",
+        "Dấu sáp của quản sự dấu sáp"
+      ]
+    },
+    {
+      "line": 3178,
+      "raw": [
+        "振翅电梯兽",
+        "振翅电梯兽翅膜"
+      ],
+      "vn": [
+        "Thú thang máy đập cánh",
+        "Màng cánh của thú thang máy đập cánh"
+      ]
+    },
+    {
+      "line": 3182,
+      "raw": [
+        "蜂后物业"
+      ],
+      "vn": [
+        "Ban quản lý ong chúa"
+      ]
+    },
+    {
+      "line": 3187,
+      "raw": [
+        "永久开学日"
+      ],
+      "vn": [
+        "Ngày khai giảng vĩnh cửu"
+      ]
+    },
+    {
+      "line": 3194,
+      "raw": [
+        "无人教室"
+      ],
+      "vn": [
+        "Lớp học không người"
+      ]
+    },
+    {
+      "line": 3198,
+      "raw": [
+        "封闭操场"
+      ],
+      "vn": [
+        "Sân thể dục đóng kín"
+      ]
+    },
+    {
+      "line": 3202,
+      "raw": [
+        "无尽考场"
+      ],
+      "vn": [
+        "Phòng thi vô tận"
+      ]
+    },
+    {
+      "line": 3206,
+      "raw": [
+        "黑板粉尘"
+      ],
+      "vn": [
+        "Bụi phấn bảng đen"
+      ]
+    },
+    {
+      "line": 3210,
+      "raw": [
+        "课桌童偶"
+      ],
+      "vn": [
+        "Đồng ngẫu bàn học"
+      ]
+    },
+    {
+      "line": 3214,
+      "raw": [
+        "作业纸蛾",
+        "作业纸蛾作业纸"
+      ],
+      "vn": [
+        "Bướm giấy bài tập",
+        "Giấy bài tập của bướm giấy bài tập"
+      ]
+    },
+    {
+      "line": 3218,
+      "raw": [
+        "圆规足蛛",
+        "圆规足蛛圆规脚"
+      ],
+      "vn": [
+        "Nhện chân compa",
+        "Chân compa của nhện chân compa"
+      ]
+    },
+    {
+      "line": 3222,
+      "raw": [
+        "墨水盒兽",
+        "墨水盒兽墨水"
+      ],
+      "vn": [
+        "Thú hộp mực",
+        "Mực của thú hộp mực"
+      ]
+    },
+    {
+      "line": 3226,
+      "raw": [
+        "监考影"
+      ],
+      "vn": [
+        "Bóng giám thị"
+      ]
+    },
+    {
+      "line": 3230,
+      "raw": [
+        "铃声训导员",
+        "铃声训导员训导铃"
+      ],
+      "vn": [
+        "Giám thị chuông reo",
+        "Chuông giám thị của giám thị chuông reo"
+      ]
+    },
+    {
+      "line": 3234,
+      "raw": [
+        "试卷装订巨偶",
+        "试卷装订巨偶装订钉"
+      ],
+      "vn": [
+        "Khổng ngẫu đóng tập bài thi",
+        "Đinh đóng tập của khổng ngẫu đóng tập bài thi"
+      ]
+    },
+    {
+      "line": 3238,
+      "raw": [
+        "永不毕业者"
+      ],
+      "vn": [
+        "Kẻ không bao giờ tốt nghiệp"
+      ]
+    },
+    {
+      "line": 3243,
+      "raw": [
+        "无货超市"
+      ],
+      "vn": [
+        "Siêu thị không hàng"
+      ]
+    },
+    {
+      "line": 3250,
+      "raw": [
+        "空货架海"
+      ],
+      "vn": [
+        "Biển kệ trống"
+      ]
+    },
+    {
+      "line": 3254,
+      "raw": [
+        "冷柜长廊"
+      ],
+      "vn": [
+        "Hành lang tủ đông"
+      ]
+    },
+    {
+      "line": 3258,
+      "raw": [
+        "循环收银台"
+      ],
+      "vn": [
+        "Quầy thu ngân tuần hoàn"
+      ]
+    },
+    {
+      "line": 3262,
+      "raw": [
+        "条码蛇"
+      ],
+      "vn": [
+        "Rắn mã vạch"
+      ]
+    },
+    {
+      "line": 3266,
+      "raw": [
+        "购物车犬"
+      ],
+      "vn": [
+        "Chó xe đẩy"
+      ]
+    },
+    {
+      "line": 3270,
+      "raw": [
+        "价签蜉蝣",
+        "价签蜉蝣价签"
+      ],
+      "vn": [
+        "Phù du bảng giá",
+        "Bảng giá của phù du bảng giá"
+      ]
+    },
+    {
+      "line": 3274,
+      "raw": [
+        "冷柜冰蚕",
+        "冷柜冰蚕冰丝"
+      ],
+      "vn": [
+        "Băng tằm tủ đông",
+        "Tơ băng của băng tằm tủ đông"
+      ]
+    },
+    {
+      "line": 3278,
+      "raw": [
+        "塑袋寄居体",
+        "塑袋寄居体塑料袋"
+      ],
+      "vn": [
+        "Thể ký cư túi nhựa",
+        "Túi nhựa của thể ký cư túi nhựa"
+      ]
+    },
+    {
+      "line": 3282,
+      "raw": [
+        "夜盘点员"
+      ],
+      "vn": [
+        "Nhân viên kiểm kê ca đêm"
+      ]
+    },
+    {
+      "line": 3286,
+      "raw": [
+        "货架搬山者",
+        "货架搬山者货架"
+      ],
+      "vn": [
+        "Kẻ dời núi kệ hàng",
+        "Kệ hàng của kẻ dời núi kệ hàng"
+      ]
+    },
+    {
+      "line": 3290,
+      "raw": [
+        "条码扫描巨眼",
+        "条码扫描巨眼扫描镜"
+      ],
+      "vn": [
+        "Cự nhãn quét mã vạch",
+        "Kính quét của cự nhãn quét mã vạch"
+      ]
+    },
+    {
+      "line": 3294,
+      "raw": [
+        "零库存店长"
+      ],
+      "vn": [
+        "Cửa hàng trưởng tồn kho bằng không"
+      ]
+    },
+    {
+      "line": 3299,
+      "raw": [
+        "发光盐田"
+      ],
+      "vn": [
+        "Ruộng muối phát quang"
+      ]
+    },
+    {
+      "line": 3306,
+      "raw": [
+        "结晶堤岸"
+      ],
+      "vn": [
+        "Đê kết tinh"
+      ]
+    },
+    {
+      "line": 3310,
+      "raw": [
+        "盐雾泵房"
+      ],
+      "vn": [
+        "Trạm bơm sương muối"
+      ]
+    },
+    {
+      "line": 3314,
+      "raw": [
+        "黑水蒸发池"
+      ],
+      "vn": [
+        "Hồ bốc hơi nước đen"
+      ]
+    },
+    {
+      "line": 3318,
+      "raw": [
+        "盐壳蜥"
+      ],
+      "vn": [
+        "Thằn lằn vỏ muối"
+      ]
+    },
+    {
+      "line": 3322,
+      "raw": [
+        "卤水蜉蝣"
+      ],
+      "vn": [
+        "Phù du nước ót"
+      ]
+    },
+    {
+      "line": 3326,
+      "raw": [
+        "盐晶蜗牛",
+        "盐晶蜗牛晶壳"
+      ],
+      "vn": [
+        "Ốc sên tinh thể muối",
+        "Vỏ tinh thể của ốc sên tinh thể muối"
+      ]
+    },
+    {
+      "line": 3330,
+      "raw": [
+        "泵房卤泥",
+        "泵房卤泥泥核"
+      ],
+      "vn": [
+        "Bùn ót trạm bơm",
+        "Nhân bùn của bùn ót trạm bơm"
+      ]
+    },
+    {
+      "line": 3334,
+      "raw": [
+        "结晶水蚤",
+        "结晶水蚤晶足"
+      ],
+      "vn": [
+        "Rận nước kết tinh",
+        "Chân tinh thể của rận nước kết tinh"
+      ]
+    },
+    {
+      "line": 3338,
+      "raw": [
+        "晒盐祭司"
+      ],
+      "vn": [
+        "Tế tư phơi muối"
+      ]
+    },
+    {
+      "line": 3342,
+      "raw": [
+        "卤湖守泵人",
+        "卤湖守泵人泵阀"
+      ],
+      "vn": [
+        "Người giữ bơm hồ ót",
+        "Van bơm của người giữ bơm hồ ót"
+      ]
+    },
+    {
+      "line": 3346,
+      "raw": [
+        "发光盐角兽",
+        "发光盐角兽盐角"
+      ],
+      "vn": [
+        "Thú sừng muối phát quang",
+        "Sừng muối của thú sừng muối phát quang"
+      ]
+    },
+    {
+      "line": 3350,
+      "raw": [
+        "白色潮汐"
+      ],
+      "vn": [
+        "Thủy triều trắng"
+      ]
+    },
+    {
+      "line": 3355,
+      "raw": [
+        "云上屠宰厂"
+      ],
+      "vn": [
+        "Lò mổ trên mây"
+      ]
+    },
+    {
+      "line": 3362,
+      "raw": [
+        "云雾流水线"
+      ],
+      "vn": [
+        "Dây chuyền mây mù"
+      ]
+    },
+    {
+      "line": 3366,
+      "raw": [
+        "悬空冷库"
+      ],
+      "vn": [
+        "Kho lạnh treo lơ lửng"
+      ]
+    },
+    {
+      "line": 3370,
+      "raw": [
+        "羽毛卸货台"
+      ],
+      "vn": [
+        "Sàn bốc dỡ lông vũ"
+      ]
+    },
+    {
+      "line": 3374,
+      "raw": [
+        "羽钩小兽"
+      ],
+      "vn": [
+        "Thú nhỏ móc vũ"
+      ]
+    },
+    {
+      "line": 3378,
+      "raw": [
+        "白雾肉块"
+      ],
+      "vn": [
+        "Tảng thịt sương trắng"
+      ]
+    },
+    {
+      "line": 3382,
+      "raw": [
+        "云脂毛虫",
+        "云脂毛虫云脂"
+      ],
+      "vn": [
+        "Sâu mỡ mây",
+        "Mỡ mây của sâu mỡ mây"
+      ]
+    },
+    {
+      "line": 3386,
+      "raw": [
+        "羽秤怪鸟",
+        "羽秤怪鸟秤砣"
+      ],
+      "vn": [
+        "Quái điểu cân lông",
+        "Quả cân của quái điểu cân lông"
+      ]
+    },
+    {
+      "line": 3390,
+      "raw": [
+        "滑轨钩虫",
+        "滑轨钩虫钩足"
+      ],
+      "vn": [
+        "Sâu móc ray trượt",
+        "Chân móc của sâu móc ray trượt"
+      ]
+    },
+    {
+      "line": 3394,
+      "raw": [
+        "卸云工头"
+      ],
+      "vn": [
+        "Quản đốc dỡ mây"
+      ]
+    },
+    {
+      "line": 3398,
+      "raw": [
+        "冷库屠云者",
+        "冷库屠云者屠刀"
+      ],
+      "vn": [
+        "Đồ tể mổ mây kho lạnh",
+        "Đao đồ tể của đồ tể mổ mây kho lạnh"
+      ]
+    },
+    {
+      "line": 3402,
+      "raw": [
+        "链钩缝合兽",
+        "链钩缝合兽缝合线"
+      ],
+      "vn": [
+        "Thú khâu móc xích",
+        "Chỉ khâu của thú khâu móc xích"
+      ]
+    },
+    {
+      "line": 3406,
+      "raw": [
+        "云层分割机"
+      ],
+      "vn": [
+        "Máy phân cắt tầng mây"
+      ]
+    },
+    {
+      "line": 3411,
+      "raw": [
+        "雨伞沙漠"
+      ],
+      "vn": [
+        "Sa mạc ô dù"
+      ]
+    },
+    {
+      "line": 3418,
+      "raw": [
+        "伞骨沙丘"
+      ],
+      "vn": [
+        "Cồn cát nan ô"
+      ]
+    },
+    {
+      "line": 3422,
+      "raw": [
+        "无雨驿站"
+      ],
+      "vn": [
+        "Trạm dịch không mưa"
+      ]
+    },
+    {
+      "line": 3426,
+      "raw": [
+        "逆风伞塔"
+      ],
+      "vn": [
+        "Tháp ô ngược gió"
+      ]
+    },
+    {
+      "line": 3430,
+      "raw": [
+        "伞骨蝎"
+      ],
+      "vn": [
+        "Bọ cạp nan ô"
+      ]
+    },
+    {
+      "line": 3434,
+      "raw": [
+        "布面沙鳐"
+      ],
+      "vn": [
+        "Cá đuối cát mặt vải"
+      ]
+    },
+    {
+      "line": 3438,
+      "raw": [
+        "伞柄蠕虫",
+        "伞柄蠕虫伞柄"
+      ],
+      "vn": [
+        "Giun cán ô",
+        "Cán ô của giun cán ô"
+      ]
+    },
+    {
+      "line": 3442,
+      "raw": [
+        "漏斗沙螺",
+        "漏斗沙螺漏斗壳"
+      ],
+      "vn": [
+        "Ốc cát phễu",
+        "Vỏ phễu của ốc cát phễu"
+      ]
+    },
+    {
+      "line": 3446,
+      "raw": [
+        "伞布夜蛾",
+        "伞布夜蛾夜色鳞粉"
+      ],
+      "vn": [
+        "Bướm đêm vải ô",
+        "Phấn vảy màu đêm của bướm đêm vải ô"
+      ]
+    },
+    {
+      "line": 3450,
+      "raw": [
+        "撑伞行刑客"
+      ],
+      "vn": [
+        "Đao phủ che ô"
+      ]
+    },
+    {
+      "line": 3454,
+      "raw": [
+        "逆风伞匠",
+        "逆风伞匠修伞锤"
+      ],
+      "vn": [
+        "Thợ làm ô ngược gió",
+        "Búa sửa ô của thợ làm ô ngược gió"
+      ]
+    },
+    {
+      "line": 3458,
+      "raw": [
+        "千骨撑天兽",
+        "千骨撑天兽伞骨"
+      ],
+      "vn": [
+        "Thú ngàn nan chống trời",
+        "Nan ô của thú ngàn nan chống trời"
+      ]
+    },
+    {
+      "line": 3462,
+      "raw": [
+        "从未落下的雨"
+      ],
+      "vn": [
+        "Cơn mưa chưa từng rơi xuống"
+      ]
+    },
+    {
+      "line": 3467,
+      "raw": [
+        "瓶中群岛"
+      ],
+      "vn": [
+        "Quần đảo trong chai"
+      ]
+    },
+    {
+      "line": 3474,
+      "raw": [
+        "玻璃海岸"
+      ],
+      "vn": [
+        "Bờ biển thủy tinh"
+      ]
+    },
+    {
+      "line": 3478,
+      "raw": [
+        "瓶塞灯塔"
+      ],
+      "vn": [
+        "Ngọn hải đăng nút chai"
+      ]
+    },
+    {
+      "line": 3482,
+      "raw": [
+        "软木群礁"
+      ],
+      "vn": [
+        "Rạn đá nút bấc"
+      ]
+    },
+    {
+      "line": 3486,
+      "raw": [
+        "玻璃虾"
+      ],
+      "vn": [
+        "Tôm thủy tinh"
+      ]
+    },
+    {
+      "line": 3490,
+      "raw": [
+        "软木潜鸟"
+      ],
+      "vn": [
+        "Chim lặn gỗ bấc"
+      ]
+    },
+    {
+      "line": 3494,
+      "raw": [
+        "瓶砂蟹",
+        "瓶砂蟹瓶砂"
+      ],
+      "vn": [
+        "Cua cát chai",
+        "Cát chai của cua cát chai"
+      ]
+    },
+    {
+      "line": 3498,
+      "raw": [
+        "漂签鱼",
+        "漂签鱼漂流签"
+      ],
+      "vn": [
+        "Cá thẻ trôi",
+        "Thẻ trôi dạt của cá thẻ trôi"
+      ]
+    },
+    {
+      "line": 3502,
+      "raw": [
+        "水藻塞偶",
+        "水藻塞偶藻塞"
+      ],
+      "vn": [
+        "Rối nút bấc rong biển",
+        "Nút rong biển của rối nút bấc rong biển"
+      ]
+    },
+    {
+      "line": 3506,
+      "raw": [
+        "瓶塞守卫"
+      ],
+      "vn": [
+        "Thủ vệ nút chai"
+      ]
+    },
+    {
+      "line": 3510,
+      "raw": [
+        "玻璃航标者",
+        "玻璃航标者航标灯"
+      ],
+      "vn": [
+        "Người đặt tiêu thủy tinh",
+        "Đèn tiêu hàng hải của người đặt tiêu thủy tinh"
+      ]
+    },
+    {
+      "line": 3514,
+      "raw": [
+        "软木甲巨鲸",
+        "软木甲巨鲸软木甲"
+      ],
+      "vn": [
+        "Cá voi khổng lồ giáp gỗ bấc",
+        "Giáp gỗ bấc của cá voi khổng lồ giáp gỗ bấc"
+      ]
+    },
+    {
+      "line": 3518,
+      "raw": [
+        "收集海洋的人"
+      ],
+      "vn": [
+        "Người thu thập đại dương"
+      ]
+    },
+    {
+      "line": 3523,
+      "raw": [
+        "机械神社"
+      ],
+      "vn": [
+        "Đền Thần cơ khí"
+      ]
+    },
+    {
+      "line": 3530,
+      "raw": [
+        "伺服鸟居"
+      ],
+      "vn": [
+        "Cổng Torii trợ động"
+      ]
+    },
+    {
+      "line": 3534,
+      "raw": [
+        "自动祈愿台"
+      ],
+      "vn": [
+        "Bệ cầu nguyện tự động"
+      ]
+    },
+    {
+      "line": 3538,
+      "raw": [
+        "芯片内殿"
+      ],
+      "vn": [
+        "Điện trong vi mạch"
+      ]
+    },
+    {
+      "line": 3542,
+      "raw": [
+        "电签纸偶"
+      ],
+      "vn": [
+        "Bùa giấy quẻ điện tử"
+      ]
+    },
+    {
+      "line": 3546,
+      "raw": [
+        "铜尾狐机"
+      ],
+      "vn": [
+        "Hồ ly máy đuôi đồng"
+      ]
+    },
+    {
+      "line": 3550,
+      "raw": [
+        "齿轮铃虫",
+        "齿轮铃虫铃片"
+      ],
+      "vn": [
+        "Côn trùng chuông bánh răng",
+        "Mảnh chuông của côn trùng chuông bánh răng"
+      ]
+    },
+    {
+      "line": 3554,
+      "raw": [
+        "铁羽鸦机",
+        "铁羽鸦机铁羽"
+      ],
+      "vn": [
+        "Quạ máy lông sắt",
+        "Lông sắt của quạ máy lông sắt"
+      ]
+    },
+    {
+      "line": 3558,
+      "raw": [
+        "香灰微型卫",
+        "香灰微型卫香灰"
+      ],
+      "vn": [
+        "Vệ sĩ siêu nhỏ tàn hương",
+        "Tàn hương của vệ sĩ siêu nhỏ tàn hương"
+      ]
+    },
+    {
+      "line": 3562,
+      "raw": [
+        "维护神官"
+      ],
+      "vn": [
+        "Thần quan bảo trì"
+      ]
+    },
+    {
+      "line": 3566,
+      "raw": [
+        "伺服巫祝",
+        "伺服巫祝祈愿卡"
+      ],
+      "vn": [
+        "Vu nữ trợ động",
+        "Thẻ cầu nguyện của vu nữ trợ động"
+      ]
+    },
+    {
+      "line": 3570,
+      "raw": [
+        "护殿铜狮机",
+        "护殿铜狮机铜鬃"
+      ],
+      "vn": [
+        "Sư tử đồng máy hộ điện",
+        "Bờm đồng của sư tử đồng máy hộ điện"
+      ]
+    },
+    {
+      "line": 3574,
+      "raw": [
+        "八百万处理器"
+      ],
+      "vn": [
+        "Bộ xử lý Bát Bách Vạn"
+      ]
+    },
+    {
+      "line": 3579,
+      "raw": [
+        "骨白游乐园"
+      ],
+      "vn": [
+        "Công viên giải trí xương trắng"
+      ]
+    },
+    {
+      "line": 3586,
+      "raw": [
+        "停摆旋转木马"
+      ],
+      "vn": [
+        "Vòng quay ngựa gỗ ngừng chạy"
+      ]
+    },
+    {
+      "line": 3590,
+      "raw": [
+        "骨质摩天轮"
+      ],
+      "vn": [
+        "Vòng đu quay xương cốt"
+      ]
+    },
+    {
+      "line": 3594,
+      "raw": [
+        "售票坟场"
+      ],
+      "vn": [
+        "Nghĩa địa bán vé"
+      ]
+    },
+    {
+      "line": 3598,
+      "raw": [
+        "木马肋骨"
+      ],
+      "vn": [
+        "Xương sườn ngựa gỗ"
+      ]
+    },
+    {
+      "line": 3602,
+      "raw": [
+        "票根蝙蝠"
+      ],
+      "vn": [
+        "Dơi cuống vé"
+      ]
+    },
+    {
+      "line": 3606,
+      "raw": [
+        "骨架气球犬",
+        "骨架气球犬气球骨"
+      ],
+      "vn": [
+        "Chó bóng bay khung xương",
+        "Xương bóng bay của chó bóng bay khung xương"
+      ]
+    },
+    {
+      "line": 3610,
+      "raw": [
+        "糖纸灯蛾",
+        "糖纸灯蛾糖纸翅"
+      ],
+      "vn": [
+        "Bướm đèn giấy kẹo",
+        "Cánh giấy kẹo của bướm đèn giấy kẹo"
+      ]
+    },
+    {
+      "line": 3614,
+      "raw": [
+        "旋杯寄居骨",
+        "旋杯寄居骨旋杯"
+      ],
+      "vn": [
+        "Xương ký cư tách xoay",
+        "Tách xoay của xương ký cư tách xoay"
+      ]
+    },
+    {
+      "line": 3618,
+      "raw": [
+        "白面售票员"
+      ],
+      "vn": [
+        "Nhân viên bán vé mặt trắng"
+      ]
+    },
+    {
+      "line": 3622,
+      "raw": [
+        "白骨巡园者",
+        "白骨巡园者巡园哨"
+      ],
+      "vn": [
+        "Kẻ tuần tra công viên xương trắng",
+        "Còi tuần tra của kẻ tuần tra công viên xương trắng"
+      ]
+    },
+    {
+      "line": 3626,
+      "raw": [
+        "断轨过山龙",
+        "断轨过山龙断轨"
+      ],
+      "vn": [
+        "Rồng tàu lượn đứt ray",
+        "Ray đứt của rồng tàu lượn đứt ray"
+      ]
+    },
+    {
+      "line": 3630,
+      "raw": [
+        "旋转中的墓园"
+      ],
+      "vn": [
+        "Nghĩa trang đang xoay tròn"
+      ]
+    },
+    {
+      "line": 3635,
+      "raw": [
+        "梦境水族馆"
+      ],
+      "vn": [
+        "Thủy cung mộng cảnh"
+      ]
+    },
+    {
+      "line": 3642,
+      "raw": [
+        "鱼缸卧室"
+      ],
+      "vn": [
+        "Phòng ngủ bể cá"
+      ]
+    },
+    {
+      "line": 3646,
+      "raw": [
+        "通往海底的电梯"
+      ],
+      "vn": [
+        "Thang máy xuống đáy biển"
+      ]
+    },
+    {
+      "line": 3650,
+      "raw": [
+        "梦游展廊"
+      ],
+      "vn": [
+        "Hành lang triển lãm mộng du"
+      ]
+    },
+    {
+      "line": 3654,
+      "raw": [
+        "枕头水母"
+      ],
+      "vn": [
+        "Sứa gối đầu"
+      ]
+    },
+    {
+      "line": 3658,
+      "raw": [
+        "梦鳞鱼"
+      ],
+      "vn": [
+        "Cá vảy mộng"
+      ]
+    },
+    {
+      "line": 3662,
+      "raw": [
+        "珊瑚闹钟蟹",
+        "珊瑚闹钟蟹闹铃"
+      ],
+      "vn": [
+        "Cua đồng hồ báo thức san hô",
+        "Chuông báo thức của cua đồng hồ báo thức san hô"
+      ]
+    },
+    {
+      "line": 3666,
+      "raw": [
+        "枕羽海马",
+        "枕羽海马枕羽"
+      ],
+      "vn": [
+        "Cá ngựa lông gối",
+        "Lông gối của cá ngựa lông gối"
+      ]
+    },
+    {
+      "line": 3670,
+      "raw": [
+        "瞌睡海葵",
+        "瞌睡海葵触须"
+      ],
+      "vn": [
+        "Hải quỳ buồn ngủ",
+        "Xúc tu của hải quỳ buồn ngủ"
+      ]
+    },
+    {
+      "line": 3674,
+      "raw": [
+        "无眠饲养员"
+      ],
+      "vn": [
+        "Người chăm sóc không ngủ"
+      ]
+    },
+    {
+      "line": 3678,
+      "raw": [
+        "梦幕潜行者",
+        "梦幕潜行者梦幕"
+      ],
+      "vn": [
+        "Kẻ lén lút màn mộng",
+        "Màn mộng của kẻ lén lút màn mộng"
+      ]
+    },
+    {
+      "line": 3682,
+      "raw": [
+        "玻璃睡鲨",
+        "玻璃睡鲨睡鳍"
+      ],
+      "vn": [
+        "Cá nhám ngủ thủy tinh",
+        "Vây ngủ của cá nhám ngủ thủy tinh"
+      ]
+    },
+    {
+      "line": 3686,
+      "raw": [
+        "透明梦鲸"
+      ],
+      "vn": [
+        "Cá voi mộng trong suốt"
+      ]
+    },
+    {
+      "line": 3691,
+      "raw": [
+        "黑日农场"
+      ],
+      "vn": [
+        "Nông trại mặt trời đen"
+      ]
+    },
+    {
+      "line": 3698,
+      "raw": [
+        "朝黑日生长的麦田"
+      ],
+      "vn": [
+        "Ruộng lúa mạch hướng về mặt trời đen"
+      ]
+    },
+    {
+      "line": 3702,
+      "raw": [
+        "倒流水车"
+      ],
+      "vn": [
+        "Cối xay nước chảy ngược"
+      ]
+    },
+    {
+      "line": 3706,
+      "raw": [
+        "稻草谷仓"
+      ],
+      "vn": [
+        "Kho thóc rơm rạ"
+      ]
+    },
+    {
+      "line": 3710,
+      "raw": [
+        "黑穗鸦"
+      ],
+      "vn": [
+        "Quạ bông đen"
+      ]
+    },
+    {
+      "line": 3714,
+      "raw": [
+        "稻草耕者"
+      ],
+      "vn": [
+        "Kẻ cày cấy rơm rạ"
+      ]
+    },
+    {
+      "line": 3718,
+      "raw": [
+        "焦籽跳虫",
+        "焦籽跳虫焦籽"
+      ],
+      "vn": [
+        "Bọ nhảy hạt cháy",
+        "Hạt cháy của bọ nhảy hạt cháy"
+      ]
+    },
+    {
+      "line": 3722,
+      "raw": [
+        "黑乳木偶牛",
+        "黑乳木偶牛黑乳"
+      ],
+      "vn": [
+        "Bò rối gỗ sữa đen",
+        "Sữa đen của bò rối gỗ sữa đen"
+      ]
+    },
+    {
+      "line": 3726,
+      "raw": [
+        "锈镰草螳",
+        "锈镰草螳锈镰"
+      ],
+      "vn": [
+        "Bọ ngựa cỏ lưỡi liềm rỉ",
+        "Liềm rỉ của bọ ngựa cỏ lưỡi liềm rỉ"
+      ]
+    },
+    {
+      "line": 3730,
+      "raw": [
+        "日蚀农夫"
+      ],
+      "vn": [
+        "Nông phu nhật thực"
+      ]
+    },
+    {
+      "line": 3734,
+      "raw": [
+        "麦垛焚日者",
+        "麦垛焚日者焚火"
+      ],
+      "vn": [
+        "Kẻ đốt mặt trời đống rơm",
+        "Lửa thiêu của kẻ đốt mặt trời đống rơm"
+      ]
+    },
+    {
+      "line": 3738,
+      "raw": [
+        "日环犁地兽",
+        "日环犁地兽日环犁"
+      ],
+      "vn": [
+        "Thú cày đất vành nhật",
+        "Cày vành nhật của thú cày đất vành nhật"
+      ]
+    },
+    {
+      "line": 3742,
+      "raw": [
+        "不落的黑日"
+      ],
+      "vn": [
+        "Mặt trời đen không lặn"
+      ]
+    },
+    {
+      "line": 3747,
+      "raw": [
+        "极深钻井酒店"
+      ],
+      "vn": [
+        "Khách sạn giếng khoan cực sâu"
+      ]
+    },
+    {
+      "line": 3754,
+      "raw": [
+        "钻头前台"
+      ],
+      "vn": [
+        "Quầy lễ tân mũi khoan"
+      ]
+    },
+    {
+      "line": 3758,
+      "raw": [
+        "岩层套房"
+      ],
+      "vn": [
+        "Phòng suite tầng đá"
+      ]
+    },
+    {
+      "line": 3762,
+      "raw": [
+        "地热宴会厅"
+      ],
+      "vn": [
+        "Sảnh tiệc địa nhiệt"
+      ]
+    },
+    {
+      "line": 3766,
+      "raw": [
+        "岩屑门童"
+      ],
+      "vn": [
+        "Doorman vụn đá"
+      ]
+    },
+    {
+      "line": 3770,
+      "raw": [
+        "热液蠕虫"
+      ],
+      "vn": [
+        "Giun nhiệt dịch"
+      ]
+    },
+    {
+      "line": 3774,
+      "raw": [
+        "矿灯盲蛾",
+        "矿灯盲蛾矿灯粉"
+      ],
+      "vn": [
+        "Bướm mù đèn hầm mỏ",
+        "Bột đèn mỏ của bướm mù đèn hầm mỏ"
+      ]
+    },
+    {
+      "line": 3778,
+      "raw": [
+        "钻泥甲虫",
+        "钻泥甲虫泥壳"
+      ],
+      "vn": [
+        "Bọ cánh cứng khoan bùn",
+        "Vỏ bùn của bọ cánh cứng khoan bùn"
+      ]
+    },
+    {
+      "line": 3782,
+      "raw": [
+        "缆索岩蚯",
+        "缆索岩蚯岩索"
+      ],
+      "vn": [
+        "Giun đất đá dây cáp",
+        "Cáp đá của giun đất đá dây cáp"
+      ]
+    },
+    {
+      "line": 3786,
+      "raw": [
+        "钻井领班"
+      ],
+      "vn": [
+        "Tổ trưởng giếng khoan"
+      ]
+    },
+    {
+      "line": 3790,
+      "raw": [
+        "套管守门者",
+        "套管守门者套管"
+      ],
+      "vn": [
+        "Kẻ canh cổng ống chống",
+        "Ống chống của kẻ canh cổng ống chống"
+      ]
+    },
+    {
+      "line": 3794,
+      "raw": [
+        "热泉岩壳兽",
+        "热泉岩壳兽岩壳"
+      ],
+      "vn": [
+        "Thú vỏ đá suối nước nóng",
+        "Vỏ đá của thú vỏ đá suối nước nóng"
+      ]
+    },
+    {
+      "line": 3798,
+      "raw": [
+        "地心总经理"
+      ],
+      "vn": [
+        "Tổng giám đốc tâm trái đất"
+      ]
+    },
+    {
+      "line": 3803,
+      "raw": [
+        "缝隙城堡"
+      ],
+      "vn": [
+        "Lâu đài khe nứt"
+      ]
+    },
+    {
+      "line": 3810,
+      "raw": [
+        "墙缝集市"
+      ],
+      "vn": [
+        "Chợ khe tường"
+      ]
+    },
+    {
+      "line": 3814,
+      "raw": [
+        "砖内牢房"
+      ],
+      "vn": [
+        "Nhà lao trong gạch"
+      ]
+    },
+    {
+      "line": 3818,
+      "raw": [
+        "巨门背面"
+      ],
+      "vn": [
+        "Mặt sau cửa lớn"
+      ]
+    },
+    {
+      "line": 3822,
+      "raw": [
+        "灰泥鼠兵"
+      ],
+      "vn": [
+        "Chuột lính vữa vôi"
+      ]
+    },
+    {
+      "line": 3826,
+      "raw": [
+        "碎砖蜥"
+      ],
+      "vn": [
+        "Thằn lằn gạch vỡ"
+      ]
+    },
+    {
+      "line": 3830,
+      "raw": [
+        "门栓蠹虫",
+        "门栓蠹虫蛀粉"
+      ],
+      "vn": [
+        "Mọt then cửa",
+        "Bột mọt của mọt then cửa"
+      ]
+    },
+    {
+      "line": 3834,
+      "raw": [
+        "石缝壁蛛",
+        "石缝壁蛛石丝"
+      ],
+      "vn": [
+        "Nhện vách khe đá",
+        "Tơ đá của nhện vách khe đá"
+      ]
+    },
+    {
+      "line": 3838,
+      "raw": [
+        "锈锁蛙",
+        "锈锁蛙锈锁舌"
+      ],
+      "vn": [
+        "Ếch khóa rỉ",
+        "Lưỡi khóa rỉ của ếch khóa rỉ"
+      ]
+    },
+    {
+      "line": 3842,
+      "raw": [
+        "门缝骑士"
+      ],
+      "vn": [
+        "Kỵ sĩ khe cửa"
+      ]
+    },
+    {
+      "line": 3846,
+      "raw": [
+        "碎墙执旗者",
+        "碎墙执旗者碎旗"
+      ],
+      "vn": [
+        "Kẻ cầm cờ tường vỡ",
+        "Cờ rách của kẻ cầm cờ tường vỡ"
+      ]
+    },
+    {
+      "line": 3850,
+      "raw": [
+        "砖甲攻城兽",
+        "砖甲攻城兽砖甲"
+      ],
+      "vn": [
+        "Thú công thành giáp gạch",
+        "Giáp gạch của thú công thành giáp gạch"
+      ]
+    },
+    {
+      "line": 3854,
+      "raw": [
+        "缝隙里的王冠"
+      ],
+      "vn": [
+        "Vương miện trong khe nứt"
+      ]
+    },
+    {
+      "line": 3859,
+      "raw": [
+        "折叠地铁"
+      ],
+      "vn": [
+        "Tàu điện ngầm gấp khúc"
+      ]
+    },
+    {
+      "line": 3866,
+      "raw": [
+        "交叉车厢"
+      ],
+      "vn": [
+        "Toa xe giao nhau"
+      ]
+    },
+    {
+      "line": 3870,
+      "raw": [
+        "站中站"
+      ],
+      "vn": [
+        "Ga trong ga"
+      ]
+    },
+    {
+      "line": 3874,
+      "raw": [
+        "纸折隧道"
+      ],
+      "vn": [
+        "Đường hầm gấp giấy"
+      ]
+    },
+    {
+      "line": 3878,
+      "raw": [
+        "扶手长虫"
+      ],
+      "vn": [
+        "Giun dài tay vịn"
+      ]
+    },
+    {
+      "line": 3882,
+      "raw": [
+        "站牌旅客"
+      ],
+      "vn": [
+        "Hành khách biển báo ga"
+      ]
+    },
+    {
+      "line": 3886,
+      "raw": [
+        "折票飞蛾",
+        "折票飞蛾折票"
+      ],
+      "vn": [
+        "Bướm đêm vé gấp",
+        "Vé gấp của bướm đêm vé gấp"
+      ]
+    },
+    {
+      "line": 3890,
+      "raw": [
+        "车窗映像",
+        "车窗映像车窗倒影"
+      ],
+      "vn": [
+        "Hình phản chiếu cửa sổ xe",
+        "Bóng phản chiếu cửa sổ của hình phản chiếu cửa sổ xe"
+      ]
+    },
+    {
+      "line": 3894,
+      "raw": [
+        "隧道拉链虫",
+        "隧道拉链虫拉链齿"
+      ],
+      "vn": [
+        "Sâu khóa kéo đường hầm",
+        "Răng khóa kéo của sâu khóa kéo đường hầm"
+      ]
+    },
+    {
+      "line": 3898,
+      "raw": [
+        "折线列车长"
+      ],
+      "vn": [
+        "Trưởng tàu tuyến gấp"
+      ]
+    },
+    {
+      "line": 3902,
+      "raw": [
+        "换轨调度影",
+        "换轨调度影换轨杆"
+      ],
+      "vn": [
+        "Bóng điều độ bẻ ghi",
+        "Cần bẻ ghi của bóng điều độ bẻ ghi"
+      ]
+    },
+    {
+      "line": 3906,
+      "raw": [
+        "铰链车厢兽",
+        "铰链车厢兽铰链"
+      ],
+      "vn": [
+        "Thú toa xe bản lề",
+        "Bản lề của thú toa xe bản lề"
+      ]
+    },
+    {
+      "line": 3910,
+      "raw": [
+        "没有始发站"
+      ],
+      "vn": [
+        "Không có ga xuất phát"
+      ]
+    },
+    {
+      "line": 3915,
+      "raw": [
+        "大潮钟表行"
+      ],
+      "vn": [
+        "Hiệu đồng hồ đại triều"
+      ]
+    },
+    {
+      "line": 3922,
+      "raw": [
+        "涨潮柜台"
+      ],
+      "vn": [
+        "Quầy triều dâng"
+      ]
+    },
+    {
+      "line": 3926,
+      "raw": [
+        "摆轮海沟"
+      ],
+      "vn": [
+        "Rãnh biển bánh xe cân bằng"
+      ]
+    },
+    {
+      "line": 3930,
+      "raw": [
+        "水下报时厅"
+      ],
+      "vn": [
+        "Sảnh điểm giờ dưới nước"
+      ]
+    },
+    {
+      "line": 3934,
+      "raw": [
+        "发条潮蟹"
+      ],
+      "vn": [
+        "Cua triều dây cót"
+      ]
+    },
+    {
+      "line": 3938,
+      "raw": [
+        "指针鱼"
+      ],
+      "vn": [
+        "Cá kim đồng hồ"
+      ]
+    },
+    {
+      "line": 3942,
+      "raw": [
+        "秒轮虾",
+        "秒轮虾秒轮"
+      ],
+      "vn": [
+        "Tôm bánh xe giây",
+        "Bánh xe giây của tôm bánh xe giây"
+      ]
+    },
+    {
+      "line": 3946,
+      "raw": [
+        "表盘海星",
+        "表盘海星表盘"
+      ],
+      "vn": [
+        "Sao biển mặt số",
+        "Mặt số của sao biển mặt số"
+      ]
+    },
+    {
+      "line": 3950,
+      "raw": [
+        "钟罩水母",
+        "钟罩水母钟罩"
+      ],
+      "vn": [
+        "Sứa chụp đồng hồ",
+        "Chụp đồng hồ của sứa chụp đồng hồ"
+      ]
+    },
+    {
+      "line": 3954,
+      "raw": [
+        "海摆修表师"
+      ],
+      "vn": [
+        "Thợ sửa đồng hồ con lắc biển"
+      ]
+    },
+    {
+      "line": 3958,
+      "raw": [
+        "潮刻报时者",
+        "潮刻报时者报时贝"
+      ],
+      "vn": [
+        "Kẻ điểm giờ khắc triều",
+        "Sò điểm giờ của kẻ điểm giờ khắc triều"
+      ]
+    },
+    {
+      "line": 3962,
+      "raw": [
+        "锚链巨摆兽",
+        "锚链巨摆兽锚链摆"
+      ],
+      "vn": [
+        "Thú con lắc xích neo khổng lồ",
+        "Con lắc xích neo của thú con lắc xích neo khổng lồ"
+      ]
+    },
+    {
+      "line": 3966,
+      "raw": [
+        "第十三次潮汐"
+      ],
+      "vn": [
+        "Thủy triều lần thứ mười ba"
+      ]
+    },
+    {
+      "line": 3971,
+      "raw": [
+        "黑雪邮局"
+      ],
+      "vn": [
+        "Bưu điện tuyết đen"
+      ]
+    },
+    {
+      "line": 3978,
+      "raw": [
+        "未投递大厅"
+      ],
+      "vn": [
+        "Đại sảnh thư chưa phát"
+      ]
+    },
+    {
+      "line": 3982,
+      "raw": [
+        "煤雪分拣场"
+      ],
+      "vn": [
+        "Bãi phân loại tuyết than"
+      ]
+    },
+    {
+      "line": 3986,
+      "raw": [
+        "冻住的信箱街"
+      ],
+      "vn": [
+        "Phố hòm thư đóng băng"
+      ]
+    },
+    {
+      "line": 3990,
+      "raw": [
+        "邮票寒蛾"
+      ],
+      "vn": [
+        "Bướm lạnh tem thư"
+      ]
+    },
+    {
+      "line": 3994,
+      "raw": [
+        "封口雪鼠"
+      ],
+      "vn": [
+        "Chuột tuyết dán miệng"
+      ]
+    },
+    {
+      "line": 3998,
+      "raw": [
+        "邮袋寒鸦",
+        "邮袋寒鸦邮袋"
+      ],
+      "vn": [
+        "Quạ túi thư",
+        "Túi thư của quạ túi thư"
+      ]
+    },
+    {
+      "line": 4002,
+      "raw": [
+        "信蜡冻偶",
+        "信蜡冻偶冻蜡"
+      ],
+      "vn": [
+        "Con rối sáp niêm phong đóng băng",
+        "Sáp đông của con rối sáp niêm phong đóng băng"
+      ]
+    },
+    {
+      "line": 4006,
+      "raw": [
+        "黑雪纸蛛",
+        "黑雪纸蛛黑雪纸"
+      ],
+      "vn": [
+        "Nhện giấy tuyết đen",
+        "Giấy tuyết đen của nhện giấy tuyết đen"
+      ]
+    },
+    {
+      "line": 4010,
+      "raw": [
+        "退信邮差"
+      ],
+      "vn": [
+        "Người đưa thư trả về"
+      ]
+    },
+    {
+      "line": 4014,
+      "raw": [
+        "封缄监察者",
+        "封缄监察者监察印"
+      ],
+      "vn": [
+        "Người giám sát niêm phong",
+        "Con dấu giám sát của người giám sát niêm phong"
+      ]
+    },
+    {
+      "line": 4018,
+      "raw": [
+        "雪橇信笼兽",
+        "雪橇信笼兽信笼"
+      ],
+      "vn": [
+        "Thú lồng thư xe trượt tuyết",
+        "Lồng thư của thú lồng thư xe trượt tuyết"
+      ]
+    },
+    {
+      "line": 4022,
+      "raw": [
+        "无人签收的冬天"
+      ],
+      "vn": [
+        "Mùa đông không người ký nhận"
+      ]
+    },
+    {
+      "line": 4027,
+      "raw": [
+        "玻璃墓园"
+      ],
+      "vn": [
+        "Nghĩa trang thủy tinh"
+      ]
+    },
+    {
+      "line": 4034,
+      "raw": [
+        "透明坟场"
+      ],
+      "vn": [
+        "Nghĩa địa trong suốt"
+      ]
+    },
+    {
+      "line": 4038,
+      "raw": [
+        "棱镜碑林"
+      ],
+      "vn": [
+        "Rừng bia lăng kính"
+      ]
+    },
+    {
+      "line": 4042,
+      "raw": [
+        "折光守墓屋"
+      ],
+      "vn": [
+        "Nhà người trông mộ khúc xạ"
+      ]
+    },
+    {
+      "line": 4046,
+      "raw": [
+        "碑光蝶"
+      ],
+      "vn": [
+        "Bướm quang bia"
+      ]
+    },
+    {
+      "line": 4050,
+      "raw": [
+        "玻璃骸骨"
+      ],
+      "vn": [
+        "Hài cốt thủy tinh"
+      ]
+    },
+    {
+      "line": 4054,
+      "raw": [
+        "棱镜蜗牛",
+        "棱镜蜗牛棱镜壳"
+      ],
+      "vn": [
+        "Ốc sên lăng kính",
+        "Vỏ lăng kính của ốc sên lăng kính"
+      ]
+    },
+    {
+      "line": 4058,
+      "raw": [
+        "墓玻璃蜘蛛",
+        "墓玻璃蜘蛛玻璃丝"
+      ],
+      "vn": [
+        "Nhện thủy tinh lăng mộ",
+        "Tơ thủy tinh của nhện thủy tinh lăng mộ"
+      ]
+    },
+    {
+      "line": 4062,
+      "raw": [
+        "露滴灯灵",
+        "露滴灯灵露滴"
+      ],
+      "vn": [
+        "Đèn linh giọt sương",
+        "Giọt sương của đèn linh giọt sương"
+      ]
+    },
+    {
+      "line": 4066,
+      "raw": [
+        "折光守墓者"
+      ],
+      "vn": [
+        "Người trông mộ khúc xạ"
+      ]
+    },
+    {
+      "line": 4070,
+      "raw": [
+        "碎镜送葬者",
+        "碎镜送葬者碎镜"
+      ],
+      "vn": [
+        "Người đưa tang gương vỡ",
+        "Gương vỡ của người đưa tang gương vỡ"
+      ]
+    },
+    {
+      "line": 4074,
+      "raw": [
+        "晶棺守陵兽",
+        "晶棺守陵兽晶棺碎片"
+      ],
+      "vn": [
+        "Thú giữ lăng quan tài pha lê",
+        "Mảnh quan tài pha lê của thú giữ lăng quan tài pha lê"
+      ]
+    },
+    {
+      "line": 4078,
+      "raw": [
+        "看不见的葬礼"
+      ],
+      "vn": [
+        "Tang lễ vô hình"
+      ]
+    },
+    {
+      "line": 4083,
+      "raw": [
+        "蒸汽竹海"
+      ],
+      "vn": [
+        "Biển trúc hơi nước"
+      ]
+    },
+    {
+      "line": 4090,
+      "raw": [
+        "铜节竹林"
+      ],
+      "vn": [
+        "Rừng trúc đốt đồng"
+      ]
+    },
+    {
+      "line": 4094,
+      "raw": [
+        "沸泉茶棚"
+      ],
+      "vn": [
+        "Lán trà suối sôi"
+      ]
+    },
+    {
+      "line": 4098,
+      "raw": [
+        "蒸汽栈桥"
+      ],
+      "vn": [
+        "Cầu ván hơi nước"
+      ]
+    },
+    {
+      "line": 4102,
+      "raw": [
+        "铜竹螳螂"
+      ],
+      "vn": [
+        "Bọ ngựa trúc đồng"
+      ]
+    },
+    {
+      "line": 4106,
+      "raw": [
+        "汽雾剑灵"
+      ],
+      "vn": [
+        "Kiếm linh sương khí"
+      ]
+    },
+    {
+      "line": 4110,
+      "raw": [
+        "阀节竹蜂",
+        "阀节竹蜂阀节刺"
+      ],
+      "vn": [
+        "Ong trúc van đốt",
+        "Gai van đốt của ong trúc van đốt"
+      ]
+    },
+    {
+      "line": 4114,
+      "raw": [
+        "铜笋甲虫",
+        "铜笋甲虫铜笋壳"
+      ],
+      "vn": [
+        "Bọ cánh cứng măng đồng",
+        "Vỏ măng đồng của bọ cánh cứng măng đồng"
+      ]
+    },
+    {
+      "line": 4118,
+      "raw": [
+        "滚露汽蛙",
+        "滚露汽蛙汽泡"
+      ],
+      "vn": [
+        "Ếch hơi nước giọt lăn",
+        "Bọt khí của ếch hơi nước giọt lăn"
+      ]
+    },
+    {
+      "line": 4122,
+      "raw": [
+        "竹海铸客"
+      ],
+      "vn": [
+        "Đúc khách biển trúc"
+      ]
+    },
+    {
+      "line": 4126,
+      "raw": [
+        "蒸泉阀守",
+        "蒸泉阀守阀令牌"
+      ],
+      "vn": [
+        "Người giữ van suối sôi",
+        "Lệnh bài van của người giữ van suối sôi"
+      ]
+    },
+    {
+      "line": 4130,
+      "raw": [
+        "竹节压风兽",
+        "竹节压风兽压风节"
+      ],
+      "vn": [
+        "Thú nén gió đốt trúc",
+        "Đốt nén gió của thú nén gió đốt trúc"
+      ]
+    },
+    {
+      "line": 4134,
+      "raw": [
+        "千节机关龙"
+      ],
+      "vn": [
+        "Cơ quan long ngàn đốt"
+      ]
+    },
+    {
+      "line": 4139,
+      "raw": [
+        "超立方仓储"
+      ],
+      "vn": [
+        "Kho lưu trữ siêu lập phương"
+      ]
+    },
+    {
+      "line": 4146,
+      "raw": [
+        "重复货架"
+      ],
+      "vn": [
+        "Kệ hàng trùng lặp"
+      ]
+    },
+    {
+      "line": 4150,
+      "raw": [
+        "四向装卸门"
+      ],
+      "vn": [
+        "Cửa bốc dỡ bốn hướng"
+      ]
+    },
+    {
+      "line": 4154,
+      "raw": [
+        "空间库存核"
+      ],
+      "vn": [
+        "Lõi tồn kho không gian"
+      ]
+    },
+    {
+      "line": 4158,
+      "raw": [
+        "库存立方"
+      ],
+      "vn": [
+        "Khối lập phương tồn kho"
+      ]
+    },
+    {
+      "line": 4162,
+      "raw": [
+        "叉车侍从"
+      ],
+      "vn": [
+        "Thị tùng xe nâng"
+      ]
+    },
+    {
+      "line": 4166,
+      "raw": [
+        "折角搬运虫",
+        "折角搬运虫折角"
+      ],
+      "vn": [
+        "Sâu vận chuyển góc gập",
+        "Góc gập của sâu vận chuyển góc gập"
+      ]
+    },
+    {
+      "line": 4170,
+      "raw": [
+        "货架索引灵",
+        "货架索引灵索引卡"
+      ],
+      "vn": [
+        "Linh mục lục kệ hàng",
+        "Thẻ mục lục của linh mục lục kệ hàng"
+      ]
+    },
+    {
+      "line": 4174,
+      "raw": [
+        "空盒潜伏体",
+        "空盒潜伏体空盒"
+      ],
+      "vn": [
+        "Thể ẩn nấp hộp rỗng",
+        "Hộp rỗng của thể ẩn nấp hộp rỗng"
+      ]
+    },
+    {
+      "line": 4178,
+      "raw": [
+        "第四维盘点员"
+      ],
+      "vn": [
+        "Nhân viên kiểm kê chiều thứ tư"
+      ]
+    },
+    {
+      "line": 4182,
+      "raw": [
+        "维缝封箱者",
+        "维缝封箱者封箱胶"
+      ],
+      "vn": [
+        "Kẻ đóng thùng khe nứt chiều",
+        "Băng keo dán thùng của kẻ đóng thùng khe nứt chiều"
+      ]
+    },
+    {
+      "line": 4186,
+      "raw": [
+        "对折集装兽",
+        "对折集装兽对折箱"
+      ],
+      "vn": [
+        "Thú container gập đôi",
+        "Hộp gập đôi của thú container gập đôi"
+      ]
+    },
+    {
+      "line": 4190,
+      "raw": [
+        "无法出库之物"
+      ],
+      "vn": [
+        "Vật phẩm không thể xuất kho"
+      ]
+    },
+    {
+      "line": 4195,
+      "raw": [
+        "无人的婚宴"
+      ],
+      "vn": [
+        "Tiệc cưới không người"
+      ]
+    },
+    {
+      "line": 4202,
+      "raw": [
+        "永远热着的宴席"
+      ],
+      "vn": [
+        "Yến tiệc luôn nóng sốt"
+      ]
+    },
+    {
+      "line": 4206,
+      "raw": [
+        "空礼堂"
+      ],
+      "vn": [
+        "Lễ đường trống rỗng"
+      ]
+    },
+    {
+      "line": 4210,
+      "raw": [
+        "镜中新房"
+      ],
+      "vn": [
+        "Tân phòng trong gương"
+      ]
+    },
+    {
+      "line": 4214,
+      "raw": [
+        "酒盏侍者"
+      ],
+      "vn": [
+        "Thị giả chén rượu"
+      ]
+    },
+    {
+      "line": 4218,
+      "raw": [
+        "喜糖纸灵"
+      ],
+      "vn": [
+        "Linh giấy kẹo mừng"
+      ]
+    },
+    {
+      "line": 4222,
+      "raw": [
+        "空椅游魂",
+        "空椅游魂椅背"
+      ],
+      "vn": [
+        "Hồn du đãng ghế trống",
+        "Lưng ghế của hồn du đãng ghế trống"
+      ]
+    },
+    {
+      "line": 4226,
+      "raw": [
+        "红烛蜡偶",
+        "红烛蜡偶红烛泪"
+      ],
+      "vn": [
+        "Búp bê sáp nến đỏ",
+        "Nước mắt nến đỏ của búp bê sáp nến đỏ"
+      ]
+    },
+    {
+      "line": 4230,
+      "raw": [
+        "婚纱蛾",
+        "婚纱蛾婚纱翅"
+      ],
+      "vn": [
+        "Bướm đêm váy cưới",
+        "Cánh váy cưới của bướm đêm váy cưới"
+      ]
+    },
+    {
+      "line": 4234,
+      "raw": [
+        "空席司仪"
+      ],
+      "vn": [
+        "MC bàn trống"
+      ]
+    },
+    {
+      "line": 4238,
+      "raw": [
+        "酒窖守席者",
+        "酒窖守席者窖钥"
+      ],
+      "vn": [
+        "Người giữ tiệc hầm rượu",
+        "Chìa khóa hầm của người giữ tiệc hầm rượu"
+      ]
+    },
+    {
+      "line": 4242,
+      "raw": [
+        "缎带婚轿兽",
+        "缎带婚轿兽缎带"
+      ],
+      "vn": [
+        "Thú kiệu hoa ruy băng",
+        "Ruy băng của thú kiệu hoa ruy băng"
+      ]
+    },
+    {
+      "line": 4246,
+      "raw": [
+        "缺席的新郎"
+      ],
+      "vn": [
+        "Chú rể vắng mặt"
+      ]
+    },
+    {
+      "line": 4251,
+      "raw": [
+        "彩色噪声海"
+      ],
+      "vn": [
+        "Biển nhiễu xạ màu"
+      ]
+    },
+    {
+      "line": 4258,
+      "raw": [
+        "失真沙滩"
+      ],
+      "vn": [
+        "Bãi cát biến dạng"
+      ]
+    },
+    {
+      "line": 4262,
+      "raw": [
+        "信号浮岛"
+      ],
+      "vn": [
+        "Đảo nổi tín hiệu"
+      ]
+    },
+    {
+      "line": 4266,
+      "raw": [
+        "白噪港湾"
+      ],
+      "vn": [
+        "Vịnh nhiễu trắng"
+      ]
+    },
+    {
+      "line": 4270,
+      "raw": [
+        "噪点鱼"
+      ],
+      "vn": [
+        "Cá điểm nhiễu"
+      ]
+    },
+    {
+      "line": 4274,
+      "raw": [
+        "失真鸟"
+      ],
+      "vn": [
+        "Chim biến dạng"
+      ]
+    },
+    {
+      "line": 4278,
+      "raw": [
+        "色块海蜗",
+        "色块海蜗负片壳"
+      ],
+      "vn": [
+        "Ốc biển mảng màu",
+        "Vỏ phim âm bản của ốc biển mảng màu"
+      ]
+    },
+    {
+      "line": 4282,
+      "raw": [
+        "失帧水母",
+        "失帧水母帧片"
+      ],
+      "vn": [
+        "Sứa mất khung hình",
+        "Mảnh khung hình của sứa mất khung hình"
+      ]
+    },
+    {
+      "line": 4286,
+      "raw": [
+        "频闪浮游群",
+        "频闪浮游群频闪光"
+      ],
+      "vn": [
+        "Đàn sinh vật trôi nổi nhấp nháy",
+        "Ánh nhấp nháy của đàn sinh vật trôi nổi nhấp nháy"
+      ]
+    },
+    {
+      "line": 4290,
+      "raw": [
+        "信号捕手"
+      ],
+      "vn": [
+        "Kẻ bắt tín hiệu"
+      ]
+    },
+    {
+      "line": 4294,
+      "raw": [
+        "调色潮汐师",
+        "调色潮汐师调色盘"
+      ],
+      "vn": [
+        "Sư điều sắc thủy triều",
+        "Bảng pha màu của sư điều sắc thủy triều"
+      ]
+    },
+    {
+      "line": 4298,
+      "raw": [
+        "断频虹鳗",
+        "断频虹鳗虹鳍"
+      ],
+      "vn": [
+        "Lươn cầu vồng đứt tần số",
+        "Vây cầu vồng của lươn cầu vồng đứt tần số"
+      ]
+    },
+    {
+      "line": 4302,
+      "raw": [
+        "未调谐的海"
+      ],
+      "vn": [
+        "Vùng biển chưa điều chuẩn"
+      ]
+    },
+    {
+      "line": 4307,
+      "raw": [
+        "低重力垃圾环"
+      ],
+      "vn": [
+        "Vành đai rác trọng lực thấp"
+      ]
+    },
+    {
+      "line": 4314,
+      "raw": [
+        "轨道废物街"
+      ],
+      "vn": [
+        "Phố phế liệu quỹ đạo"
+      ]
+    },
+    {
+      "line": 4318,
+      "raw": [
+        "破船拼接港"
+      ],
+      "vn": [
+        "Cảng ghép nối tàu hỏng"
+      ]
+    },
+    {
+      "line": 4322,
+      "raw": [
+        "磁吸回收场"
+      ],
+      "vn": [
+        "Bãi tái chế hút từ"
+      ]
+    },
+    {
+      "line": 4326,
+      "raw": [
+        "废片卫星"
+      ],
+      "vn": [
+        "Mảnh vệ tinh phế liệu"
+      ]
+    },
+    {
+      "line": 4330,
+      "raw": [
+        "磁尘团"
+      ],
+      "vn": [
+        "Khối bụi từ"
+      ]
+    },
+    {
+      "line": 4334,
+      "raw": [
+        "电池寄居蟹",
+        "电池寄居蟹电池壳"
+      ],
+      "vn": [
+        "Cua ký cư pin",
+        "Vỏ pin của cua ký cư pin"
+      ]
+    },
+    {
+      "line": 4338,
+      "raw": [
+        "缆线飞鳐",
+        "缆线飞鳐缆线翼"
+      ],
+      "vn": [
+        "Cá đuối bay dây cáp",
+        "Cánh cáp của cá đuối bay dây cáp"
+      ]
+    },
+    {
+      "line": 4342,
+      "raw": [
+        "铆钉爬虫",
+        "铆钉爬虫铆钉"
+      ],
+      "vn": [
+        "Bọ bò đinh tán",
+        "Đinh tán của bọ bò đinh tán"
+      ]
+    },
+    {
+      "line": 4346,
+      "raw": [
+        "废环回收王"
+      ],
+      "vn": [
+        "Vua thu gom phế liệu vành đai"
+      ]
+    },
+    {
+      "line": 4350,
+      "raw": [
+        "磁轨拾荒者",
+        "磁轨拾荒者拾荒钩"
+      ],
+      "vn": [
+        "Người nhặt rác đường ray từ tính",
+        "Móc nhặt rác của người nhặt rác đường ray từ tính"
+      ]
+    },
+    {
+      "line": 4354,
+      "raw": [
+        "残骸拼接龙",
+        "残骸拼接龙拼接鳞"
+      ],
+      "vn": [
+        "Rồng ghép mảnh vỡ",
+        "Vảy ghép nối của rồng ghép mảnh vỡ"
+      ]
+    },
+    {
+      "line": 4358,
+      "raw": [
+        "人造星屑"
+      ],
+      "vn": [
+        "Bụi sao nhân tạo"
+      ]
+    },
+    {
+      "line": 4363,
+      "raw": [
+        "无尽后台剧院"
+      ],
+      "vn": [
+        "Nhà hát hậu trường vô tận"
+      ]
+    },
+    {
+      "line": 4370,
+      "raw": [
+        "换景走廊"
+      ],
+      "vn": [
+        "Hành lang đổi cảnh"
+      ]
+    },
+    {
+      "line": 4374,
+      "raw": [
+        "提线仓库"
+      ],
+      "vn": [
+        "Kho dây kéo"
+      ]
+    },
+    {
+      "line": 4378,
+      "raw": [
+        "无观众舞台"
+      ],
+      "vn": [
+        "Sân khấu không khán giả"
+      ]
+    },
+    {
+      "line": 4382,
+      "raw": [
+        "面具小偶"
+      ],
+      "vn": [
+        "Con rối nhỏ đeo mặt nạ"
+      ]
+    },
+    {
+      "line": 4386,
+      "raw": [
+        "提词纸鸟"
+      ],
+      "vn": [
+        "Chim giấy nhắc lời"
+      ]
+    },
+    {
+      "line": 4390,
+      "raw": [
+        "幕布蛛",
+        "幕布蛛幕布丝"
+      ],
+      "vn": [
+        "Nhện màn nhung",
+        "Tơ màn nhung của nhện màn nhung"
+      ]
+    },
+    {
+      "line": 4394,
+      "raw": [
+        "灯架脚兽",
+        "灯架脚兽追光灯"
+      ],
+      "vn": [
+        "Thú chân giá đèn",
+        "Đèn theo dõi của thú chân giá đèn"
+      ]
+    },
+    {
+      "line": 4398,
+      "raw": [
+        "道具箱影",
+        "道具箱影道具"
+      ],
+      "vn": [
+        "Bóng hòm đạo cụ",
+        "Đạo cụ của bóng hòm đạo cụ"
+      ]
+    },
+    {
+      "line": 4402,
+      "raw": [
+        "换景总管"
+      ],
+      "vn": [
+        "Tổng quản đổi cảnh"
+      ]
+    },
+    {
+      "line": 4406,
+      "raw": [
+        "绳桥提偶师",
+        "绳桥提偶师提线"
+      ],
+      "vn": [
+        "Nghệ nhân múa rối cầu dây",
+        "Dây kéo của nghệ nhân múa rối cầu dây"
+      ]
+    },
+    {
+      "line": 4410,
+      "raw": [
+        "落幕布景兽",
+        "落幕布景兽布景板"
+      ],
+      "vn": [
+        "Thú phông nền hạ màn",
+        "Tấm phông nền của thú phông nền hạ màn"
+      ]
+    },
+    {
+      "line": 4414,
+      "raw": [
+        "最后一位观众"
+      ],
+      "vn": [
+        "Vị khán giả cuối cùng"
+      ]
+    },
+    {
+      "line": 4419,
+      "raw": [
+        "宝箱怪",
+        "价值的结晶"
+      ],
+      "vn": [
+        "Quái rương báu",
+        "Tinh thể của giá trị"
+      ]
+    }
+  ]
+}
