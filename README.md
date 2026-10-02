@@ -3,7 +3,7 @@
 > **Dự Án Bản Địa Hóa Tiếng Việt & Tích Hợp SillyTavern (Localization Project)**
 >
 > - **Nguyên tác**: **Adirm007** (Phát hành theo giấy phép CC BY-NC 4.0).
-> - **Mục tiêu dự án**: Bản địa hóa giao diện Web UI, hệ thống Prompt bàn giao hai chiều (Entry & Exit handoff), đồng bộ bộ từ khóa Worldbook (951 thuật ngữ) và xây dựng Adapter hai chiều cho `stat_data` (ENG ↔ CN) tương thích với Card SillyTavern **Lỗ Thần Quốc / Cửu Thập Cửu Dạ Mộng (Độc Giả - Reader)**.
+> - **Mục tiêu dự án**: Bản địa hóa giao diện Web UI, hệ thống Prompt bàn giao hai chiều (Entry & Exit handoff), đồng bộ bộ từ khóa Worldbook (951 thuật ngữ) và xây dựng Adapter hai chiều cho `stat_data` (ENG ↔ CN) tương thích với Card SillyTavern **Thiên Chương Định Mệnh / Cửu Thập Cửu Dạ Mộng (Độc Giả - Reader)**.
 
 ---
 
