@@ -1664,7 +1664,7 @@ _%>
 <%_ } _%>
 
 <%_ /* BOOKSEA_READER_HANDOFF_BEGIN */ _%>
-<%_ if (matchChatMessages(/进入普罗泰利西翁/, { start: -1, role: 'user' })) { _%>
+<%_ if (matchChatMessages(/(?:Tiến vào|Vào)\s*(?:Protelysion|Proteleision)|进入普罗泰利西翁/i, { start: -1, role: 'user' })) { _%>
 [普罗泰利西翁入口]
 这是用户主动发起的入口请求。承接当前剧情，沿用读者当前的人格与呈现方式，描写抵达普罗泰利西翁（Protelysion，《书海》迷宫）入口的场景。
 场景描写结束后，在正文末尾另起一行，原样呈现以下入口标签：
@@ -1681,7 +1681,7 @@ if (bsMessageId > 0 && bsMessages[bsMessageId]?.is_user !== true
     && bsMessages[bsMessageId - 1]?.is_user === true) bsMessageId--;
 let bsNativeMessage = bsMessages[bsMessageId];
 let bsExitText = typeof getChatMessage === 'function' ? getChatMessage(bsMessageId) : bsNativeMessage?.mes;
-let bsMatches = bsNativeMessage?.is_user === true && /^\s*离开普罗泰利西翁\s*$/.test(String(bsExitText ?? ''));
+let bsMatches = bsNativeMessage?.is_user === true && /^\s*(?:Rời khỏi (?:Protelysion|Proteleision)|离开普罗泰利西翁)\s*$/.test(String(bsExitText ?? ''));
 let bsBook = typeof getvar === 'function' ? getvar('booksea', { scope: 'local', defaults: {} }) : {};
 let bsInfo = bsMessageId >= 0 && typeof getvar === 'function'
     ? getvar('bookseaPromptHandoff', { scope: 'message', withMsg: { id: bsMessageId }, defaults: null }) : null;
@@ -1747,7 +1747,7 @@ if (bsMessageId > 0 && bsMessages[bsMessageId]?.is_user !== true
     && bsMessages[bsMessageId - 1]?.is_user === true) bsMessageId--;
 let bsNativeMessage = bsMessages[bsMessageId];
 let bsExitText = typeof getChatMessage === 'function' ? getChatMessage(bsMessageId) : bsNativeMessage?.mes;
-let bsMatches = bsNativeMessage?.is_user === true && /^\s*离开普罗泰利西翁\s*$/.test(String(bsExitText ?? ''));
+let bsMatches = bsNativeMessage?.is_user === true && /^\s*(?:Rời khỏi (?:Protelysion|Proteleision)|离开普罗泰利西翁)\s*$/.test(String(bsExitText ?? ''));
 let bsBook = typeof getvar === 'function' ? getvar('booksea', { scope: 'local', defaults: {} }) : {};
 let bsInfo = bsMessageId >= 0 && typeof getvar === 'function'
     ? getvar('bookseaPromptHandoff', { scope: 'message', withMsg: { id: bsMessageId }, defaults: null }) : null;

@@ -1676,11 +1676,11 @@ try {
       && _bs_chat[_bs_id - 1]?.is_user === true) _bs_id--;
   let _bs_msg = _bs_chat[_bs_id];
   let _bs_text = typeof getChatMessage === 'function' ? getChatMessage(_bs_id) : _bs_msg?.mes;
-  if (_bs_msg?.is_user === true && /^\s*Rời khỏi (?:Protelysion|Proteleision)\s*$/.test(String(_bs_text ?? ''))) {
+  if (_bs_msg?.is_user === true && /^\s*(?:Rời khỏi (?:Protelysion|Proteleision)|离开普罗泰利西翁)\s*$/.test(String(_bs_text ?? ''))) {
     let _bs_sw = _bs_msg?.swipe_info?.[_bs_msg?.swipe_id ?? 0];
     let _bs_info = _bs_msg?.extra?.bookseaHandoff ?? _bs_sw?.extra?.bookseaHandoff ?? _bs_sw?.bookseaHandoff
       ?? (typeof getvar === 'function' ? getvar('bookseaPromptHandoff', { scope: 'message', withMsg: { id: _bs_id }, defaults: null }) : null);
-    let _bs_line = String(_bs_info?.summary ?? '').split(/\r?\n/).find(_l => _l.startsWith('Quái địch liên quan：') || _l.startsWith('Quái địch liên quan:')) || '';
+    let _bs_line = String(_bs_info?.summary ?? '').split(/\r?\n/).find(_l => _l.startsWith('Quái địch liên quan：') || _l.startsWith('Quái địch liên quan:') || _l.startsWith('相关敌怪：') || _l.startsWith('相关敌怪:')) || '';
     for (let _m of _bs_line.matchAll(/「([^」]+)」Lv\./g)) _bs_foes.push(_m[1]);
   }
 } catch (_e) { _bs_foes = []; }
@@ -4422,7 +4422,7 @@ Kẻ săn mồi ngụy trang có thể bắt gặp ở khắp các tầng mê cu
 <%_ } _%>
 <%_ } _%>
 <%_ /* BOOKSEA_READER_HANDOFF_BEGIN */ _%>
-<%_ if (matchChatMessages(/(?:Tiến vào|Vào)\s*(?:Protelysion|Proteleision)/i, { start: -1, role: 'user' })) { _%>
+<%_ if (matchChatMessages(/(?:Tiến vào|Vào)\s*(?:Protelysion|Proteleision)|进入普罗泰利西翁/i, { start: -1, role: 'user' })) { _%>
 [Lối vào Protelysion]
 Đây là yêu cầu tiến vào do <user> khởi xướng. Nối tiếp cốt truyện hiện tại, miêu tả cảnh {{getvar::system_name}} mở cửa cho <user> để họ tiến vào lối vào Protelysion (mê cung 《Thư Hải》)
 Sau khi miêu tả xong phân cảnh, hãy xuống dòng mới ở cuối phần chính văn, hiển thị nguyên vẹn thẻ lối vào sau:
