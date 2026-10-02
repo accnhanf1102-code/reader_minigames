@@ -75,8 +75,9 @@
 
 ## 游玩 / 安装
 
-- 独立试玩：https://adirm007.github.io/Protelysion/ （不会读写宿主，不调用LLM）
-- 单正则安装：https://adirm007.github.io/Protelysion/loader.html
+- Chơi thử độc lập (Việt hóa): https://accnhanf1102-code.github.io/reader_minigames/ （Không đọc ghi host, không gọi LLM）
+- Cài đặt đơn quy tắc: https://accnhanf1102-code.github.io/reader_minigames/loader.html
+- Bản gốc tiếng Trung: https://adirm007.github.io/Protelysion/
 - `install/`：已更新的读者正则、读者核心和书海外链正则。必须已有酒馆助手、MVU及EJS提示词模板扩展。
 
 1. 导入`读者对话渲染0917 (new).json`，替换/停用原读者正则，不同时启用两版。
