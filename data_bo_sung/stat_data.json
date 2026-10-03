@@ -1,0 +1,549 @@
+{
+    "events": {
+        "open": false,
+        "end": false,
+        "title": "",
+        "stage": "",
+        "completed_events": []
+    },
+    "world": {
+        "time": "Kỷ nguyên Phục Hưng năm 488-Tháng 04-Ngày 01-Thứ Hai-09:43",
+        "location": "Đại Lục Astaria Tây Nam-Vương Đình Tinh Linh-Lucentia-Elvenheim-Protelysion"
+    },
+    "task_list": {
+        "Chương Sử Thi: Cửu Thập Cửu Dạ Mộng": {
+            "status": "Đang tiến hành",
+            "attention_level": "Cao",
+            "progress": "Bắt đầu khám phá Thư Hải",
+            "details": "Ủy thác: Cửu Thập Cửu Dạ Mộng. Cấp độ: S",
+            "objective": "Khám phá Protelysion và tìm hiểu những tri thức bị lãng quên",
+            "reward": "Lượng lớn FP, hồi tưởng cốt truyện, trích xuất Bảo cụ"
+        }
+    },
+    "protagonist": {
+        "race": "Thượng Cấp Tinh Linh",
+        "identity": [],
+        "profession": [],
+        "life_tier": "第三层级/精英",
+        "level": 10,
+        "accumulated_exp": 11940,
+        "required_exp": 16940,
+        "attribute_points": 0,
+        "attributes": {
+            "strength": 3,
+            "agility": 8,
+            "constitution": 8,
+            "intelligence": 15,
+            "spirit": 10
+        },
+        "health": {
+            "current": 3244,
+            "limit": {
+                "_base": 3244,
+                "extra": 0
+            }
+        },
+        "mana": {
+            "current": 7500,
+            "limit": {
+                "_base": 7500,
+                "extra": 0
+            }
+        },
+        "stamina": {
+            "current": 3300,
+            "limit": {
+                "_base": 3300,
+                "extra": 0
+            }
+        },
+        "status_effects": {
+            "Tập Thường Nhật": {
+                "type": "Đặc Biệt",
+                "effects": "Không gặp bất kỳ bất ngờ hay khủng hoảng nào, ở trong ngày thường bình yên, có thể chủ động giải trừ",
+                "stacks": 1,
+                "remaining_time": "7 ngày",
+                "source": "Điều chỉnh nhịp điệu - Đứng sau Thơ Cầu Nguyện"
+            },
+            "Gợn Sóng · Hỷ": {
+                "type": "Đặc Biệt",
+                "effects": "Trong thời gian ngắn sẽ xảy ra sự việc nhẹ nhàng vui vẻ hoặc vở kịch hài hước",
+                "stacks": 1,
+                "remaining_time": "Đến khi kích hoạt sự kiện",
+                "source": "Điều chỉnh nhịp điệu - Đứng sau Thơ Cầu Nguyện"
+            },
+            "Gợn Sóng · Hiểm": {
+                "type": "Đặc Biệt",
+                "effects": "Trong thời gian ngắn sẽ gặp khủng hoảng, âm mưu hoặc khởi đầu cuộc đột kích của địch",
+                "stacks": 1,
+                "remaining_time": "Đến khi kích hoạt sự kiện",
+                "source": "Điều chỉnh nhịp điệu - Đứng sau Thơ Cầu Nguyện"
+            },
+            "Cầu Thi · I": {
+                "type": "Đặc Biệt",
+                "effects": "[Kiểm tra]: Kiểm tra chiến đấu/sản xuất vì người khác nhận 【Ưu thế】, kiểm tra chiến đấu/sản xuất thuần túy vì lợi ích bản thân chịu 【Bất lợi】; [Tự sự]: Hành vi vị tha dễ nhận kết quả tích cực; thỉnh cầu ích kỷ dễ thất bại",
+                "stacks": 1,
+                "remaining_time": "Đến nửa đêm làm mới",
+                "source": "Cầu Thi - Ưu tiên hơn điều chỉnh nhịp điệu; ưu thế/bất lợi triệt tiêu với áp chế cấp bậc liền kề; vô hiệu với mục tiêu cao hơn hoặc thấp hơn bản thân 2 bậc"
+            }
+        },
+        "money": 0,
+        "inventory": {
+            "Đồ ăn vặt": {
+                "quality": "Thường",
+                "type": "Thức Ăn",
+                "quantity": 99,
+                "tags": [
+                    "Thức Ăn"
+                ],
+                "effects": {
+                    "Ngon": "Tuy không no nhưng rất ngon"
+                },
+                "description": "Đồ ăn vặt của tinh linh",
+                "_hidden": false
+            }
+        },
+        "assets": {
+            "Tàu Lữ Khách Tĩnh Lặng": {
+                "quality": "Truyền Thuyết",
+                "type": "Phương tiện",
+                "tags": [
+                    "Chủ sở hữu: Lục Diệp",
+                    "Mục đích: Viễn hành / căn cứ di động",
+                    "Trạng thái: Khả dụng"
+                ],
+                "total_space": "Thân tàu: 1 thân phi không đĩnh, 1 khoang sinh hoạt, 1 khoang xưởng; diện tích: khoảng 900m²|Không gian khả dụng: khoảng 120m²",
+                "settlement": "Định giá tài sản: 100 triệu Z; lần quyết toán gần nhất: chưa quyết toán",
+                "description": "Một phi không đĩnh cỡ trung mang trong lòng lò rèn động lực dĩ thái \"Trái Tim Tịch Lặng\", vừa có thể viễn hành đường dài, vừa là nơi trú ngụ và làm việc — một căn cứ giữa mây trời có thể tự lực lâu dài.",
+                "location": "Di chuyển theo người sở hữu",
+                "internal_assets": {
+                    "Thân Phi Không Đĩnh": {
+                        "quality": "Truyền Thuyết",
+                        "tags": [
+                            "Loại hình: Phương tiện",
+                            "Vị trí: Thân tàu",
+                            "Trạng thái: Khả dụng"
+                        ],
+                        "quantity": 1,
+                        "effects": {
+                            "Thuộc tính cơ bản": "Toàn thân dài 42 mét, sải cánh 28 mét; tốc độ hành trình 150km/h; trần bay tối đa 10.000 mét; sức chở tối đa 8 người; thủy thủ đoàn tiêu chuẩn 1 người."
+                        },
+                        "description": "Thân bay và hệ thống điều khiển chính của Tàu Lữ Khách Tĩnh Lặng.",
+                        "total_occupied_space": "Phi không đĩnh cỡ trung, khoảng 900m²"
+                    },
+                    "Khoang Sinh Hoạt": {
+                        "quality": "Hiếm",
+                        "tags": [
+                            "Loại hình: Cơ sở sinh hoạt",
+                            "Vị trí: Giữa thân tàu",
+                            "Trạng thái: Khả dụng"
+                        ],
+                        "quantity": 1,
+                        "effects": {
+                            "Bố cục": "1 phòng ngủ chính, 3 phòng khách đôi, 1 phòng khách kiêm phòng ăn, 2 phòng tắm, 1 bếp."
+                        },
+                        "description": "Khoang sinh hoạt trọn vẹn đáp ứng nhu cầu cư trú lâu dài trên hành trình.",
+                        "total_occupied_space": "Khoảng 300m²"
+                    },
+                    "Xưởng Đa Năng": {
+                        "quality": "Hiếm",
+                        "tags": [
+                            "Loại hình: Xưởng thủ công",
+                            "Vị trí: Đuôi thân tàu",
+                            "Trạng thái: Khả dụng"
+                        ],
+                        "quantity": 1,
+                        "effects": {
+                            "Thiết bị tự động hóa": "Khi [Rèn Đúc][Luyện Kim][May Vá][Nấu Ăn]: kiểm định +4, thời gian sản xuất +35%."
+                        },
+                        "description": "Xưởng tổng hợp tích hợp bàn luyện kim, bàn rèn và bàn phù chú, hỗ trợ sản xuất, chế tạo và bảo trì trên đường đi.",
+                        "total_occupied_space": "Khoảng 80m²"
+                    },
+                    "Hệ Thống Hàng Trình Tĩnh Lặng": {
+                        "quality": "Truyền Thuyết",
+                        "tags": [
+                            "Loại hình: Hệ thống ẩn giấu",
+                            "Vị trí: Hệ thống động lực và điều khiển",
+                            "Trạng thái: Khả dụng"
+                        ],
+                        "quantity": 1,
+                        "effects": {
+                            "Hành trình tĩnh lặng": "Có thể né tránh hiệu quả sự dò xét bằng ma lực."
+                        },
+                        "description": "Hệ thống hàng trình đặc biệt dùng để giảm dấu hiệu ma lực của con tàu.",
+                        "total_occupied_space": "Không chiếm dụng"
+                    }
+                },
+                "_hidden": false
+            },
+            "Nhà Vệ Sinh Cộng Cộng Tinh Linh": {
+                "quality": "Ưu Tú",
+                "type": "Kim Thủ Chỉ",
+                "tags": [
+                    "Kim Thủ Chỉ"
+                ],
+                "total_space": "9m vuông",
+                "settlement": "Mỗi Tháng Thu 100 Z",
+                "description": "Tinh Linh cũng cần giải quyết nổi buồn, và họ thì thích làm 1 cách rất thân thiện với thiên nhiên",
+                "location": "Vương Đình Tinh Linh. Gần Quảng Trường",
+                "internal_assets": {
+                    "Toilet Thiên Nhiên": {
+                        "quality": "Ưu Tú",
+                        "tags": [
+                            "Loại nội thất, tình trạng: có thể sử dụng"
+                        ],
+                        "quantity": 1,
+                        "effects": {
+                            "Mát": "Có thể cảm thấy gió thổi khi đang giải quyết nổi buồn"
+                        },
+                        "description": "Loại Toilet Tinh Linh ưa thích",
+                        "total_occupied_space": "2m vuông"
+                    }
+                },
+                "_hidden": false
+            }
+        },
+        "equipment": {
+            "Nhẫn Trí Lực": {
+                "quality": "Hiếm",
+                "type": "Phụ Kiện",
+                "tags": [
+                    "Nhẫn"
+                ],
+                "effects": {
+                    "Trí Tuệ": "Kiểm định trí lực +2.",
+                    "Hấp Thu Ma Lực": "Tiêu hao một [Hành Động] và 400 điểm MP, nhận hiệu ứng [Cường Hóa Năng Lượng], mỗi hiệp hồi phục 350 điểm MP, duy trì 2 hiệp."
+                },
+                "description": "Chiếc nhẫn có thể tăng cường trí lực của người đeo.",
+                "location": ""
+            },
+            "Hòm Du Hành Tường Than Thở": {
+                "quality": "Sử Thi",
+                "type": "Trang Bị Không Gian",
+                "tags": [
+                    "Không Gian: Cỡ Lớn",
+                    "Rương Hòm",
+                    "Cấm Sinh Vật Sống"
+                ],
+                "effects": {
+                    "Gấp Nếp Diện Rộng": "Cung cấp khoảng 30 mét khối không gian lưu trữ, tốc độ trôi thời gian bên trong giảm 90%."
+                },
+                "description": "Một chiếc vali da màu đen khổng lồ trông có vẻ bình thường, có thể chứa một lượng lớn nguyên liệu thô, nhược điểm là khi lấy vật phẩm cồng kềnh ra ngoài bắt buộc phải tìm một bãi đất trống tương đối rộng rãi mới có thể giải phong và đưa ra an toàn.",
+                "location": ""
+            },
+            "Kẻ Trộm Ký Ức": {
+                "quality": "Hiếm",
+                "type": "Vũ Khí",
+                "tags": [
+                    "Pháp trượng",
+                    "Tấn công: 180"
+                ],
+                "effects": {
+                    "Trộm Ký Ức": "Khi đánh bại kẻ địch, có tỷ lệ d20≥14 học được một kỹ năng phẩm chất [Hiếm] mà nó từng sử dụng (quên sau khi kết thúc chiến đấu)."
+                },
+                "description": "Thân trượng hắc diệu thạch, đỉnh khảm một quả cầu thủy tinh rỗng, có thể bắt giữ mảnh ký ức của kẻ địch trong thời gian ngắn.",
+                "location": ""
+            },
+            "Bàn Tay Thuật Sĩ Bí Thuật": {
+                "quality": "Hiếm",
+                "type": "Phòng Cụ",
+                "tags": [
+                    "Giáp vải",
+                    "Phòng ngự: 140"
+                ],
+                "effects": {
+                    "Nạp Đầy Năng Lượng": "Sát thương năng lượng tăng 12%."
+                },
+                "description": "Dệt từ lụa bạc, trên mu bàn tay dùng bột tinh thể bí thuật thêu nên một pháp trận phức tạp, có thể gia tăng uy năng ma pháp.",
+                "location": ""
+            },
+            "Quần Lót của Thánh Nữ": {
+                "quality": "Thường",
+                "type": "Trang Bị Nội Y",
+                "tags": [
+                    "Trang Bị",
+                    "Nội Y"
+                ],
+                "effects": {
+                    "Không": "Không có hiệu quả đặc biệt"
+                },
+                "description": "Kiểu dáng ngây thơ, Không có hiệu quả đặc biệt. Người đang giữ món trang bị cũng chẳng hứng thú, chẳng qua chỉ là cầm nhầm",
+                "location": ""
+            }
+        },
+        "skills": {
+            "Phượng Hoàng Diễm Tức": {
+                "quality": "Hiếm",
+                "type": "Chủ động",
+                "consumption": "Tấn công: 650MP",
+                "tags": [
+                    "Trí Lực",
+                    "Phạm vi: 3",
+                    "Sát thương",
+                    "Uy lực: 400",
+                    "Thượng Cấp Tinh Linh"
+                ],
+                "effects": {
+                    "Sát thương diện rộng": "Gây 100% sát thương năng lượng lên tất cả mục tiêu trong phạm vi",
+                    "Sát thương duy trì": "Khiến mục tiêu rơi vào trạng thái [Phượng Hoàng Tàn Dư], mỗi hiệp chịu 180 điểm sát thương chuẩn, duy trì 3 hiệp."
+                },
+                "description": "Ngâm xướng tôn danh Kim Phụng, từ lòng bàn tay giải phóng một đợt sóng lửa hình quạt rực cháy mang theo ngọn lửa phượng hoàng thiêu đốt vạn vật.",
+                "_hidden": false
+            },
+            "Tinh Huy Tinh Thông": {
+                "quality": "Hiếm",
+                "type": "Bị động",
+                "consumption": "",
+                "tags": [
+                    "Trí Lực",
+                    "Bản thân",
+                    "Tăng ích",
+                    "Thượng Cấp Tinh Linh"
+                ],
+                "effects": {
+                    "Tăng sát thương năng lượng": "Sát thương cuối cùng do toàn bộ sát thương [Năng Lượng] gây ra tăng 12%.",
+                    "Tăng độ chính xác": "Phán định trúng đích +2."
+                },
+                "description": "Nền tảng áo thuật lĩnh hội từ Học Cung Tinh Huy vượt xa người thường có thể với tới. Hiểu biết sâu sắc về bản chất ma lực giúp bạn luôn tìm được góc độ sắc bén nhất khi dẫn xuất năng lượng, đưa sức phá hoại của phép thuật vượt khỏi giới hạn thông thường.",
+                "_hidden": false
+            },
+            "Tinh Lạc Nhất Trảm": {
+                "quality": "Hiếm",
+                "type": "Chủ động",
+                "consumption": "Tấn công: 620SP",
+                "tags": [
+                    "Lực Lượng",
+                    "Đơn thể",
+                    "Sát thương",
+                    "Uy lực: 530",
+                    "Thượng Cấp Tinh Linh"
+                ],
+                "effects": {
+                    "Sát thương hỗn hợp": "Gây 50% sát thương vật lý và 50% sát thương năng lượng, đồng thời gây thêm 180 điểm sát thương năng lượng.",
+                    "Tăng độ chính xác": "Phán định trúng đích của đòn tấn công này nhận hiệu chỉnh +2."
+                },
+                "description": "Lấy kiếm thuật quân lễ ngàn năm lưu truyền của phương trận công dân làm nền tảng, rót năng lượng áo thuật vào lưỡi kiếm trắng muốt chém ra một kích. Nơi mũi kiếm đi qua để lại vệt cầu vồng trắng xóa, nhát chém vật lý cùng nhát cắt tinh huy cùng lúc băm nát vết thương, chuẩn xác và tao nhã phi thường.",
+                "_hidden": false
+            },
+            "Thất Mang Chi Vận": {
+                "quality": "Hiếm",
+                "type": "Bị động",
+                "consumption": "",
+                "tags": [
+                    "Trí Lực",
+                    "Bản thân",
+                    "Tăng ích",
+                    "Thượng Cấp Tinh Linh"
+                ],
+                "effects": {
+                    "Giảm hao tổn": "Tiêu hao MP của tất cả kỹ năng chủ động giảm cố định 12%.",
+                    "Tuần hoàn ma lực": "Mỗi hiệp tự động hồi phục 200 điểm MP cho bản thân."
+                },
+                "description": "Pháp môn minh tưởng truyền thừa từ Thánh Điện Thất Mang giúp vòng tuần hoàn ma lực của bạn chuẩn xác và không hề hao tổn tựa như tinh tú vận hành trên vòm trời. Từng sợi áo năng đều được phân bổ chuẩn xác hoàn hảo, tuyệt đối không vương một tia lãng phí.",
+                "_hidden": false
+            },
+            "Cao Đẳng Huyết Thống": {
+                "quality": "Hiếm",
+                "type": "Bị động",
+                "consumption": "",
+                "tags": [
+                    "Tinh Thần",
+                    "Bản thân",
+                    "Tăng ích",
+                    "Thượng Cấp Tinh Linh"
+                ],
+                "effects": {
+                    "Kháng tinh thần": "Nhận hiệu chỉnh +2 khi phán định chống lại các hiệu ứng dạng [Tinh Thần].",
+                    "Tăng hiệu quả trị liệu": "Thi triển kỹ năng dạng [Tinh Thần], hiệu quả +12%."
+                },
+                "description": "Dòng máu cổ xưa ngưng tụ tinh huy ban cho bạn ý chí siêu phàm thoát tục. Tâm trí được gọt giũa qua tuổi thọ đằng đẵng vững chãi tựa tảng đá trắng ngàn năm, sự mê hoặc hay sợ hãi phàm tục đứng trước bạn chẳng khác nào giọt sương đọng trên vách đá.",
+                "_hidden": false
+            },
+            "Tinh Huy Tiễn Vũ": {
+                "quality": "Hiếm",
+                "type": "Chủ động",
+                "consumption": "Tấn công: 580MP",
+                "tags": [
+                    "Trí Lực",
+                    "Phạm vi: 4",
+                    "Sát thương",
+                    "Uy lực: 500",
+                    "Thượng Cấp Tinh Linh"
+                ],
+                "effects": {
+                    "Sát thương năng lượng": "Gây 100% sát thương năng lượng",
+                    "Làm suy yếu phòng ngự": "Khiến mục tiêu rơi vào trạng thái [Tinh Thực], phòng ngự năng lượng giảm 11%, duy trì 3 hiệp."
+                },
+                "description": "Ngưng kết áo thuật bí truyền từ Học Cung Tinh Huy nơi đầu ngón tay, hóa thành những mũi tên sao lấp lánh phóng vụt ra. Mũi tên trúng đích liền vỡ vụn bên trong cơ thể mục tiêu thành vô số mảnh tinh huy li ti, liên tục làm sụp đổ bình chướng ma pháp của kẻ địch.",
+                "_hidden": false
+            },
+            "Trường Sinh Công": {
+                "quality": "Hiếm",
+                "type": "Bị động",
+                "consumption": "",
+                "tags": [
+                    "Tình Dục"
+                ],
+                "effects": {
+                    "Trường Sinh": "Có thể sản xuất tinh liên tục"
+                },
+                "description": "Dù mang tên là trường sinh công nhưng tác dụng duy nhất là gia tăng khả năng giường chiếu",
+                "_hidden": false
+            },
+            "Chương Đệm: Nghỉ Ngơi": {
+                "quality": "Duy Nhất",
+                "type": "Chủ động",
+                "consumption": "[Hành động: 1] [MP: 0]",
+                "tags": [
+                    "Tinh thần",
+                    "Bản thân",
+                    "Chức năng",
+                    "Đặc chất: Mệnh định",
+                    "Khu an toàn"
+                ],
+                "effects": {
+                    "Tách rời tự sự": "Bất kể đang ở nơi đâu (bao gồm Hư Hải/tuyệt cảnh), phớt lờ phong tỏa không gian, dịch chuyển người sử dụng đến [Không gian chiều không xác định · Một quán cà phê ven biển nào đó] chỉ có một mình Độc giả.",
+                    "Hạn chế chiến đấu": "Nếu sử dụng trong chiến đấu, sau khi phát động cần đến [Đầu hiệp sau nữa] mới có thể có hiệu lực truyền tống, nhưng trừ khi chết thì sẽ không bị cắt đứt"
+                },
+                "description": "Đã mệt mỏi rồi sao? Vậy thì hãy dừng bút nghỉ ngơi một chút trước đã.",
+                "_hidden": false
+            },
+            "Chủ Nhân Câu Chuyện": {
+                "quality": "Duy Nhất",
+                "type": "Bị động",
+                "consumption": "Không",
+                "tags": [
+                    "Tinh thần",
+                    "Bản thân",
+                    "Chức năng"
+                ],
+                "effects": {
+                    "Miễn nhiễm can thiệp": "Vĩnh viễn miễn nhiễm tất cả can thiệp tinh thần có thể dẫn đến 'Mất tư cách nhân vật chính', bao gồm nhưng không giới hạn ở [Sợ hãi], [Mê hoặc], [Chi phối], [Khống chế tâm trí], [Tước đoạt ý chí], v.v.; hiệu quả này phớt lờ chênh lệch giai vị nguồn phát, không thể bị xua tan, áp chế hoặc vô hiệu hóa"
+                },
+                "description": "Sự gia hộ của Độc giả, với tư cách vừa là người cầm bút kiêm nhân vật chính của câu chuyện, ý chí của nhân vật chính phải là tự do.",
+                "_hidden": false
+            }
+        },
+        "ascension_path": {
+            "is_enabled": false
+        }
+    },
+    "fate_points": 1592,
+    "partners_list": {
+        "Elaron": {
+            "is_present": true,
+            "_hidden": false,
+            "tags": [],
+            "race": "Thượng Cấp Tinh Linh",
+            "identity": [
+                "Thánh Nữ Của Thượng Cấp Tinh Linh"
+            ],
+            "profession": [
+                "Thánh Nữ"
+            ],
+            "life_tier": "第四层级/史诗",
+            "personality": "Bề ngoài nghiêm trang nhưng bên trong thì giống như bao tinh linh khác, hướng nội và lười",
+            "likes": "Thích chăm sóc cây",
+            "appearance": "Dáng người tuyệt trần, nước gia trắng hồng, mái tóc vàng óng ánh kim, Là 1 trong những người phụ nữ xinh đẹp nhất lục địa.",
+            "outfit": "Áo ngủ lụa sương mai mỏng tang xuyên thấu, áo yếm lụa viền lá bạc, quần lót lụa trắng ngà",
+            "level": 13,
+            "health": {
+                "current": 10048,
+                "limit": {
+                    "_base": 10048,
+                    "extra": 0
+                }
+            },
+            "mana": {
+                "current": 16500,
+                "limit": {
+                    "_base": 16500,
+                    "extra": 0
+                }
+            },
+            "stamina": {
+                "current": 12000,
+                "limit": {
+                    "_base": 12000,
+                    "extra": 0
+                }
+            },
+            "attributes": {
+                "strength": 8,
+                "agility": 8,
+                "constitution": 10,
+                "intelligence": 10,
+                "spirit": 12
+            },
+            "status_effects": {},
+            "inventory": {},
+            "assets": {},
+            "equipment": {
+                "Lắc Tay": {
+                    "quality": "Thường",
+                    "type": "Trang Sức",
+                    "tags": [
+                        "Trang Sức"
+                    ],
+                    "effects": {},
+                    "description": "Không có hiệu ứng đặc biệt, chỉ là 1 chiếc lắc tay làm đẹp cổ kính",
+                    "location": ""
+                }
+            },
+            "skills": {
+                "Vắt Tinh": {
+                    "quality": "Ưu Tú",
+                    "type": "Chủ Động",
+                    "consumption": "",
+                    "tags": [
+                        "Bị Động"
+                    ],
+                    "effects": {},
+                    "description": "Kỹ năng cơ bản của Succubus. Elaron vô tình nhận được từ hiệu ứng ban phước nhận kỹ năng ngẫu nhiên từ khi sinh ra",
+                    "_hidden": false
+                }
+            },
+            "ascension_path": {
+                "is_enabled": true,
+                "elements": {
+                    "custom": {
+                        "desc": "Yếu Tố:\n- Gia Tốc Sinh Trưởng\n- Phước Lành Hồi Phục"
+                    }
+                },
+                "authority": {},
+                "law": {},
+                "divine_status": "",
+                "divine_realm": {
+                    "name": "",
+                    "description": ""
+                }
+            },
+            "destined_contract": true,
+            "affection": 55,
+            "inner_thoughts": "Nơi này thật kỳ lạ nhưng cũng đầy hấp dẫn. Lục Diệp... anh ấy mang lại một cảm giác an toàn khó tả, khác hẳn với những kẻ nhàm chán ở vương đình.",
+            "backstory": ""
+        }
+    },
+    "news": {
+        "astalia_express": {
+            "faction_news": "",
+            "exalted_traces": "",
+            "military_actions": "",
+            "economic_arteries": "",
+            "disaster_warnings": ""
+        },
+        "tavern_board": {
+            "high_bounties": "",
+            "adventure_discoveries": "",
+            "monster_anomalies": "",
+            "wanted_criminals": "",
+            "treasure_rumors": ""
+        },
+        "afternoon_tea_party": {
+            "social_anecdotes": "",
+            "far_sight": "",
+            "ripples_of_fate": "",
+            "encounter_omens": ""
+        }
+    }
+}
