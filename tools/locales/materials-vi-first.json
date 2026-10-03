@@ -1,0 +1,1082 @@
+{
+  "T01_N01": {
+    "name": "Kẻ Nhiễm Bệnh Lang Thang Răng Mục",
+    "voice": "Độc giả",
+    "description": "Lộ trình của nó luôn hướng về cùng một phía. Có lẽ đó là nơi nó từng sống; khu vực ấy giờ chẳng còn tòa nhà nào."
+  },
+  "T01_N02": {
+    "name": "Chó Săn Đói Khát Xương Sườn",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Gầy đến thế mà vẫn đuổi theo… Nó không hung dữ, mà thật sự đói đến kiệt quệ rồi nhỉ. Đánh bại nó xong, lòng mình thấy hơi khó chịu."
+  },
+  "T01_N03": {
+    "name": "Tàn Binh Phòng Hóa Bình Lọc Độc",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Trong mặt nạ vẫn lưu mệnh lệnh rút lui cuối cùng. Người ra lệnh là kẻ chạy đầu tiên đấy, hì hì, chuyện này thì anh ta chẳng biết đâu."
+  },
+  "T01_N04": {
+    "name": "Đàn Chuột Bào Tử Túi Bào Tử",
+    "voice": "Quái nhân",
+    "description": "Một con là chuột, một trăm con là dự báo thời tiết. Hôm nay xác suất mưa chuột là chín mươi phần trăm, ra ngoài nhớ mang ô."
+  },
+  "T01_N05": {
+    "name": "Vật Ký Sinh Vỏ Xe Vỏ Rỉ Sét",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Trốn vào vỏ xe thì sẽ không bị tổn thương nữa sao… Thật ra, mình cũng phần nào hiểu được suy nghĩ ấy."
+  },
+  "T01_E01": {
+    "name": "Đồ Tể Bạo Tẩu Dao Chặt Xương",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Vốn chỉ là ông chủ tiệm thịt ở góc phố. Ai đã thì thầm bên tai hắn rằng “tận thế rồi, chặt gì cũng được” nhỉ? Đoán xem."
+  },
+  "T01_E02": {
+    "name": "Binh Sĩ Thiết Giáp Biến Dị Tấm Sắt Thịt",
+    "voice": "Độc giả",
+    "description": "Không còn phân biệt được ranh giới giữa thép và máu thịt. Trong hồ sơ quân đội, mục thời hạn phục vụ của nó để trống."
+  },
+  "T01_E03": {
+    "name": "Bào Tử Chủ Mẫu Bào Cung",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Hình như cô ấy chỉ muốn làm mẹ thôi… Những đứa con hơi đông, hơi kỳ lạ, nhưng tình cảm ấy là thật mà nhỉ."
+  },
+  "T01_B01": {
+    "name": "Bệnh Nhân Số 0 Tàn Trang Bệnh Án",
+    "voice": "Kẻ đứng sau màn",
+    "description": "“Số không” nghe có vẻ đặc biệt sao? Chỉ là đánh số từ không thôi. Dù sao cũng phải có kẻ xui xẻo đầu tiên, đúng chứ?"
+  },
+  "T02_N01": {
+    "name": "Sơn Tiêu Trảo Đoạt Hồn",
+    "voice": "Độc giả",
+    "description": "Truyền thuyết về yêu tinh trong núi đã lưu truyền ngàn năm. Người ta sợ nó, nhưng vẫn không nhịn được mà bước sâu thêm vào núi."
+  },
+  "T02_N02": {
+    "name": "Sắc Lệnh Phù Của Phù Chỉ Khôi Lỗi",
+    "voice": "Quái nhân",
+    "description": "Mặt trước viết “cấp cấp như luật lệnh”, mặt sau viết “đã xem không trả lời”."
+  },
+  "T02_N03": {
+    "name": "Tàn Lò Của Đan Lô Tinh",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Luyện suốt tám mươi mốt ngày, cuối cùng tự luyện mình thành tinh… Tuy buồn cười thật, nhưng chắc nó cũng rất muốn được ra khỏi lò."
+  },
+  "T02_N04": {
+    "name": "Tua Kiếm Gãy Của Ngự Kiếm Tàn Ảnh",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Chủ nhân đã mất từ lâu, thanh kiếm vẫn tìm người trên trời… Muốn nhẹ nhàng nói với nó rằng đã có thể dừng lại rồi."
+  },
+  "T02_N05": {
+    "name": "Độc Đan Của Đan Độc Đồng Ngẫu",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Ăn đan trường sinh rồi mãi mãi là trẻ con… Chuyện này đâu nên để người lớn quyết định thay trẻ nhỏ, quá đáng thật!"
+  },
+  "T02_E01": {
+    "name": "Bờm Đá Của Thủ Sơn Thạch Sư",
+    "voice": "Độc giả",
+    "description": "Không thể xác định đã canh núi bao nhiêu năm. Tông môn phía sau sơn môn đã tan rã trước nó."
+  },
+  "T02_E02": {
+    "name": "Kim Đan Cháy Của Tẩu Hỏa Đan Sư",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Chỉ còn một bước là kết đan. Bước còn thiếu ấy à, là do ta đẩy nhẹ một cái—đùa thôi. Có lẽ vậy."
+  },
+  "T02_E03": {
+    "name": "Kiếm Trận Nhãn Của Trấn Cung Kiếm Trận",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Ba thanh kiếm phối hợp ăn ý đến thế, chắc hẳn đã cùng luyện rất nhiều năm. Chia lìa chúng thấy hơi áy náy."
+  },
+  "T02_B01": {
+    "name": "Nghịch Đan Của Đảo Huyền Đan Tôn",
+    "voice": "Độc giả",
+    "description": "Tu luyện ngược dòng vẫn có thể thành tôn, cho thấy đạo vốn không phân thuận nghịch. Chỉ là nó đã không thể quay lại."
+  },
+  "T03_N01": {
+    "name": "Mặt Nạ Xương Của Cốt Diện Liệp Thủ",
+    "voice": "Độc giả",
+    "description": "Mặt nạ lấy từ sọ của con mồi. Người đeo nó, theo một nghĩa nào đó, cũng đã được ghi danh là con mồi."
+  },
+  "T03_N02": {
+    "name": "Hũ Cổ Của Cổ Hồ Thị Tòng",
+    "voice": "Quái nhân",
+    "description": "Trong hũ có một trăm con trùng, ngoài hũ có một mình tôi. Về mặt toán học, chúng tôi bình đẳng."
+  },
+  "T03_N03": {
+    "name": "Lông Xám Của Hôi Vũ Liệp Điểu",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Chúng chỉ ăn những thứ đã chết. Vậy chúng cứ đi theo các bạn suốt đường là đang chờ gì nhỉ?"
+  },
+  "T03_N04": {
+    "name": "Túi Máu Của Bọ Ve Đầm Lầy",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Oa, túi máu… ghê quá! Nhưng nghe nói dùng làm thuốc được, cứ lấy đi, đừng phí số máu nó uống cả đời."
+  },
+  "T03_N05": {
+    "name": "Rễ Tổ Của Thụ Căn Hành Giả",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó ghi lại mọi con đường đã đi qua trong rễ. Biết đâu cũng đã lặng lẽ ghi nhớ tiếng bước chân của bạn."
+  },
+  "T03_E01": {
+    "name": "Khuôn Mặt Thứ Ba Của Tam Diện Tế Tư",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Khuôn mặt thứ nhất cầu phúc, khuôn mặt thứ hai nguyền rủa, khuôn mặt thứ ba—đang cười vì bạn lại tin hai khuôn mặt trước."
+  },
+  "T03_E02": {
+    "name": "Xương Vương Của Cự Cốt Liệp Vương",
+    "voice": "Độc giả",
+    "description": "Thợ săn mạnh nhất hoang nguyên đã chết dưới tay một thợ săn mạnh hơn. Luật của hoang nguyên luôn đơn giản như vậy."
+  },
+  "T03_E03": {
+    "name": "Bát Cúng Của Cơ Ngạ Tổ Linh",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Con cháu đi hết rồi, chẳng còn ai đến cúng… Đói lâu như thế, tính tình xấu đi cũng không thể trách hết nó được nhỉ."
+  },
+  "T03_B01": {
+    "name": "Mặt Trống Của Vạn Diện Cổ Mẫu",
+    "voice": "Quái nhân",
+    "description": "Tùng, tùng, tùng tùng. Đây là mã Morse, nghĩa là “tối nay ăn thịt nướng”. Bạn không hiểu sao?"
+  },
+  "T04_N01": {
+    "name": "Mảnh Giáp Rỉ Của Hủ Giáp Binh Sĩ",
+    "voice": "Độc giả",
+    "description": "Bên trong giáp trụ trống rỗng, nhưng quân kỷ vẫn còn nguyên. Vương quốc nó bảo vệ chỉ tồn tại trong ký ức của nó."
+  },
+  "T04_N02": {
+    "name": "Tàn Nến Của Chúc Hỏa Tu Sĩ",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Vẫn đang cầu nguyện cho ai vậy nhỉ… Giá mà có thể chia cho bạn một chút phúc lành."
+  },
+  "T04_N03": {
+    "name": "Vòng Cổ Của Địa Lao Liệp Khuyển",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Trên vòng cổ khắc “Bé Tí”! Chắc trước đây từng có người rất thương nó… Giờ chỉ còn một mình nó trông nhà."
+  },
+  "T04_N04": {
+    "name": "Mũ Xanh Của Lam Mạo Goblin",
+    "voice": "Quái nhân",
+    "description": "Tại sao là mũ xanh? Vì mũ đỏ đã được đặt trước. Bởi ai? Bởi một câu chuyện cổ tích."
+  },
+  "T04_N05": {
+    "name": "Cánh Đá Của Tháp Lâu Thạch Tượng",
+    "voice": "Độc giả",
+    "description": "Ban ngày là tượng đá, đêm mới mở mắt. Ở một thế giới nào đó, những tạo vật này được gọi là “gargoyle”."
+  },
+  "T04_E01": {
+    "name": "Búa Xử Án Của Vương Đình Xử Hình Quan",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Đã chặt bao nhiêu đầu từ lâu chẳng đếm nổi. Nhà vua nói ai có tội thì người đó có tội—tiện biết bao."
+  },
+  "T04_E02": {
+    "name": "Kiếm Gãy Lời Thề Của Thất Thệ Kỵ Sĩ",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Anh ấy thề sẽ bảo vệ công chúa. Công chúa không còn nữa, lời thề vẫn quấn lấy anh… Thật muốn gỡ nó ra giúp anh ấy."
+  },
+  "T04_E03": {
+    "name": "Vảy Rồng Của Ấu Long Khán Thủ",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Còn là con non mà đã bị phái đi trông kho báu… Đây rõ ràng là lao động trẻ em! Nó đáng ra phải lăn lộn bên mẹ mới đúng!"
+  },
+  "T04_B01": {
+    "name": "Vương Miện Trống Của Không Quan Chi Vương",
+    "voice": "Độc giả",
+    "description": "Vương miện trống rỗng, ngai vàng cũng trống rỗng. Có lẽ thứ hắn cai trị chỉ là bản thân việc “cai trị”."
+  },
+  "T05_N01": {
+    "name": "Ống Kính Quang Học Của Tuần Kiểm Phong Cơ",
+    "voice": "Quái nhân",
+    "description": "Nó chụp bạn một vạn bức ảnh, lưu trong một nơi có tên “Thư mục mới (3)”."
+  },
+  "T05_N02": {
+    "name": "Mũ Bảo Hiểm Của Thất Áp Vũ Hàng Viên",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Lời liên lạc cuối cùng là “đã nhận, về ngay”… Anh ấy thật sự vẫn luôn cố gắng quay về."
+  },
+  "T05_N03": {
+    "name": "Cuộn Dây Của Từ Quỹ Pháo Đài",
+    "voice": "Độc giả",
+    "description": "Chương trình phòng thủ tự động vẫn hoạt động. Trạm không gian nó bảo vệ đã không còn cần được bảo vệ nữa."
+  },
+  "T05_N04": {
+    "name": "Chân Hồ Quang Của Duy Tu Tri Chu",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó sửa hết những thứ bị hỏng, chỉ riêng nó là không ai đến sửa… Muốn xoa đầu nó quá."
+  },
+  "T05_N05": {
+    "name": "Lõi Sương Xám Của Nano Tụ Hợp Thể",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Bị đánh tan rồi lại tụ về, kiên trì đến thế… Biết đâu nó chỉ không muốn ở một mình thôi."
+  },
+  "T05_E01": {
+    "name": "Tấm Giáp Của Trọng Trang Thanh Trừ Giả",
+    "voice": "Độc giả",
+    "description": "Chỉ thị là “loại bỏ mọi bất thường”. Theo tiêu chuẩn đánh giá của nó, các bạn quả thật rất bất thường."
+  },
+  "T05_E02": {
+    "name": "Lõi Pha Của Tương Vị Liệp Thủ",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó lúc ẩn lúc hiện, giống ranh giới của sa bàn này. Bạn thật sự nghĩ mình đang đứng “bên ngoài” sao?"
+  },
+  "T05_E03": {
+    "name": "Bo Mạch Chủ Của Mẫu Cơ Duy Hộ Hạch",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Chăm sóc tàu mẹ suốt một ngàn năm, trên tàu đã chẳng còn ai từ lâu… Nó cố gắng thật nhiều, ai khen nó một câu đi."
+  },
+  "T05_B01": {
+    "name": "Lõi Dẫn Lực Của Dẫn Lực Chủ Cơ Zero",
+    "voice": "Độc giả",
+    "description": "“Zero” tức là nguyên mẫu. Sau nguyên mẫu lẽ ra phải sản xuất hàng loạt, nhưng mọi người đã rút đi trước đó."
+  },
+  "T06_N01": {
+    "name": "Khuôn Mặt Mượn Của Vô Diện Hành Nhân",
+    "voice": "Độc giả",
+    "description": "Ở một thế giới nào đó, nó được gọi là chuyện ma đô thị và lưu truyền trong một phạm vi nhất định: ai nhìn thấy mặt nó sẽ mất một khuôn mặt."
+  },
+  "T06_N02": {
+    "name": "Tay Giấy Bện Của Chỉ Trát Đồng Tử",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Đứa trẻ bằng giấy cũng muốn dự tiệc sao… Lần sau, mình sẽ lén để dành cho nó một chỗ."
+  },
+  "T06_N03": {
+    "name": "Dây Treo Xà Của Điếu Ảnh",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó luôn chờ người giúp tháo dây. Mỗi người tốt bụng cuối cùng đều bị dây quấn lấy. Thú vị thật."
+  },
+  "T06_N04": {
+    "name": "Rêu Giếng Của Cựu Tỉnh Thấp Quỷ",
+    "voice": "Quái nhân",
+    "description": "Trong giếng rất mát, mùa hè có thể ướp dưa hấu. Với điều kiện dưa hấu không sợ nó."
+  },
+  "T06_N05": {
+    "name": "Đèn Mắt Của Đăng Lung Nhãn",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Cứ nhìn chằm chằm vào người khác, thật ra là sợ tối nhỉ? Cầm đèn canh ở nơi này, nhát gan cũng bình thường mà."
+  },
+  "T06_E01": {
+    "name": "Đòn Kiệu Của Tống Táng Kiệu Phu",
+    "voice": "Độc giả",
+    "description": "Trong kiệu không có ai, người khiêng vẫn bước đi. Bản thân việc đưa tang đã trở thành mục đích."
+  },
+  "T06_E02": {
+    "name": "Giọng Câm Của Vô Thanh Hí Tử",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Hát được nửa vở thì mất giọng, dưới sân khấu chẳng ai vỗ tay, vậy mà cô ấy vẫn không dám dừng lại…"
+  },
+  "T06_E03": {
+    "name": "Dây Thừng Giếng Của Thủ Tỉnh Bà",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Bà ấy nói nước giếng không uống được, là đang bảo vệ các bạn. Hay đang bảo vệ thứ trong giếng nhỉ? Hì."
+  },
+  "T06_B01": {
+    "name": "Khăn Voan Đỏ Của Nghênh Thân Không Kiệu",
+    "voice": "Độc giả",
+    "description": "Có đoàn rước dâu, không có cô dâu. Hoặc có thể nói, vị khách được đón chính là cô dâu."
+  },
+  "T07_N01": {
+    "name": "Đao Mẻ Của Mông Diện Đao Khách",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Che mặt để không bị người nhà nhận ra nhỉ… Làm nghề này chắc có nỗi khó xử nào đó, lần sau đừng rút đao nữa nhé."
+  },
+  "T07_N02": {
+    "name": "Túi Phi Tiêu Của Phi Tiêu Du Hiệp",
+    "voice": "Độc giả",
+    "description": "Đường giang hồ xa xôi, chỉ mang một túi phi tiêu. Ngày hết phi tiêu, có lẽ cũng là lúc quy ẩn."
+  },
+  "T07_N03": {
+    "name": "Hồ Lô Rượu Của Túy Quyền Khách",
+    "voice": "Quái nhân",
+    "description": "Trong hồ lô không đựng rượu, mà là một hồ lô nhỏ hơn. Bên trong còn nữa."
+  },
+  "T07_N04": {
+    "name": "Kim Thêu Của Độc Châm Thị Nữ",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Hoa cô ấy thêu thật ra rất đẹp… Giá mà cây kim ấy chỉ dùng để thêu hoa thôi."
+  },
+  "T07_N05": {
+    "name": "Gậy Gãy Của Đoạn Côn Tăng",
+    "voice": "Độc giả",
+    "description": "Gậy đã gãy, thiền tâm chưa gãy. Chỉ là ngôi chùa ông gìn giữ đã bị giang hồ lãng quên từ lâu."
+  },
+  "T07_E01": {
+    "name": "Nón Lá Của Vũ Dạ Truy Mệnh Khách",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Đuổi theo một người suốt mười năm, đến lúc đuổi kịp mới biết nhận nhầm. Ta biết ngay từ đầu đấy."
+  },
+  "T07_E02": {
+    "name": "Mặt Nạ Sắt Của Thiết Diện Trang Chủ",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Từ ngày đeo mặt nạ sắt, chẳng còn ai thấy ông ấy khóc nữa… Vậy lúc khóc, ông ấy phải làm sao?"
+  },
+  "T07_E03": {
+    "name": "Vỏ Song Nhận Của Vô Ảnh Song Nhận",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Song đao nhanh đến mức không nhìn thấy! Luyện được đến trình độ này, đã phải chịu bao khổ cực nhỉ, thật muốn vỗ tay cho nó."
+  },
+  "T07_B01": {
+    "name": "Kiếm Chưa Đúc Xong Của Đúc Kiếm Vô Quy Nhân",
+    "voice": "Độc giả",
+    "description": "Để đúc nên thiên hạ đệ nhất kiếm, ông đã lao mình vào lò. Cuối cùng, thanh kiếm vẫn không được đúc thành."
+  },
+  "T08_N01": {
+    "name": "Ấn Hiến Thân Của Thâm Tiềm Thị Tòng",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó hiến thân cho vị ở sâu bên dưới. Vị ấy hoàn toàn không biết nó là ai—hiến thân là vậy đấy."
+  },
+  "T08_N02": {
+    "name": "Xúc Tu Non Của Xúc Tu Sơ Thể",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nhỏ nhỏ, mềm mềm, đang nằm mơ. Trong giấc mơ liệu có gì ngoài biển cả không?"
+  },
+  "T08_N03": {
+    "name": "Hốc Mắt Rỗng Của Manh Nhãn Quan Trắc Viên",
+    "voice": "Độc giả",
+    "description": "Mất cả hai mắt vì nhìn thấy thứ không nên thấy. Nhật ký quan trắc đến nay vẫn được cập nhật."
+  },
+  "T08_N04": {
+    "name": "Vỏ Mặt Ngược Của Đảo Xác Giáp Trùng",
+    "voice": "Quái nhân",
+    "description": "Nó đi với lưng hướng lên trên, vì mặt trước dành cho các vì sao ngắm."
+  },
+  "T08_N05": {
+    "name": "Giác Hút Của Hắc Triều Thủy Đỉa",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Hút máu thì còn đỡ, đến ánh sáng cũng hút mất… Nhưng nó cũng chỉ muốn sống tiếp, đừng trách nó quá."
+  },
+  "T08_E01": {
+    "name": "Mảnh Vỡ Tinh Hài Của Tinh Hài Khán Thủ",
+    "voice": "Độc giả",
+    "description": "Nó bảo vệ di hài của một ngôi sao đã chết. Những thứ đã chết cũng cần người giữ mộ."
+  },
+  "T08_E02": {
+    "name": "Bài Nguyện Của Hắc Triều Tư Tế",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Thần nó cầu nguyện có đáp lời không? Có chứ. Chỉ là nội dung lời đáp, chắc bạn chẳng muốn nghe đâu."
+  },
+  "T08_E03": {
+    "name": "Thể Thủy Tinh Của Chiết Quang Chi Nhãn",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó có thể nhìn thấy mọi thứ, chỉ không nhìn thấy chính mình… Chắc cô đơn lắm nhỉ."
+  },
+  "T08_B01": {
+    "name": "Mảnh Ánh Nhìn Của Kẻ Quan Trắc Không Thể Gọi Tên",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Bạn đang quan trắc nó, nó đang quan trắc bạn, ta đang quan trắc cả hai. Tầng trong cùng là ai nhỉ?"
+  },
+  "T09_N01": {
+    "name": "Vé Xe Cũ Của Mạt Ban Thừa Khách",
+    "voice": "Độc giả",
+    "description": "Chuyến xe cuối đã rời đi từ lâu. Anh ấy vẫn ngồi trên sân ga, đợi một chuyến xe sẽ không bao giờ đến nữa."
+  },
+  "T09_N02": {
+    "name": "Hộp Giữ Nhiệt Của Ngoại Mại Không Xác",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Đơn đồ ăn trễ tám trăm năm mà vẫn đang giao… Người giao hàng tận tâm thế này, đánh giá tốt! Dù chẳng biết giao cho ai."
+  },
+  "T09_N03": {
+    "name": "Camera Của Giám Khống Nhãn",
+    "voice": "Quái nhân",
+    "description": "Nó ghi lại mọi thứ, kể cả miếng bánh thứ ba bạn lén ăn hôm qua."
+  },
+  "T09_N04": {
+    "name": "Bột Huỳnh Quang Của Nghê Hồng Phi Nga",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Chúng chỉ thích những thứ sáng lấp lánh… Cũng giống mình thích bạn. À, không, câu vừa rồi không tính!"
+  },
+  "T09_N05": {
+    "name": "Đèn Pin Của Thất Miên Bảo An",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Ba trăm năm chưa chợp mắt… Chú bảo vệ ơi, thật sự nên nghỉ rồi, thành phố sẽ không trách chú đâu."
+  },
+  "T09_E01": {
+    "name": "Mũ Trạm Trưởng Của Vĩnh Dạ Trạm Trưởng",
+    "voice": "Độc giả",
+    "description": "Nội quy nhà ga chưa đổi một điều, hành khách chẳng còn một ai."
+  },
+  "T09_E02": {
+    "name": "Vương Miện Neon Của Quảng Cáo Nữ Vương",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Cô ấy bán ham muốn cho từng người qua đường. Còn ta bán cô ấy cho thành phố này."
+  },
+  "T09_E03": {
+    "name": "Đèn Đỏ Của Hồng Đăng Truy Liệp Giả",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Kẻ săn đuổi đèn đỏ… Có phải trước đây nó từng gặp tai nạn nên mới ám ảnh với đèn đỏ đến thế không?"
+  },
+  "T09_B01": {
+    "name": "Thẻ Từ Của Linh Điểm Thành Thị Quản Lý Viên",
+    "voice": "Độc giả",
+    "description": "Thành phố sau nửa đêm do nó quản lý. Sau nửa đêm, trong thành phố còn lại gì?"
+  },
+  "T10_N01": {
+    "name": "Lông Tơ Của Địa Thảm Nhuyễn Trùng",
+    "voice": "Quái nhân",
+    "description": "Thật ra nó là linh hồn của tấm thảm. Khi bạn giẫm lên, nó sẽ nói “cảm ơn quý khách”."
+  },
+  "T10_N02": {
+    "name": "Biển Số Phòng Của Tuần Lang Nhân Ngẫu",
+    "voice": "Độc giả",
+    "description": "Mỗi hành lang đều có quy tắc, nó chịu trách nhiệm ghi nhớ. Bản thân quy tắc cũng không ngừng thay đổi."
+  },
+  "T10_N03": {
+    "name": "Biển Báo Màu Xanh Của Xuất Khẩu Huyễn Ảnh",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Ở đó thật sự có lối ra đấy. Chỉ là lối ra nó chỉ và lối ra bạn tìm không phải cùng một loại."
+  },
+  "T10_N04": {
+    "name": "Khăn Tay Ướt Của Thấp Diện Phóng Khách",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó đã gõ mọi cánh cửa, chẳng cánh nào mở cho nó… Lần sau, có thử đáp lại một lần không?"
+  },
+  "T10_N05": {
+    "name": "Điện Cực Của Sáp Tọa Ký Sinh Thể",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Trộm điện là không đúng! Nhưng sống được ở nơi này cũng chẳng dễ chút nào…"
+  },
+  "T10_E01": {
+    "name": "Chìa Khóa Vạn Năng Của Vạn Năng Thược Thi Trì Hữu Giả",
+    "voice": "Độc giả",
+    "description": "Chiếc chìa khóa mở được mọi cánh cửa, chỉ không mở nổi cánh cửa để rời khỏi đây."
+  },
+  "T10_E02": {
+    "name": "Đèn Flash Của Quá Bộc Tuần Tra Viên",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Ánh sáng chói quá… Nhưng nó chỉ muốn nhìn rõ trong từng căn phòng còn ai cần giúp không nhỉ."
+  },
+  "T10_E03": {
+    "name": "Ống Họng Của Trường Lang Thôn Yết Giả",
+    "voice": "Quái nhân",
+    "description": "Hành lang không vô tận, chỉ bị nó nuốt vào rồi nhả ra. Giống sushi băng chuyền."
+  },
+  "T10_B01": {
+    "name": "Khung Cửa Của Căn Phòng Thứ Không",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Căn phòng số không không nằm ở bất cứ tầng nào. Bạn vẫn luôn ở trong đó, chỉ chưa từng để ý biển số phòng."
+  },
+  "T11_N01": {
+    "name": "Dây Cót Của Chuột Dây Cót",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Lên đầy dây cót là chạy hết sức, chạy hết thì dừng… Thuần túy quá, thật mong nó chạy đến được nơi muốn đến."
+  },
+  "T11_N02": {
+    "name": "Van Áp Suất Của Nồi Hơi Bộc Dịch",
+    "voice": "Độc giả",
+    "description": "Toàn bộ công việc của nó là duy trì áp suất nồi hơi. Theo một nghĩa nào đó, bản thân nó chính là một bộ phận của nồi hơi."
+  },
+  "T11_N03": {
+    "name": "Lưới Bánh Răng Của Xỉ Luân Tri Chu",
+    "voice": "Quái nhân",
+    "description": "Mỗi sợi trên lưới là một bánh răng, quay một vòng sẽ tính ra cung hoàng đạo của bạn."
+  },
+  "T11_N04": {
+    "name": "Tro Than Của Yên Thông Tiểu Quỷ",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Cả người đen nhẻm, đôi mắt lại rất sáng… Muốn giúp nó tắm rửa thật sạch."
+  },
+  "T11_N05": {
+    "name": "Súng Bắn Đinh Tán Của Đinh Tán Công Binh",
+    "voice": "Độc giả",
+    "description": "Thành phố sụp nhanh bao nhiêu, nó sửa nhanh bấy nhiêu. Đến nay vẫn chưa phân thắng bại."
+  },
+  "T11_E01": {
+    "name": "Búa Hiệu Chuẩn Của Trọng Chùy Kỹ Sư",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Một nhát búa là hiệu chuẩn được mọi thứ, giỏi thật… Chỉ có lưng nó chắc đã lệch từ lâu rồi, vất vả quá."
+  },
+  "T11_E02": {
+    "name": "Bánh Lái Của Thất Khống Tuần Không Đĩnh",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Không ai cầm lái, chỉ có thể bay vòng mãi trên trời… Không hạ xuống được, cũng không dừng được, lo quá."
+  },
+  "T11_E03": {
+    "name": "Con Lắc Ngược Của Nghịch Bãi Giám Sát Quan",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó làm con lắc quay ngược, muốn trở về lúc mọi thứ chưa hỏng. Tiếc quá, vốn đã hỏng ngay từ đầu rồi."
+  },
+  "T11_B01": {
+    "name": "Dây Cót Chính Của Đình Chung Công Trình Sư",
+    "voice": "Độc giả",
+    "description": "Ông ấy khiến mọi đồng hồ ngừng chạy, chỉ để hoàng hôn không bao giờ kết thúc."
+  },
+  "T12_N01": {
+    "name": "Lệ Băng Của Tuyết Nguyên Thất Hồn Giả",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó tìm thứ mình đánh mất trong tuyết, nhưng đến đánh mất gì cũng không nhớ nổi…"
+  },
+  "T12_N02": {
+    "name": "Gai Băng Của Băng Cức Lang",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Lông làm bằng băng chắc lạnh lắm nhỉ… Lớn lên ở nơi lạnh thế này, nó cũng chỉ đang giữ lãnh thổ của mình thôi."
+  },
+  "T12_N03": {
+    "name": "Tràng Hạt Sương Của Tụng Sương Tu Nữ",
+    "voice": "Độc giả",
+    "description": "Lời cầu nguyện của cô ấy khiến sương giá dịu đi. Sương giá dịu đi vẫn là sương giá."
+  },
+  "T12_N04": {
+    "name": "Tinh Thể Chuông Của Kết Tinh Chung Linh",
+    "voice": "Quái nhân",
+    "description": "Mỗi lần nó ngân, thế giới bớt một hạt tuyết. Vì vậy phải gõ nhiều, gõ mãi đến mùa hè."
+  },
+  "T12_N05": {
+    "name": "Lông Đen Của Hàn Nha Thị Nữ",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó luôn mang đến tin xấu… Chắc bản thân nó cũng rất muốn một lần đem tin tốt đến."
+  },
+  "T12_E01": {
+    "name": "Giáp Thề Của Mai Tuyết Kỵ Sĩ",
+    "voice": "Độc giả",
+    "description": "Lời thề khiến ông đứng trong tuyết suốt trăm năm. Ngày tuyết tan, có lẽ ông cũng sẽ tan theo."
+  },
+  "T12_E02": {
+    "name": "Sổ Giải Tội Của Bạch Dịch Cáo Giải Sư",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó nghe hết tội lỗi của mọi người, rồi kể lại không sót một chữ cho người tiếp theo. Xưng tội mà, phải chia sẻ chứ."
+  },
+  "T12_E03": {
+    "name": "Búa Gõ Chuông Của Đống Thổ Thủ Chung Nhân",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Ngày nào cũng đánh chuông đúng giờ, nhưng luôn báo cùng một thời khắc… Tận tâm quá, cũng buồn quá."
+  },
+  "T12_B01": {
+    "name": "Mảnh Vỡ Thánh Tượng Của Vĩnh Đông Thánh Tượng",
+    "voice": "Độc giả",
+    "description": "Tín đồ cầu xin vĩnh hằng, thánh tượng liền ban vĩnh hằng—dưới hình thức mùa đông bất tận."
+  },
+  "T13_N01": {
+    "name": "Nhụy Hoa Của Bào Nang Hoa",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nở đẹp quá… Chỉ đừng đến quá gần nhé, mình không muốn bạn bị bệnh."
+  },
+  "T13_N02": {
+    "name": "Răng Lá Của Nha Diệp Thảo",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Cỏ mọc răng! Nhưng nghĩ kỹ thì nó cũng chỉ muốn ăn no, thực vật cũng chẳng dễ sống mà."
+  },
+  "T13_N03": {
+    "name": "Mạch Dây Leo Của Huyết Quản Đằng",
+    "voice": "Độc giả",
+    "description": "Chất lỏng chảy trong dây leo ấm nóng. Nhà kính này rốt cuộc đang nuôi trồng thứ gì, chưa có ghi chép."
+  },
+  "T13_N04": {
+    "name": "Khuẩn Ty Của Khuẩn Phu Viên Đinh",
+    "voice": "Quái nhân",
+    "description": "Người làm vườn trồng nấm, nấm trồng người làm vườn. Họ đang thảo luận ai là cây cảnh của ai."
+  },
+  "T13_N05": {
+    "name": "Quả Mọng Giả Của Tương Quả Nghĩ Thái Giả",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Trông ngon lắm đúng không? Những thứ bị nó ăn mất, trước khi chết đều nghĩ như vậy."
+  },
+  "T13_E01": {
+    "name": "Kéo Tỉa Cành Của Đảo Sinh Viên Trưởng",
+    "voice": "Độc giả",
+    "description": "Nó khiến cây mọc ngược. Có lẽ nó muốn mọi thứ trở lại trạng thái hạt giống."
+  },
+  "T13_E02": {
+    "name": "Cánh Hoa Xương Của Cốt Biện Bộ Thực Giả",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Cánh hoa bằng xương kêu lách cách… Tuy đáng sợ, nhưng dáng mở khép thật ra khá đẹp."
+  },
+  "T13_E03": {
+    "name": "Túi Thai Của Trán Liệt Nang Mẫu",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Mỗi lần nở ra lại vỡ mất một phần của bản thân… Cô ấy vẫn tiếp tục, thật xót xa."
+  },
+  "T13_B01": {
+    "name": "Hoa Vĩnh Sinh Của Vĩnh Sinh Hoa Sàng",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Mãi mãi nở rộ, mãi mãi không chết, mãi mãi không thể rời đi. Muốn sự bất tử này không? Ta có thể tặng bạn đấy."
+  },
+  "T14_N01": {
+    "name": "Neo Rỉ Sét Của Tú Miêu Thủy Binh",
+    "voice": "Độc giả",
+    "description": "Tàu đã chìm, anh ấy vẫn ôm chiếc neo. Như thể chỉ cần neo còn thì tàu vẫn còn."
+  },
+  "T14_N02": {
+    "name": "Giáp San Hô Của San Hô Kỵ Sĩ",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "San hô phủ đầy giáp, như hoa nở khắp nơi… Trước đây nó chắc từng là một kỵ sĩ rất dịu dàng."
+  },
+  "T14_N03": {
+    "name": "Mũ Cối Đồng Của Ký Cư Đồng Khôi",
+    "voice": "Quái nhân",
+    "description": "Nó đã đổi rất nhiều mũ. Cái thích nhất là một chiếc ấm trà."
+  },
+  "T14_N04": {
+    "name": "Màng Dù Của Phát Quang Thủy Mẫu",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Sứa phát sáng đẹp quá! Ở đáy biển tối đến thế, nó có lẽ là đèn ngủ nhỏ của mọi người."
+  },
+  "T14_N05": {
+    "name": "Mõm Kiếm Của Thâm Thủy Kiếm Ngư",
+    "voice": "Độc giả",
+    "description": "Trong vương đình chìm đắm, nó là kỵ binh duy nhất vẫn còn tuần tra."
+  },
+  "T14_E01": {
+    "name": "Lệnh Bài Quân Sự Của Trầm Miêu Thống Lĩnh",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Ông ấy vẫn đợi lệnh rút lui… Đã chẳng còn ai ra lệnh từ lâu, thật muốn nói với ông ấy rằng có thể về nhà rồi."
+  },
+  "T14_E02": {
+    "name": "Vỏ Nứt Của Liệt Xác Tế Tư",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Cô ấy hiến cả vương quốc cho biển. Biển nhận rồi, nhưng đâu có nói sẽ đáp lễ."
+  },
+  "T14_E03": {
+    "name": "Khiên Xương Cá Voi Của Kình Cốt Vệ Sĩ",
+    "voice": "Độc giả",
+    "description": "Chiếc khiên lấy từ di cốt cá voi khổng lồ. Bảo vệ vương đình là một vị vua khác, cổ xưa hơn."
+  },
+  "T14_B01": {
+    "name": "Vương Miện Đuối Nước Của Nịch Quan Nữ Vương",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Cô ấy thà chìm cùng vương quốc, cũng không muốn một mình nổi lên mặt nước… Kiêu hãnh quá, mà cũng cô đơn quá."
+  },
+  "T15_N01": {
+    "name": "Cánh Nếp Gấp Của Chiết Chỉ Điểu",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Ai đã gấp nó nhỉ? Chắc hẳn là một người rất, rất tỉ mỉ."
+  },
+  "T15_N02": {
+    "name": "Lõi Mực Của Mặc Tích Slime",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Mềm mềm, nảy nảy, còn viết chữ được! Dùng nó làm bút máy có thất lễ quá không… Biết đâu nó cũng muốn viết gì đó."
+  },
+  "T15_N03": {
+    "name": "Chữ Sai Của Thác Tự Trùng",
+    "voice": "Quái nhân",
+    "description": "Nó gặm “Biển Sách” thành “Biển Say”, nên thật ra nơi này là một bữa tiệc."
+  },
+  "T15_N04": {
+    "name": "Tàn Trang Của Khuyết Diệp Vệ Binh",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Canh ở đây cũng chẳng ích gì, tội nghiệp thật… Trang nó bảo vệ đã bị ta xé từ lâu rồi."
+  },
+  "T15_N05": {
+    "name": "Chỉ Đóng Sách Của Trang Đính Tri",
+    "voice": "Độc giả",
+    "description": "Nó khâu từng trang sách rơi rải rác lại với nhau. Cuốn sách khâu thành chẳng ai đọc hiểu."
+  },
+  "T15_E01": {
+    "name": "Thẻ Chỉ Mục Của Sách Dẫn Thủ Vệ",
+    "voice": "Độc giả",
+    "description": "Nó nhớ vị trí của từng cuốn sách, nhưng không biết mình được viết trên trang nào."
+  },
+  "T15_E02": {
+    "name": "Bút Đỏ Của San Cải Sứ Đồ",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó đang sửa lại câu chuyện ở đây. Yên tâm, ta sửa nhiều hơn nó rất nhiều."
+  },
+  "T15_E03": {
+    "name": "Đinh Ghim Lớn Của Cự Hình Trang Đính Giả",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Một đinh ghim ghim luôn sách với sàn… Mạnh quá! Nhưng nó chỉ muốn sách đừng tản ra nữa thôi nhỉ."
+  },
+  "T15_B01": {
+    "name": "Giấy Bản Thảo Trắng Của Vô Tự Chi Tác Giả",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Tác giả không viết ra chữ nên Biển Sách mới có các bạn. Cảm ơn ông ấy đi—tiện thể cảm ơn cả ta, người viết tiếp bản thảo thay ông ấy."
+  },
+  "T16_N01": {
+    "name": "Mảnh Vỡ Khe Nứt Giới Của Toái Giới Du Linh",
+    "voice": "Độc giả",
+    "description": "Đến từ một thế giới đã vỡ nát. Trong mảnh vỡ, đôi khi vẫn nghe thấy tiếng vọng của thế giới ấy."
+  },
+  "T16_N02": {
+    "name": "Kính Ngược Sáng Của Nghịch Quang Vệ Tinh",
+    "voice": "Quái nhân",
+    "description": "Nó quay quanh một hành tinh không tồn tại, hành tinh ấy cũng quay quanh nó. Tôn trọng lẫn nhau."
+  },
+  "T16_N03": {
+    "name": "Tàn Luật Của Pháp Tắc Toái Phiến Thể",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Mẩu thừa cắt ra từ một pháp tắc nào đó. Khâu lại vẫn dùng được đấy, bạn muốn pháp tắc nào?"
+  },
+  "T16_N04": {
+    "name": "Trứng Xác Suất Của Xác Suất Lăng Quăng",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Có thể nở, cũng có thể chưa nở!… Sinh linh nhỏ này chắc cũng rất muốn biết chắc mình có tồn tại không."
+  },
+  "T16_N05": {
+    "name": "Râu Cá Voi Của Hư Vô Phù Kình",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó nuốt rất nhiều thế giới, bụng vẫn trống rỗng… Chắc đói lắm, cũng cô độc lắm."
+  },
+  "T16_E01": {
+    "name": "Lưỡi Dao Bóc Tách Của Biên Giới Bác Ly Giả",
+    "voice": "Độc giả",
+    "description": "Nó bóc ranh giới thế giới để xem bên ngoài là gì. Ghi chép không có nội dung nó đã nhìn thấy."
+  },
+  "T16_E02": {
+    "name": "Huy Hiệu Chấp Pháp Của Thất Tự Chấp Pháp Thể",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Rõ ràng đã chẳng còn luật nào để thi hành… Nó vẫn rất cố gắng duy trì trật tự."
+  },
+  "T16_E03": {
+    "name": "Đèn Tuần Hành Của Tinh Mộ Tuần Hành Giả",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Thắp một ngọn đèn cho mỗi ngôi sao đã tắt… Công việc dịu dàng quá, mong cũng có ai thắp một ngọn cho nó."
+  },
+  "T16_B01": {
+    "name": "Trang Giấy Trắng Của Thư Hải Chi Lưu Bạch",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Trang cuối cùng còn lại sau khi câu chuyện được viết xong. Muốn đoán xem ta định viết gì lên đó không?"
+  },
+  "T17_01": {
+    "name": "Thẻ Hành Lý Của Ký Vận Hành Thi",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó ký gửi chính mình, nhưng mãi chẳng ai đến nhận… Mình rất muốn ra băng chuyền hành lý đón nó."
+  },
+  "T17_02": {
+    "name": "Thẻ Lên Máy Bay Của Thẻ Lên Máy Bay Trùng",
+    "voice": "Quái nhân",
+    "description": "Cửa lên máy bay: ∞. Số ghế: cái trong lòng bạn. Vui lòng lên máy bay sớm chín mươi năm."
+  },
+  "T17_N03": {
+    "name": "Nan Dù Của Dù An Kiểm Nghịch Vũ",
+    "voice": "Độc giả",
+    "description": "Mưa rơi lên trên, ô bèn che ngược. Đối tượng kiểm tra an ninh ở đây là người hay thời tiết, vẫn chưa có kết luận."
+  },
+  "T17_N04": {
+    "name": "Băng Tải Bàn Xoay Của Băng Chuyền Hành Lý Thú",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Quay một vạn vòng mà vẫn chưa đợi được chủ… Các va li chắc cũng rất sốt ruột."
+  },
+  "T17_N05": {
+    "name": "Biển Đón Máy Bay Của Bóng Đón Máy Bay Mất Nét",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Tên trên biển đã không nhìn rõ nữa… Người nó chờ chắc hẳn rất quan trọng."
+  },
+  "T17_03": {
+    "name": "Huy Hiệu Tiếp Viên Của Tiếp Viên Trưởng Nghịch Hàng",
+    "voice": "Độc giả",
+    "description": "Cô ấy mỉm cười chào từng hành khách, dù chuyến bay đã từ lâu bay về một điểm đến không tồn tại."
+  },
+  "T17_E02": {
+    "name": "Đèn Hiệu Hàng Không Của Hoa Tiêu Đèn Hiệu Con Rối",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Cứ chỉ đường cho máy bay, nhưng đã lâu lắm chẳng có chiếc nào hạ cánh… Nó vẫn lau đèn sáng bóng mỗi ngày."
+  },
+  "T17_E03": {
+    "name": "Kính Cửa Sổ Mạn Của Kẻ Dòm Ngó Cửa Sổ Máy Bay",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó nhìn bạn qua cửa sổ máy bay, bạn nhìn nó qua cửa sổ máy bay. Người bên ngoài cửa sổ thật sự là bạn sao?"
+  },
+  "T17_04": {
+    "name": "Loa Phóng Thanh Của Phát Thanh Chuyến Bay Cuối Cùng",
+    "voice": "Độc giả",
+    "description": "“Chuyến bay cuối cùng sắp cất cánh”—thông báo này đã được phát lặp lại vô số lần."
+  },
+  "T18_01": {
+    "name": "Răng Vân Lốp Của Chó Săn Lốp Xe",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Lăn lốp xe đuổi người là phạm luật quá rồi! Nhưng nó canh bãi đỗ xe này, chắc cũng đang chờ xe của chủ trở về."
+  },
+  "T18_02": {
+    "name": "Khay Cơm Của Kẻ Bưng Khay Cơm",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó dọn từng bàn sạch sẽ, đợi khách quay lại ăn… Một con quái vật dịu dàng quá."
+  },
+  "T18_N03": {
+    "name": "Màng Dầu Của Bùn Nhão Vết Dầu",
+    "voice": "Quái nhân",
+    "description": "Nó không phải vết dầu, mà là một bức tranh trừu tượng. Nhà phê bình nói đáng giá cả gia tài."
+  },
+  "T18_N04": {
+    "name": "Đầu Vòi Bơm Xăng Của Giun Vòi Bơm Xăng",
+    "voice": "Độc giả",
+    "description": "Nó hút không phải nhiên liệu, mà là một thứ trong cơ thể người đi qua khó đo đếm hơn nhiều."
+  },
+  "T18_N05": {
+    "name": "Tiền Xu Trả Lại Của Ký Sinh Thể Tủ Bán Hàng Tự Động",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó luôn chuẩn bị tiền thối, nhưng chưa từng có ai bỏ vào một đồng xu…"
+  },
+  "T18_03": {
+    "name": "Dấu Thu Phí Của Thu Phí Viên Ca Đêm",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Phí qua đường không đắt đâu, chỉ cần một chút thời gian của bạn. Một chút thôi, cả đời."
+  },
+  "T18_E02": {
+    "name": "Chao Đèn Của Kẻ Tuần Đường Đèn Hỏng",
+    "voice": "Độc giả",
+    "description": "Đèn đường đã hỏng từ lâu, nó bèn tự thắp sáng mình, soi con đường không người."
+  },
+  "T18_E03": {
+    "name": "Van Bồn Dầu Của Thú Thồ Bồn Dầu",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Vác bồn dầu lớn như vậy chạy tới chạy lui, lưng chắc đau lắm nhỉ… Thật muốn cho nó nghỉ một lát."
+  },
+  "T18_04": {
+    "name": "Cuống Vé Của Khách Đường Dài Không Điểm Đến",
+    "voice": "Độc giả",
+    "description": "Hành khách giữ một vé xe không có điểm đến. Theo quy định, anh ấy không thể xuống xe."
+  },
+  "T19_01": {
+    "name": "Càng Đóng Thùng Của Cua Đóng Thùng",
+    "voice": "Quái nhân",
+    "description": "Trong thùng nó đóng kín có một con cua đóng thùng khác, cứ lồng nhau mãi như búp bê Nga."
+  },
+  "T19_02": {
+    "name": "Thẻ Hàng Của Thể Trôi Nổi Thẻ Hàng",
+    "voice": "Độc giả",
+    "description": "Mỗi thẻ hàng chỉ một điểm đến khác nhau, nhưng tất cả đều trôi nổi ở đây."
+  },
+  "T19_N03": {
+    "name": "Vỏ Phao Của Ốc Đinh Phao Cứu Sinh",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó vẫn luôn đáp lại lời gọi… Mong một ngày thật sự có tàu đến đón nó."
+  },
+  "T19_N04": {
+    "name": "Đoạn Dây Cáp Của Đỉa Dây Cáp",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Quấn chặt thế này là sợ bị sóng cuốn đi nhỉ… Buông ra cũng không sao đâu mà."
+  },
+  "T19_N05": {
+    "name": "Tấm Thùng Rỉ Của Kẻ Ẩn Núp Thùng Rỉ Sét",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Trong thùng có thứ bạn muốn đấy. Mở xem nhé? Ta bảo đảm lần này không phải bẫy. Có lẽ vậy."
+  },
+  "T19_03": {
+    "name": "Móc Cẩu Của Kẻ Cẩu Dây Sắt",
+    "voice": "Độc giả",
+    "description": "Nó cẩu từng công-ten-nơ lên, xếp thành một bến cảng mãi mãi không xây xong."
+  },
+  "T19_E02": {
+    "name": "Niêm Phong Của Quan Niêm Phong Hải Quan",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Kiểm tra từng món hàng rất cẩn thận, nhưng chưa món nào được thông qua… Chắc bản thân nó cũng rất buồn."
+  },
+  "T19_E03": {
+    "name": "Càng Neo Chìm Của Cua Dời Núi Neo Chìm",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Lấy neo làm vũ khí, lấy núi làm hành lý… Sức mạnh lớn đến thế mà canh một bến cảng không người, tiếc quá."
+  },
+  "T19_04": {
+    "name": "Vận Đơn Tổng Của Vận Đơn Tổng Cảng",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Vận đơn này ghi lại chủ sở hữu của mọi hàng hóa trong cảng. Tất nhiên, kể cả các bạn."
+  },
+  "T20_01": {
+    "name": "Chăn Tuyết Của Khách Trọ Chăn Tuyết",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Quấn tuyết làm chăn, chắc lạnh lắm nhỉ… Thật muốn cho nó mượn một chiếc chăn thật."
+  },
+  "T20_02": {
+    "name": "Phấn Đèn Của Bướm Đêm Đèn Ấm",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Chúng bay vòng quanh đèn vì lạnh quá nên muốn sưởi ấm nhỉ… Rõ ràng nơi này mãi mãi là ban ngày."
+  },
+  "T20_N03": {
+    "name": "Móng Sương Của Thạch Sùng Sương Cửa Sổ",
+    "voice": "Quái nhân",
+    "description": "Nó vẽ trên cửa sổ, vẽ một cửa sổ bên ngoài cửa sổ."
+  },
+  "T20_N04": {
+    "name": "Gối Tuyết Của Kẻ Rình Rập Gối Tuyết",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Gối lên nó ngủ sẽ có một giấc mơ rất dài. Dài đến mức không tỉnh lại—như vậy cũng là mơ đẹp mà."
+  },
+  "T20_N05": {
+    "name": "Lông Ngày Của Cú Tuyết Ngày Dài",
+    "voice": "Độc giả",
+    "description": "Trong cánh đồng tuyết không bao giờ có hoàng hôn, nó là sinh vật duy nhất còn nhớ từ “đêm”."
+  },
+  "T20_03": {
+    "name": "Chìa Khóa Cửa Của Kẻ Giữ Cửa Ban Ngày",
+    "voice": "Độc giả",
+    "description": "Nó mở cửa cho từng vị khách. Trong sổ đăng ký khách trọ không có ghi chép trả phòng."
+  },
+  "T20_E02": {
+    "name": "Đèn Lồng Của Người Tuần Đêm Nhà Kính",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Rõ ràng không có đêm mà vẫn tuần đêm… Sự tận tâm này, thật mong có người nhìn thấy."
+  },
+  "T20_E03": {
+    "name": "Dây Xe Trượt Tuyết Của Thú Vận Chuyển Gió Tuyết",
+    "voice": "Quái nhân",
+    "description": "Nó phụ trách vận chuyển gió tuyết. Trạm tiếp theo là sa mạc, bên ấy đã đặt ba tấn."
+  },
+  "T20_04": {
+    "name": "Thẻ Phòng Của Mặt Trời Vĩnh Viễn Không Trả Phòng",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Mặt trời vào trọ rồi nhất quyết không trả phòng. Lễ tân hỏi ta phải làm sao, ta nói: cứ thu tiền phòng thôi."
+  },
+  "T21_01": {
+    "name": "Chân Giác Hút Của Khách Trọ Trần Nhà",
+    "voice": "Quái nhân",
+    "description": "Nó sống trên trần nhà, thấy các bạn sống trên trần nhà. Ai đúng ai sai?"
+  },
+  "T21_02": {
+    "name": "Tua Chổi Của Chổi Treo Ngược",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Bụi rơi lên trời, nó vẫn quét dọn cẩn thận mỗi ngày… Cố gắng thật nhiều."
+  },
+  "T21_N03": {
+    "name": "Vảy Ngược Của Thằn Lằn Tường Bò Ngược",
+    "voice": "Độc giả",
+    "description": "Nó bò ngược dọc theo tường, dường như đang tìm hướng ban đầu của ngôi nhà."
+  },
+  "T21_N04": {
+    "name": "Túi Đựng Đồ Của Linh Túi Nhặt Đồ Rơi",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Những thứ rơi xuống đều được nó cất kỹ! Biết đâu nó chỉ muốn giữ giúp mọi người, đợi chủ đến lấy."
+  },
+  "T21_N05": {
+    "name": "Móng Đậu Của Chim Đậu Ngược Đui Đèn",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó treo ngược trên đui đèn đợi trời sáng, nhưng ở đây bình minh lại nằm dưới chân… Mong một ngày nó đợi được."
+  },
+  "T21_03": {
+    "name": "Chùm Chìa Khóa Của Quản Lý Đáy Tòa Nhà",
+    "voice": "Độc giả",
+    "description": "Nó quản lý một tòa nhà không có nóc. Hoặc có thể nói, nóc nhà nằm dưới đất."
+  },
+  "T21_E02": {
+    "name": "Dây Móc Của Khách Móc Dây Giếng Trời",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó móc được bạn, bạn tưởng đang leo lên, thật ra đang rơi xuống. Vui không?"
+  },
+  "T21_E03": {
+    "name": "Gạch Chịu Lực Của Khôi Lỗi Tường Chịu Lực",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Hễ nó cử động là cả tòa nhà sụp, nên vẫn luôn không dám động đậy… Vất vả rồi, thật đấy."
+  },
+  "T21_04": {
+    "name": "Đá Móng Của Nền Móng Tầng Thứ Mười Ba",
+    "voice": "Độc giả",
+    "description": "Nền móng tầng thứ mười ba nghĩa là dưới đất chôn mười ba tầng lầu. Cư dân trên mặt đất không biết chuyện này."
+  },
+  "T22_01": {
+    "name": "Giáp Lưỡi Dao Của Bọ Hung Vụn Gọt",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Gọt bút chì nhanh quá! Nhưng nó gọt hết sức như vậy, chắc là sợ khu rừng bị cùn."
+  },
+  "T22_02": {
+    "name": "Vụn Tẩy Của Thú Gôm Tẩy",
+    "voice": "Quái nhân",
+    "description": "Nó xóa mất bóng của chính mình, nên giờ cái bóng đang truy sát nó."
+  },
+  "T22_N03": {
+    "name": "Ngòi Bút Của Kiến Gãy Ngòi",
+    "voice": "Độc giả",
+    "description": "Ruột bút gãy là vật liệu xây dựng của chúng. Trong khu rừng này không có lấy một cây bút chì nguyên vẹn."
+  },
+  "T22_N04": {
+    "name": "Vết Trắng Của Sên Bút Xóa",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó muốn che hết những thứ viết sai… Nhưng sai sót quá nhiều, một mình nó không che hết được."
+  },
+  "T22_N05": {
+    "name": "Sừng Ký Họa Của Hươu Giấy Ký Họa",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó được vẽ ra sao? Người vẽ nó chắc rất thích hươu nhỉ."
+  },
+  "T22_03": {
+    "name": "Rìu Than Chì Của Tiều Phu Than Chì",
+    "voice": "Độc giả",
+    "description": "Nó chặt cây bút chì, dùng than chì ghi lại vòng tuổi của rừng."
+  },
+  "T22_E02": {
+    "name": "Gọt Bút Chì Của Người Tuần Rừng Gọt Bút",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó chịu trách nhiệm giữ khu rừng sắc bén. Những thứ cùn sẽ bị gọt đi—kể cả bạn."
+  },
+  "T22_E03": {
+    "name": "Sừng Than Của Kỳ Lân Bút Than",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Kỳ lân đen ngầu quá! Sừng còn vẽ được… Chắc nó cũng muốn vẽ câu chuyện của mình."
+  },
+  "T22_04": {
+    "name": "Cành Phác Thảo Của Vua Cây Chưa Vẽ Xong",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Xét về vẻ ngoài thì trông rất đặc biệt nhỉ… Rốt cuộc được cố ý thiết kế, hay cũng như sa bàn này, chỉ là thứ ghép tùy tiện lại? Đoán xem…"
+  },
+  "T23_01": {
+    "name": "Dấu Đỏ Của Tế Bào Con Dấu",
+    "voice": "Quái nhân",
+    "description": "Đóng một dấu là phân đôi một lần. Giờ nó đã là cả một phòng ban rồi."
+  },
+  "T23_02": {
+    "name": "Hóa Đơn Của Sâu Trắng Hóa Đơn",
+    "voice": "Độc giả",
+    "description": "Chúng chảy trong mạch máu người khổng lồ, chuyển từng đơn xin sẽ mãi mãi không được duyệt."
+  },
+  "T23_N03": {
+    "name": "Móc Kim Của Ký Trùng Ghim Kẹp",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Đừng cài lên tóc, đây không phải kẹp tóc!… Nhưng nó cũng chỉ muốn tìm một chỗ để ở yên thôi nhỉ."
+  },
+  "T23_N04": {
+    "name": "Mực Dấu Của Túi Nuốt Nhả Mực Dấu",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó nuốt nhả mực dấu suốt đời, nhưng chưa từng đóng một con dấu thuộc về chính mình…"
+  },
+  "T23_N05": {
+    "name": "Chân Đinh Của Bộ Binh Ghim Bấm",
+    "voice": "Độc giả",
+    "description": "Nó đóng tài liệu thành tập, cũng ghim chính mình vào hồ sơ."
+  },
+  "T23_03": {
+    "name": "Dấu Phê Duyệt Của Trưởng Phòng Mạch Đập",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nhịp tim người khổng lồ do nó phê duyệt. Hôm nay nó vui, nên người khổng lồ vẫn còn sống."
+  },
+  "T23_E02": {
+    "name": "Túi Hồ Sơ Của Quan Hồ Sơ Tuyến Thể",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Nó sắp xếp từng ký ức rất gọn gàng… Như đang gìn giữ một thứ vô cùng quý giá."
+  },
+  "T23_E03": {
+    "name": "Con Dấu Hủy Bỏ Của Kẻ Nuốt Chửng Dấu Đỏ",
+    "voice": "Độc giả",
+    "description": "Những thứ bị nó hủy bỏ không còn tìm được chứng cứ từng tồn tại trong cơ thể người khổng lồ."
+  },
+  "T23_04": {
+    "name": "Van Tâm Thất Của Trái Tim Tổng Vụ",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Là trái tim mà chỉ được duyệt hồ sơ, người khổng lồ chẳng còn cảm nhận được nhịp đập của nó… Buồn quá."
+  },
+  "T24_01": {
+    "name": "Phim Nhựa Của Rắn Nước Phim Nhựa",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Phim nhựa bơi tới bơi lui trong nước! Bộ phim bên trong, có phải nó vẫn luôn muốn tìm ai xem hết không?"
+  },
+  "T24_02": {
+    "name": "Nhung Ghế Của Kẻ Ký Cư Ghế Ngồi",
+    "voice": "Quái nhân",
+    "description": "Nó chiếm ghế của bạn. Đừng giận, nó đã mua vé—bằng tên bạn."
+  },
+  "T24_N03": {
+    "name": "Cánh Màn Chiếu Của Cá Đuối Màn Chiếu",
+    "voice": "Độc giả",
+    "description": "Nó chiếu hình ảnh trong nước. Khán giả đã rời đi từ lâu, buổi chiếu vẫn tiếp tục."
+  },
+  "T24_N04": {
+    "name": "Vỏ Caramen Của Túi Nổi Bỏng Ngô",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Mùi thơm ngọt ngào… Giống loại mua khi hẹn hò. À, mình đang nói gì vậy."
+  },
+  "T24_N05": {
+    "name": "Kẹp Vé Của Lươn Kẹp Vé",
+    "voice": "Thiếu nữ hướng ngoại",
+    "description": "Rạp chiếu phim đã chìm xuống nước mà vẫn soát vé cẩn thận! Tận tâm quá… Nhưng cũng đến lúc tan ca rồi mà."
+  },
+  "T24_03": {
+    "name": "Kìm Soát Vé Của Người Soát Vé Màn Chìm",
+    "voice": "Độc giả",
+    "description": "Sau khi phim bắt đầu, người soát vé mất đi lý do rời đi. Vì thế nó ở lại cửa."
+  },
+  "T24_E02": {
+    "name": "Phim Quấn Màn Của Kẻ Quấn Phim Quanh Màn",
+    "voice": "Kẻ đứng sau màn",
+    "description": "Nó quấn khán giả vào phim nhựa, biến họ thành một phần của bộ phim. Bạn muốn diễn vai gì? Ta chọn giúp."
+  },
+  "T24_E03": {
+    "name": "Kính Tụ Quang Của Quái Lặn Sâu Tụ Quang",
+    "voice": "Thiếu nữ yêu dấu",
+    "description": "Rọi đèn dưới đáy nước… Có phải nó cũng muốn một lần được ai đó nhìn thấy không?"
+  },
+  "T24_04": {
+    "name": "Cuống Vé Xem Phim Của Khán Giả Suất Chiếu Số Không",
+    "voice": "Độc giả",
+    "description": "Suất chiếu số không nghĩa là trước khi mọi buổi chiếu bắt đầu. Nội dung nó xem không được ghi lại."
+  }
+}

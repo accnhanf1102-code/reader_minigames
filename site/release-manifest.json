@@ -1,5 +1,5 @@
 {
-  "revision": "protelysion-0.38.2-20261003-skill-vi",
+  "revision": "protelysion-0.38.2-20261003-runtime-vi",
   "scope": {
     "themes": 48,
     "species": 433,
@@ -18,8 +18,8 @@
     "mapActors": 1
   },
   "pck": {
-    "bytes": 50010504,
-    "sha256": "ab4e8d47bfd341fd54cbed4e76b20488cfdab7d142eb3350fc5cb66d17c49d8a"
+    "bytes": 50020328,
+    "sha256": "2968992bd9e1e9a7aad01bdb4eb9b2018fecba83a88d4a0695b863a356514574"
   },
   "pckParts": [
     "game.pck.gz.001",
@@ -51,16 +51,16 @@
       "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
     },
     "game.pck.gz.001": {
-      "bytes": 16777216,
-      "sha256": "d25a9327973efeeda6e2d1932168db06b92072b8ec15fc21e93b266ab18fb235"
+      "bytes": 16497252,
+      "sha256": "1a37616a603fb6a58e172fc3cdcd1ae21316881e3ab6be2d7cf7b4bc3109832f"
     },
     "game.pck.gz.002": {
-      "bytes": 16777216,
-      "sha256": "33ae8d9884165c72d76cc0af7707281dfe4b53112c7ee0e7462f1ff1563e24e1"
+      "bytes": 16497252,
+      "sha256": "aa172f4d22211eb7c49c87b7839356d27ab90137702ad05d7e0fbf36aaffd27a"
     },
     "game.pck.gz.003": {
-      "bytes": 15927753,
-      "sha256": "8ecb1d2d9c1bf1a2e0c1d0b4386db63922ca2d6b22978368f6bf66dd0a1a3f60"
+      "bytes": 16497250,
+      "sha256": "31de8d01ac700da2d1ede05a2f439effb880ef40129db0e2c0c4797192709178"
     },
     "NotoSansSC-OFL.txt": {
       "bytes": 4388,
@@ -79,8 +79,8 @@
       "sha256": "5d3325dac2c71b3f5e91e2eacd2827fa99cb7a8b4b0a99b48fbe34767b58729a"
     },
     "distribution.js": {
-      "bytes": 3049022,
-      "sha256": "b065db3a556355db0d2e7bd01d3a3a5dd148477c80f4001ef4f546afb395e36a"
+      "bytes": 3307450,
+      "sha256": "bae5b75f23c39217d5c16d6dc81d759756f060bdeba8b06985b7eb3967c43a3c"
     },
     "audio/music/Abyss.ogg": {
       "bytes": 574764,

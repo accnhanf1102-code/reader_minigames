@@ -19,6 +19,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify localization and host compatibility
+        run: |
+          node --check site/distribution.js
+          node tools/test_skill_display_vi.mjs
+          node tools/test_runtime_localization.mjs
+          node tools/test_godot_labels.mjs
+          node tools/test_async_host.mjs
+          node tools/test_reader_loader.mjs
       - name: Verify every asset and complete Godot package
         run: python tools/materialize.py
       - uses: actions/upload-pages-artifact@v3
