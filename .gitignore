@@ -2,3 +2,4 @@ site/game.pck
 site/game.wasm
 *.tmp
 .DS_Store
+scratch/
