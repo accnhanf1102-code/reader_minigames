@@ -3,3 +3,4 @@ site/game.wasm
 *.tmp
 .DS_Store
 scratch/
+.agents/
