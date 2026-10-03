@@ -79,8 +79,8 @@
       "sha256": "5d3325dac2c71b3f5e91e2eacd2827fa99cb7a8b4b0a99b48fbe34767b58729a"
     },
     "distribution.js": {
-      "bytes": 3012142,
-      "sha256": "18bbeb1cfb538d3a22134985ef00cce808f27ced95208adf35667f7c62b7c973"
+      "bytes": 3018169,
+      "sha256": "b18f57f7c72b3d45f220aaf135f00380d2e2ff88fa3b10dc2fdc220d653d004a"
     },
     "audio/music/Abyss.ogg": {
       "bytes": 574764,
@@ -1783,12 +1783,12 @@
       "sha256": "243a3eb6055cbf18b7fc50a61e76c2a72cf3060132c397ae287d4da05c7a6fa8"
     },
     "loader.html": {
-      "bytes": 7977,
-      "sha256": "0ecd79a944ce8fac796aee44fbd691f3133486d1997a29f51df9cda81211a114"
+      "bytes": 8627,
+      "sha256": "50586fa48ea42a2843d0a14af29d5a120d704ec7c118066c9f6045ba1e20c3a4"
     },
     "index.html": {
-      "bytes": 4480,
-      "sha256": "d9a3e5d6d8acf1877b22d53b0c0ea2a67315c1a35b86b5bfa3d4b9292fa0b90a"
+      "bytes": 4764,
+      "sha256": "6abc4e21e7885927a03be3826c6a62ecb7a0ff3355929f54df58c14f5a0b2041"
     },
     ".nojekyll": {
       "bytes": 0,
