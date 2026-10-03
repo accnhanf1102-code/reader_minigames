@@ -1623,26 +1623,205 @@ function safeClone(obj) {
   }
 }
 
+function unflattenDotKeys(obj) {
+  if (!obj || typeof obj !== 'object') return obj;
+  const res = {};
+  for (const [k, v] of Object.entries(obj)) {
+    let parsedVal = v;
+    if (typeof v === 'string') {
+      let trimmed = v.trim();
+      if ((trimmed.startsWith('{') && trimmed.endsWith('}')) || (trimmed.startsWith('[') && trimmed.endsWith(']'))) {
+        try { parsedVal = JSON.parse(trimmed); } catch (e) {}
+      }
+    }
+    if (k.includes('.')) {
+      const parts = k.split('.');
+      let cur = res;
+      for (let i = 0; i < parts.length - 1; i++) {
+        const p = parts[i];
+        if (!cur[p] || typeof cur[p] !== 'object' || Array.isArray(cur[p])) {
+          cur[p] = {};
+        }
+        cur = cur[p];
+      }
+      const lastKey = parts[parts.length - 1];
+      if (cur[lastKey] && typeof cur[lastKey] === 'object' && typeof parsedVal === 'object' && !Array.isArray(parsedVal)) {
+        Object.assign(cur[lastKey], parsedVal);
+      } else {
+        cur[lastKey] = parsedVal;
+      }
+    } else {
+      if (res[k] && typeof res[k] === 'object' && typeof parsedVal === 'object' && !Array.isArray(parsedVal)) {
+        Object.assign(res[k], parsedVal);
+      } else {
+        res[k] = parsedVal;
+      }
+    }
+  }
+  return res;
+}
+
+const VIETNAMESE_STAT_ALIASES = {
+  'nhan_vat_chinh': '主角', 'nhân vật chính': '主角',
+  'dong_hanh': '关系列表', 'đồng hành': '关系列表',
+  'danh_sach_dong_hanh': '关系列表', 'danh sách đồng hành': '关系列表',
+  'cap_do': '等级', 'cấp độ': '等级', 'cap': '等级', 'cấp': '等级',
+  'thuoc_tinh': '属性', 'thuộc tính': '属性',
+  'suc_manh': '力量', 'sức mạnh': '力量',
+  'nhanh_nhen': '敏捷', 'nhanh nhẹn': '敏捷',
+  'the_chat': '体质', 'thể chất': '体质',
+  'tri_tue': '智力', 'trí tuệ': '智力',
+  'tinh_than': '精神', 'tinh thần': '精神',
+  'sinh_luc': '生命值', 'sinh lực': '生命值', 'mau': '生命值', 'máu': '生命值',
+  'phap_luc': '法力值', 'pháp lực': '法力值', 'nang_luong': '法力值', 'năng lượng': '法力值',
+  'the_luc': '体力值', 'thể lực': '体力值',
+  'ky_nang': '技能', 'kỹ năng': '技能',
+  'trang_bi': '装备', 'trang bị': '装备',
+  'trang_thai': '状态效果', 'trạng thái': '状态效果',
+  'tui_do': '背包', 'túi đồ': '背包', 'balo': '背包', 'ba lô': '背包',
+  'hien_tai': '当前', 'hiện tại': '当前',
+  'gioi_han': '上限', 'giới hạn': '上限', 'toi_da': '上限', 'tối đa': '上限',
+  'co_ban': '_基础', 'cơ bản': '_基础',
+  'phu_them': '额外', 'phụ thêm': '额外', 'cong_them': '额外', 'cộng thêm': '额外',
+  'diem_dinh_menh': '命运点数', 'điểm định mệnh': '命运点数',
+  'su_kien': '事件', 'sự kiện': '事件',
+  'the_gioi': '世界', 'thế giới': '世界',
+  'nhiem_vu': '任务列表', 'nhiệm vụ': '任务列表'
+};
+Object.assign(PROTELYSION_ENG_TO_CN, VIETNAMESE_STAT_ALIASES);
+
+function normalizeActor(actor, isPlayer = true) {
+  if (!actor || typeof actor !== 'object') {
+    actor = {};
+  }
+  let level = Number(actor['等级'] ?? actor.level ?? 1);
+  if (!Number.isSafeInteger(level) || level < 1) level = 1;
+  if (level > 25) level = 25;
+  actor['等级'] = level;
+
+  let tier = actor['生命层级'] ?? actor.life_tier ?? '第一层级/普通';
+  actor['生命层级'] = normalizeTierToCN(String(tier));
+
+  let stats = actor['属性'] ?? actor.attributes ?? {};
+  if (!stats || typeof stats !== 'object') stats = {};
+  for (let s of ['力量', '敏捷', '体质', '智力', '精神']) {
+    let engKey = PROTELYSION_CN_TO_ENG[s];
+    let val = Number(stats[s] ?? stats[engKey] ?? 10);
+    stats[s] = Number.isFinite(val) ? val : 10;
+  }
+  actor['属性'] = stats;
+
+  const resDefs = [
+    { cn: '生命值', eng: 'health', defBase: 100 },
+    { cn: '法力值', eng: 'mana', defBase: 50 },
+    { cn: '体力值', eng: 'stamina', defBase: 80 }
+  ];
+  for (let r of resDefs) {
+    let resObj = actor[r.cn] ?? actor[r.eng] ?? {};
+    if (!resObj || typeof resObj !== 'object') resObj = {};
+    let limitObj = resObj['上限'] ?? resObj.limit ?? {};
+    if (!limitObj || typeof limitObj !== 'object') limitObj = {};
+    
+    let base = Number(limitObj['_基础'] ?? limitObj._base ?? limitObj.base ?? r.defBase);
+    if (!Number.isFinite(base) || base < 0) base = r.defBase;
+    
+    let extra = Number(limitObj['额外'] ?? limitObj.extra ?? 0);
+    if (!Number.isFinite(extra)) extra = 0;
+    
+    let max = Math.max(0, base + extra);
+    let cur = Number(resObj['当前'] ?? resObj.current ?? max);
+    if (!Number.isFinite(cur) || cur < 0) cur = max;
+    if (cur > max) cur = max;
+
+    actor[r.cn] = {
+      '当前': cur,
+      '上限': {
+        '_基础': base,
+        '额外': extra
+      }
+    };
+  }
+
+  for (let field of ['技能', '装备', '状态效果', '背包']) {
+    let engField = PROTELYSION_CN_TO_ENG[field];
+    let val = actor[field] ?? actor[engField] ?? {};
+    actor[field] = (val && typeof val === 'object' && !Array.isArray(val)) ? val : {};
+  }
+
+  if (!isPlayer) {
+    actor['命定契约'] = Boolean(actor['命定契约'] ?? actor.destined_contract ?? true);
+    let aff = Number(actor['好感度'] ?? actor.affection ?? 100);
+    actor['好感度'] = Number.isFinite(aff) ? aff : 100;
+  }
+
+  return actor;
+}
+
 function adapterTransformIn(vars) {
-  if (!vars || typeof vars !== 'object') return vars;
+  if (!vars || typeof vars !== 'object') vars = {};
   if (vars instanceof Promise || typeof vars.then === 'function') {
     return typeof vars.then === 'function' ? vars.then(v => adapterTransformIn(v)) : vars;
   }
-  const cloned = safeClone(vars);
+  
+  const unflattened = unflattenDotKeys(vars);
+  const cloned = safeClone(unflattened);
+  const hadDotKeys = Boolean(vars && Object.keys(vars).some(k => k.includes('.')));
+  
   let hasMvu = Boolean(cloned.MVU && typeof cloned.MVU === 'object');
   let rawStatData = hasMvu ? (cloned.MVU.stat_data || cloned.stat_data) : cloned.stat_data;
-  if (!rawStatData && cloned.MVU) rawStatData = cloned.MVU;
-  
+  if (!rawStatData && cloned.MVU && (cloned.MVU.protagonist || cloned.MVU['主角'])) {
+    rawStatData = cloned.MVU;
+  }
+  if (!rawStatData && (cloned.protagonist || cloned['主角'])) {
+    rawStatData = cloned;
+  }
+  if (typeof rawStatData === 'string') {
+    try { rawStatData = JSON.parse(rawStatData); } catch (e) {}
+  }
+
   if (!rawStatData || typeof rawStatData !== 'object') {
-    return cloned;
+    rawStatData = {
+      protagonist: {
+        name: 'Nhân vật chính',
+        level: 1,
+        life_tier: '第一层级/普通',
+        attributes: { strength: 10, agility: 10, constitution: 10, intelligence: 10, spirit: 10 },
+        health: { current: 100, limit: { _base: 100, extra: 0 } },
+        mana: { current: 50, limit: { _base: 50, extra: 0 } },
+        stamina: { current: 80, limit: { _base: 80, extra: 0 } },
+        skills: {}, equipment: {}, status_effects: {}, inventory: {}
+      },
+      partners_list: {}
+    };
   }
 
   let isEnglish = Boolean(
     rawStatData.protagonist || rawStatData.partners_list || rawStatData.fate_points ||
-    rawStatData.level || rawStatData.attributes || rawStatData.health
+    rawStatData.level || rawStatData.attributes || rawStatData.health || rawStatData.skills
   );
 
   let cnStatData = isEnglish ? deepTransformKeys(rawStatData, PROTELYSION_ENG_TO_CN, false) : rawStatData;
+
+  // Normalize 主角
+  if (cnStatData['主角']) {
+    normalizeActor(cnStatData['主角'], true);
+  } else if (cnStatData.protagonist) {
+    cnStatData['主角'] = normalizeActor(cnStatData.protagonist, true);
+    delete cnStatData.protagonist;
+  } else {
+    cnStatData['主角'] = normalizeActor({}, true);
+  }
+
+  // Normalize 关系列表
+  if (cnStatData['关系列表'] && typeof cnStatData['关系列表'] === 'object') {
+    for (let [name, partner] of Object.entries(cnStatData['关系列表'])) {
+      if (partner && typeof partner === 'object') {
+        normalizeActor(partner, false);
+      }
+    }
+  } else {
+    cnStatData['关系列表'] = {};
+  }
 
   cloned.stat_data = cnStatData;
   if (!cloned.MVU || typeof cloned.MVU !== 'object') {
@@ -1653,7 +1832,8 @@ function adapterTransformIn(vars) {
   cloned._mvuAdapterMeta = {
     isEnglish,
     hadMvuWrapper: hasMvu,
-    hadRootStatData: Boolean(vars.stat_data)
+    hadRootStatData: Boolean(vars.stat_data),
+    hadDotKeys
   };
 
   return cloned;
@@ -1670,31 +1850,127 @@ function adapterTransformOut(vars) {
   const cloned = safeClone(vars);
   delete cloned._mvuAdapterMeta;
 
-  if (!isEnglish) {
-    return cloned;
-  }
-
   let cnStatData = cloned.MVU?.stat_data || cloned.stat_data;
   if (!cnStatData) return cloned;
 
-  let engStatData = deepTransformKeys(cnStatData, PROTELYSION_CN_TO_ENG, true);
-
-  if (meta?.hadMvuWrapper && cloned.MVU) {
-    cloned.MVU.stat_data = engStatData;
-  }
-  if (meta?.hadRootStatData || !meta?.hadMvuWrapper) {
-    cloned.stat_data = engStatData;
+  if (isEnglish) {
+    let engStatData = deepTransformKeys(cnStatData, PROTELYSION_CN_TO_ENG, true);
+    if (meta?.hadMvuWrapper && cloned.MVU) {
+      cloned.MVU.stat_data = engStatData;
+    }
+    if (meta?.hadRootStatData || !meta?.hadMvuWrapper) {
+      cloned.stat_data = engStatData;
+    }
+    if (meta?.hadDotKeys) {
+      if (engStatData.protagonist) cloned['stat_data.protagonist'] = engStatData.protagonist;
+      if (engStatData.partners_list) cloned['stat_data.partners_list'] = engStatData.partners_list;
+      if (engStatData.events) cloned['stat_data.events'] = engStatData.events;
+      if (engStatData.world) cloned['stat_data.world'] = engStatData.world;
+      if (engStatData.task_list) cloned['stat_data.task_list'] = engStatData.task_list;
+      if (engStatData.fate_points !== undefined) cloned['stat_data.fate_points'] = engStatData.fate_points;
+    }
+  } else {
+    if (meta?.hadDotKeys) {
+      if (cnStatData['主角']) cloned['stat_data.主角'] = cnStatData['主角'];
+      if (cnStatData['关系列表']) cloned['stat_data.关系列表'] = cnStatData['关系列表'];
+      if (cnStatData['事件']) cloned['stat_data.事件'] = cnStatData['事件'];
+      if (cnStatData['世界']) cloned['stat_data.世界'] = cnStatData['世界'];
+      if (cnStatData['任务列表']) cloned['stat_data.任务列表'] = cnStatData['任务列表'];
+      if (cnStatData['命运点数'] !== undefined) cloned['stat_data.命运点数'] = cnStatData['命运点数'];
+    }
   }
 
   return cloned;
 }
+
+function fetchEffectiveVariables(t, r, targetMsgId) {
+  let rawVars = {};
+  try {
+    if (typeof t.getVariables === 'function') {
+      rawVars = t.getVariables({ type: "message", message_id: targetMsgId }) || {};
+    }
+  } catch (e) {}
+
+  const hasStatData = (obj) => {
+    if (!obj || typeof obj !== 'object') return false;
+    if (obj.stat_data || obj.MVU || obj.protagonist || obj['主角']) return true;
+    for (const k of Object.keys(obj)) {
+      if (k.startsWith('stat_data.') || k.startsWith('MVU.') || k === 'protagonist' || k === '主角') return true;
+    }
+    return false;
+  };
+
+  if (!hasStatData(rawVars)) {
+    const chat = (r && typeof r === 'function' && r()?.chat) || (window?.SillyTavern?.getContext?.()?.chat);
+    const startId = typeof targetMsgId === 'number' ? targetMsgId : 0;
+    for (let mId = startId - 1; mId >= Math.max(0, startId - 30); mId--) {
+      try {
+        let prevVars = null;
+        if (typeof t.getVariables === 'function') {
+          prevVars = t.getVariables({ type: "message", message_id: mId });
+        }
+        if (!prevVars && Array.isArray(chat) && chat[mId]?.extra?.variables) {
+          prevVars = chat[mId].extra.variables;
+        }
+        if (hasStatData(prevVars)) {
+          rawVars = { ...prevVars, ...rawVars };
+          break;
+        }
+      } catch (e) {}
+    }
+  }
+
+  if (!hasStatData(rawVars)) {
+    try {
+      if (typeof t.getMessageVar === 'function') {
+        let sd = t.getMessageVar('stat_data');
+        if (sd && typeof sd === 'object') {
+          rawVars = { ...rawVars, stat_data: sd };
+        } else {
+          let pro = t.getMessageVar('stat_data.protagonist') || t.getMessageVar('protagonist') || t.getMessageVar('stat_data.主角') || t.getMessageVar('主角');
+          if (pro && typeof pro === 'object') {
+            let partners = t.getMessageVar('stat_data.partners_list') || t.getMessageVar('partners_list') || t.getMessageVar('stat_data.关系列表') || t.getMessageVar('关系列表') || {};
+            rawVars = { ...rawVars, stat_data: { protagonist: pro, partners_list: partners } };
+          }
+        }
+      }
+    } catch (e) {}
+  }
+
+  if (!hasStatData(rawVars)) {
+    try {
+      if (typeof t.getVariables === 'function') {
+        let chatVars = t.getVariables({ type: "chat" });
+        if (hasStatData(chatVars)) {
+          rawVars = { ...chatVars, ...rawVars };
+        }
+      }
+    } catch (e) {}
+  }
+
+  if (!hasStatData(rawVars)) {
+    try {
+      let metaVars = (r && typeof r === 'function' && r()?.chatMetadata?.variables) || (window?.SillyTavern?.getContext?.()?.chatMetadata?.variables);
+      if (hasStatData(metaVars)) {
+        rawVars = { ...metaVars, ...rawVars };
+      }
+    } catch (e) {}
+  }
+
+  return rawVars;
+}
+try {
+  if (typeof window !== 'undefined') {
+    window.BookseaMvuAdapter = { adapterTransformIn, adapterTransformOut, fetchEffectiveVariables, unflattenDotKeys, normalizeActor };
+  }
+} catch (e) {}
 /* --- PROTELYSION MVU ZOD ADAPTER END --- */
 
 
 
 
 
-function Ab(e){let t=e.TavernHelper??e,r=()=>e.SillyTavern.getContext(),n=()=>`${r().characterId}:${r().getCurrentChatId()}`,a=n(),i=-2,s="",o,l,c=!1,d,m=0,u=ra({}),p={},g="",h=0,f=()=>Number(t.getLastMessageId()),b=()=>{if(n()!==a)throw Error("聊天已切换，拒绝写入另一聊天")},y=B=>{let H=t.getChatMessages(B),q=H?.find(N=>N.message_id===B)??H?.[B]??(H?.length===1?H[0]:void 0);if(!q)throw Error("聊天楼层已变化，请重新打开书海");return{...q,extra:xb(q.extra,x(B))}},x=B=>Array.isArray(r().chat)?r().chat[B]:void 0,w=()=>t.getVariables({type:"chat"});function v(B){if(!c||n()!==a||f()!==i)return!1;let H=x(i);return o&&(H!==o||H?.swipe_id!==l||Dt(H.extra)[ss]!==s)?!1:!B||B.frame===s}function k(B){if(b(),!v(B))throw Error("聊天楼层已回退或变化，旧旅程不能写入；请从当前楼层继续")}function A(B,H){let q=H.find(O=>O.token===B),N=[];q&&Number(q.messageId)<=f()&&N.push(Number(q.messageId));let F=r().chat;if(Array.isArray(F)){for(let O=F.length-1;O>=0;O--)if(Dt(Dt(F[O]?.extra)[qo]).token===B&&!N.includes(O)){N.push(O);break}}for(let O of N)try{let U=Dt(Dt(y(O).extra)[qo]);if(U.version===1&&U.contextId===a&&U.token===B)return{id:O,data:U}}catch{}}function T(B,H,q){let N=Dt(H.booksea),F=Dt(B[ic]),O=Array.isArray(N.timelineIndex)?N.timelineIndex.map(Dt):[];if(F.version===1&&F.contextId===a){if(F.token===null)return{value:ra({}),token:"",revision:0,receipts:{}};let U=A(String(F.token),O);return U?{value:ra(Dt(U.data.progress)),token:String(U.data.token),revision:Number(U.data.revision)||0,receipts:Dt(U.data.receipts)}:{value:ra({}),token:"",revision:0,receipts:{}}}if(N.timelineVersion===1){if(q.version===1&&q.contextId===a)return{value:ra(Dt(q.progress)),token:String(q.token),revision:Number(q.revision)||0,receipts:Dt(q.receipts)};for(let U of[...O].filter(j=>Number(j.messageId)<=f()).sort((j,D)=>Number(D.messageId)-Number(j.messageId))){let j=A(String(U.token),O);if(j)return{value:ra(Dt(j.data.progress)),token:String(j.data.token),revision:Number(j.data.revision)||0,receipts:Dt(j.data.receipts)}}return{value:ra({}),token:"",revision:0,receipts:{}}}return{value:ra(N),token:"",revision:0,receipts:Dt(B.bookseaSessionReceipts)}}async function P(B,H){await t.updateVariablesWith(q=>{k();let N=Dt(q.booksea),F=(Array.isArray(N.timelineIndex)?N.timelineIndex.map(Dt):[]).filter(U=>Number(U.messageId)<=f()),O=H?[...F.filter(U=>U.messageId!==H.id&&U.token!==H.token),{messageId:H.id,token:H.token}].sort((U,j)=>Number(U.messageId)-Number(j.messageId)):F;return{...q,booksea:{...N,...safeClone(B),timelineVersion:1,timelineIndex:O}}},{type:"chat"})}async function z(B,H,q,N,F){let O=()=>{if(b(),f()!==B||N&&x(B)!==N||F&&String(Dt(x(B)?.extra)[ss]??Dt(y(B).extra)[ss])!==F)throw Error("聊天楼层已变化，已取消旧记录写入")};if(O(),N)await t.updateVariablesWith(U=>{O();let j=adapterTransformOut(q(adapterTransformIn(U)));return wb(N,H),j},{type:"message",message_id:B});else if(typeof t.setChatMessages=="function"){let U=y(B),j=adapterTransformIn(t.getVariables({type:"message",message_id:B}));O(),await t.setChatMessages([{message_id:B,data:adapterTransformOut(q(j)),extra:{...Dt(U.extra),...H}}],{refresh:"none"})}else throw Error("酒馆助手缺少楼层存档接口，请更新助手后重试");O()}async function S(){return b(),d||(d=(async()=>{let B=f();if(B<0)throw Error("当前聊天没有可保存的楼层");let H=y(B),q=t.getVariables({type:"message",message_id:B}),N=w(),F=Dt(N.booksea),O=Dt(H.extra),U=x(B),j=T(q,N,Dt(O[qo])),D=typeof O[ss]=="string"?String(O[ss]):"frame-"+crypto.randomUUID(),W=F.timelineVersion!==1,Z={version:1,contextId:a,token:j.token||null};if(i=B,o=U,l=U?.swipe_id,s=D,u=j.value,p=j.receipts,g=j.token,h=j.revision,c=!0,W){let re=ra(u);kb(re,{frame:D,revision:1}),await z(B,{[ss]:D,[qo]:{version:1,contextId:a,token:D,revision:1,progress:re,receipts:p}},de=>({...de,[ic]:{version:1,contextId:a,token:D}}),U),u=re,g=D,h=1,await P(u,{id:B,token:D}),await r().saveChat()}else{let re=O[ss]!==D,ee=Ho(Dt(q[ic]))!==Ho(Z);(re||ee)&&await z(B,{[ss]:D},we=>({...we,[ic]:Z}),U);let de=Ho(ra(F))!==Ho(u);de&&await P(u),(re||ee||de)&&await r().saveChat()}k()})().catch(B=>{throw c=!1,B}).finally(()=>{d=void 0}),d)}let M=()=>{b();let B=w();return c?{...B,booksea:{...Dt(B.booksea),...structuredClone(u)}}:B},C=()=>{b();let B=adapterTransformIn(t.getVariables({type:"message",message_id:f()}));return B.bookseaSessionReceipts===void 0&&c&&Object.keys(p).length>0?{...B,bookseaSessionReceipts:structuredClone(p)}:B},I=()=>{k();let B=Dt(Dt(y(i).extra)[qo]);return{frame:s,revision:B.token===s&&Number(B.revision)||0}};async function E(B,H,q){k(q);let N=i,F=s,O=o,U=I(),j=H(M()),D=ra(Dt(j.booksea)),W={frame:F,revision:U.revision+1};kb(D,W);let Z=Dt(B?.bookseaSessionReceipts??C().bookseaSessionReceipts);return await z(N,{[ss]:F,[qo]:{version:1,contextId:a,token:F,revision:W.revision,progress:D,receipts:Z}},re=>({...B??re,bookseaSessionReceipts:Z,[ic]:{version:1,contextId:a,token:F}}),O,F),u=D,p=Z,g=F,h=W.revision,await P(D,{id:N,token:F}),k(q),await r().saveChat(),k(q),W}async function R(B){k();let H=M(),q=B(H);return Ho(ra(Dt(H.booksea)))!==Ho(ra(Dt(q.booksea)))?(await E(void 0,()=>q),q):(await t.updateVariablesWith(N=>{k();let F=Dt(N.booksea);return{...q,booksea:{...Dt(q.booksea),timelineVersion:F.timelineVersion,timelineIndex:F.timelineIndex}}},{type:"chat"}),await r().saveChat(),q)}async function L(B){let H=f(),q=x(H),N=s,F,O;m++;try{try{F=await B()}catch(U){O=U}if(b(),f()<H||q&&x(H)!==q||String(Dt(y(H).extra)[ss])!==N)throw Error("聊天楼层已回退，已停止旧交接");if(await S(),O)throw O;return F}finally{m--}}return{prepare:S,chat:M,readVars:C,stamp:I,commit:E,updateChat:R,valid:v,assertFrame:k,authorizedFrames:()=>[...new Set([s,g].filter(Boolean))],sourceRevision:()=>h,ownedAppend:L,invalidate(){c=!1},get contextId(){return a}}}var Tb="Vào Protelysion",ci="Rời khỏi Protelysion";function Mb(e,t,r,n){return{bookseaHandoff:{version:2,kind:"exit",contextId:e,runId:t,status:r,summary:n}}}function X0(e){let t=Nm(e.extra).bookseaHandoff;return t?.version===2&&t.kind==="exit"&&typeof t.contextId=="string"&&typeof t.runId=="string"&&typeof t.summary=="string"&&["success","failed"].includes(String(t.status))?t:void 0}function _0(e,t,r){let n=X0(e);return n?.contextId===t&&n.runId===r}function Cm(e,t){let{bookseaPromptHandoff:r,...n}=e,a=X0({role:"user",message:ci,extra:t});return{...n,...a?{bookseaPromptHandoff:structuredClone(a)}:{}}}function Sb(e,t,r){return Tb}function Bm(e){if(e.onlineStatus==="no_connection")throw Error("正文模型未连接，请先连接酒馆API后重试交接。")}async function Om(e,t,r){let n=e.getVariables({type:"chat"}),a=ae(n.booksea??{}),i=ae(a.narrativeRequests??{});if(i[r]&&i[r]!=="failed")return;Bm(t),await e.updateVariablesWith(d=>({...d,booksea:{...ae(d.booksea??{}),narrativeRequests:{...ae(ae(d.booksea??{}).narrativeRequests??{}),[r]:"requested"}}}),{type:"chat"}),await t.saveChat();let s=e.getLastMessageId(),o;try{await e.triggerSlash("/trigger await=true")}catch(d){o=d}let l=e.getChatMessages(-1)[0],c=e.getLastMessageId()>s&&l?.role==="assistant"&&String(l.message).trim().length>0;if(await e.updateVariablesWith(d=>({...d,booksea:{...ae(d.booksea??{}),narrativeRequests:{...ae(ae(d.booksea??{}).narrativeRequests??{}),[r]:c?"delivered":"failed"}}}),{type:"chat"}),await t.saveChat(),!c)throw o??Error("未生成正文；宿主结算保留，可显式补写，不会自动重试。");if(o)throw o}function $0(e){if(!e.getVariables||!e.updateVariablesWith)throw new Error("聊天缓存API不可用");let t=e.getVariables.bind(e),r=e.updateVariablesWith.bind(e);function n(a,i,s){let o=a.booksea===void 0?{}:ae(a.booksea,"booksea"),c={...o.actorCache===void 0?{}:ae(o.actorCache,"actorCache")};return s?c[i]=structuredClone(s):delete c[i],{...a,booksea:{...o,actorCache:c}}}return{async read(a){let i=t({type:"chat"});if(i.booksea===void 0)return;let s=ae(i.booksea);if(s.actorCache===void 0)return;let o=ae(s.actorCache);return Object.hasOwn(o,a)?structuredClone(o[a]):void 0},async write(a,i){await r(s=>n(s,a,i),{type:"chat"})},async remove(a){await r(i=>n(i,a),{type:"chat"})}}}function Dm(e){return Array.isArray(e)?e.map(Dm):e&&typeof e=="object"?Object.fromEntries(Object.entries(e).filter(([t])=>!["minimum","maximum","minLength","maxLength","minItems","maxItems"].includes(t)).map(([t,r])=>[t,Dm(r)])):e}function Eb(e,t=18e4,r="full-schema",n={}){if(typeof e.generateRaw!="function"||typeof e.stopGenerationById!="function")throw Error("缺少独立生成或停止接口");return async({prompt:a,schema:i})=>{let s="booksea-compile-"+crypto.randomUUID(),o;try{let l=i===v0,c=r==="portable-action-json"&&!l?a+`
+function Ab(e){let t=e.TavernHelper??e,r=()=>e.SillyTavern.getContext(),n=()=>`${r().characterId}:${r().getCurrentChatId()}`,a=n(),i=-2,s="",o,l,c=!1,d,m=0,u=ra({}),p={},g="",h=0,f=()=>Number(t.getLastMessageId()),b=()=>{if(n()!==a)throw Error("聊天已切换，拒绝写入另一聊天")},y=B=>{let H=t.getChatMessages(B),q=H?.find(N=>N.message_id===B)??H?.[B]??(H?.length===1?H[0]:void 0);if(!q)throw Error("聊天楼层已变化，请重新打开书海");return{...q,extra:xb(q.extra,x(B))}},x=B=>Array.isArray(r().chat)?r().chat[B]:void 0,w=()=>t.getVariables({type:"chat"});function v(B){if(!c||n()!==a||f()!==i)return!1;let H=x(i);return o&&(H!==o||H?.swipe_id!==l||Dt(H.extra)[ss]!==s)?!1:!B||B.frame===s}function k(B){if(b(),!v(B))throw Error("聊天楼层已回退或变化，旧旅程不能写入；请从当前楼层继续")}function A(B,H){let q=H.find(O=>O.token===B),N=[];q&&Number(q.messageId)<=f()&&N.push(Number(q.messageId));let F=r().chat;if(Array.isArray(F)){for(let O=F.length-1;O>=0;O--)if(Dt(Dt(F[O]?.extra)[qo]).token===B&&!N.includes(O)){N.push(O);break}}for(let O of N)try{let U=Dt(Dt(y(O).extra)[qo]);if(U.version===1&&U.contextId===a&&U.token===B)return{id:O,data:U}}catch{}}function T(B,H,q){let N=Dt(H.booksea),F=Dt(B[ic]),O=Array.isArray(N.timelineIndex)?N.timelineIndex.map(Dt):[];if(F.version===1&&F.contextId===a){if(F.token===null)return{value:ra({}),token:"",revision:0,receipts:{}};let U=A(String(F.token),O);return U?{value:ra(Dt(U.data.progress)),token:String(U.data.token),revision:Number(U.data.revision)||0,receipts:Dt(U.data.receipts)}:{value:ra({}),token:"",revision:0,receipts:{}}}if(N.timelineVersion===1){if(q.version===1&&q.contextId===a)return{value:ra(Dt(q.progress)),token:String(q.token),revision:Number(q.revision)||0,receipts:Dt(q.receipts)};for(let U of[...O].filter(j=>Number(j.messageId)<=f()).sort((j,D)=>Number(D.messageId)-Number(j.messageId))){let j=A(String(U.token),O);if(j)return{value:ra(Dt(j.data.progress)),token:String(j.data.token),revision:Number(j.data.revision)||0,receipts:Dt(j.data.receipts)}}return{value:ra({}),token:"",revision:0,receipts:{}}}return{value:ra(N),token:"",revision:0,receipts:Dt(B.bookseaSessionReceipts)}}async function P(B,H){await t.updateVariablesWith(q=>{k();let N=Dt(q.booksea),F=(Array.isArray(N.timelineIndex)?N.timelineIndex.map(Dt):[]).filter(U=>Number(U.messageId)<=f()),O=H?[...F.filter(U=>U.messageId!==H.id&&U.token!==H.token),{messageId:H.id,token:H.token}].sort((U,j)=>Number(U.messageId)-Number(j.messageId)):F;return{...q,booksea:{...N,...safeClone(B),timelineVersion:1,timelineIndex:O}}},{type:"chat"})}async function z(B,H,q,N,F){let O=()=>{if(b(),f()!==B||N&&x(B)!==N||F&&String(Dt(x(B)?.extra)[ss]??Dt(y(B).extra)[ss])!==F)throw Error("聊天楼层已变化，已取消旧记录写入")};if(O(),N)await t.updateVariablesWith(U=>{O();let j=adapterTransformOut(q(adapterTransformIn(U)));return wb(N,H),j},{type:"message",message_id:B});else if(typeof t.setChatMessages=="function"){let U=y(B),j=adapterTransformIn(fetchEffectiveVariables(t,r,B));O(),await t.setChatMessages([{message_id:B,data:adapterTransformOut(q(j)),extra:{...Dt(U.extra),...H}}],{refresh:"none"})}else throw Error("酒馆助手缺少楼层存档接口，请更新助手后重试");O()}async function S(){return b(),d||(d=(async()=>{let B=f();if(B<0)throw Error("当前聊天没有可保存的楼层");let H=y(B),q=fetchEffectiveVariables(t,r,B),N=w(),F=Dt(N.booksea),O=Dt(H.extra),U=x(B),j=T(q,N,Dt(O[qo])),D=typeof O[ss]=="string"?String(O[ss]):"frame-"+crypto.randomUUID(),W=F.timelineVersion!==1,Z={version:1,contextId:a,token:j.token||null};if(i=B,o=U,l=U?.swipe_id,s=D,u=j.value,p=j.receipts,g=j.token,h=j.revision,c=!0,W){let re=ra(u);kb(re,{frame:D,revision:1}),await z(B,{[ss]:D,[qo]:{version:1,contextId:a,token:D,revision:1,progress:re,receipts:p}},de=>({...de,[ic]:{version:1,contextId:a,token:D}}),U),u=re,g=D,h=1,await P(u,{id:B,token:D}),await r().saveChat()}else{let re=O[ss]!==D,ee=Ho(Dt(q[ic]))!==Ho(Z);(re||ee)&&await z(B,{[ss]:D},we=>({...we,[ic]:Z}),U);let de=Ho(ra(F))!==Ho(u);de&&await P(u),(re||ee||de)&&await r().saveChat()}k()})().catch(B=>{throw c=!1,B}).finally(()=>{d=void 0}),d)}let M=()=>{b();let B=w();return c?{...B,booksea:{...Dt(B.booksea),...structuredClone(u)}}:B},C=()=>{b();let B=adapterTransformIn(fetchEffectiveVariables(t,r,f()));return B.bookseaSessionReceipts===void 0&&c&&Object.keys(p).length>0?{...B,bookseaSessionReceipts:structuredClone(p)}:B},I=()=>{k();let B=Dt(Dt(y(i).extra)[qo]);return{frame:s,revision:B.token===s&&Number(B.revision)||0}};async function E(B,H,q){k(q);let N=i,F=s,O=o,U=I(),j=H(M()),D=ra(Dt(j.booksea)),W={frame:F,revision:U.revision+1};kb(D,W);let Z=Dt(B?.bookseaSessionReceipts??C().bookseaSessionReceipts);return await z(N,{[ss]:F,[qo]:{version:1,contextId:a,token:F,revision:W.revision,progress:D,receipts:Z}},re=>({...B??re,bookseaSessionReceipts:Z,[ic]:{version:1,contextId:a,token:F}}),O,F),u=D,p=Z,g=F,h=W.revision,await P(D,{id:N,token:F}),k(q),await r().saveChat(),k(q),W}async function R(B){k();let H=M(),q=B(H);return Ho(ra(Dt(H.booksea)))!==Ho(ra(Dt(q.booksea)))?(await E(void 0,()=>q),q):(await t.updateVariablesWith(N=>{k();let F=Dt(N.booksea);return{...q,booksea:{...Dt(q.booksea),timelineVersion:F.timelineVersion,timelineIndex:F.timelineIndex}}},{type:"chat"}),await r().saveChat(),q)}async function L(B){let H=f(),q=x(H),N=s,F,O;m++;try{try{F=await B()}catch(U){O=U}if(b(),f()<H||q&&x(H)!==q||String(Dt(y(H).extra)[ss])!==N)throw Error("聊天楼层已回退，已停止旧交接");if(await S(),O)throw O;return F}finally{m--}}return{prepare:S,chat:M,readVars:C,stamp:I,commit:E,updateChat:R,valid:v,assertFrame:k,authorizedFrames:()=>[...new Set([s,g].filter(Boolean))],sourceRevision:()=>h,ownedAppend:L,invalidate(){c=!1},get contextId(){return a}}}var Tb="Vào Protelysion",ci="Rời khỏi Protelysion";function Mb(e,t,r,n){return{bookseaHandoff:{version:2,kind:"exit",contextId:e,runId:t,status:r,summary:n}}}function X0(e){let t=Nm(e.extra).bookseaHandoff;return t?.version===2&&t.kind==="exit"&&typeof t.contextId=="string"&&typeof t.runId=="string"&&typeof t.summary=="string"&&["success","failed"].includes(String(t.status))?t:void 0}function _0(e,t,r){let n=X0(e);return n?.contextId===t&&n.runId===r}function Cm(e,t){let{bookseaPromptHandoff:r,...n}=e,a=X0({role:"user",message:ci,extra:t});return{...n,...a?{bookseaPromptHandoff:structuredClone(a)}:{}}}function Sb(e,t,r){return Tb}function Bm(e){if(e.onlineStatus==="no_connection")throw Error("正文模型未连接，请先连接酒馆API后重试交接。")}async function Om(e,t,r){let n=e.getVariables({type:"chat"}),a=ae(n.booksea??{}),i=ae(a.narrativeRequests??{});if(i[r]&&i[r]!=="failed")return;Bm(t),await e.updateVariablesWith(d=>({...d,booksea:{...ae(d.booksea??{}),narrativeRequests:{...ae(ae(d.booksea??{}).narrativeRequests??{}),[r]:"requested"}}}),{type:"chat"}),await t.saveChat();let s=e.getLastMessageId(),o;try{await e.triggerSlash("/trigger await=true")}catch(d){o=d}let l=e.getChatMessages(-1)[0],c=e.getLastMessageId()>s&&l?.role==="assistant"&&String(l.message).trim().length>0;if(await e.updateVariablesWith(d=>({...d,booksea:{...ae(d.booksea??{}),narrativeRequests:{...ae(ae(d.booksea??{}).narrativeRequests??{}),[r]:c?"delivered":"failed"}}}),{type:"chat"}),await t.saveChat(),!c)throw o??Error("未生成正文；宿主结算保留，可显式补写，不会自动重试。");if(o)throw o}function $0(e){if(!e.getVariables||!e.updateVariablesWith)throw new Error("聊天缓存API不可用");let t=e.getVariables.bind(e),r=e.updateVariablesWith.bind(e);function n(a,i,s){let o=a.booksea===void 0?{}:ae(a.booksea,"booksea"),c={...o.actorCache===void 0?{}:ae(o.actorCache,"actorCache")};return s?c[i]=structuredClone(s):delete c[i],{...a,booksea:{...o,actorCache:c}}}return{async read(a){let i=t({type:"chat"});if(i.booksea===void 0)return;let s=ae(i.booksea);if(s.actorCache===void 0)return;let o=ae(s.actorCache);return Object.hasOwn(o,a)?structuredClone(o[a]):void 0},async write(a,i){await r(s=>n(s,a,i),{type:"chat"})},async remove(a){await r(i=>n(i,a),{type:"chat"})}}}function Dm(e){return Array.isArray(e)?e.map(Dm):e&&typeof e=="object"?Object.fromEntries(Object.entries(e).filter(([t])=>!["minimum","maximum","minLength","maxLength","minItems","maxItems"].includes(t)).map(([t,r])=>[t,Dm(r)])):e}function Eb(e,t=18e4,r="full-schema",n={}){if(typeof e.generateRaw!="function"||typeof e.stopGenerationById!="function")throw Error("缺少独立生成或停止接口");return async({prompt:a,schema:i})=>{let s="booksea-compile-"+crypto.randomUUID(),o;try{let l=i===v0,c=r==="portable-action-json"&&!l?a+`
 传输约定：mappings中不要输出action字段，改用actionJson字符串保存完整动作JSON；实际能力一律提供完整动作；非战斗技能先近似成探索或支援能力，无合理近似则按replacementScale替换同阶技能。active与passive都必须提供完整动作，passive不能写null。可选字段不用时直接省略，不要填null或空结构；若有library，必须同时含actions、statuses、summons、fields四个字典，没有条目写{}。解码后的action必须满足以下完整Schema，不得删除字段或省略效果：
 `+JSON.stringify(T4(ms.json)):a,d=r==="portable-action-json"&&!l?Dm(Hf.json):i,m=await Promise.race([e.generateRaw({custom_api:{max_tokens:16384,temperature:0,...n},generation_id:s,should_stream:!1,should_silence:!1,max_chat_history:0,ordered_prompts:[{role:"user",content:c}],json_schema:{name:l?"booksea_skill_blueprint":"booksea_skill_compilation",strict:!l,value:d}}),new Promise((p,g)=>{o=setTimeout(()=>{let h=!1;try{e.stopGenerationById(s)}catch{h=!0}g(Error(h?"角色编译超时且停止接口异常；未保存新缓存，请核对未结束请求":"角色编译超时，未保存新缓存"))},t)})]);if(typeof m!="string"||m.length>1e6)throw Error("模型返回不是受限JSON文本");let u=JSON.parse(m.trim().replace(/^```(?:json)?\s*/i,"").replace(/\s*```$/,""));return r==="portable-action-json"&&u&&Array.isArray(u.mappings)?{version:u.version,mappings:u.mappings.map(p=>{if(!p||typeof p!="object")return p;let{actionJson:g,...h}=p;try{return{...h,action:typeof g=="string"?JSON.parse(g):null}}catch{return{...h,disposition:"unsupported",action:null,reason:"此条由本地规则继续转化"}}})}:u}finally{clearTimeout(o)}}}function T4(e){let t=new Map,r=o=>{if(!o||typeof o!="object")return;let l=JSON.stringify(o);!Array.isArray(o)&&("type"in o||"anyOf"in o||"enum"in o)&&l.length>100&&t.set(l,(t.get(l)??0)+1);for(let c of Object.values(o))r(c)};r(e);let n=[...t].filter(([,o])=>o>1).map(([o])=>o),a=new Map(n.map((o,l)=>[o,"S"+l])),i={},s=(o,l)=>{if(!o||typeof o!="object")return o;let c=a.get(JSON.stringify(o));return c&&c!==l?{$ref:"#/$defs/"+c}:Array.isArray(o)?o.map(d=>s(d)):Object.fromEntries(Object.entries(o).map(([d,m])=>[d,s(m)]))};for(let o of n){let l=a.get(o);i[l]=s(JSON.parse(o),l)}return{...s(e),$defs:i}}async function Pb(e,t,r){let n=t.contextId();if(!n)throw Error("未选择聊天");let a=()=>{if(t.contextId()!==n)throw Error("编译期间切换聊天，拒绝保存到其他聊天")};if(!t.api.getVariables||!t.api.updateVariablesWith||!t.locks?.request)throw Error("角色数据暂时不可用，请重新打开书海");let i=t.api.getVariables.bind(t.api),s=t.api.updateVariablesWith.bind(t.api),o={...t.api,getVariables(u){return a(),i(u)},async updateVariablesWith(u,p){return a(),s(g=>(a(),u(g)),p)}},l=$0(o),c={async read(u){return a(),l.read(u)},async write(u,p){a(),await l.write(u,p),a(),await t.saveChat(),a()},async remove(u){a(),await l.remove(u)}},d=t.api.generateRaw&&t.api.stopGenerationById?Eb({generateRaw:u=>(a(),t.api.generateRaw(u)),stopGenerationById:u=>t.api.stopGenerationById(u)},12e4,t.compilerTransport,t.compilerApi):async()=>{throw Error("No model available; use source/rank conversion")},m=A0(d,r,{blueprint:!0});return t.locks.request(`booksea-compile:${n}:${rt(e)}`,async()=>(a(),ig(e,async()=>{a();let p=await t.readMvu();return a(),p},c,m)))}var M4=e=>{if(!/^[A-Za-z0-9_-]{1,100}$/.test(e))throw Error("本趟ID须为安全且非空的稳定标识")},zb=(e,t)=>Zt(e.map(rt).sort())===Zt(t.map(rt).sort()),Lm=e=>JSON.stringify(e).replace(/</g,"\\u003c").replace(/>/g,"\\u003e"),Rb=e=>e.kind==="player"?"主角":e.name,ed=e=>Lm(e.map(Rb));function Ib(e,t){if(M4(e.id),zt(t.depth,"深度",1),e.status!=="failed"||e.battleActive||!e.failureSignal||e.failureSignal.runId!==e.id)throw Error("本趟失败尚未确定");if(!e.participants.length||e.participants.length>4||new Set(e.participants.map(l=>rt(l.ref))).size!==e.participants.length)throw Error("失败队伍非法");if(e.participants.some(l=>!["voluntaryExit","downedExit"].includes(l.status)||l.experience!==0)||e.rewards.length)throw Error("失败账本未清零");let r=e.failureSignal;if(!zb(r.downed,e.participants.filter(l=>l.status==="downedExit").map(l=>l.ref))||!zb(r.voluntary,e.participants.filter(l=>l.status==="voluntaryExit").map(l=>l.ref)))throw Error("失败名单与结束状态不一致");if(!r.finalDowned?.length||new Set(r.finalDowned.map(rt)).size!==r.finalDowned.length||r.finalDowned.some(l=>!r.downed.some(c=>rt(c)===rt(l))))throw Error("缺少最后倒下批次，旧存档须显式迁移，不能猜测");if(typeof t.encounter!="string"||!t.encounter.trim()||t.encounter.length>2e3)throw Error("致命遭遇事实缺失或过长");if(t.knockouts&&(t.knockouts.length>12||t.knockouts.some(l=>typeof l!="string"||!l.trim()||l.length>3e3)))throw Error("倒下经过记录非法");for(let l of t.consumed)if(zt(l.count,"已消耗数量",1),!l.name||l.name.length>300||!e.participants.some(c=>rt(c.ref)===rt(l.owner)))throw Error("消耗记录非法");let n=new Set(r.finalDowned.map(rt)),a=r.downed.filter(l=>!n.has(rt(l))),i=e.participants.filter(l=>!n.has(rt(l.ref))).map(l=>l.ref),s=[`本趟参战名单：${ed(e.participants.map(l=>l.ref))}。`,e.participants.some(l=>l.ref.kind==="player")?"主角参战；最终倒下者以以下名单为准。":"主角未参战。",`最终在局内倒下、战斗生命为零的成员：${ed(r.finalDowned)}。`,`此前已安全离场的成员：${ed(i)}；其中先前单独倒下并已恢复者：${ed(a)}。`,`抵达深度：${t.depth}；遭遇与过程记录：${Lm(t.encounter)}。`,...t.knockouts??[],`已实际消耗的原物品：${Lm(t.consumed.map(l=>({owner:Rb(l.owner),name:l.name,count:l.count})))}。`,"宿主离场数值已按约定补满三资源，书海伤势Đã xóa；宿主原有状态及其剩余时间保留。","本趟经验与新掉落已按失败规则清空；永久发现和解锁保留，已消耗原物品维持已扣除记录。"].join(`
 `),o=ci;return structuredClone({version:1,runId:e.id,participants:e.participants.map(l=>l.ref),finalDowned:r.finalDowned,safelyExited:i,voluntary:r.voluntary,previouslyDowned:a,...t,resourcePolicy:"host-full-narrative-zero",message:o,directive:s})}function td(e,t,r,n=10){let a=e.get,i=()=>n,s=()=>t,o={warning:()=>{}},l=G=>e.merge(t,G),c={5:{attributes:1,tier:"第二层级/中坚"},9:{attributes:1,tier:"第三层级/精英"},13:{attributes:1,tier:"第四层级/史诗"},17:{attributes:1,tier:"第五层级/传说"},21:{attributes:1,tier:"第六层级/神话"},25:{attributes:1,tier:"第七层级/登神"}},d={0:0,1:120,2:360,3:720,4:1200,5:2400,6:3840,7:5520,8:7440,9:11940,10:16940,11:22440,12:28440,13:38840,14:50040,15:62040,16:74840,17:100340,18:127340,19:155840,20:185840,21:236240,22:289040,23:344240,24:401840,25:"MAX"},m=1,u=13,p=25,g=["力量","敏捷","体质","智力","精神"],h=G=>c[G],f=G=>{let X=e.chain(c).toPairs().map(([J,se])=>({level:Number(J),data:se})).filter(({level:J})=>G>=J).value();return e.maxBy(X,"level")?.data.tier??"第一层级/普通"},b=G=>e.get(d,G,"MAX"),y=G=>G>=p,x={1:1,5:2,9:4,13:10,17:20,21:40,25:100},w={1:1,5:2.5,9:6,13:15,17:35,21:80,25:160},v=(G,X)=>{let J=e.chain(G).keys().map(Number).filter(ie=>X>=ie).value(),se=e.max(J);return se===void 0?G[1]:G[se]},k=[12,16,20,24],A="登神·启明之阶",T="登神·铸权之仪",P="登神·定律誓约",z="登神·登神仪式",S="登神·神国初立",M={[A]:{状态:"进行中",关注度:"高",进展:"尚未开始收集要素。",详情:"等级已锁，无法获取经验，需满足条件：获取至少 1 个要素。",目标:"以一枚要素点燃登神之火，让长阶回应你的名。",奖励:"长阶初启，神火与要素共鸣。"},[T]:{状态:"进行中",关注度:"高",进展:"权能尚未开始融合。",详情:"等级已锁，无法获取经验，需满足条件：融合 3 个要素为 1 个权能。",目标:"三要素归一，淬炼成唯一权能。",奖励:"权能成形，诸力归位于你。"},[P]:{状态:"进行中",关注度:"高",进展:"法则源质未准备就绪。",详情:"等级已锁，无法获取经验，需满足条件：以权能融合法则源质，铸成法则。",目标:"寻得法则源质，与权能相合，点燃法则真名。",奖励:"法则凝就，秩序向你低首。"},[z]:{状态:"进行中",关注度:"高",进展:"登神仪式尚未筹备。",详情:"等级已锁，无法获取经验，需满足条件：获得神位。",目标:"行登神之礼，确立神位。",奖励:"神位应诺，尊名刻入天穹。"},[S]:{状态:"进行中",关注度:"高",进展:"神国建设尚未启动。",详情:"完成条件：建立神国。",目标:"赐予神国之名，令其在诸界立足。",奖励:"神国初立，法则之缚自此尽解。"}},C=/法则源质/,I=/^༺.+༻$/,E=G=>e.filter(e.keys(G),X=>((J,se)=>{if(!I.test(String(se)))return!1;let ie=a(J,"标签",[]);return!!Array.isArray(ie)&&ie.some(Pe=>C.test(String(Pe)))})(a(G,X,{}),String(X))),R=G=>E(G).length>0,L=G=>{let X=(J=>{let se=Number(a(J,"升级所需经验",0));return Number.isFinite(se)?se:null})(G);return X!==null&&a(G,"累计经验值",0)>=X},B=(G,X)=>{e.has(G,X)||e.set(G,X,M[X])},H=(G,X)=>{e.has(G,X)&&e.unset(G,X)},q=G=>({elementCount:e.size(a(G,"要素",{})),powerCount:e.size(a(G,"权能",{})),lawCount:e.size(a(G,"法则",{})),hasGodPosition:!!a(G,"神位",""),hasGodNationName:!!a(G,"神国.名称","")}),N=(G,X)=>{if(!k.includes(G))return!0;let J=a(X,"stat_data.主角",{}),se=a(J,"登神长阶",{}),{elementCount:ie,powerCount:Pe,lawCount:ue,hasGodPosition:Se}=q(se);switch(G){case 12:return ie>0;case 16:return Pe>0;case 20:return ue>0;case 24:return ue>0&&Se;default:return!0}},F=(G,X)=>{let J=a(G,"stat_data.主角",{}),se=a(G,"stat_data.任务列表",{}),ie=a(J,"登神长阶",{}),{elementCount:Pe,powerCount:ue,lawCount:Se,hasGodPosition:Ke,hasGodNationName:Ee}=q(ie),me=Number(a(J,"等级",1)),De=L(J),Ie=a(J,"背包",{}),Xe=E(Ie),ft=Xe.length>0,V=a(X??{},"stat_data.主角.登神长阶",{}),Le=e.size(a(V,"法则",{})),Je=a(X??{},"stat_data.主角.背包",{}),te=R(Je);me===20&&Se>0&&!ft&&!te&&e.set(J,"登神长阶.法则",{});let $=me>=u||me===12&&De;e.set(J,"登神长阶.是否开启",a(ie,"是否开启",!1)||$),me===12&&De&&Pe===0?B(se,A):H(se,A),me===16&&De&&Pe===3&&ue===0?B(se,T):H(se,T),me===20&&De&&ue>=1&&Se===0?B(se,P):H(se,P),me===24&&De&&Se>=1&&!Ke?B(se,z):H(se,z),me===25&&Se>=2&&!Ee?B(se,S):H(se,S),Le===0&&Se>0&&((ze,Ce)=>{Ce.length===1&&e.forEach(Ce,ht=>{e.unset(ze,ht)})})(Ie,Xe),e.set(G,"date.ascensionLawReady",R(Ie))},O={deathCount:0,maxCurrencyDebt:0,bankruptcyCount:0,illegalLevelUpId:[],totalFPGained:0,timeRecord:{},locationRecord:{}},U=G=>a(G,"date.log",null)||{...O},j=(G,X)=>{let J=a(G,"stat_data.主角",{}),se=e.has(X,"stat_data.主角.等级"),ie=a(X,"stat_data.主角.等级",1),Pe=i()<=2;if(F(G,X),!Pe&&se&&ie<J.等级){let ue=Number(a(J,"升级所需经验",0));Number.isFinite(ue)&&Number(a(J,"累计经验值",0))>=ue&&J.等级===ie+1?e.set(J,"等级",ie):(e.set(J,"等级",ie),(()=>{let Se=s({type:"message"}),Ke=U(Se),Ee=i();Ke.illegalLevelUpId.includes(Ee)||Ke.illegalLevelUpId.push(Ee),l({date:{log:{illegalLevelUpId:Ke.illegalLevelUpId}}},{type:"message"})})(),o.warning("等级被AI非法提升,请检查变量更新"))}if(e.set(J,"升级所需经验",b(J.等级)),J.等级>0){let ue=b(J.等级-1),Se=Number(J.累计经验值)||0,Ke=a(X,"stat_data.主角.累计经验值",Se),Ee=Math.max(Se,Number(ue)||0,Ke);J.累计经验值!==Ee&&e.set(J,"累计经验值",Ee)}e.set(J,"生命层级",f(J.等级))},D={"第一层级/普通":8,"第二层级/中坚":10,"第三层级/精英":12,"第四层级/史诗":14,"第五层级/传说":16,"第六层级/神话":18,"第七层级/登神":20},W=G=>D[G]??8,Z=new Set([12,16,20,24]),re=(G,X,J,se)=>{let ie=[];if(e.forEach(g,Ke=>{let Ee=Number(G[Ke]||0);if(Ee+Number(X[Ke]||0)+Number(J[Ke]||0)>=se)return;let me=Math.max(1,Ee*Ee);ie.push({key:Ke,weight:me})}),ie.length===0)return null;let Pe=e.sumBy(ie,"weight"),ue=Math.random()*Pe,Se=ie[ie.length-1]?.key??g[0];for(let Ke of ie)if(ue-=Ke.weight,ue<=0){Se=Ke.key;break}return Se},ee=(G,X)=>Number(a(G,`属性.${X}`,0))||0,de=(G,X=!1)=>{let J=Number(a(G,"等级",1))||1,se=(ze=>v(x,ze))(J),ie=(ze=>v(w,ze))(J),Pe=ee(G,"力量"),ue=ee(G,"敏捷"),Se=ee(G,"体质"),Ke=ee(G,"智力"),Ee=ee(G,"精神"),me=Pe+ue+Se+Ke+Ee,De=Math.round(100*Se*se+me),Ie=Math.round(50*(Ke+Ee)*ie),Xe=Math.round(50*(Pe+ue)*ie);e.set(G,"生命值.上限._基础",De),e.set(G,"法力值.上限._基础",Ie),e.set(G,"体力值.上限._基础",Xe);let ft=Number(a(G,"生命值.当前",0))||0,V=Number(a(G,"法力值.当前",0))||0,Le=Number(a(G,"体力值.当前",0))||0,Je=Math.max(0,De+Number(a(G,"生命值.上限.额外",0))),te=Math.max(0,Ie+Number(a(G,"法力值.上限.额外",0))),$=Math.max(0,Xe+Number(a(G,"体力值.上限.额外",0)));e.set(G,"生命值.当前",X?Je:e.clamp(ft,0,Je)),e.set(G,"法力值.当前",X?te:e.clamp(V,0,te)),e.set(G,"体力值.当前",X?$:e.clamp(Le,0,$))},we=(G,X)=>{let J=a(G,"stat_data.主角",{}),se=a(X,"stat_data.主角.等级",J.等级),ie=Number(J.属性点)||0,Pe=a(X,"stat_data.主角.生命层级",f(se)),ue=e.fromPairs(e.map(g,me=>[me,Number(a(J,`属性.${me}`,0))||0])),Se=0,Ke=[],Ee=e.fromPairs(e.map(g,me=>[me,0]));for(;J.累计经验值>=Number(J.升级所需经验)&&!y(J.等级);){if(!N(J.等级,G)){e.set(J,"累计经验值",Number(J.升级所需经验));break}e.set(J,"等级",J.等级+1),e.set(J,"升级所需经验",b(J.等级)),J.等级%m===0&&(Se+=1);let me=h(J.等级);me&&(e.forEach(g,De=>{Ee[De]+=me.attributes}),e.set(J,"生命层级",me.tier),Pe!==me.tier&&(Ke.push(`{{user}}的生命层级从${Pe}突破到了${me.tier}`),Pe=me.tier))}if(e.set(J,"属性点",ie+Se),e.forEach(g,me=>{e.set(J,`属性.${me}`,ue[me]+Ee[me])}),e.set(J,"生命层级",f(J.等级)),J.等级>se){let me=[`{{user}}的等级从${se}级提升到了${J.等级}级`];Se>0&&me.push(`{{user}}升级了，获得了${Se}点属性点。引导{{user}}使用属性点`),Ke.length>0&&me.push(...Ke),l({date:{levelUpCharacter:me}},{type:"message"})}},Q=(G,X)=>{let J=a(G,"stat_data.关系列表",{}),se=a(G,"date.requiresContractForExp",!0),ie=a(G,"date.npcs",{}),Pe=a(G,"stat_data.主角.累计经验值",0),ue=Pe-a(X,"stat_data.主角.累计经验值",Pe),Se=i()<=3;e.forEach(J,(Ee,me)=>{ie[me]||e.set(ie,me,{level:Ee.等级,exp:0,required_exp:b(Ee.等级)})}),e.forEach(e.keys(ie),Ee=>{J[Ee]||e.unset(ie,Ee)});let Ke=[];e.forEach(ie,(Ee,me)=>{let De=J[me];if(!De)return;let Ie=a(X,`stat_data.关系列表.${me}.等级`,void 0),Xe=typeof Ie!="number"||Ie!==De.等级,ft=e.fromPairs(e.map(g,ht=>[ht,Number(a(De,`属性.${ht}`,0))||0])),V=e.fromPairs(e.map(g,ht=>[ht,0])),Le=e.fromPairs(e.map(g,ht=>[ht,0]));e.set(Ee,"level",De.等级),e.set(Ee,"required_exp",b(Ee.level));let Je=Ee.level>1?d[Ee.level-1]:0;Xe?typeof Je=="number"&&e.set(Ee,"exp",Je):Ee.level>1&&typeof Je=="number"&&Ee.exp<Je&&e.set(Ee,"exp",Je);let te=!Xe,$=a(G,"stat_data.主角.等级",1),ze=De.等级,Ce=a(X,`stat_data.关系列表.${me}.生命层级`,f(ze));for(;te&&Ee.exp>=Ee.required_exp&&!y(Ee.level);){e.set(Ee,"level",Ee.level+1),e.set(Ee,"required_exp",b(Ee.level));let ht=f(Ee.level),Nr=W(ht);if(Ee.level%m===0){let Cr=re(ft,V,Le,Nr);Cr&&(V[Cr]+=1)}let ar=h(Ee.level);ar&&e.forEach(g,Cr=>{Le[Cr]+=ar.attributes});let Mn=f(Ee.level);if(Ce!==Mn&&(Ke.push(`${me}的生命层级从${Ce}突破到了${Mn}`),Ce=Mn),Z.has(Ee.level))break}e.forEach(g,ht=>{e.set(De,`属性.${ht}`,ft[ht]+V[ht]+Le[ht])}),De.等级<Ee.level&&(Ke.unshift(`${me}从LV${ze}提升到LV${Ee.level}`),e.set(De,"等级",Ee.level),e.set(De,"生命层级",f(Ee.level)))}),Ke.length>0?l({date:{npcs:ie,levelUpNpcs:Ke}},{type:"message"}):l({date:{npcs:ie}},{type:"message"})};return{threshold:b,base:de,player:()=>{j(t,r),we(t,r),de(t.stat_data.主角)},npcs:()=>{Q(t,r);for(let G of Object.values(t.stat_data.关系列表))de(G)}}}function Nb(e,t,r,n){let a=structuredClone(e);if(r===0)return a;let i=dr(a,t),s=structuredClone(a);if(t.kind==="player")i.累计经验值=Number(i.累计经验值)+r,td(n,a,s).player();else{let o=a.date===void 0?{}:ae(a.date),l=o.npcs===void 0?{}:ae(o.npcs),c=l[t.name],d=td(n,a,s).threshold,m=c?structuredClone(c):{level:i.等级,exp:Number(d(Number(i.等级)-1)),required_exp:d(i.等级)};m.exp=Math.max(Number(m.exp),Number(d(Number(i.等级)-1)))+r;let u={...a,stat_data:{...ae(a.stat_data),关系列表:{[t.name]:i}},date:{...o,npcs:{[t.name]:m}}};td(n,u,s).npcs(),a.date={...o,npcs:{...l,...u.date.npcs},...u.date.levelUpNpcs?{levelUpNpcs:u.date.levelUpNpcs}:{}},ae(ae(a.stat_data).关系列表)[t.name]=u.stat_data.关系列表[t.name]}return a}var jm=e=>e.id===dn?"「?」":`「${translateHitTerm(e.name)}」`;function rd(e){let t=new Map;for(let r of e)t.set(jm(r),(t.get(jm(r))??0)+1);return[...t].map(([r,n])=>n>1?`${r}×${n}`:r).join("、")}var oc=e=>`Tầng ${e.depth}「${translateHitTerm(e.region)}」（${translateHitTerm(e.theme)}）`;function S4(e){if(e.cause==="battle"&&e.foes.length)return`${e.name}：${oc(e)}，bị đánh bại trong trận chiến với ${rd(e.foes)}`;let t=e.foes.length?`（trước đó giao chiến cuối cùng với ${rd(e.foes)}）`:"";return e.cause==="event"?`${e.name}：${oc(e)}，ngã xuống trong sự kiện「${translateHitTerm(e.event??"Không rõ")}」${t}`:`${e.name}：${oc(e)}，ngã xuống trên đường thám hiểm${t}`}function E4(e){if(e.id===dn)return`「?」Lv.${e.level}：Tư liệu xem tại 【「?」】`;let t=Fn[e.id],r=br[e.id],n=[`${jm(e)}Lv.${e.level}`,r?.role??t?.role??"Thường"];t&&n.push("Xuất hiện tại "+translateHitTerm(un[t.theme]?.name??t.theme)),t?.motif&&n.push("Đặc trưng: "+translateHitTerm(t.motif));let a=[...new Set(Object.values(r?.skills??{}).map(i=>translateHitTerm(i.name)).filter(i=>!!i))].slice(0,4);return a.length&&n.push("Chiêu thức: "+a.join("、")),n.join("，")}function Fm(e,t=[]){let r=e.knockouts??[];if(!r.length)return[];let n=["Quá trình ngã xuống của các thành viên: "+r.map(S4).join("；")+"。"],a=r.filter(l=>t.includes(l.member)),i=a.at(-1);i&&(i.cause==="battle"&&i.foes.length?n.push(`Trận chiến cuối cùng: ${oc(i)}，đội ngũ thất bại trước ${rd(i.foes)}，bị tống ra khỏi Protelysion。`):n.push(`Lần ngã xuống cuối cùng xảy ra tại ${oc(i)} trong ${i.cause==="event"?"sự kiện「"+translateHitTerm(i.event??"Không rõ")+"」":"lúc thám hiểm"}${i.foes.length?"，trước đó giao chiến cuối cùng với "+rd(i.foes):""}。`));let s=new Set,o=[];for(let l of[...a,...r])for(let c of l.foes){let d=c.id+":"+c.level;s.has(d)||(s.add(d),o.push(c))}return o.length&&n.push("Quái địch liên quan: "+o.slice(0,8).map(E4).join("；")+"。"),n}function Bb(e){let t=e.TavernHelper??e,r=()=>e.SillyTavern.getContext();if(!e.SillyTavern?.getContext||typeof t.getVariables!="function")throw Error("请在启用酒馆助手的聊天消息内打开书海宿主入口；独立试玩请使用试玩页面。");if(!e.navigator?.locks?.request)throw Error("当前页面缺少安全上下文的跨窗口锁；请通过HTTPS或本机localhost访问酒馆，避免不安全写入。");let n=Ab(e),a=()=>`${r().characterId}:${r().getCurrentChatId()}`,i=a(),s=()=>t.getLastMessageId(),o=()=>{if(a()!==i)throw Error("请回到此趟所属聊天")},l=()=>(o(),adapterTransformIn(n.readVars())),c=async()=>{o(),await r().saveChat()},d={getVariables:u=>u.type==="chat"?n.chat():t.getVariables(u),updateVariablesWith:(u,p)=>p.type==="chat"?n.updateChat(u):t.updateVariablesWith(u,p),generateRaw:t.generateRaw,stopGenerationById:t.stopGenerationById},m={...d,getLastMessageId:()=>t.getLastMessageId(),getChatMessages:u=>t.getChatMessages(u),triggerSlash:u=>n.ownedAppend(()=>t.triggerSlash(u))};return{id:a,messageId:s,read:l,chat:n.chat,lodash:e._,prepare:n.prepare,authorizedFrames:n.authorizedFrames,bind(u){u.hostSave=n.stamp()},saveCurrent:u=>n.valid(u.hostSave),assertSave:u=>{if(!u.hostSave)throw Error("远征缺少楼层绑定，请重新打开入口");n.assertFrame(u.hostSave)},async commitProgress(u,p,g){g.hostSave=await n.commit(u,p,g.hostSave)},requireNarrativeReady:()=>Bm(r()),async enterNarrative(u,p,g){o(),await n.prepare();let h=l();await n.ownedAppend(()=>t.createChatMessages([{role:"user",message:Sb(u,p,g),data:Cm(h,{}),extra:{bookseaHandoff:{version:2,kind:"entry",contextId:i,runId:g}}}])),await c(),await Om(m,r(),"entry:"+g)},async write(u){o(),await t.replaceVariables(adapterTransformOut(u),{type:"message",message_id:s()}),await c()},async deliver(u){o(),u.hostSave?n.assertFrame(u.hostSave):(await n.prepare(),u.hostSave=n.stamp());try{if(u.mode!=="ended"||!["success","failed"].includes(u.run.status))throw Error("本趟尚未结算结束");let p=ae(n.chat().booksea??{}),g=ae(p.narrativeRequests??{}),h=ae(p.exitDeliveries??{}),f="exit:"+u.run.id;if(g[f]==="delivered"||p.activeExpedition?.run.id&&p.activeExpedition.run.id!==u.run.id||p.lastExpedition?.run.id&&p.lastExpedition.run.id!==u.run.id)return;let b=u.party.filter(T=>T.ref&&u.run.failureSignal?.finalDowned?.some(P=>rt(P)===rt(T.ref))).map(T=>T.id),y=u.run.status==="failed"?Ib(u.run,{depth:u.depth,encounter:u.region.name+" / "+u.notice,knockouts:Fm(u,b),consumed:Object.values(u.inventory??{}).filter(T=>T.used>0).map(T=>({owner:T.owner,name:T.name,count:T.used}))}):null,x=y?.directive??[`Người tham chiến và rời sân: ${Ni(u.party.map(T=>T.name))}。`,`Ghi chép độ sâu chuyến này: Xuất phát tầng ${u.depthLog?.start??1}；Sâu nhất tầng ${u.depthLog?.maximum??u.depth}；Xuống ${u.depthLog?.down??0} lần, lên ${u.depthLog?.up??0} lần, thám hiểm ${u.depthLog?.visits??u.visit+1} khu vực。`,`Chạm trán thực tế: ${Ni((u.encounters??[]).map(translateHitTerm))}`,`FP đã kết toán và hộp mù chưa mở: ${Ni(u.run.rewards)}`,`Vật phẩm đã tiêu hao: ${Ni(Object.values(u.inventory??{}).filter(T=>T.used>0).map(T=>({owner:T.owner,name:translateHitTerm(T.name),count:T.used})))}`,`Thành viên rời sân: ${Ni(u.run.participants.map(T=>({actor:T.ref,exit:T.status,experience:T.experience})))}`,...Fm(u),"Kết toán kinh nghiệm, FP, hộp mù và vật liệu quái của chuyến này đã hoàn tất, 3 tài nguyên khi rời sân đã được hồi phục。"].join(`
