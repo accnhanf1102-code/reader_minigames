@@ -34,3 +34,9 @@ Các ví dụ và năm ảnh đã báo được giải quyết; không còn ch�
 - Khi đổi bản dịch: chạy `node tools/build_runtime_locale.mjs`, sau đó `node tools/update_release_manifest.mjs`. Khi đổi nhãn bản đồ: chạy `node tools/localize_godot_labels.mjs` trước cập nhật manifest. Dùng Node 24 cho công cụ PCK.
 - Kiểm chứng: `node --check site/distribution.js`, `node tools/test_skill_display_vi.mjs`, `node tools/test_runtime_localization.mjs`, `node tools/test_godot_labels.mjs`, `node tools/test_async_host.mjs`, `node tools/test_reader_loader.mjs`, `python tools/materialize.py`. CI Pages chạy cùng các kiểm tra trước khi phát hành.
 - Phạm vi xác minh host là fixture và adapter với dữ liệu mẫu; cần test lại chat thực tế của người dùng sau khi cập nhật. Dữ liệu do AI/người dùng tự viết ngoài danh mục không bị dịch cưỡng bức.
+
+## Bổ sung loại và tag vật phẩm (2026-10-04)
+
+- Adapter chuyển giá trị loại/tag và nhãn hiệu ứng của đồ mang tag `书海`/`Thư Hải` sang tiếng Việt khi ghi host, khôi phục sang mã tiếng Trung khi đọc. Bao phủ hành trang nhân vật chính và đồng đội, cả đồ cũ và dữ liệu trộn hai ngôn ngữ; không đổi tag riêng, mã nguồn vật phẩm hoặc mệnh giá.
+- Giữ tên định danh vé FP đúng mẫu parser, sửa bộ dịch tên trước đây làm đổi một phần tên vé. Nhãn metadata được dịch, tên định danh vé vẫn giữ nguyên để bộ đổi vé hoạt động.
+- `node tools/test_item_metadata_vi.mjs` kiểm tra 144 khu vực, chuyển đổi hai chiều vật liệu/Hộp Mù/vé FP, cộng dồn, đổi vé, đồ cũ của đồng đội và bảo toàn dữ liệu riêng. CI Pages chạy kiểm tra này trước phát hành.

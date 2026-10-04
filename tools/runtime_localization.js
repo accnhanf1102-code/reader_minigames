@@ -1,5 +1,46 @@
 // Embedded by build_runtime_locale.mjs; engine keys and enum values stay unchanged.
 var bsRuntimeTerms={},bsRuntimeDescriptions={},bsRuntimeTemplates=[];
+var bsItemTypesVi={材料:"Vật liệu",消耗品:"Vật phẩm tiêu hao"};
+var bsItemTagsVi={书海:"Thư Hải",怪物素材:"Vật liệu quái",盲盒:"Hộp Mù",未开启:"Chưa mở",FP兑换券:"Vé đổi FP"};
+var bsItemPrefixesVi={主题:"Chủ đề",区域:"Khu vực",来源:"Nguồn",内容类型:"Loại nội dung",面额:"Mệnh giá"};
+var bsItemEffectsVi={素材:"Vật liệu",待开启:"Chờ mở",兑换:"Đổi FP"};
+function bsItemMapped(value,map,out){
+  if(out)return map[value]??value;
+  return Object.keys(map).find(key=>map[key]===value)??value;
+}
+function bsItemContent(value,out){
+  const map={消耗品:"Vật phẩm tiêu hao"};
+  for(const theme of _u){map[theme.name]=bsTextVi(theme.name);for(const scene of theme.scenes)map[scene]=bsTextVi(scene);}
+  // Legacy boxes use the runtime display term, which is lower case.
+  if(!out&&value==="vật phẩm tiêu hao")return "消耗品";
+  return bsItemMapped(value,map,out);
+}
+function bsItemTag(value,out){
+  if(typeof value!=="string")return value;
+  const direct=bsItemMapped(value,bsItemTagsVi,out);
+  if(direct!==value)return direct;
+  const colon=value.indexOf(":");if(colon<0)return value;
+  const prefix=value.slice(0,colon),content=value.slice(colon+1).trim();
+  const canonical=bsItemMapped(prefix,bsItemPrefixesVi,false);
+  if(!Object.hasOwn(bsItemPrefixesVi,canonical))return value;
+  const translated=["主题","区域","内容类型"].includes(canonical)?bsItemContent(content,out):content;
+  return out?bsItemPrefixesVi[canonical]+": "+translated:canonical+":"+translated;
+}
+function bsTransformHostItemMetadata(statData,out){
+  const actors=[statData?.主角,...Object.values(statData?.关系列表??{})];
+  for(const actor of actors)for(const item of Object.values(actor?.背包??{})){
+    if(!item||!Array.isArray(item.标签)||!item.标签.some(tag=>tag==="书海"||tag==="Thư Hải"))continue;
+    // Canonicalize mixed old/new metadata before producing either representation.
+    item.类型=bsItemMapped(bsItemMapped(item.类型,bsItemTypesVi,false),bsItemTypesVi,out);
+    item.标签=item.标签.map(tag=>bsItemTag(bsItemTag(tag,false),out));
+    if(item.效果&&typeof item.效果==="object"&&!Array.isArray(item.效果)){
+      const entries=Object.entries(item.效果).map(([key,value])=>({key,value,target:bsItemMapped(bsItemMapped(key,bsItemEffectsVi,false),bsItemEffectsVi,out)}));
+      // Keep original keys for ambiguous custom pairs instead of overwriting either value.
+      item.效果=Object.fromEntries(entries.map(entry=>[entries.filter(other=>other.target===entry.target).length>1?entry.key:entry.target,entry.value]));
+    }
+  }
+  return statData;
+}
 function translateHitTerm(value){return bsTextVi(value)}
 function bsTextVi(value){
   if(typeof value!=="string"||!value)return value;
@@ -84,7 +125,8 @@ function bsRewardName(reward){
   return reward.kind==="box"?`${bsTextVi(reward.quality)} · ${bsTextVi(reward.style)} · Hộp Mù ${bsTextVi(reward.contentType)}`:reward.kind==="material"?`${bsTextVi(reward.quality)} · ${bsTextVi(reward.name)}`:`${kl(reward)} FP`;
 }
 function bsRewardItem(result){
-  result.name=bsTextVi(result.name);
+  // Redemption recognizes this exact voucher name; translate metadata at the host boundary.
+  if(!result.item.标签?.includes("FP兑换券"))result.name=bsTextVi(result.name);
   result.item.描述=bsTextVi(result.item.描述);
   if(result.item.效果)result.item.效果=Object.fromEntries(Object.entries(result.item.效果).map(([key,text])=>[key,typeof text==="string"?bsTextVi(text):text]));
   return result;

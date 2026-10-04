@@ -19,5 +19,7 @@ source=source.replace('function translateHitTerm(term) {','function bsLegacyHitT
 if(source.includes(begin))source=source.slice(0,source.indexOf(begin))+block+source.slice(source.indexOf(end)+end.length);
 else source=source.replace('/* --- PROTELYSION BOOKSEA HIT MAPPING END --- */','/* --- PROTELYSION BOOKSEA HIT MAPPING END --- */\r\n'+block);
 if(!source.includes('bsApplyContentTranslations();return C5(HA);'))source=source.replace('return C5(HA);})();','bsApplyContentTranslations();return C5(HA);})();');
+if(!source.includes('bsTransformHostItemMetadata(cnStatData, false);'))source=source.replace('  cloned.stat_data = cnStatData;\r\n  cloned.MVU', '  bsTransformHostItemMetadata(cnStatData, false);\r\n  cloned.stat_data = cnStatData;\r\n  cloned.MVU');
+if(!source.includes('bsTransformHostItemMetadata(cnStatData, true);'))source=source.replace('  if (!cnStatData) return cloned;','  if (!cnStatData) return cloned;\r\n  bsTransformHostItemMetadata(cnStatData, true);');
 fs.writeFileSync(file,source);
 console.log(`Embedded ${Object.keys(materials).length} materials, ${Object.keys(base.relics).length} relics and ${phrases.length} phrase dictionaries`);

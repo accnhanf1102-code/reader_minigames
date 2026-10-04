@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';import {createHash} from 'node:crypto';
 export function loadRuntime(source){
  const context={console,setTimeout,clearTimeout,structuredClone};context.window=context;
- const instrumented=source.includes('window.Runtime=')?source:source.replace('return C5(HA);})();','window.Runtime={O0,Co,Fn,Xk,Kt,_u,Do,I1,B7,Hi,wu,Eh,cw,cwRaw,Ph,T1,A1,adapterTransformIn,adapterTransformOut,bsTextVi,bsDisplayName,bsActionSource,bsNormalizeInventory,fa,BS_RUNTIME_LOCALE};return C5(HA);})();');
+ const instrumented=source.includes('window.Runtime=')?source:source.replace('return C5(HA);})();','window.Runtime={O0,Co,Fn,Xk,Kt,_u,Do,I1,B7,Hi,wu,Eh,cw,cwRaw,Ph,Sh,D1,T1,A1,adapterTransformIn,adapterTransformOut,bsTextVi,bsDisplayName,bsActionSource,bsNormalizeInventory,fa,BS_RUNTIME_LOCALE};return C5(HA);})();');
  vm.runInNewContext(instrumented,context);
  return context.Runtime;
 }

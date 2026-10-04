@@ -27,6 +27,7 @@ jobs:
           node --check site/distribution.js
           node tools/test_skill_display_vi.mjs
           node tools/test_runtime_localization.mjs
+          node tools/test_item_metadata_vi.mjs
           node tools/test_godot_labels.mjs
           node tools/test_async_host.mjs
           node tools/test_reader_loader.mjs
